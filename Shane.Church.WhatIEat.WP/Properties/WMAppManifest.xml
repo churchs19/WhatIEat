@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{d2c8145e-8508-40ba-9828-175d5b1efabe}" Title="What I Eat" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Shane Church" Description="A simple food journal for windows phone" Publisher="Shane Church" BitsPerPixel="32">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainCalendar.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="Shane.Church.WhatIEat.WPToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>What I Eat</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>

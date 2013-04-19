@@ -1,0 +1,872 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	xmlns:System="clr-namespace:System;assembly=mscorlib" 
+	xmlns:telerikTextBox="clr-namespace:Telerik.Windows.Controls.PhoneTextBox;assembly=Telerik.Windows.Controls.Primitives"
+	xmlns:telerikConverters="clr-namespace:Telerik.Windows.Controls.ImageButton;assembly=Telerik.Windows.Controls.Primitives"
+	mc:Ignorable="d">
+	
+	<Color x:Key="AppBaseColor">#FFF6E6FF</Color>
+	<SolidColorBrush x:Key="AppBaseColorBrush" Color="{StaticResource AppBaseColor}"/>
+	<Color x:Key="AppAccentColor">#FF8F6FAD</Color>
+	<SolidColorBrush x:Key="AppAccentColorBrush" Color="{StaticResource AppAccentColor}"/>
+	<Color x:Key="AppBaseColor2">#FFD3BEFF</Color>
+	<SolidColorBrush x:Key="AppBaseColor2Brush" Color="{StaticResource AppBaseColor2}"/>
+	<Color x:Key="AppBaseColor3">#FF8C2AE5</Color>
+	<SolidColorBrush x:Key="AppBaseColor3Brush" Color="{StaticResource AppBaseColor3}"/>
+	<Color x:Key="AppBaseColor4">#FF270C40</Color>
+	<SolidColorBrush x:Key="AppBaseColor4Brush" Color="{StaticResource AppBaseColor4}"/>
+	<LinearGradientBrush x:Key="MainBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+		<GradientStop Color="{StaticResource AppBaseColor}" Offset="0"/>
+		<GradientStop Color="{StaticResource AppBaseColor2}" Offset="1"/>
+		<GradientStop Color="{StaticResource AppBaseColor}">
+			<GradientStop.Offset>
+				<System:Double>0.75</System:Double>
+			</GradientStop.Offset>
+		</GradientStop>
+	</LinearGradientBrush>
+	<SolidColorBrush Color="#00813D" x:Key="GreenBrush"/>
+	<SolidColorBrush Color="#BF0000" x:Key="RedBrush"/>	
+
+	<Style TargetType="calendar:CalendarButton">
+		<Setter Property="Padding" Value="0" />
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="calendar:CalendarButton">
+					<Grid x:Name="LayoutRoot" Background="{TemplateBinding Background}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor3}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="IsNotFromCurrentView">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor3}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="IsNotSelectable">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor3}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="ButtonType">
+								<VisualState x:Name="Date" />
+								<VisualState x:Name="TodayDate">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="TodayVisual"
+											Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Month" />
+								<VisualState x:Name="WeekNumber">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor3}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="WeekName">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppAccentColor}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="SelectionStates">
+								<VisualState x:Name="Unselected" />
+								<VisualState x:Name="Selected" >
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="SelectedVisual"
+											Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Border x:Name="TodayVisual" Visibility="Collapsed" Background="{StaticResource AppAccentColorBrush}" />
+						<Border x:Name="SelectedVisual" Visibility="Collapsed" Background="{StaticResource AppBaseColor3Brush}" />
+						<ContentControl Margin="{TemplateBinding Padding}"
+							ContentTemplate="{TemplateBinding ContentTemplate}"
+							HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+							VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+							Content="{TemplateBinding Content}" 
+							x:Name="ContentPresenter"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style TargetType="telerikInput:RadCalendar">
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="VerticalAlignment" Value="Top"/>
+		<Setter Property="BorderThickness" Value="1" />
+		<Setter Property="IsTabStop" Value="False" />
+		<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}" />
+		<Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}" />
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="GridLinesBrush" Value="{StaticResource AppBaseColor4}"/>
+		<Setter Property="ItemTemplate">
+			<Setter.Value>
+				<DataTemplate>
+					<Grid Margin="5">
+						<TextBlock Text="{Binding DetailText}" FontSize="7" MaxHeight="25" VerticalAlignment="Top" Margin="0,-2,0,0"/>
+						<TextBlock Text="{Binding Text}" x:Name="TextPresenter" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+					</Grid>
+				</DataTemplate>
+			</Setter.Value>
+		</Setter>
+
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="telerikInput:RadCalendar">
+					<Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="DayNamesNotVisible">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="MonthTextContainer"
+											Storyboard.TargetProperty="Margin">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="-4, -10, 0, 30" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto" />
+								<RowDefinition Height="*" />
+							</Grid.RowDefinitions>
+
+							<telerikInput:RadDatePicker Culture="{TemplateBinding Culture}" x:Name="DatePicker" Width="1" Height="1" Opacity="0" SelectorFormat="my"/>
+
+							<Canvas Grid.Row="1" IsHitTestVisible="False" Margin="0,-20,0,0" d:IsHidden="True">
+								<Rectangle Canvas.Left="0" Canvas.Top="0" x:Name="OldContentPresenterCopy" CacheMode="BitmapCache"/>
+							</Canvas>
+							<Grid Grid.Row="1" x:Name="CalendarViewContainer" Margin="0,-20,0,0">
+								<Canvas IsHitTestVisible="False" d:IsHidden="True">
+									<Rectangle Canvas.Left="0" Canvas.Top="0" x:Name="OldContentPresenter" CacheMode="BitmapCache"/>
+								</Canvas>
+								<telerikPrimitives:RadUniformGrid FirstRowVisibility="{TemplateBinding DayNamesVisibility}" FirstColumnVisibility="{TemplateBinding WeekNumbersVisibility}" x:Name="CalendarPanel" PreserveSpaceForCollapsedChildren="True" NumberOfRows="7" NumberOfColumns ="8" />
+								<telerikPrimitives:RadUniformGrid FirstRowVisibility="{TemplateBinding DayNamesVisibility}" FirstColumnVisibility="{TemplateBinding WeekNumbersVisibility}" x:Name="GridLinesPanel" PreserveSpaceForCollapsedChildren="True" NumberOfRows="7" NumberOfColumns ="8" />
+							</Grid>
+							<Grid Margin="22,10,0,15" x:Name="MonthInfoLargeContainer">
+								<Grid.RowDefinitions>
+									<RowDefinition Height="Auto" />
+									<RowDefinition Height="Auto" />
+								</Grid.RowDefinitions>
+								<telerikPrimitives:RadTransitionControl x:Name="YearTextContainer" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="{StaticResource PhoneFontSizeMedium}" Foreground="{StaticResource AppAccentColorBrush}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+								<telerikPrimitives:RadTransitionControl Margin="-4, -10, 0, 0" Grid.Row="1" x:Name="MonthTextContainer" FontFamily="{StaticResource PhoneFontFamilySemiLight}" FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}" Foreground="{StaticResource AppAccentColorBrush}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+							</Grid>
+							<Grid x:Name="MonthInfoSmallContainer" Margin="3,0,0,0">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+								<telerikPrimitives:RadTransitionControl x:Name="MonthTextContainerSmall" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="{StaticResource PhoneFontSizeMedium}" Foreground="{StaticResource AppAccentColorBrush}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+								<telerikPrimitives:RadTransitionControl Grid.Column="1" Margin="5,0,0,0" FontFamily="{StaticResource PhoneFontFamilySemiBold}" x:Name="YearTextContainerSmall" FontSize="{StaticResource PhoneFontSizeMedium}" Foreground="{StaticResource AppAccentColorBrush}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+							</Grid>
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+ 
+	<telerikTextBox:TextToVisibilityConverter x:Key="TextToVisibilityConverter"/>
+	<telerikConverters:ThicknessToDoubleConverter x:Key="ThicknessToDoubleConverter" />
+	<telerikConverters:ImageButtonShapeToVisibilityConverter x:Key="ImageButtonShapeToVisibilityConverter"/>
+
+	<Style x:Key="HeaderStyle" TargetType="ContentControl">
+		<Setter Property="Foreground" Value="{StaticResource AppBaseColor4Brush}"/>
+		<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+		<Setter Property="Padding" Value="0,0,0,8"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+	</Style>
+
+	<SolidColorBrush Color="{StaticResource AppBaseColor4}" x:Key="PressedStateWithOpacityMaskClearButtonBackgroundFillBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBaseColor4}" x:Key="PressedStateWithOpacityMaskClearButtonBackgroundStrokeBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBaseColor}" x:Key="PressedStateWithOpacityMaskClearButtonForegroundFillBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBaseColor2}" x:Key="DisabledStateWithOpacityMaskClearButtonBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBaseColor4}" x:Key="PressedStateWithOpacityMaskActionButtonBackgroundFillBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBaseColor4}" x:Key="PressedStateWithOpacityMaskActionButtonBackgroundStrokeBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBaseColor}" x:Key="PressedStateWithOpacityMaskActionButtonForegroundFillBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBaseColor2}" x:Key="DisabledStateWithOpacityMaskActionButtonBrush"/>
+
+	<!--telerikTextBox:TextBoxClearButton-->
+	<Style TargetType="telerikTextBox:TextBoxSecondaryButton">
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="Foreground" Value="{StaticResource AppBaseColor4Brush}"/>
+		<Setter Property="Margin" Value="-9"/>
+		<Setter Property="MinWidth" Value="36"/>
+		<Setter Property="MinHeight" Value="36"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="telerikTextBox:TextBoxSecondaryButton">
+					<Grid>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="RestState"/>
+								<VisualState x:Name="PressedState">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedStateImageSource}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="DisabledState">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DisabledStateImageSource}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="RestStateWithOpacityMask">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="PressedStateWithOpacityMask">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskClearButtonBackgroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskClearButtonBackgroundStrokeBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskClearButtonForegroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskClearButtonBackgroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskClearButtonBackgroundStrokeBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskClearButtonForegroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="DisabledStateWithOpacityMask">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskClearButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TransparentBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskClearButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskClearButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TransparentBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskClearButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskClearButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups> 
+						<Grid Margin="{StaticResource PhoneTouchTargetOverhang}">
+							<Grid.RowDefinitions>
+								<RowDefinition/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<Rectangle x:Name="RectangleButtonBackground"
+									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+									Fill="{TemplateBinding Background}"
+									Stroke="{TemplateBinding BorderBrush}"
+									StrokeThickness="{Binding Path=BorderThickness, 
+										RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource ThicknessToDoubleConverter}}" 
+									Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}"/>
+							<Rectangle x:Name="RectangleButtonForeground"
+								Fill="{TemplateBinding Foreground}"
+								Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+									Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}">
+								<Rectangle.OpacityMask>
+									<ImageBrush x:Name="PART_RectangleOpacityMaskImageBrush"/>
+								</Rectangle.OpacityMask>
+							</Rectangle>
+							<Ellipse x:Name="EllipseButtonBackground"
+									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+									Fill="{TemplateBinding Background}"
+									Stroke="{TemplateBinding BorderBrush}"
+									StrokeThickness="{Binding Path=BorderThickness, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ThicknessToDoubleConverter}}"
+									Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}" />
+							<Ellipse x:Name="EllipseButtonForeground"
+								Fill="{TemplateBinding Foreground}"
+								Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}">
+								<Ellipse.OpacityMask>
+									<ImageBrush x:Name="PART_EllipseOpacityMaskImageBrush"/>
+								</Ellipse.OpacityMask>
+							</Ellipse>
+							<Image x:Name="PART_ButtonImage"
+								Stretch="None"
+								Source="{TemplateBinding RestStateImageSource}"
+								CacheMode="BitmapCache"/>
+							<ContentControl x:Name="ContentControl" Grid.Row="1"
+										Content="{TemplateBinding Content}"
+										ContentTemplate="{TemplateBinding ContentTemplate}"
+										VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+										HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+						</Grid>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!--telerikTextBox:TextBoxActionButton-->
+	<Style TargetType="telerikTextBox:TextBoxActionButton">
+		<Setter Property="Background" Value="{StaticResource AppAccentColorBrush}"/>
+		<Setter Property="Foreground" Value="{StaticResource AppBaseColor}"/>
+		<Setter Property="Margin" Value="-9"/>
+		<Setter Property="MinWidth" Value="36"/>
+		<Setter Property="MinHeight" Value="36"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="telerikTextBox:TextBoxActionButton">
+					<Grid>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="RestState"/>
+								<VisualState x:Name="PressedState">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedStateImageSource}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="DisabledState">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DisabledStateImageSource}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor2}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor2}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="RestStateWithOpacityMask">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="PressedStateWithOpacityMask">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskActionButtonBackgroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskActionButtonBackgroundStrokeBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskActionButtonForegroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskActionButtonBackgroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskActionButtonBackgroundStrokeBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PressedStateWithOpacityMaskActionButtonForegroundFillBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="DisabledStateWithOpacityMask">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskActionButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TransparentBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskActionButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskActionButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource TransparentBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskActionButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentControl" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource DisabledStateWithOpacityMaskActionButtonBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="RestStateWithClearButton">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppAccentColorBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppAccentColorBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppAccentColorBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppAccentColorBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="PressedStateWithClearButton">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor4}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor4}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor4}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor4}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="RestStateWhenUnfocused">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor4}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonBackground" Storyboard.TargetProperty="Stroke">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EllipseButtonForeground" Storyboard.TargetProperty="Fill">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor4}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Grid Margin="{StaticResource PhoneTouchTargetOverhang}">
+							<Grid.RowDefinitions>
+								<RowDefinition/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+ 
+							<Rectangle x:Name="RectangleButtonBackground"
+									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+									Fill="Transparent"
+									Stroke="{StaticResource AppBaseColor4Brush}"
+									StrokeThickness="{Binding Path=BorderThickness, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ThicknessToDoubleConverter}}"
+							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}"/> 
+							<Rectangle x:Name="RectangleButtonForeground"
+									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+							Fill="{StaticResource AppBaseColor4Brush}"
+							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}">
+								<Rectangle.OpacityMask>
+									<ImageBrush x:Name="PART_RectangleOpacityMaskImageBrush"/>
+								</Rectangle.OpacityMask>
+							</Rectangle>
+							<Ellipse x:Name="EllipseButtonBackground"
+									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+									Fill="Transparent"
+									Stroke="{StaticResource AppBaseColor4Brush}"
+									StrokeThickness="{Binding Path=BorderThickness, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ThicknessToDoubleConverter}}"
+							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}" />
+							<Ellipse x:Name="EllipseButtonForeground"
+									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+									Fill="{StaticResource AppBaseColor4Brush}"
+							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
+										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}">
+								<Ellipse.OpacityMask>
+									<ImageBrush x:Name="PART_EllipseOpacityMaskImageBrush"/>
+								</Ellipse.OpacityMask>
+							</Ellipse>
+							<Image x:Name="PART_ButtonImage"
+								Stretch="None"
+								Source="{TemplateBinding RestStateImageSource}"
+								CacheMode="BitmapCache"/>
+							<ContentControl x:Name="ContentControl" Grid.Row="1"
+										Content="{TemplateBinding Content}"
+										ContentTemplate="{TemplateBinding ContentTemplate}"
+										VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+										HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+						</Grid>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<ControlTemplate x:Key="PhoneDisabledTextBoxTemplate" TargetType="TextBox">
+		<ContentControl x:Name="ContentElement" BorderThickness="0" Padding="{TemplateBinding Padding}" Margin="{StaticResource PhoneTextBoxInnerMargin}"
+			HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+	</ControlTemplate>
+	<!--telerikPrimitives:RadTextBox-->
+	<Style TargetType="telerikPrimitives:RadTextBox">
+		<Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+		<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMediumLarge}"/>
+		<Setter Property="Background" Value="{StaticResource PhoneTextBoxBrush}"/>
+		<Setter Property="Foreground" Value="{StaticResource PhoneTextBoxForegroundBrush}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource PhoneTextBoxBrush}"/>
+		<Setter Property="SelectionBackground" Value="{StaticResource AppAccentColorBrush}"/>
+		<Setter Property="SelectionForeground" Value="{StaticResource AppBaseColor}"/>
+		<Setter Property="BorderThickness" Value="{StaticResource PhoneBorderThickness}"/>
+		<Setter Property="HeaderStyle" Value="{StaticResource HeaderStyle}"/>
+		<Setter Property="Padding" Value="2"/>
+		<Setter Property="ClearButtonVisibility" Value="Visible"/>
+		<Setter Property="ActionButtonVisibility" Value="Collapsed"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="telerikPrimitives:RadTextBox">
+					<Grid Background="Transparent" Margin="{StaticResource PhoneTouchTargetOverhang}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal"/>
+								<VisualState x:Name="MouseOver"/>
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Collapsed</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="DisabledOrReadonlyBorder" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Visible</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="ReadOnly">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Collapsed</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="DisabledOrReadonlyBorder" Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<Visibility>Visible</Visibility>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="DisabledOrReadonlyBorder" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneTextBoxBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="DisabledOrReadonlyBorder" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneTextBoxBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="DisabledOrReadonlyContent" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneTextBoxReadOnlyBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="FocusStates">
+								<VisualState x:Name="Focused">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneTextBoxEditBackgroundBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneTextBoxEditBorderBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="FocusedInvalid">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneTextBoxEditBackgroundBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource RedBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="FocusedValid">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneTextBoxEditBackgroundBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="EnabledBorder" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource GreenBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Unfocused"/>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="ValidationStates">
+								<VisualState x:Name="NotValidated"/>
+								<VisualState x:Name="Validating">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationMessage" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor2}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationImage" Storyboard.TargetProperty="Width">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BusyIndicator" Storyboard.TargetProperty="IsRunning">
+											<DiscreteObjectKeyFrame KeyTime="0">
+												<DiscreteObjectKeyFrame.Value>
+													<System:Boolean>True</System:Boolean>
+												</DiscreteObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Valid">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationMessage" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource GreenBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationImage" Storyboard.TargetProperty="Source">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="/Telerik.Windows.Controls.Primitives;Component/TextBox/Images/valid.png"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationBorder" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource GreenBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Invalid">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationMessage" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource RedBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationImage" Storyboard.TargetProperty="Source">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="/Telerik.Windows.Controls.Primitives;Component/TextBox/Images/invalid.png"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ValidationBorder" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource RedBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition/>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="Auto"/>
+							</Grid.ColumnDefinitions>
+							<ContentControl
+								x:Name="HeaderPresenter"
+								CacheMode="BitmapCache"
+								Content="{TemplateBinding Header}"
+								ContentTemplate="{TemplateBinding HeaderTemplate}"
+								Style="{TemplateBinding HeaderStyle}"/>
+							<TextBlock
+							x:Name="ValidationMessage"
+							Grid.Column="1"
+							Padding="0,0,0,2"
+							Visibility="{Binding ValidationMessage, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TextToVisibilityConverter}}"
+							Text="{TemplateBinding ValidationMessage}"
+							FontSize="{StaticResource PhoneFontSizeNormal}"/>
+							<Image
+							x:Name="ValidationImage" 
+							Grid.Column="2"
+							Margin="8,0,0,0" />
+						</Grid>
+						<Border Grid.Row="1"
+						x:Name="EnabledBorder"
+						Background="{TemplateBinding Background}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						BorderBrush="{TemplateBinding BorderBrush}" >
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition/>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+								<Grid.RowDefinitions>
+									<RowDefinition/>
+									<RowDefinition Height="Auto"/>
+								</Grid.RowDefinitions>
+								<ContentControl
+								x:Name="ContentElement"
+								BorderThickness="0"
+								Padding="{TemplateBinding Padding}"
+								HorizontalContentAlignment="Stretch"
+								VerticalContentAlignment="Stretch"
+								Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
+								<TextBlock x:Name="PART_Watermark"
+								Text="{TemplateBinding Watermark}"
+								TextAlignment="{TemplateBinding TextAlignment}"
+								Foreground="Gray"
+								Padding="{TemplateBinding Padding}"
+								Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
+								<telerikTextBox:TextBoxSecondaryButton x:Name="PART_ClearButton" Grid.Column="1" Style="{TemplateBinding ClearButtonStyle}" ButtonType="Clear"/>
+								<telerikTextBox:TextBoxActionButton x:Name="PART_ActionButton" Grid.Column="2" Style="{TemplateBinding ActionButtonStyle}" Visibility="{TemplateBinding ActionButtonVisibility}"/>
+							</Grid>
+						</Border>
+						<Border Grid.Row="1" x:Name="ValidationBorder" BorderThickness="0 0 0 3" />
+						<telerikPrimitives:RadBusyIndicator x:Name="BusyIndicator" Grid.Row="1" Margin="0,0,0,-10" VerticalAlignment="Bottom" Content="{x:Null}" AnimationStyle="AnimationStyle9"/>
+						<Border Grid.Row="1"
+						x:Name="DisabledOrReadonlyBorder"
+						Visibility="Collapsed"
+						Background="Transparent"
+						BorderBrush="{StaticResource AppAccentColorBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}" >
+							<TextBox
+							x:Name="DisabledOrReadonlyContent"
+							Text="{TemplateBinding Text}"
+							Foreground="{StaticResource PhoneDisabledBrush}"
+							Background="Transparent"
+							SelectionBackground="{TemplateBinding SelectionBackground}"
+							SelectionForeground="{TemplateBinding SelectionForeground}"
+							TextWrapping="{TemplateBinding TextWrapping}"
+							TextAlignment="{TemplateBinding TextAlignment}"
+							IsReadOnly="True"
+							Template="{StaticResource PhoneDisabledTextBoxTemplate}"
+							FontFamily="{TemplateBinding FontFamily}"
+							FontSize="{TemplateBinding FontSize}"
+							FontWeight="{TemplateBinding FontWeight}"
+							FontStyle="{TemplateBinding FontStyle}"/>
+						</Border>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

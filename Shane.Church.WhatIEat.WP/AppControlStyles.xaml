@@ -1,0 +1,215 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+	xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input"
+	xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+	<!-- Resource dictionary entries should be defined here. -->
+	<Color x:Key="AppAccentColor">#FF85D3FF</Color>
+	<Color x:Key="AppBackground">White</Color>
+	<Color x:Key="AppLabelColor">#FF555555</Color>
+	<SolidColorBrush Color="{StaticResource AppAccentColor}" x:Key="AppAccentBrush"/>
+	<SolidColorBrush Color="{StaticResource AppBackground}" x:Key="AppBackgroundBrush"/>
+	<SolidColorBrush Color="{StaticResource AppLabelColor}" x:Key="AppLabelBrush"/>
+	<Style TargetType="calendar:CalendarButton" x:Key="AppCalendarButtonStyle">
+		<Setter Property="Padding" Value="0" />
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="calendar:CalendarButton">
+					<Grid x:Name="LayoutRoot" Background="{TemplateBinding Background}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Brown" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="IsNotFromCurrentView">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Brown" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="IsNotSelectable">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppLabelBrush}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="ButtonType">
+								<VisualState x:Name="Date" >
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="DateVisual"
+											Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="TodayDate">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="TodayVisual"
+											Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Month" />
+								<VisualState x:Name="WeekNumber">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Magenta" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="WeekName">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="ContentPresenter"
+											Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Blue" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+							<VisualStateGroup x:Name="SelectionStates">
+								<VisualState x:Name="Unselected" />
+								<VisualState x:Name="Selected" >
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="SelectedVisual"
+											Storyboard.TargetProperty="Visibility">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Border x:Name="DateVisual" Visibility="Collapsed" Background="Red"/>
+						<Border x:Name="TodayVisual" Visibility="Collapsed" Background="Green" />
+						<Border x:Name="SelectedVisual" Visibility="Collapsed" Background="Purple" />
+						<ContentControl Margin="{TemplateBinding Padding}"
+							ContentTemplate="{TemplateBinding ContentTemplate}"
+									HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+									VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+							Content="{TemplateBinding Content}"
+							x:Name="ContentPresenter"/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="telerikInput:RadCalendar">
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="VerticalAlignment" Value="Top"/>
+		<Setter Property="BorderThickness" Value="1" />
+		<Setter Property="IsTabStop" Value="False" />
+		<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}" />
+		<Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}" />
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="GridLinesBrush" Value="{StaticResource AppLabelBrush}"/>
+		<Setter Property="ItemTemplate">
+			<Setter.Value>
+				<DataTemplate>
+					<Grid Margin="5">
+						<TextBlock Text="{Binding DetailText}" FontSize="7" MaxHeight="25" VerticalAlignment="Top" Margin="0,-2,0,0" Foreground="Magenta"/>
+						<TextBlock Text="{Binding Text}" x:Name="TextPresenter" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+					</Grid>
+				</DataTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="telerikInput:RadCalendar">
+					<Border Background="{TemplateBinding Background}" 
+						BorderBrush="{TemplateBinding BorderBrush}" 
+						BorderThickness="{TemplateBinding BorderThickness}" 
+						Padding="{TemplateBinding Padding}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="DayNamesNotVisible">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="MonthTextContainer"
+											Storyboard.TargetProperty="Margin">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="-4, -10, 0, 30" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto" />
+								<RowDefinition Height="*" />
+							</Grid.RowDefinitions>
+							<telerikInput:RadDatePicker Culture="{TemplateBinding Culture}" x:Name="DatePicker" Width="1" Height="1" Opacity="0" SelectorFormat="my"/>
+							<Canvas Grid.Row="1" IsHitTestVisible="False" Margin="0,-20,0,0">
+								<Rectangle Canvas.Left="0" Canvas.Top="0" x:Name="OldContentPresenterCopy" CacheMode="BitmapCache"/>
+							</Canvas>
+							<Grid Grid.Row="1" x:Name="CalendarViewContainer" Margin="0,-20,0,0">
+								<Canvas IsHitTestVisible="False">
+									<Rectangle Canvas.Left="0" Canvas.Top="0" x:Name="OldContentPresenter" CacheMode="BitmapCache"/>
+								</Canvas>
+								<telerikPrimitives:RadUniformGrid FirstRowVisibility="{TemplateBinding DayNamesVisibility}" FirstColumnVisibility="{TemplateBinding WeekNumbersVisibility}" x:Name="CalendarPanel" PreserveSpaceForCollapsedChildren="True" NumberOfRows="7" NumberOfColumns ="8" />
+								<telerikPrimitives:RadUniformGrid FirstRowVisibility="{TemplateBinding DayNamesVisibility}" FirstColumnVisibility="{TemplateBinding WeekNumbersVisibility}" x:Name="GridLinesPanel" PreserveSpaceForCollapsedChildren="True" NumberOfRows="7" NumberOfColumns ="8" />
+							</Grid>
+							<Grid Margin="22,10,0,15" x:Name="MonthInfoLargeContainer">
+								<Grid.RowDefinitions>
+									<RowDefinition Height="Auto" />
+									<RowDefinition Height="Auto" />
+								</Grid.RowDefinitions>
+								<telerikPrimitives:RadTransitionControl x:Name="YearTextContainer" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="{StaticResource PhoneFontSizeMedium}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+								<telerikPrimitives:RadTransitionControl Margin="-4, -10, 0, 0" Grid.Row="1" x:Name="MonthTextContainer" FontFamily="{StaticResource PhoneFontFamilySemiLight}" FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+							</Grid>
+							<Grid x:Name="MonthInfoSmallContainer" Margin="3,0,0,0">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+								<telerikPrimitives:RadTransitionControl x:Name="MonthTextContainerSmall" Foreground="{StaticResource AppAccentBrush}" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="{StaticResource PhoneFontSizeMedium}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+								<telerikPrimitives:RadTransitionControl Grid.Column="1" Margin="5,0,0,0" FontFamily="{StaticResource PhoneFontFamilySemiBold}" Foreground="{StaticResource AppAccentBrush}" x:Name="YearTextContainerSmall" FontSize="{StaticResource PhoneFontSizeMedium}">
+									<telerikPrimitives:RadTransitionControl.Transition>
+										<telerikPrimitives:RadFadeTransition PlayMode="Simultaneously"/>
+									</telerikPrimitives:RadTransitionControl.Transition>
+								</telerikPrimitives:RadTransitionControl>
+							</Grid>
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

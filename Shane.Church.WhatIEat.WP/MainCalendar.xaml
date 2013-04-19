@@ -1,0 +1,45 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Shane.Church.WhatIEat.WP.MainCalendar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
+    xmlns:viewModels="clr-namespace:Shane.Church.WhatIEat.WP.ViewModels"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" 
+	Orientation="Portrait"
+    mc:Ignorable="d" 
+	d:DesignHeight="800" 
+	d:DesignWidth="480"
+    shell:SystemTray.IsVisible="False">
+
+	<Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock x:Name="ApplicationTitle" 
+				   Grid.Row="0"
+				   Margin="12,17,0,0" 
+				   Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" 
+				   Style="{StaticResource PhoneTextLargeStyle}" 
+				   Foreground="{StaticResource AppAccentColorBrush}"/>
+
+		<telerikInput:RadCalendar x:Name="MainRadCalendar"
+								  Grid.Row="1" 
+								  MonthInfoDisplayMode="Large" 
+								  ItemTap="RadCalendar_ItemTap" 
+								  GridLinesBrush="{StaticResource AppBaseColor4Brush}" 
+								  Foreground="{StaticResource AppBaseColor4Brush}" />
+	</Grid>
+</phone:PhoneApplicationPage>
