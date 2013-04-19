@@ -70,6 +70,15 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to rate this app.
+        /// </summary>
+        public static string AboutReviewLabel {
+            get {
+                return ResourceManager.GetString("AboutReviewLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copyright © Shane Church 2013.
         /// </summary>
         public static string AppCopyright {
@@ -133,7 +142,7 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to review this app.
+        ///   Looks up a localized string similar to rate me.
         /// </summary>
         public static string ReviewLabel {
             get {
@@ -144,9 +153,9 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         /// <summary>
         ///   Looks up a localized string similar to settings.
         /// </summary>
-        public static string SettingsMenuItem {
+        public static string SettingsLabel {
             get {
-                return ResourceManager.GetString("SettingsMenuItem", resourceCulture);
+                return ResourceManager.GetString("SettingsLabel", resourceCulture);
             }
         }
         

@@ -116,14 +116,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Commands\RateThisAppCommand.cs" />
-    <Compile Include="Commands\SendAnEmailCommand.cs" />
     <Compile Include="DateEdit.xaml.cs">
       <DependentUpon>DateEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\EntryTemplateSelector.cs" />
     <Compile Include="Helpers\LocalizedDateConverter.cs" />
     <Compile Include="Helpers\NonEmptyDateValidator.cs" />
+    <Compile Include="Helpers\TextBinding.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainCalendar.xaml.cs">
       <DependentUpon>MainCalendar.xaml</DependentUpon>
@@ -134,7 +133,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\EntriesAppointmentSource.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,9 +148,11 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\About.png" />
     <Content Include="Images\Add.png" />
     <Content Include="Images\DateTimePickerCancel.png" />
     <Content Include="Images\DateTimePickerOk.png" />
+    <Content Include="Images\Rating.png" />
     <Content Include="Images\Remove.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>

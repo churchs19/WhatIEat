@@ -19,6 +19,8 @@ using Shane.Church.WhatIEat.Core.Services;
 using Shane.Church.WhatIEat.Core.WP.Services;
 using Shane.Church.WhatIEat.Core.Data;
 using Shane.Church.WhatIEat.Core.WP.Data;
+using Shane.Church.WhatIEat.Core.ViewModels;
+using Shane.Church.WhatIEat.Core.WP.ViewModels;
 
 namespace Shane.Church.WhatIEat.WP
 {
@@ -46,8 +48,10 @@ namespace Shane.Church.WhatIEat.WP
 			KernelService.Kernel = new StandardKernel();
 			KernelService.Kernel.Bind<INavigationService>().To<PhoneNavigationService>().InSingletonScope();
 			KernelService.Kernel.Bind<ISettingsService>().To<PhoneSettingsService>().InSingletonScope();
+			KernelService.Kernel.Bind<IWebNavigationService>().To<PhoneWebNavigationService>().InSingletonScope();
 			KernelService.Kernel.Bind<IEntry>().To<PhoneEntry>();
 			KernelService.Kernel.Bind<IRepository<IEntry>>().To<PhoneEntryRepository>();
+			KernelService.Kernel.Bind<AboutViewModel>().To<PhoneAboutViewModel>();
 
 			Telerik.Windows.Controls.InputLocalizationManager.Instance.ResourceManager = Shane.Church.WhatIEat.WP.Resources.AppResources.ResourceManager;
 

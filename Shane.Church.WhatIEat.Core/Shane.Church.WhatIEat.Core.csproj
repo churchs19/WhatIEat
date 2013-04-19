@@ -38,7 +38,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Services\ISettingsService.cs" />
+    <Compile Include="Services\IWebNavigationService.cs" />
     <Compile Include="Services\KernelService.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\CalendarItemViewModel.cs" />
     <Compile Include="ViewModels\DateEditViewModel.cs" />
     <Compile Include="ViewModels\EntryViewModel.cs" />

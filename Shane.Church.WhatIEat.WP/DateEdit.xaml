@@ -8,6 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
     xmlns:System="clr-namespace:System;assembly=mscorlib" 
+	xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Binding"
     x:Class="Shane.Church.WhatIEat.WP.DateEdit"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
@@ -29,30 +30,20 @@
 			<Setter Property="Background" Value="{StaticResource AppAccentColorBrush}"/>
 			<Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
 		</Style>
-		<Style x:Key="RemoveEntryActionButtonStyle" TargetType="telerikPrimitives:RadImageButton">
-			<Setter Property="ButtonShape" Value="Ellipse"/>
-			<Setter Property="ButtonType" Value="Custom"/>
-			<Setter Property="RestStateImageSource" Value="Images/Remove.png"/>
-			<Setter Property="BorderBrush" Value="{StaticResource AppBaseColor4Brush}"/>
-			<Setter Property="Background" Value="{StaticResource AppAccentColorBrush}"/>
-			<Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
-			<Setter Property="BorderThickness" Value="1"/>
-			<Setter Property="Margin" Value="0"/>
-			<Setter Property="HorizontalAlignment" Value="Center"/>
-			<Setter Property="VerticalAlignment" Value="Top"/>
-		</Style>
+
 		<DataTemplate x:Key="DefaultEntryDataTemplate">
 			<Grid Background="{StaticResource TransparentBrush}">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition/>
 				</Grid.ColumnDefinitions>
 				<TextBlock HorizontalAlignment="Left" 
-					Margin="0,0,10,0" 
+					Margin="10" 
 					TextWrapping="Wrap" 
 					Text="{Binding Entry}" 
 					VerticalAlignment="Center" 
-					FontSize="{StaticResource PhoneFontSizeNormal}"
-					Foreground="{StaticResource AppBaseColor4Brush}"/>
+					FontSize="{StaticResource PhoneFontSizeMedium}"
+					Foreground="{StaticResource AppBaseColor4Brush}" Padding="10"/>
+				<Border BorderBrush="{StaticResource AppAccentColorBrush}" BorderThickness="0,0,0,2"/>
 			</Grid>
 		</DataTemplate>
 		<DataTemplate x:Key="SelectedEntryDataTemplate">
@@ -61,17 +52,22 @@
 					<ColumnDefinition Width="*"/>
 					<ColumnDefinition Width="Auto"/>
 				</Grid.ColumnDefinitions>
-				<telerikPrimitives:RadTextBox Grid.Column="0"
-									TextWrapping="Wrap"
-									Text="{Binding Entry, Mode=TwoWay}"
-									VerticalAlignment="Top" 
-									HorizontalAlignment="Stretch"
-									ActionButtonVisibility="Visible"
-									InputScope="Text"
-									SelectionBackground="{StaticResource AppAccentColorBrush}"
-									SelectionForeground="{StaticResource AppBaseColorBrush}"
-									ActionButtonStyle="{StaticResource SaveEntryActionButtonStyle}"
-									ActionButtonCommand="{Binding SaveCommand}">
+				<Rectangle Grid.ColumnSpan="2" Fill="{StaticResource PhoneTextBoxBrush}" Margin="10" StrokeThickness="3" Stroke="{StaticResource PhoneTextBoxBrush}"/>
+				<telerikPrimitives:RadTextBox x:Name="editTextBox" Grid.Column="0"
+					TextWrapping="Wrap"
+					Text="{Binding Entry, Mode=TwoWay}"
+					VerticalAlignment="Top" 
+					HorizontalAlignment="Stretch"
+					ActionButtonVisibility="Visible"
+					InputScope="Text"
+					c4f:TextBinding.UpdateSourceOnChange="True"
+					SelectionBackground="{StaticResource AppAccentColorBrush}"
+					SelectionForeground="{StaticResource AppBaseColorBrush}"
+					ActionButtonStyle="{StaticResource SaveEntryActionButtonStyle}"
+					ActionButtonCommand="{Binding SaveCommand}" 
+					ExecuteActionOnReturn="True"
+					Loaded="editTextBox_Loaded" 
+					LostFocus="editTextBox_LostFocus">
 					<telerikPrimitives:RadTextBox.HeaderStyle>
 						<Style TargetType="ContentControl">
 							<Setter Property="Padding">
@@ -83,11 +79,16 @@
 					</telerikPrimitives:RadTextBox.HeaderStyle>
 				</telerikPrimitives:RadTextBox>
 				<telerikPrimitives:RadImageButton Content="" 
-											Grid.Column="1" 
-											Style="{StaticResource RemoveEntryActionButtonStyle}"
-											RestStateImageSource="Images/Remove.png"
-											Command="{Binding RemoveCommand}" Width="64" Height="64" VerticalAlignment="Center"/>
-				<Border BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+					Grid.Column="1" 
+					RestStateImageSource="Images/Remove.png"
+					Command="{Binding RemoveCommand}" 
+					VerticalAlignment="Top" 
+					Foreground="{StaticResource PressedStateWithOpacityMaskClearButtonForegroundFillBrush}" 
+					Background="{StaticResource AppAccentColorBrush}" 
+					Margin="-22,6,10,0" 
+					ButtonShape="Ellipse" 
+					BorderThickness="0" HorizontalAlignment="Left" MinHeight="36" MinWidth="36" Padding="0,10,10,10"/>
+				<Border BorderBrush="{StaticResource AppBaseColor4Brush}" BorderThickness="2" Grid.ColumnSpan="2" Grid.Column="0"/>
 			</Grid>
 		</DataTemplate>
 		<helpers:EntryTemplateSelector x:Key="SelectedItemSelector"
@@ -145,9 +146,12 @@
 										  HorizontalAlignment="Stretch"
 										  ActionButtonVisibility="Visible"
 										  InputScope="Text"
+										  c4f:TextBinding.UpdateSourceOnChange="True"
 										  ActionButtonStyle="{StaticResource NewEntryActionButtonStyle}"
 										  ActionButtonCommand="{Binding AddEntryCommand}" 
+										  ExecuteActionOnReturn="True"
 										  TextChanged="newEntry_TextChanged" />
+			<Border BorderBrush="{StaticResource AppBaseColor4Brush}" BorderThickness="0,1,0,0" Grid.Row="1"/>
 		</Grid>
     </Grid>
 

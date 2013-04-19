@@ -117,40 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AboutLabel" xml:space="preserve">
-    <value>about</value>
-  </data>
-  <data name="AboutReviewLabel" xml:space="preserve">
-    <value>rate this app</value>
-  </data>
-  <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
-  </data>
-  <data name="AppDescription" xml:space="preserve">
-    <value>a simple food journal for windows phone</value>
-  </data>
-  <data name="AppIconDescription" xml:space="preserve">
-    <value>Eat designed by Danny Chapman from The Noun Project</value>
-  </data>
-  <data name="AppIconLabel" xml:space="preserve">
-    <value>application icon</value>
-  </data>
-  <data name="AppTitle" xml:space="preserve">
-    <value>WHAT I EAT</value>
-  </data>
-  <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Nothing on this date. Add something!</value>
-  </data>
-  <data name="NewEntryLabel" xml:space="preserve">
-    <value>new entry</value>
-  </data>
-  <data name="ReviewLabel" xml:space="preserve">
-    <value>rate me</value>
-  </data>
-  <data name="SettingsLabel" xml:space="preserve">
-    <value>settings</value>
-  </data>
-  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>technical support/feedback email</value>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>What I Eat Feedback</value>
   </data>
 </root>

@@ -14,50 +14,47 @@
     mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True">
 
-    <Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
-        <Grid.DataContext>
-            <viewModels:AboutViewModel/>
-        </Grid.DataContext>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+	<Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
 
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource AppAccentColorBrush}"/>
-            <TextBlock x:Name="PageTitle" Text="{Binding LocalizedResources.AboutLabel, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource AppBaseColor4Brush}"/>
-        </StackPanel>
+		<StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+			<TextBlock x:Name="ApplicationTitle" Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource AppAccentColorBrush}"/>
+			<TextBlock x:Name="PageTitle" Text="{Binding LocalizedResources.AboutLabel, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource AppBaseColor4Brush}"/>
+		</StackPanel>
 
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            
-            <StackPanel>
-                <TextBlock 
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition />
+			</Grid.RowDefinitions>
+
+			<StackPanel>
+				<TextBlock 
                     Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" 
                     Margin="12,0,12,0" 
                     FontSize="{StaticResource PhoneFontSizeLarge}" 
                     FontFamily="{StaticResource PhoneFontFamilySemiBold}" Foreground="{StaticResource AppAccentColorBrush}"/>
-                <TextBlock 
+				<TextBlock 
                     Text="{Binding Version}" 
                     Margin="12,0,12,0" 
                     FontSize="{StaticResource PhoneFontSizeNormal}" Foreground="{StaticResource AppBaseColor4Brush}"/>
-            </StackPanel>
-            
-            <TextBlock 
+			</StackPanel>
+
+			<TextBlock 
                 Grid.Row="1" 
                 Text="{Binding LocalizedResources.AppDescription, Source={StaticResource LocalizedStrings}}"
                 Margin="12,24,12,24" 
                 TextWrapping="Wrap" 
                 Foreground="{StaticResource AppBaseColor2Brush}" 
                 FontSize="{StaticResource PhoneFontSizeNormal}" />
-            <HyperlinkButton 
+			<HyperlinkButton 
                 Grid.Row="2" 
                 Content="{Binding LocalizedResources.TechnicalSupportEmailLabel, Source={StaticResource LocalizedStrings}}" 
                 Margin="0,12,0,0" 
@@ -65,9 +62,9 @@
                 Foreground="{StaticResource AppBaseColor3Brush}" 
                 FontSize="{StaticResource PhoneFontSizeNormal}" 
                 Command="{Binding SendAnEmailCommand}"/>
-            <HyperlinkButton 
+			<HyperlinkButton 
                 Grid.Row="3"
-                Content="{Binding LocalizedResources.ReviewLabel, Source={StaticResource LocalizedStrings}}" 
+                Content="{Binding LocalizedResources.AboutReviewLabel, Source={StaticResource LocalizedStrings}}" 
                 Margin="0,12,0,0" 
                 HorizontalAlignment="Left" 
                 Foreground="{StaticResource AppBaseColor3Brush}" 
@@ -89,13 +86,20 @@
 					Foreground="{StaticResource AppBaseColor2Brush}" 
 					FontSize="{StaticResource PhoneFontSizeNormal}" />
 			</StackPanel>
-            <StackPanel Grid.Row="5" Margin="12,0,12,50" VerticalAlignment="Bottom">
-                <TextBlock 
+			<StackPanel Grid.Row="5" Margin="12,0,12,50" VerticalAlignment="Bottom">
+				<TextBlock 
                     Text="{Binding LocalizedResources.AppCopyright, Source={StaticResource LocalizedStrings}}" 
                     Margin="0,12,0,0" 
-                    FontSize="{StaticResource PhoneFontSizeNormal}" Foreground="{StaticResource AppBaseColor4Brush}"/>
-            </StackPanel>
-        </Grid>
-    </Grid>
-    
+                    FontSize="{StaticResource PhoneFontSizeNormal}" 
+					Foreground="{StaticResource AppBaseColor4Brush}"/>
+				<HyperlinkButton Content="http://www.s-church.net"
+					Margin="-10,5,0,0" 
+                    FontSize="{StaticResource PhoneFontSizeNormal}" 
+					Foreground="{StaticResource AppBaseColor4Brush}"
+					HorizontalAlignment="Left"
+					Command="{Binding GoToSChurchNetCommand}"/>
+			</StackPanel>
+		</Grid>
+	</Grid>
+
 </phone:PhoneApplicationPage>

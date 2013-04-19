@@ -42,7 +42,10 @@ namespace Shane.Church.WhatIEat.WP
 					isSuccess = ((ValidationResultEventArgs)args).IsValid;
 
 				if (isSuccess)
+				{
 					this.newEntry.Text = "";
+					this.Focus();
+				}
 				else
 					newEntry.ChangeValidationState(ValidationState.Invalid, "Required");
 			};
@@ -84,6 +87,24 @@ namespace Shane.Church.WhatIEat.WP
 					}
 				}
 			}
+		}
+
+		private void editTextBox_Loaded(object sender, System.Windows.RoutedEventArgs e)
+		{
+			if (sender is RadTextBox)
+			{
+				Dispatcher.BeginInvoke(() =>
+				{
+					var tb = ((RadTextBox)sender);
+					tb.Focus();
+					tb.SelectionStart = tb.Text.Length;
+				});
+			}
+		}
+
+		private void editTextBox_LostFocus(object sender, System.Windows.RoutedEventArgs e)
+		{
+			this.Entries.SelectedItem = null;
 		}
 	}
 }
