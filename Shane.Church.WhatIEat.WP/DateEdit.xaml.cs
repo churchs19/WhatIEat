@@ -102,9 +102,45 @@ namespace Shane.Church.WhatIEat.WP
 			}
 		}
 
-		private void editTextBox_LostFocus(object sender, System.Windows.RoutedEventArgs e)
+		private void Entries_Tap(object sender, System.Windows.Input.GestureEventArgs e)
 		{
-			this.Entries.SelectedItem = null;
+			if (Entries.SelectedItem != null)
+			{
+				var item = Entries.GetContainerForItem(Entries.SelectedItem);
+				if (item != null)
+				{
+					var position = e.GetPosition(item);
+					if (!(position.X >= 0 && position.X <= item.ActualWidth && position.Y >= 0 && position.Y <= item.ActualHeight))
+					{
+						Entries.SelectedItem = null;
+					}
+				}
+			}
+		}
+
+		private void editTextBox_ActionButtonTap(object sender, EventArgs e)
+		{
+			var tb = sender as RadTextBox;
+			if (tb!=null)
+			{
+				var viewModel = tb.DataContext as EntryViewModel;
+				if (viewModel != null)
+				{
+					viewModel.SaveActionCompleted += entryModel_SaveActionCompleted;
+				}
+			}
+		}
+
+		private void entryModel_SaveActionCompleted(object sender, EventArgs e)
+		{
+			if (sender is EntryViewModel)
+			{
+				Dispatcher.BeginInvoke(() =>
+				{
+					((EntryViewModel)sender).SaveActionCompleted -= entryModel_SaveActionCompleted;
+					Entries.SelectedItem = null;
+				});
+			}
 		}
 	}
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Linq;
 using System.Data.Linq.Mapping;
 using System.Linq;
 using System.Text;
@@ -34,7 +35,7 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 			}
 		}
 		private DateTime _entryDate;
-		[Column(CanBeNull = false)]
+		[Column(CanBeNull = false, DbType = "DATETIME NOT NULL")]
 		public DateTime EntryDate
 		{
 			get { return _entryDate.Date; }
@@ -55,7 +56,7 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 		}
 
 		private DateTime _createDateTime;
-		[Column(CanBeNull = false)]
+		[Column(CanBeNull = false, DbType = "DATETIME NOT NULL")]
 		public DateTime CreateDateTime
 		{
 			get { return _createDateTime + DateTimeOffset.Now.Offset; }
@@ -66,7 +67,7 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 		}
 
 		private DateTime _editDateTime;
-		[Column(CanBeNull = false)]
+		[Column(CanBeNull = false, DbType = "DATETIME NOT NULL")]
 		public DateTime EditDateTime
 		{
 			get { return _editDateTime + DateTimeOffset.Now.Offset; }
@@ -75,5 +76,8 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 				Set(() => EditDateTime, ref _editDateTime, value.ToUniversalTime());
 			}
 		}
+
+		[Column(IsVersion = true)]
+		private Binary _version;
 	}
 }

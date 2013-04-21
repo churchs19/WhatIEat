@@ -50,7 +50,7 @@ namespace Shane.Church.WhatIEat.WP
 			KernelService.Kernel.Bind<ISettingsService>().To<PhoneSettingsService>().InSingletonScope();
 			KernelService.Kernel.Bind<IWebNavigationService>().To<PhoneWebNavigationService>().InSingletonScope();
 			KernelService.Kernel.Bind<IEntry>().To<PhoneEntry>();
-			KernelService.Kernel.Bind<IRepository<IEntry>>().To<PhoneEntryRepository>();
+			KernelService.Kernel.Bind<IRepository<IEntry>>().To<PhoneEntryRepository>().InSingletonScope();
 			KernelService.Kernel.Bind<AboutViewModel>().To<PhoneAboutViewModel>();
 
 			Telerik.Windows.Controls.InputLocalizationManager.Instance.ResourceManager = Shane.Church.WhatIEat.WP.Resources.AppResources.ResourceManager;

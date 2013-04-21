@@ -65,9 +65,9 @@
 					SelectionForeground="{StaticResource AppBaseColorBrush}"
 					ActionButtonStyle="{StaticResource SaveEntryActionButtonStyle}"
 					ActionButtonCommand="{Binding SaveCommand}" 
+					ActionButtonTap="editTextBox_ActionButtonTap"
 					ExecuteActionOnReturn="True"
-					Loaded="editTextBox_Loaded" 
-					LostFocus="editTextBox_LostFocus">
+					Loaded="editTextBox_Loaded">
 					<telerikPrimitives:RadTextBox.HeaderStyle>
 						<Style TargetType="ContentControl">
 							<Setter Property="Padding">
@@ -136,7 +136,7 @@
 												   VerticalAlignment="Top" 
 												   ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
 												   VerticalContentAlignment="Top"
-												   ItemTemplateSelector="{StaticResource SelectedItemSelector}" SelectionChanging="Entries_SelectionChanging" Foreground="{StaticResource AppBaseColor4Brush}"/>
+												   ItemTemplateSelector="{StaticResource SelectedItemSelector}" SelectionChanging="Entries_SelectionChanging" Foreground="{StaticResource AppBaseColor4Brush}" Tap="Entries_Tap"/>
 
 			<telerikPrimitives:RadTextBox Grid.Row="1" x:Name="newEntry" 
 										  TextWrapping="Wrap"
@@ -151,7 +151,7 @@
 										  ActionButtonCommand="{Binding AddEntryCommand}" 
 										  ExecuteActionOnReturn="True"
 										  TextChanged="newEntry_TextChanged" />
-			<Border BorderBrush="{StaticResource AppBaseColor4Brush}" BorderThickness="0,1,0,0" Grid.Row="1"/>
+			<Border BorderBrush="{StaticResource AppBaseColor2Brush}" BorderThickness="0,1,0,0" Grid.Row="1"/>
 		</Grid>
     </Grid>
 

@@ -2,40 +2,57 @@
 using Shane.Church.WhatIEat.Core.Data;
 using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
+using System.Windows;
 
 namespace Shane.Church.WhatIEat.Core.WP.Data
 {
-	public class PhoneEntryRepository : IRepository<IEntry>
+	public class PhoneEntryRepository : IRepository<IEntry>, IDisposable
 	{
+		private PhoneDataContext _context;
+		private static object _lock = new object();
+
+		public PhoneEntryRepository()
+		{
+			_context = new PhoneDataContext();
+			_context.DeferredLoadingEnabled = true;
+			_context.ObjectTrackingEnabled = true;
+		}
+
+		public void Dispose()
+		{
+			_context.Dispose();
+		}
+
 		public IQueryable<IEntry> GetAllEntries()
 		{
-			using (PhoneDataContext context = new PhoneDataContext())
+			lock (_lock)
 			{
-				return context.Entries.Select(it => (IEntry)it).ToList().AsQueryable();
+				return _context.Entries.Select(it => (IEntry)it).ToList().AsQueryable();
 			}
 		}
 
 		public IQueryable<IEntry> GetFilteredEntries(System.Linq.Expressions.Expression<Func<IEntry, bool>> filter)
 		{
-			var filterDelegate = filter.Compile();
-			using (PhoneDataContext context = new PhoneDataContext())
+			lock (_lock)
 			{
-				var results = context.Entries.Select(it => (IEntry)it).ToList().Where(it => filterDelegate(it)).AsQueryable();
+				var filterDelegate = filter.Compile();
+				var results = _context.Entries.Select(it => (IEntry)it).ToList().Where(it => filterDelegate(it)).AsQueryable();
 				return results;
 			}
 		}
 
 		public void DeleteEntry(IEntry entry)
 		{
-			using (PhoneDataContext context = new PhoneDataContext())
+			lock (_lock)
 			{
-				var pEntry = context.Entries.Where(it => it.EntryGuid == entry.EntryGuid).FirstOrDefault();
+				var pEntry = _context.Entries.Where(it => it.EntryGuid == entry.EntryGuid).FirstOrDefault();
 				if (pEntry != null)
 				{
-					context.Entries.DeleteOnSubmit(pEntry);
-					context.SubmitChanges();
+					_context.Entries.DeleteOnSubmit(pEntry);
+					_context.SubmitChanges();
 				}
 			}
 		}
@@ -44,10 +61,9 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 		{
 			if (!string.IsNullOrWhiteSpace(entry.EntryText))
 			{
-
-				using (PhoneDataContext context = new PhoneDataContext())
+				lock (_lock)
 				{
-					var pEntry = context.Entries.Where(it => it.EntryGuid == entry.EntryGuid).FirstOrDefault();
+					var pEntry = _context.Entries.Where(it => it.EntryGuid == entry.EntryGuid).FirstOrDefault();
 					if (pEntry != null)
 					{
 						pEntry.EntryId = entry.EntryId;
@@ -64,9 +80,9 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 						pEntry.EntryDate = entry.EntryDate;
 						pEntry.CreateDateTime = DateTime.Now.ToUniversalTime();
 						pEntry.EditDateTime = DateTime.Now.ToUniversalTime();
-						context.Entries.InsertOnSubmit(pEntry);
+						_context.Entries.InsertOnSubmit(pEntry);
 					}
-					context.SubmitChanges();
+					_context.SubmitChanges();
 					return pEntry;
 				}
 			}
