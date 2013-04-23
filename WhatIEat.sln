@@ -15,6 +15,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shane.Church.Utility.Core",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shane.Church.Utility.Core.WP", "Shane.Church.Utility.Core.WP\Shane.Church.Utility.Core.WP.csproj", "{75A3873F-015F-4784-B6A6-8A4484FBE48D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FD7C87B6-E4A5-4431-985A-BFE69057828D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shane.Church.WhatIEat.WP8", "Shane.Church.WhatIEat.WP8\Shane.Church.WhatIEat.WP8.csproj", "{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +76,24 @@ Global
 		{75A3873F-015F-4784-B6A6-8A4484FBE48D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75A3873F-015F-4784-B6A6-8A4484FBE48D}.Release|ARM.ActiveCfg = Release|Any CPU
 		{75A3873F-015F-4784-B6A6-8A4484FBE48D}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|ARM.Build.0 = Debug|ARM
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|ARM.Deploy.0 = Debug|ARM
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|x86.ActiveCfg = Debug|x86
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|x86.Build.0 = Debug|x86
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Debug|x86.Deploy.0 = Debug|x86
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|ARM.ActiveCfg = Release|ARM
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|ARM.Build.0 = Release|ARM
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|ARM.Deploy.0 = Release|ARM
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|x86.ActiveCfg = Release|x86
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|x86.Build.0 = Release|x86
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,5 +104,6 @@ Global
 		{D2C8145E-8508-40BA-9828-175D5B1EFABE} = {A46903F1-8979-4FB5-B89D-76D5DFACFCA4}
 		{3EE5E38D-6925-4986-A255-E5CBEAEF1F1E} = {A46903F1-8979-4FB5-B89D-76D5DFACFCA4}
 		{75A3873F-015F-4784-B6A6-8A4484FBE48D} = {A46903F1-8979-4FB5-B89D-76D5DFACFCA4}
+		{3F8BEBEA-859A-41F7-A5C5-B20FF28E6756} = {A46903F1-8979-4FB5-B89D-76D5DFACFCA4}
 	EndGlobalSection
 EndGlobal
