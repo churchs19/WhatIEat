@@ -6,12 +6,12 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Shane.Church.WhatIEat.WP8")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("What I Eat")]
+[assembly: AssemblyDescription("A food journal for Windows Phone")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Shane.Church.WhatIEat.WP8")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCompany("Shane Church")]
+[assembly: AssemblyProduct("What I Eat - Windows Phone 8")]
+[assembly: AssemblyCopyright("Copyright © Shane Church 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

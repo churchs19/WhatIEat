@@ -44,7 +44,7 @@ namespace Shane.Church.WhatIEat.WP
 				if (isSuccess)
 				{
 					this.newEntry.Text = "";
-					this.Focus();
+//					this.Focus();
 				}
 				else
 					newEntry.ChangeValidationState(ValidationState.Invalid, "Required");
