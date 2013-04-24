@@ -99,6 +99,19 @@ namespace Shane.Church.WhatIEat.WP
 			//Sets how often the rate reminder is displayed.
 			rateReminder.RecurrencePerUsageCount = 5;
 			rateReminder.AllowUsersToSkipFurtherReminders = true;
+
+			if (Mangopollo.Utils.CanUseLiveTiles)
+			 {
+				 var tile = ShellTile.ActiveTiles.First();
+				 var flipTileData = new Mangopollo.Tiles.FlipTileData
+						 {
+							 Title = AppResources.AppTitle,
+							 SmallBackgroundImage = new Uri("/SmallApplicationIcon.png", UriKind.Relative),
+							 BackgroundImage = new Uri("/MediumApplicationIcon.png", UriKind.Relative),
+							 WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative),
+						 };
+				 tile.Update(flipTileData);
+			 }
 		}
 
 		// Code to execute when the application is launching (eg, from Start)

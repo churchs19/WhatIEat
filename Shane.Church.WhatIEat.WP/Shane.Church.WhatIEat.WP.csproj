@@ -156,7 +156,10 @@
     <Content Include="Images\DateTimePickerOk.png" />
     <Content Include="Images\Rating.png" />
     <Content Include="Images\Remove.png" />
+    <Content Include="MediumApplicationIcon.png" />
+    <Content Include="SmallApplicationIcon.png" />
     <Content Include="SplashScreenImage.jpg" />
+    <Content Include="WideApplicationIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
