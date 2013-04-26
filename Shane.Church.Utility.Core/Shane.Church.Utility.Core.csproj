@@ -16,6 +16,7 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+	<SupportedCultures>ar%3bbg%3bca%3bzh-CN%3bzh-TW%3bcs%3bda%3bnl%3bet%3bfi%3bfr%3bde%3bel%3bhe%3bhi%3bhu%3bid%3bit%3bja%3bko%3blv%3blt%3bms%3bno%3bfa%3bpl%3bpt%3bro%3bru%3bsk%3bsl%3bes%3bsv%3bth%3btr%3buk%3bvi</SupportedCultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,10 +37,48 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <EmbeddedResource Include="Resources\UtilityResources.ar.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.bg.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.ca.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.cs.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.da.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.de.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.el.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.es.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.et.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.fa.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.fi.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.fr.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.he.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.hi.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.hu.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.id.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.it.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.ja.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.ko.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.lt.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.lv.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.ms.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.nl.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.no.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.pl.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.pt.resx" />
     <EmbeddedResource Include="Resources\UtilityResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>UtilityResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UtilityResources.ro.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.ru.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.sk.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.sl.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.sv.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.th.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.tr.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.uk.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.vi.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.zh-CHS.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\UtilityResources.zh-TW.resx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command\ActionCompleteEventHandler.cs" />

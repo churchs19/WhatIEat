@@ -21,11 +21,20 @@ using Shane.Church.WhatIEat.Core.Data;
 using Shane.Church.WhatIEat.Core.WP.Data;
 using Shane.Church.WhatIEat.Core.ViewModels;
 using Shane.Church.WhatIEat.Core.WP.ViewModels;
+using System.Threading;
+using System.Globalization;
+using System.Windows.Markup;
+using System.Diagnostics;
 
 namespace Shane.Church.WhatIEat.WP
 {
 	public partial class App : Application
 	{
+		// Locale to force CurrentCulture to in InitializeLanguage(). 
+		// Use "qps-PLOC" to deploy pseudolocalized strings. 
+		// Use "" to let user Phone Language selection determine locale. 
+		public static String appForceCulture = ""; 
+
 		/// <summary>
 		/// Component used to handle unhandle exceptions, to collect runtime info and to send email to developer.
 		/// </summary>
@@ -45,6 +54,18 @@ namespace Shane.Church.WhatIEat.WP
 		/// </summary>
 		public App()
 		{
+			// Global handler for uncaught exceptions. 
+			UnhandledException += Application_UnhandledException;
+
+			// Standard Silverlight initialization
+			InitializeComponent();
+
+			// Phone-specific initialization
+			InitializePhoneApplication();
+
+			// Language display initialization 
+			InitializeLanguage();
+
 			KernelService.Kernel = new StandardKernel();
 			KernelService.Kernel.Bind<INavigationService>().To<PhoneNavigationService>().InSingletonScope();
 			KernelService.Kernel.Bind<ISettingsService>().To<PhoneSettingsService>().InSingletonScope();
@@ -54,15 +75,6 @@ namespace Shane.Church.WhatIEat.WP
 			KernelService.Kernel.Bind<AboutViewModel>().To<PhoneAboutViewModel>();
 
 			Telerik.Windows.Controls.InputLocalizationManager.Instance.ResourceManager = Shane.Church.WhatIEat.WP.Resources.AppResources.ResourceManager;
-
-			// Global handler for uncaught exceptions. 
-			UnhandledException += Application_UnhandledException;
-
-			// Standard Silverlight initialization
-			InitializeComponent();
-
-			// Phone-specific initialization
-			InitializePhoneApplication();
 
 			// Show graphics profiling information while debugging.
 			if (System.Diagnostics.Debugger.IsAttached)
@@ -113,6 +125,74 @@ namespace Shane.Church.WhatIEat.WP
 				 tile.Update(flipTileData);
 			 }
 		}
+
+       // Initialize the app's font and flow direction as defined in its localized resource strings. 
+        // 
+        // To ensure that your apps font is aligned with its supported languages and that the 
+        // FlowDirection for each of those languages follows its traditional direction, ResourceLanguage 
+        // and ResourceFlowDirection should be initialized in each .resx file to match these values with that 
+        // file's culture. For example: 
+        // 
+        // AppResources.es-ES.resx 
+        //    ResourceLanguage's value should be "es-ES" 
+        //    ResourceFlowDirection's value should be "LeftToRight" 
+        // 
+        // AppResources.ar-SA.resx 
+        //     ResourceLanguage's value should be "ar-SA" 
+        //     ResourceFlowDirection's value should be "RightToLeft" 
+        // 
+        // For more info on localizing Windows Phone apps see http://go.microsoft.com/fwlink/?LinkId=262072. 
+        // 
+        private void InitializeLanguage() 
+        { 
+            try 
+            { 
+                // Change locale to appForceCulture if it is not empty 
+                if (String.IsNullOrWhiteSpace(appForceCulture) == false) 
+                { 
+                // Force app globalization to follow appForceCulture 
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo(appForceCulture); 
+                
+                // Force app UI culture to follow appForceCulture 
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(appForceCulture); 
+                } 
+
+
+                // Set the font to match the display language defined by the 
+                // ResourceLanguage resource string for each supported language. 
+                // 
+                // Fall back to the font of the neutral language if the display 
+                // language of the phone is not supported. 
+                // 
+                // If a compiler error occurs, ResourceLanguage is missing from 
+                // the resource file. 
+                RootFrame.Language = XmlLanguage.GetLanguage(AppResources.ResourceLanguage); 
+
+                // Set the FlowDirection of all elements under the root frame based 
+                // on the ResourceFlowDirection resource string for each 
+                // supported language. 
+                // 
+                // If a compiler error occurs, ResourceFlowDirection is missing from 
+                // the resource file. 
+                FlowDirection flow = (FlowDirection)Enum.Parse(typeof(FlowDirection), AppResources.ResourceFlowDirection,false); 
+                RootFrame.FlowDirection = flow; 
+            } 
+            catch 
+            { 
+                // If an exception is caught here it is most likely due to either 
+                // ResourceLangauge not being correctly set to a supported language 
+                // code or ResourceFlowDirection is set to a value other than LeftToRight 
+                // or RightToLeft. 
+
+                if (Debugger.IsAttached) 
+                { 
+                    Debugger.Break(); 
+                } 
+
+                throw; 
+            } 
+        } 
+
 
 		// Code to execute when the application is launching (eg, from Start)
 		// This code will not execute when the application is reactivated

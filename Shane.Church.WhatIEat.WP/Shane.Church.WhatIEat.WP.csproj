@@ -16,8 +16,7 @@
     <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
     <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>
-    </SupportedCultures>
+    <SupportedCultures>ar%3bbg%3bca%3bzh-CN%3bzh-TW%3bcs%3bda%3bnl%3bet%3bfi%3bfr%3bde%3bel%3bhe%3bhi%3bhu%3bid%3bit%3bja%3bko%3blv%3blt%3bms%3bno%3bfa%3bpl%3bpt%3bro%3bru%3bsk%3bes%3bsv%3bth%3btr%3buk%3bvi</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>Shane.Church.WhatIEat.WP.xap</XapFilename>
@@ -87,27 +86,27 @@
     <Reference Include="mscorlib.extensions" />
     <Reference Include="Telerik.Windows.Controls.Data, Version=2013.1.418.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for Windows Phone 7 Q1 2013\Binaries\WindowsPhone\Telerik.Windows.Controls.Data.dll</HintPath>
+      <HintPath>..\lib\RCWP\2013.1.418.2040\Telerik.Windows.Controls.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Windows.Controls.Input, Version=2013.1.418.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for Windows Phone 7 Q1 2013\Binaries\WindowsPhone\Telerik.Windows.Controls.Input.dll</HintPath>
+      <HintPath>..\lib\RCWP\2013.1.418.2040\Telerik.Windows.Controls.Input.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Windows.Controls.Primitives, Version=2013.1.418.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for Windows Phone 7 Q1 2013\Binaries\WindowsPhone\Telerik.Windows.Controls.Primitives.dll</HintPath>
+      <HintPath>..\lib\RCWP\2013.1.418.2040\Telerik.Windows.Controls.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Windows.Core, Version=2013.1.418.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for Windows Phone 7 Q1 2013\Binaries\WindowsPhone\Telerik.Windows.Core.dll</HintPath>
+      <HintPath>..\lib\RCWP\2013.1.418.2040\Telerik.Windows.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Windows.Data, Version=2013.1.418.2040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Telerik\RadControls for Windows Phone 7 Q1 2013\Binaries\WindowsPhone\Telerik.Windows.Data.dll</HintPath>
+      <HintPath>..\lib\RCWP\2013.1.418.2040\Telerik.Windows.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -184,10 +183,46 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.ar.resx" />
+    <EmbeddedResource Include="Resources\AppResources.bg.resx" />
+    <EmbeddedResource Include="Resources\AppResources.ca.resx" />
+    <EmbeddedResource Include="Resources\AppResources.cs.resx" />
+    <EmbeddedResource Include="Resources\AppResources.da.resx" />
+    <EmbeddedResource Include="Resources\AppResources.de.resx" />
+    <EmbeddedResource Include="Resources\AppResources.el.resx" />
+    <EmbeddedResource Include="Resources\AppResources.es.resx" />
+    <EmbeddedResource Include="Resources\AppResources.et.resx" />
+    <EmbeddedResource Include="Resources\AppResources.fa.resx" />
+    <EmbeddedResource Include="Resources\AppResources.fi.resx" />
+    <EmbeddedResource Include="Resources\AppResources.fr.resx" />
+    <EmbeddedResource Include="Resources\AppResources.he.resx" />
+    <EmbeddedResource Include="Resources\AppResources.hi.resx" />
+    <EmbeddedResource Include="Resources\AppResources.hu.resx" />
+    <EmbeddedResource Include="Resources\AppResources.id.resx" />
+    <EmbeddedResource Include="Resources\AppResources.it.resx" />
+    <EmbeddedResource Include="Resources\AppResources.ja.resx" />
+    <EmbeddedResource Include="Resources\AppResources.ko.resx" />
+    <EmbeddedResource Include="Resources\AppResources.lt.resx" />
+    <EmbeddedResource Include="Resources\AppResources.lv.resx" />
+    <EmbeddedResource Include="Resources\AppResources.ms.resx" />
+    <EmbeddedResource Include="Resources\AppResources.nl.resx" />
+    <EmbeddedResource Include="Resources\AppResources.no.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pl.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pt.resx" />
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.ro.resx" />
+    <EmbeddedResource Include="Resources\AppResources.ru.resx" />
+    <EmbeddedResource Include="Resources\AppResources.sk.resx" />
+    <EmbeddedResource Include="Resources\AppResources.sv.resx" />
+    <EmbeddedResource Include="Resources\AppResources.th.resx" />
+    <EmbeddedResource Include="Resources\AppResources.tr.resx" />
+    <EmbeddedResource Include="Resources\AppResources.uk.resx" />
+    <EmbeddedResource Include="Resources\AppResources.vi.resx" />
+    <EmbeddedResource Include="Resources\AppResources.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\AppResources.zh-TW.resx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shane.Church.Utility.Core.WP\Shane.Church.Utility.Core.WP.csproj">

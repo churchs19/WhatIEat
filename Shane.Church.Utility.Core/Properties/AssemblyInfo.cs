@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Shane.Church.Utility.Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Shane Church Utility - Portable Class Library")]
+[assembly: AssemblyDescription("Shane Church Utility - Portable Class Library")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Shane.Church.Utility.Core")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCompany("Shane Church")]
+[assembly: AssemblyProduct("Shane Church Utility - Portable Class Library")]
+[assembly: AssemblyCopyright("Copyright © Shane Church 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en")]

@@ -6,8 +6,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("What I Eat - Core")]
-[assembly: AssemblyDescription("A Simple Food Journal - Core")]
+[assembly: AssemblyTitle("What I Eat - Core Portable Class Library")]
+[assembly: AssemblyDescription("A Simple Food Journal - Core Portable Class Library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Shane Church")]
 [assembly: AssemblyProduct("What I Eat - Core")]
