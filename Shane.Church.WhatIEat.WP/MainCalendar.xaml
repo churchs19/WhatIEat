@@ -9,6 +9,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
     xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+	xmlns:ad="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
     xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
     xmlns:viewModels="clr-namespace:Shane.Church.WhatIEat.WP.ViewModels"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
@@ -25,21 +26,39 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto"/>
 		</Grid.RowDefinitions>
 
-		<TextBlock x:Name="ApplicationTitle" 
+		<StackPanel Grid.Row="0" Margin="12,17,0,28">
+			<TextBlock x:Name="ApplicationTitle" 
 				   Grid.Row="0"
-				   Margin="12,17,0,0" 
 				   Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" 
 				   Style="{StaticResource PhoneTextLargeStyle}" 
 				   Foreground="{StaticResource AppAccentColorBrush}"/>
+		</StackPanel>
 
-		<telerikInput:RadCalendar x:Name="MainRadCalendar"
-								  Grid.Row="1" 
+		<Grid x:Name="ContentPanel" Grid.Row="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+
+			<telerikInput:RadCalendar x:Name="MainRadCalendar"
+								  Grid.Row="0" 
+								  Margin="12,0,12,0"
 								  MonthInfoDisplayMode="Large" 
 								  ItemTap="RadCalendar_ItemTap" 
 								  GridLinesBrush="{StaticResource AppBaseColor4Brush}" 
 								  Foreground="{StaticResource AppBaseColor4Brush}" />
+
+			<StackPanel Grid.Row="1">
+				<ad:AdControl Name="AdControl" 
+					Height="80" 
+					Width="480" 
+					Margin="0,0,0,30"
+					IsAutoRefreshEnabled="True"
+					ErrorOccurred="AdControl_ErrorOccurred"
+					AdRefreshed="AdControl_AdRefreshed"/>
+			</StackPanel>
+		</Grid>
 	</Grid>
 </phone:PhoneApplicationPage>

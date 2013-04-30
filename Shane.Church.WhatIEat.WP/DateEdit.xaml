@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:ad="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
 	xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
     xmlns:System="clr-namespace:System;assembly=mscorlib" 
 	xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Binding"
@@ -124,6 +125,7 @@
 			<Grid.RowDefinitions>
 				<RowDefinition Height="*"/>
 				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
 
 			<telerikPrimitives:RadDataBoundListBox x:Name="Entries" 
@@ -152,6 +154,15 @@
 										  ExecuteActionOnReturn="True"
 										  TextChanged="newEntry_TextChanged" />
 			<Border BorderBrush="{StaticResource AppBaseColor2Brush}" BorderThickness="0,1,0,0" Grid.Row="1"/>
+			<StackPanel Grid.Row="2">
+				<ad:AdControl Name="AdControl" 
+					Height="80" 
+					Width="480" 
+					Margin="0,0,0,30"
+					IsAutoRefreshEnabled="True"
+					ErrorOccurred="AdControl_ErrorOccurred"
+					AdRefreshed="AdControl_AdRefreshed"/>
+			</StackPanel>
 		</Grid>
     </Grid>
 

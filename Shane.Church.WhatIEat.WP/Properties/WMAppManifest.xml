@@ -6,6 +6,11 @@
   <App xmlns="" ProductID="{d2c8145e-8508-40ba-9828-175d5b1efabe}" Title="What I Eat" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Shane Church" Description="A simple food journal for windows phone" Publisher="Shane Church" BitsPerPixel="32">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_MEDIALIB" />
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainCalendar.xaml" />
