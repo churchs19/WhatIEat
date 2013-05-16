@@ -28,6 +28,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shane.Church.WhatIEat.Win8"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shane.Church.WhatIEat.Core.Win8", "Shane.Church.WhatIEat.Core.Win8\Shane.Church.WhatIEat.Core.Win8.csproj", "{0FBAD59B-B9F9-4998-9DF4-0240091FDB72}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Mobile Services Scripts", "Azure Mobile Services Scripts", "{EBD8DDA9-BD6C-4BAF-A0CD-3E57F44C29EA}"
+	ProjectSection(SolutionItems) = preProject
+		AzureEntryDelete.js = AzureEntryDelete.js
+		AzureEntryInsert.js = AzureEntryInsert.js
+		AzureEntryRead.js = AzureEntryRead.js
+		AzureEntryUpdate.js = AzureEntryUpdate.js
+		AzureSyncInsert.js = AzureSyncInsert.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug Personal|Any CPU = Debug Personal|Any CPU
