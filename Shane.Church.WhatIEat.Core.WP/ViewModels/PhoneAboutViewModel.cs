@@ -3,6 +3,7 @@ using Shane.Church.WhatIEat.Core.WP.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace Shane.Church.WhatIEat.Core.WP.ViewModels
@@ -14,7 +15,8 @@ namespace Shane.Church.WhatIEat.Core.WP.ViewModels
 			RateThisAppCommand = new RateThisAppCommand();
 			SendAnEmailCommand = new SendAnEmailCommand();
 
-			Version = "1.0";
+			var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
+			Version = versionAttrib.Version.ToString();
 		}
 	}
 }

@@ -27,7 +27,7 @@ namespace Shane.Church.WhatIEat.Core.WP.Services
 				if (_settings[key] is T)
 				{
 					T currentVal = (T)_settings[key];
-					if (!currentVal.Equals(default(T)) && !currentVal.Equals(value))
+					if (!currentVal.Equals(value))
 					{
 						// Store the new value
 						_settings[key] = value;

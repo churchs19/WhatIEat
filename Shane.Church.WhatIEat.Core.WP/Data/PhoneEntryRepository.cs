@@ -26,32 +26,41 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 			_context.Dispose();
 		}
 
-		public IQueryable<IEntry> GetAllEntries()
+		public IQueryable<IEntry> GetAllEntries(bool includeDeleted = false)
 		{
 			lock (_lock)
 			{
-				return _context.Entries.Select(it => (IEntry)it).ToList().AsQueryable();
+				if (includeDeleted)
+					return _context.Entries.Select(it => (IEntry)it).ToList().AsQueryable();
+				else
+					return _context.Entries.Where(it => !it.IsDeleted.HasValue || (it.IsDeleted.HasValue && !it.IsDeleted.Value)).Select(it => (IEntry)it).ToList().AsQueryable();
 			}
 		}
 
-		public IQueryable<IEntry> GetFilteredEntries(System.Linq.Expressions.Expression<Func<IEntry, bool>> filter)
+		public IQueryable<IEntry> GetFilteredEntries(System.Linq.Expressions.Expression<Func<IEntry, bool>> filter, bool includeDeleted = false)
 		{
 			lock (_lock)
 			{
 				var filterDelegate = filter.Compile();
-				var results = _context.Entries.Select(it => (IEntry)it).ToList().Where(it => filterDelegate(it)).AsQueryable();
+				var results = _context.Entries.Select(it => (IEntry)it).ToList().Where(it => includeDeleted ? filterDelegate(it) : filterDelegate(it) && (!it.IsDeleted.HasValue || (it.IsDeleted.HasValue && !it.IsDeleted.Value))).AsQueryable();
 				return results;
 			}
 		}
 
-		public void DeleteEntry(IEntry entry)
+		public void DeleteEntry(IEntry entry, bool hardDelete = false)
 		{
 			lock (_lock)
 			{
 				var pEntry = _context.Entries.Where(it => it.EntryGuid == entry.EntryGuid).FirstOrDefault();
 				if (pEntry != null)
 				{
-					_context.Entries.DeleteOnSubmit(pEntry);
+					if (hardDelete)
+						_context.Entries.DeleteOnSubmit(pEntry);
+					else
+					{
+						pEntry.EditDateTime = DateTimeOffset.Now;
+						pEntry.IsDeleted = true;
+					}
 					_context.SubmitChanges();
 				}
 			}
@@ -69,7 +78,7 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 						pEntry.EntryId = entry.EntryId;
 						pEntry.EntryText = entry.EntryText;
 						pEntry.EntryDate = entry.EntryDate;
-						pEntry.EditDateTime = DateTime.Now.ToUniversalTime();
+						pEntry.EditDateTime = DateTimeOffset.Now;
 					}
 					else
 					{
@@ -78,8 +87,8 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 						pEntry.EntryId = entry.EntryId;
 						pEntry.EntryText = entry.EntryText;
 						pEntry.EntryDate = entry.EntryDate;
-						pEntry.CreateDateTime = DateTime.Now.ToUniversalTime();
-						pEntry.EditDateTime = DateTime.Now.ToUniversalTime();
+						pEntry.CreateDateTime = DateTimeOffset.Now;
+						pEntry.EditDateTime = DateTimeOffset.Now;
 						_context.Entries.InsertOnSubmit(pEntry);
 					}
 					_context.SubmitChanges();

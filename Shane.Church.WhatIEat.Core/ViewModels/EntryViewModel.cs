@@ -82,7 +82,8 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 		private ICommand _saveCommand;
 		public ICommand SaveCommand
 		{
-			get {
+			get
+			{
 				return _saveCommand;
 			}
 		}

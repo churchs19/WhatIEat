@@ -9,7 +9,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 	{
 		public CalendarItemViewModel()
 		{
-			_calendarItemDate = DateTime.Now;
+			_calendarItemDate = DateTime.SpecifyKind(DateTime.Today, DateTimeKind.Utc);
 		}
 
 		private DateTime _calendarItemDate;

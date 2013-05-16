@@ -10,23 +10,47 @@ using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Shane.Church.WhatIEat.Core.Services;
+using System.Threading.Tasks;
+using Shane.Church.WhatIEat.Core.Exceptions;
 
 namespace Shane.Church.WhatIEat.Core.ViewModels
 {
 	public class MainViewModel : ObservableObject
 	{
-		private IRepository<IEntry> _repository;
+		protected IRepository<IEntry> _repository;
+		protected ISettingsService _settings;
+		protected SyncService _syncService;
 
-		public MainViewModel(IRepository<IEntry> repository)
+		public MainViewModel(IRepository<IEntry> repository, ISettingsService settings, SyncService sync)
 		{
 			if (repository == null)
 				throw new ArgumentNullException("repository");
 			_repository = repository;
+			if (settings == null)
+				throw new ArgumentNullException("settings");
+			_settings = settings;
+			if (sync == null)
+				throw new ArgumentNullException("sync");
+			_syncService = sync;
 
 			_dateEntries = new ObservableCollection<CalendarItemViewModel>();
 			_dateEntries.CollectionChanged += _dateEntries_CollectionChanged;
 
-			//NavigateCommand = new RelayCommandGeneric<object>(o => Navigate(o));
+			SyncCommand = new AsyncRelayCommand(async (o) =>
+			{
+				SyncRunning = true;
+				await _syncService.Sync();
+			}, null,
+			async () =>
+			{
+				SyncRunning = false;
+			},
+			(ex) =>
+			{
+				//TODO: Handle Error
+				SyncRunning = false;
+				throw ex;
+			});
 		}
 
 		void _dateEntries_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
@@ -40,41 +64,41 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			get { return _dateEntries; }
 		}
 
-		public void LoadData(DateTime startDate, DateTime endDate)
+		public bool SyncEnabled
 		{
-			var entries = _repository.GetFilteredEntries(it => it.EntryDate >= startDate && it.EntryDate <= endDate);
-			_dateEntries.Clear();
-			foreach (var e in entries)
+			get { return _settings.LoadSetting<bool>("SyncEnabled"); }
+		}
+
+		private ICommand _syncCommand;
+		public ICommand SyncCommand
+		{
+			get { return _syncCommand; }
+			set
 			{
-				DateEntries.Add(new CalendarItemViewModel() { ItemDate = e.EntryDate, ItemText = e.EntryText });
+				Set(() => SyncCommand, ref _syncCommand, value);
 			}
 		}
 
-		//private ICommand _navigateCommand;
-		//public ICommand NavigateCommand
-		//{
-		//	get { return _navigateCommand; }
-		//	set
-		//	{
-		//		Set(() => NavigateCommand, ref _navigateCommand, value);
-		//	}
-		//}
+		private bool _syncRunning;
+		public bool SyncRunning
+		{
+			get { return _syncRunning; }
+			set
+			{
+				Set(() => SyncRunning, ref _syncRunning, value);
+			}
+		}
 
-		//public bool Navigate(object parameter)
-		//{
-		//	var service = KernelService.Kernel.Get<INavigationService>();
-		//	if (parameter is string)
-		//	{
-		//		service.NavigateTo(new Uri(parameter.ToString(), UriKind.Relative));
-		//		return true;
-		//	}
-		//	else if (parameter is Uri)
-		//	{
-		//		service.NavigateTo((Uri)parameter);
-		//		return true;
-		//	}
-		//	else
-		//		return false;
-		//}
+		public void LoadData(DateTime startDate, DateTime endDate)
+		{
+			var specificStartDate = DateTime.SpecifyKind(startDate, DateTimeKind.Utc);
+			var specificEndDate = DateTime.SpecifyKind(endDate, DateTimeKind.Utc);
+			var entries = _repository.GetFilteredEntries(it => it.EntryDate >= specificStartDate && it.EntryDate <= specificEndDate);
+			_dateEntries.Clear();
+			foreach (var e in entries)
+			{
+				DateEntries.Add(new CalendarItemViewModel() { ItemDate = DateTime.SpecifyKind(e.EntryDate, DateTimeKind.Utc), ItemText = e.EntryText });
+			}
+		}
 	}
 }

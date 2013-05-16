@@ -25,18 +25,29 @@ namespace Shane.Church.WhatIEat.WP
 	public partial class MainCalendar : PhoneApplicationPage
 	{
 		private MainViewModel _model;
+		private INavigationService _navService;
+		private ISettingsService _settingsService;
 
 		public MainCalendar()
 		{
-			InitializeComponent();
+			_navService = KernelService.Kernel.Get<INavigationService>();
+			_settingsService = KernelService.Kernel.Get<ISettingsService>();
 
-			InitializeApplicationBar();
+			InitializeComponent();
 
 			InitializeAdControl();
 
 			_model = KernelService.Kernel.Get<MainViewModel>();
-			var appointmentSource = new EntriesAppointmentSource(_model);
-			this.MainRadCalendar.AppointmentSource = appointmentSource;
+
+			_model.PropertyChanged += (s, e) =>
+			{
+				if (e.PropertyName == "SyncRunning" && _model.SyncRunning == false)
+				{
+					this.MainRadCalendar.AppointmentSource = new EntriesAppointmentSource(_model);
+				}
+			};
+
+			this.DataContext = _model;
 		}
 
 		#region Ad Control
@@ -75,8 +86,8 @@ namespace Shane.Church.WhatIEat.WP
 			{
 				NavigationService.RemoveBackEntry();
 			}
-			if (e.NavigationMode != System.Windows.Navigation.NavigationMode.New)
-				this.MainRadCalendar.AppointmentSource = new EntriesAppointmentSource(_model);
+			this.MainRadCalendar.AppointmentSource = new EntriesAppointmentSource(_model);
+			InitializeApplicationBar();
 			base.OnNavigatedTo(e);
 		}
 
@@ -97,11 +108,34 @@ namespace Shane.Church.WhatIEat.WP
 			appBarButtonAbout.Text = AppResources.AboutLabel;
 			appBarButtonAbout.Click += appBarAbout_Click;
 			ApplicationBar.Buttons.Add(appBarButtonAbout);
+
+			ApplicationBarIconButton appBarButtonSettings = new ApplicationBarIconButton(new Uri("/Images/Settings.png", UriKind.Relative));
+			appBarButtonSettings.Text = AppResources.SettingsLabel;
+			appBarButtonSettings.Click += appBarButtonSettings_Click;
+			ApplicationBar.Buttons.Add(appBarButtonSettings);
+
+			if (_settingsService.LoadSetting<bool>("SyncEnabled"))
+			{
+				ApplicationBarIconButton appBarButtonSync = new ApplicationBarIconButton(new Uri("/Images/Synchronize.png", UriKind.Relative));
+				appBarButtonSync.Text = AppResources.SyncLabel;
+				appBarButtonSync.Click += appBarButtonSync_Click;
+				ApplicationBar.Buttons.Add(appBarButtonSync);
+			}
+		}
+
+		private void appBarButtonSettings_Click(object sender, EventArgs e)
+		{
+			_navService.NavigateTo(new Uri("/Settings.xaml", UriKind.Relative));
+		}
+
+		void appBarButtonSync_Click(object sender, EventArgs e)
+		{
+			_model.SyncCommand.Execute(null);
 		}
 
 		private void appBarAbout_Click(object sender, EventArgs e)
 		{
-			KernelService.Kernel.Get<INavigationService>().NavigateTo(new Uri("/About.xaml", UriKind.Relative));
+			_navService.NavigateTo(new Uri("/About.xaml", UriKind.Relative));
 		}
 
 		private void appBarReview_Click(object sender, EventArgs e)
@@ -114,7 +148,7 @@ namespace Shane.Church.WhatIEat.WP
 		{
 			if (e.Item.Date.HasValue)
 			{
-				PhoneApplicationService.Current.State["SelectedDate"] = e.Item.Date.Value.Date;
+				PhoneApplicationService.Current.State["SelectedDate"] = DateTime.SpecifyKind(e.Item.Date.Value.Date, DateTimeKind.Utc);
 				KernelService.Kernel.Get<INavigationService>().NavigateTo(new Uri("/DateEdit.xaml", UriKind.Relative));
 			}
 		}

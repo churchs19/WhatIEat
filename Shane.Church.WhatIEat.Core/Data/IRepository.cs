@@ -13,7 +13,7 @@ namespace Shane.Church.WhatIEat.Core.Data
 		/// Get all entries.
 		/// </summary>
 		/// <returns></returns>
-		IQueryable<T> GetAllEntries();
+		IQueryable<T> GetAllEntries(bool includeDeleted = false);
 
 		/// <summary>
 		/// Get filtered entries.
@@ -21,13 +21,13 @@ namespace Shane.Church.WhatIEat.Core.Data
 		/// <param name="data"></param>
 		/// <param name="filter"></param>
 		/// <returns></returns>
-		IQueryable<T> GetFilteredEntries(Expression<Func<T, bool>> filter);
+		IQueryable<T> GetFilteredEntries(Expression<Func<T, bool>> filter, bool includeDeleted = false);
 
 		/// <summary>
 		/// DeleteEntry
 		/// </summary>
 		/// <param name="entry"></param>
-		void DeleteEntry(T entry);
+		void DeleteEntry(T entry, bool hardDelete = false);
 
 		/// <summary>
 		/// Add or update an entry.

@@ -38,10 +38,10 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 		[Column(CanBeNull = false, DbType = "DATETIME NOT NULL")]
 		public DateTime EntryDate
 		{
-			get { return _entryDate.Date; }
+			get { return DateTime.SpecifyKind(_entryDate, DateTimeKind.Utc); }
 			set
 			{
-				Set(() => EntryDate, ref _entryDate, value.ToUniversalTime());
+				Set(() => EntryDate, ref _entryDate, value);
 			}
 		}
 		private string _entryText;
@@ -55,29 +55,40 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 			}
 		}
 
-		private DateTime _createDateTime;
+		private DateTimeOffset _createDateTime;
 		[Column(CanBeNull = false, DbType = "DATETIME NOT NULL")]
-		public DateTime CreateDateTime
+		public DateTimeOffset CreateDateTime
 		{
-			get { return _createDateTime + DateTimeOffset.Now.Offset; }
+			get { return _createDateTime; }
 			set
 			{
-				Set(() => CreateDateTime, ref _createDateTime, value.ToUniversalTime());
+				Set(() => CreateDateTime, ref _createDateTime, value);
 			}
 		}
 
-		private DateTime _editDateTime;
+		private DateTimeOffset _editDateTime;
 		[Column(CanBeNull = false, DbType = "DATETIME NOT NULL")]
-		public DateTime EditDateTime
+		public DateTimeOffset EditDateTime
 		{
-			get { return _editDateTime + DateTimeOffset.Now.Offset; }
+			get { return _editDateTime; }
 			set
 			{
-				Set(() => EditDateTime, ref _editDateTime, value.ToUniversalTime());
+				Set(() => EditDateTime, ref _editDateTime, value);
 			}
 		}
 
 		[Column(IsVersion = true)]
 		private Binary _version;
+
+		private bool? _isDeleted;
+		[Column(CanBeNull = true)]
+		public bool? IsDeleted
+		{
+			get { return _isDeleted; }
+			set
+			{
+				Set(() => IsDeleted, ref _isDeleted, value);
+			}
+		}
 	}
 }

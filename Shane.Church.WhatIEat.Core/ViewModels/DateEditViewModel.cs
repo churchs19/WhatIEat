@@ -76,9 +76,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 
 		public void LoadData(DateTime selectedDate)
 		{
-			_selectedDate = selectedDate;
+			_selectedDate = DateTime.SpecifyKind(selectedDate.Date, DateTimeKind.Utc);
 			Entries.Clear();
-			var entries = _repository.GetFilteredEntries(it => it.EntryDate == selectedDate.Date).OrderBy(it => it.CreateDateTime);
+			var entries = _repository.GetFilteredEntries(it => it.EntryDate.Date == selectedDate.Date).OrderBy(it => it.CreateDateTime);
 			foreach (var e in entries)
 			{
 				var evm = KernelService.Kernel.Get<EntryViewModel>();
@@ -106,7 +106,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			{
 				var newEntry = KernelService.Kernel.Get<IEntry>();
 				newEntry.EntryGuid = Guid.NewGuid();
-				newEntry.EntryDate = SelectedDate.Date;
+				newEntry.EntryDate = DateTime.SpecifyKind(SelectedDate.Date, DateTimeKind.Utc);
 				newEntry.EntryText = NewEntry;
 				newEntry = _repository.AddOrUpdateEntry(newEntry);
 				var evm = KernelService.Kernel.Get<EntryViewModel>();

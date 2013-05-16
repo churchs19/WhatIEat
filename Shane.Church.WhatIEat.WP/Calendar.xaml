@@ -8,6 +8,7 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
 	xmlns:System="clr-namespace:System;assembly=mscorlib" 
 	xmlns:telerikTextBox="clr-namespace:Telerik.Windows.Controls.PhoneTextBox;assembly=Telerik.Windows.Controls.Primitives"
+	xmlns:telerikToggleSwitch="clr-namespace:Telerik.Windows.Controls.ToggleSwitch;assembly=Telerik.Windows.Controls.Primitives"
 	xmlns:telerikConverters="clr-namespace:Telerik.Windows.Controls.ImageButton;assembly=Telerik.Windows.Controls.Primitives"
 	mc:Ignorable="d">
 	
@@ -31,7 +32,16 @@
 		</GradientStop>
 	</LinearGradientBrush>
 	<SolidColorBrush Color="#00813D" x:Key="GreenBrush"/>
-	<SolidColorBrush Color="#BF0000" x:Key="RedBrush"/>	
+	<SolidColorBrush Color="#BF0000" x:Key="RedBrush"/>
+	<Color x:Key="AppOverlayColor">#9FFFFFFF</Color>
+	<SolidColorBrush x:Key="AppOverlayColorBrush" Color="{StaticResource AppOverlayColor}"/>
+
+	<Style TargetType="telerikToggleSwitch:ToggleSwitchButton" x:Key="AppToggleSwitchButtonStyle">
+		<Setter Property="CheckBackground" Value="{StaticResource AppAccentColorBrush}"/>
+		<Setter Property="Background" Value="{StaticResource AppBaseColor4Brush}"/>
+		<Setter Property="BorderBrush" Value="{StaticResource AppBaseColor4Brush}"/>
+		<Setter Property="Foreground" Value="{StaticResource AppBaseColor4Brush}"/>
+	</Style>
 
 	<Style TargetType="calendar:CalendarButton">
 		<Setter Property="Padding" Value="0" />

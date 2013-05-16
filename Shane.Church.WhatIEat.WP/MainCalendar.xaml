@@ -60,5 +60,14 @@
 					AdRefreshed="AdControl_AdRefreshed"/>
 			</StackPanel>
 		</Grid>
+
+		<telerikPrimitives:RadBusyIndicator 
+			Grid.Row="0" 
+			Grid.Column="0" 
+			Grid.RowSpan="2" 
+			Foreground="{StaticResource AppBaseColor4Brush}"
+			Content="{Binding LocalizedResources.SynchronizingLabel, Source={StaticResource LocalizedStrings}}"
+			IsRunning="{Binding SyncRunning}" 
+			Background="{StaticResource AppOverlayColorBrush}" AnimationStyle="AnimationStyle8"/>
 	</Grid>
 </phone:PhoneApplicationPage>

@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Nothing on this date. Add something!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>enable synchronization</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>new entry</value>
   </data>
@@ -155,6 +158,12 @@
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>settings</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>synchronizing...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sync</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>technical support/feedback email</value>

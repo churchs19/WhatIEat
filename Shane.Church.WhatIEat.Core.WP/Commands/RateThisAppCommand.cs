@@ -9,6 +9,9 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Tasks;
+using Ninject;
+using Shane.Church.WhatIEat.Core.Services;
+using System.Threading.Tasks;
 
 namespace Shane.Church.WhatIEat.Core.WP.Commands
 {

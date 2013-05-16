@@ -58,7 +58,7 @@ namespace Shane.Church.WhatIEat.WP
 
 		private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
 		{
-			var selectedDate = DateTime.Now;
+			var selectedDate = DateTime.SpecifyKind(DateTime.Today, DateTimeKind.Utc);
 			try
 			{
 				selectedDate = (DateTime)PhoneApplicationService.Current.State["SelectedDate"];
@@ -76,7 +76,7 @@ namespace Shane.Church.WhatIEat.WP
 				if (isSuccess)
 				{
 					this.newEntry.Text = "";
-//					this.Focus();
+					//					this.Focus();
 				}
 				else
 					newEntry.ChangeValidationState(ValidationState.Invalid, "Required");
@@ -153,7 +153,7 @@ namespace Shane.Church.WhatIEat.WP
 		private void editTextBox_ActionButtonTap(object sender, EventArgs e)
 		{
 			var tb = sender as RadTextBox;
-			if (tb!=null)
+			if (tb != null)
 			{
 				var viewModel = tb.DataContext as EntryViewModel;
 				if (viewModel != null)

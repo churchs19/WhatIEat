@@ -133,6 +133,15 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to enable synchronization.
+        /// </summary>
+        public static string EnableSyncLabel {
+            get {
+                return ResourceManager.GetString("EnableSyncLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to new entry.
         /// </summary>
         public static string NewEntryLabel {
@@ -174,6 +183,24 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         public static string SettingsLabel {
             get {
                 return ResourceManager.GetString("SettingsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to synchronizing....
+        /// </summary>
+        public static string SynchronizingLabel {
+            get {
+                return ResourceManager.GetString("SynchronizingLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sync.
+        /// </summary>
+        public static string SyncLabel {
+            get {
+                return ResourceManager.GetString("SyncLabel", resourceCulture);
             }
         }
         

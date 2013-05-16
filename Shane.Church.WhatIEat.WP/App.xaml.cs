@@ -25,6 +25,8 @@ using System.Threading;
 using System.Globalization;
 using System.Windows.Markup;
 using System.Diagnostics;
+using System.Reflection;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace Shane.Church.WhatIEat.WP
 {
@@ -33,7 +35,7 @@ namespace Shane.Church.WhatIEat.WP
 		// Locale to force CurrentCulture to in InitializeLanguage(). 
 		// Use "qps-PLOC" to deploy pseudolocalized strings. 
 		// Use "" to let user Phone Language selection determine locale. 
-		public static String appForceCulture = ""; 
+		public static String appForceCulture = "";
 
 		/// <summary>
 		/// Component used to handle unhandle exceptions, to collect runtime info and to send email to developer.
@@ -73,8 +75,19 @@ namespace Shane.Church.WhatIEat.WP
 			KernelService.Kernel.Bind<IEntry>().To<PhoneEntry>();
 			KernelService.Kernel.Bind<IRepository<IEntry>>().To<PhoneEntryRepository>().InSingletonScope();
 			KernelService.Kernel.Bind<AboutViewModel>().To<PhoneAboutViewModel>();
-
-			Telerik.Windows.Controls.InputLocalizationManager.Instance.ResourceManager = Shane.Church.WhatIEat.WP.Resources.AppResources.ResourceManager;
+			KernelService.Kernel.Bind<MainViewModel>().ToSelf().InSingletonScope();
+			KernelService.Kernel.Bind<IMobileServiceClient>().ToMethod<MobileServiceClient>(it =>
+			{
+				var client = new MobileServiceClient(
+					"https://whatieat.azure-mobile.net/",
+					"stXIOZDpAbYsxvASsmSXyRVTgXsYXU62"
+				);
+				client.SerializerSettings.DateParseHandling = Newtonsoft.Json.DateParseHandling.DateTimeOffset;
+				client.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.RoundtripKind;
+				client.SerializerSettings.Converters.Remove(client.SerializerSettings.Converters.Where(its => its is Microsoft.WindowsAzure.MobileServices.MobileServiceIsoDateTimeConverter).FirstOrDefault());
+				return client;
+			});
+			KernelService.Kernel.Bind<SyncService>().To<PhoneSyncService>().InSingletonScope();
 
 			// Show graphics profiling information while debugging.
 			if (System.Diagnostics.Debugger.IsAttached)
@@ -113,104 +126,122 @@ namespace Shane.Church.WhatIEat.WP
 			rateReminder.AllowUsersToSkipFurtherReminders = true;
 
 			if (Mangopollo.Utils.CanUseLiveTiles)
-			 {
-				 var tile = ShellTile.ActiveTiles.First();
-				 var flipTileData = new Mangopollo.Tiles.FlipTileData
-						 {
-							 Title = AppResources.AppTitle,
-							 SmallBackgroundImage = new Uri("/SmallApplicationIcon.png", UriKind.Relative),
-							 BackgroundImage = new Uri("/MediumApplicationIcon.png", UriKind.Relative),
-							 WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative),
-						 };
-				 tile.Update(flipTileData);
-			 }
+			{
+				var tile = ShellTile.ActiveTiles.First();
+				var flipTileData = new Mangopollo.Tiles.FlipTileData
+						{
+							Title = AppResources.AppTitle,
+							SmallBackgroundImage = new Uri("/SmallApplicationIcon.png", UriKind.Relative),
+							BackgroundImage = new Uri("/MediumApplicationIcon.png", UriKind.Relative),
+							WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative),
+						};
+				tile.Update(flipTileData);
+			}
 		}
 
-       // Initialize the app's font and flow direction as defined in its localized resource strings. 
-        // 
-        // To ensure that your apps font is aligned with its supported languages and that the 
-        // FlowDirection for each of those languages follows its traditional direction, ResourceLanguage 
-        // and ResourceFlowDirection should be initialized in each .resx file to match these values with that 
-        // file's culture. For example: 
-        // 
-        // AppResources.es-ES.resx 
-        //    ResourceLanguage's value should be "es-ES" 
-        //    ResourceFlowDirection's value should be "LeftToRight" 
-        // 
-        // AppResources.ar-SA.resx 
-        //     ResourceLanguage's value should be "ar-SA" 
-        //     ResourceFlowDirection's value should be "RightToLeft" 
-        // 
-        // For more info on localizing Windows Phone apps see http://go.microsoft.com/fwlink/?LinkId=262072. 
-        // 
-        private void InitializeLanguage() 
-        { 
-            try 
-            { 
-                // Change locale to appForceCulture if it is not empty 
-                if (String.IsNullOrWhiteSpace(appForceCulture) == false) 
-                { 
-                // Force app globalization to follow appForceCulture 
-                    Thread.CurrentThread.CurrentCulture = new CultureInfo(appForceCulture); 
-                
-                // Force app UI culture to follow appForceCulture 
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo(appForceCulture); 
-                } 
+		// Initialize the app's font and flow direction as defined in its localized resource strings. 
+		// 
+		// To ensure that your apps font is aligned with its supported languages and that the 
+		// FlowDirection for each of those languages follows its traditional direction, ResourceLanguage 
+		// and ResourceFlowDirection should be initialized in each .resx file to match these values with that 
+		// file's culture. For example: 
+		// 
+		// AppResources.es-ES.resx 
+		//    ResourceLanguage's value should be "es-ES" 
+		//    ResourceFlowDirection's value should be "LeftToRight" 
+		// 
+		// AppResources.ar-SA.resx 
+		//     ResourceLanguage's value should be "ar-SA" 
+		//     ResourceFlowDirection's value should be "RightToLeft" 
+		// 
+		// For more info on localizing Windows Phone apps see http://go.microsoft.com/fwlink/?LinkId=262072. 
+		// 
+		private void InitializeLanguage()
+		{
+			try
+			{
+				// Change locale to appForceCulture if it is not empty 
+				if (String.IsNullOrWhiteSpace(appForceCulture) == false)
+				{
+					// Force app globalization to follow appForceCulture 
+					Thread.CurrentThread.CurrentCulture = new CultureInfo(appForceCulture);
+
+					// Force app UI culture to follow appForceCulture 
+					Thread.CurrentThread.CurrentUICulture = new CultureInfo(appForceCulture);
+				}
 
 
-                // Set the font to match the display language defined by the 
-                // ResourceLanguage resource string for each supported language. 
-                // 
-                // Fall back to the font of the neutral language if the display 
-                // language of the phone is not supported. 
-                // 
-                // If a compiler error occurs, ResourceLanguage is missing from 
-                // the resource file. 
-                RootFrame.Language = XmlLanguage.GetLanguage(AppResources.ResourceLanguage); 
+				// Set the font to match the display language defined by the 
+				// ResourceLanguage resource string for each supported language. 
+				// 
+				// Fall back to the font of the neutral language if the display 
+				// language of the phone is not supported. 
+				// 
+				// If a compiler error occurs, ResourceLanguage is missing from 
+				// the resource file. 
+				RootFrame.Language = XmlLanguage.GetLanguage(AppResources.ResourceLanguage);
 
-                // Set the FlowDirection of all elements under the root frame based 
-                // on the ResourceFlowDirection resource string for each 
-                // supported language. 
-                // 
-                // If a compiler error occurs, ResourceFlowDirection is missing from 
-                // the resource file. 
-                FlowDirection flow = (FlowDirection)Enum.Parse(typeof(FlowDirection), AppResources.ResourceFlowDirection,false); 
-                RootFrame.FlowDirection = flow; 
-            } 
-            catch 
-            { 
-                // If an exception is caught here it is most likely due to either 
-                // ResourceLangauge not being correctly set to a supported language 
-                // code or ResourceFlowDirection is set to a value other than LeftToRight 
-                // or RightToLeft. 
+				// Set the FlowDirection of all elements under the root frame based 
+				// on the ResourceFlowDirection resource string for each 
+				// supported language. 
+				// 
+				// If a compiler error occurs, ResourceFlowDirection is missing from 
+				// the resource file. 
+				FlowDirection flow = (FlowDirection)Enum.Parse(typeof(FlowDirection), AppResources.ResourceFlowDirection, false);
+				RootFrame.FlowDirection = flow;
 
-                if (Debugger.IsAttached) 
-                { 
-                    Debugger.Break(); 
-                } 
+				//Initialiaze Telerik Localization Manager
+				Telerik.Windows.Controls.InputLocalizationManager.Instance.ResourceManager = Shane.Church.WhatIEat.WP.Resources.AppResources.ResourceManager;
+			}
+			catch
+			{
+				// If an exception is caught here it is most likely due to either 
+				// ResourceLangauge not being correctly set to a supported language 
+				// code or ResourceFlowDirection is set to a value other than LeftToRight 
+				// or RightToLeft. 
 
-                throw; 
-            } 
-        } 
+				if (Debugger.IsAttached)
+				{
+					Debugger.Break();
+				}
 
+				throw;
+			}
+		}
 
 		// Code to execute when the application is launching (eg, from Start)
 		// This code will not execute when the application is reactivated
-		private void Application_Launching(object sender, LaunchingEventArgs e)
+		private async void Application_Launching(object sender, LaunchingEventArgs e)
 		{
 			//Before using any of the ApplicationBuildingBlocks, this class should be initialized with the version of the application.
-			ApplicationUsageHelper.Init("1.0");
+			var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
+			ApplicationUsageHelper.Init(versionAttrib.Version.ToString());
 
+			if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
+			{
+				if (await ((PhoneSyncService)KernelService.Kernel.Get<SyncService>()).LiveLoginSilent())
+				{
+					KernelService.Kernel.Get<MainViewModel>().SyncCommand.Execute(null);
+				}
+			}
 		}
 
 		// Code to execute when the application is activated (brought to foreground)
 		// This code will not execute when the application is first launched
-		private void Application_Activated(object sender, ActivatedEventArgs e)
+		private async void Application_Activated(object sender, ActivatedEventArgs e)
 		{
 			if (!e.IsApplicationInstancePreserved)
 			{
 				//This will ensure that the ApplicationUsageHelper is initialized again if the application has been in Tombstoned state.
 				ApplicationUsageHelper.OnApplicationActivated();
+
+				if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
+				{
+					if (await ((PhoneSyncService)KernelService.Kernel.Get<SyncService>()).LiveLoginSilent())
+					{
+						KernelService.Kernel.Get<MainViewModel>().SyncCommand.Execute(null);
+					}
+				}
 			}
 
 		}
