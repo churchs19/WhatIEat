@@ -124,7 +124,7 @@
     <value>Valora aquest app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane església 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>una revista d'aliments simples per a windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>CA-</value>
+    <value>ca</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>avaluar em</value>

@@ -136,10 +136,10 @@
     <value>رمز التطبيق</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>ما تناول الطعام</value>
+    <value>طريفة تناول الطعام</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>لا شيء في هذا التاريخ. إضافة شيء!</value>
+    <value>شيء يصرف هذا التاريخ. ثم شيء!</value>
   </data>
   <data name="EnableSyncLabel" xml:space="preserve">
     <value>تمكين المزامنة</value>
@@ -148,13 +148,13 @@
     <value>إدخال جديد</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
-    <value>LeftToRight</value>
+    <value>RightToLeft</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>en-US</value>
+    <value>ar</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>معدل لي</value>
+    <value>معدل أنشودة</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>إعدادات</value>
@@ -172,7 +172,7 @@
     <value>التقويم</value>
   </data>
   <data name="EmptySummaryListLabel" xml:space="preserve">
-    <value>لم يتم العثور على لا إدخالات. إضافة شيء!</value>
+    <value>إدخالات على العثور يتم لم. ثم شيء!</value>
   </data>
   <data name="SummaryLabel" xml:space="preserve">
     <value>ملخص</value>

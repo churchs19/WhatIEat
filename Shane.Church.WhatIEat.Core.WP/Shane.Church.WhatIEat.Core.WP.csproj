@@ -165,7 +165,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\WPCoreResources.ar.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.he.resx" />
@@ -191,39 +190,30 @@
     <EmbeddedResource Include="Resources\WPCoreResources.uk.resx" />
     <EmbeddedResource Include="Resources\WPCoreResources.vi.resx" />
     <EmbeddedResource Include="Resources\WPCoreResources.zh-TW.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.zh-TW.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.fi.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.fi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.et.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.et.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.nl.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.nl.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.da.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.da.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.cs.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.cs.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.zh-CN.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.zh-CN.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.ca.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.ca.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.bg.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>WPCoreResources.bg.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\WPCoreResources.resx">

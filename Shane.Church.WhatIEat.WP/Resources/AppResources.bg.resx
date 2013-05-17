@@ -124,7 +124,7 @@
     <value>оцени този ап</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Шейн църква 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>прост хранителен дневник за windows телефон</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>EN-САЩ</value>
+    <value>bg</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>оценявате мен</value>
