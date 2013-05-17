@@ -124,7 +124,7 @@
     <value>novērtēt šo app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane baznīcas 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows tālrunis vienkāršu ēdienu žurnālu</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Nekas šajā datumā. Pievienot kaut ko!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>Aktivizēt sinhronizāciju</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>jauns ieraksts</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>lv</value>
+    <value>EN-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>mani novērtēja</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>iestatījumus</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>notiek sinhronizēšana...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sinhronizācijas</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>tehniskais atbalsts/atsauksmes e-pasta</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalendārs</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Ievadnes nav atrastas. Pievienot kaut ko!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>kopsavilkums</value>
   </data>
 </root>

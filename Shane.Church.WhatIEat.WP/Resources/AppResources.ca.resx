@@ -124,7 +124,7 @@
     <value>Valora aquest app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane església 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>una revista d'aliments simples per a windows phone</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Res en aquesta data. Afegir alguna cosa!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>permeten la sincronització</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>Nova entrada</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ca</value>
+    <value>CA-</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>avaluar em</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>configuració</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>s'estan sincronitzant...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sincronització</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>correu electrònic de suport/resposta tècnica</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Calendari</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>No hi ha entrades trobades. Afegir alguna cosa!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>resum</value>
   </data>
 </root>

@@ -124,22 +124,25 @@
     <value>Оцените этот app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>© Shane Church 2013</value>
+    <value>Copyright © Шейн церковь 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>журнал для windows phone простой пищи</value>
+    <value>простой пищи журнал для windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Разработанные с Дэнни Chapman из проекта существительное EAT</value>
+    <value>Ешьте разработан Чепмен Дэнни от существительного проекта</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>значок приложения</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>ЧТО Я EAT</value>
+    <value>ТО, ЧТО Я ЕМ</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Ничего на эту дату. Добавьте что-то!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>включить синхронизацию</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>Новая запись</value>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ru</value>
+    <value>en US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Оцените меня</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>Параметры</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>Синхронизация...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Синхронизация</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>Техническая поддержка и отзывы по электронной почте</value>
+    <value>Техническая поддержка/обратной связи электронной почты</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Календарь</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Элементы не найдены. Добавьте что-то!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Резюме</value>
   </data>
 </root>

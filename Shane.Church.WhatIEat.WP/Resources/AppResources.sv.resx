@@ -118,28 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutLabel" xml:space="preserve">
-    <value>Om</value>
+    <value>om</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Betygsätt det här programmet</value>
+    <value>Betygsätt denna app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane kyrkan 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>en enkel mat journal för windows-telefon</value>
+    <value>en enkel mat tidning för windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Ät utformad med Danny Chapman från The substantiv-projekt</value>
+    <value>Äta designade av Danny Chapman från The Substantiv Project</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>programikon</value>
+    <value>programikonen</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>JAG ÄT</value>
+    <value>VAD JAG ÄTER</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Ingenting på detta datum. Lägg till något!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>aktivera synkronisering</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>ny post</value>
@@ -148,15 +151,30 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>sv</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>klassificera mig</value>
+    <value>Betygsätt mig</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>inställningar</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>Synkronisera...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Sync</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>e-post för teknisk support/feedback</value>
+    <value>teknisk support/feedback e-post</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>kalender</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Inga poster hittades. Lägg till något!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Sammanfattning</value>
   </data>
 </root>

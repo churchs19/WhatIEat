@@ -168,4 +168,13 @@
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>technical support/feedback email</value>
   </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>calendar</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>No entries found. Add something!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>summary</value>
+  </data>
 </root>

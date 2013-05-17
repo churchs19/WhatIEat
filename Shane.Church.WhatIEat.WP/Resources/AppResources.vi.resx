@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Không có gì vào ngày này. Thêm một cái gì đó!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>sử đồng bộ hóa</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>mục mới</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>vi</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>giá tôi</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>cài đặt</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>đồng bộ hóa...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>đồng bộ</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>thư điện tử kỹ thuật hỗ trợ/thông tin phản hồi</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>lịch</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Không có mục nào được tìm thấy. Thêm một cái gì đó!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Tóm tắt</value>
   </data>
 </root>

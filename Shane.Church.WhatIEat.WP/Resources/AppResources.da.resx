@@ -121,25 +121,28 @@
     <value>om</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Bedøm denne app</value>
+    <value>Vurder denne app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane kirke 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>en simpel fødevarer kladde til windows phone</value>
+    <value>en enkel mad kladde til windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Spise designet af Danny Chapman fra The navneord projekt</value>
+    <value>Spise designet af Danny Chapman fra projektets navneord</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>programikon</value>
+    <value>programikonet</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>JEG SPISE</value>
+    <value>HVAD JEG SPISER</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Intet på denne dato. Tilføje noget!</value>
+    <value>Intet på denne dato. Tilføj noget!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>Aktiver synkronisering</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>ny post</value>
@@ -148,15 +151,30 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>da</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>Bedøm mig</value>
+    <value>Vurder mig</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>indstillinger</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>synkronisering...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Sync</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>teknisk support, der er feedback email</value>
+    <value>feedback/teknisk support email</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>kalender</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Der er ikke fundet nogen poster. Tilføj noget!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Resumé</value>
   </data>
 </root>

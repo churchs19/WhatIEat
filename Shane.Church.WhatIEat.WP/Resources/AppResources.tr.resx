@@ -121,42 +121,60 @@
     <value>hakkında</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Bu uygulama oranı</value>
+    <value>Bu app oranı</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Telif Hakkı © Shane Church 2013</value>
+    <value>Copyright © Shane kilise 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>windows phone için basit bir yiyecek günlüğü</value>
+    <value>windows phone için bir basit gıda günlük</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>İsim projeden Danny Chapman tarafından tasarlanmış Yemek</value>
+    <value>Danny Chapman isim projesi tarafından tasarlanmış yemek</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>Uygulama simgesi</value>
+    <value>uygulama simgesi</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>BEN YEMEK</value>
+    <value>NE YEMEK</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Bu tarihte bir şey yok. Bir şey eklemek!</value>
+    <value>Hiçbir şey bu tarihte. Bir şey eklemek!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>eşitlemesini etkinleştir</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
-    <value>Yeni giriş</value>
+    <value>yeni giriş</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
-    <value>LeftToRight</value>
+    <value>LeftToRight diğerleri</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>tr</value>
+    <value>TR</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>Bana oranı</value>
+    <value>beni oranı</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
-    <value>ayarları</value>
+    <value>Ayarlar</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>eşitleniyor...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Eşitleme</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>e-posta teknik destek yorumu</value>
+    <value>teknik destek/geribildirim e-posta</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Takvim</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Giriş bulunamadı. Bir şey eklemek!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Özet</value>
   </data>
 </root>

@@ -121,25 +121,28 @@
     <value>om</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Vurder denne app</value>
+    <value>rangere denne app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane kirken 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>en enkel mat journal for windows-telefon</value>
+    <value>en enkel mat tidsskrift for windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Spise utviklet av Danny Chapman fra The substantiv-prosjekt</value>
+    <value>Spise designet av Danny Chapman fra The substantiv Project</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>ikonet for webprogrammet</value>
+    <value>programsymbolet</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>JEG SPISE</value>
+    <value>HVA JEG SPISER</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Ingenting på denne datoen. Legge til noe!</value>
+    <value>Ingenting på denne datoen. Legge noe!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>aktivere synkronisering</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>ny oppføring</value>
@@ -148,15 +151,30 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>no</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>vurdere meg</value>
+    <value>Ranger meg</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>innstillinger</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>synkroniserer...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>synkronisering</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>e-post til teknisk kundestøtte/tilbakemelding</value>
+    <value>teknisk støtte/tilbakemeldinger e-post</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Finner ingen oppføringer. Legge noe!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Sammendrag</value>
   </data>
 </root>

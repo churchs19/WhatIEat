@@ -121,25 +121,28 @@
     <value>에 대 한</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>이 응용 프로그램을 평가 합니다.</value>
+    <value>이 애플 리 케이이 션 평가</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>저작권 © Shane Church 2013</value>
+    <value>저작권 © 쉐 인 교회 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>windows phone 용 간단한 식품 저널</value>
+    <value>windows phone에 대 한 간단한 식품 저널</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Danny Chapman 명사 프로젝트에 의해 설계 된 식사</value>
+    <value>먹고는 명사 프로젝트에서 대 니 채 프 먼에 의해 설계 된</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>응용 프로그램 아이콘</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>어떻게 내가 먹을</value>
+    <value>내가 무엇을 먹을 까합니다</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>아무이 날짜에. 뭔가 추가!</value>
+    <value>이 날짜에 아무것도입니다. 뭔가 추가!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>동기화를 사용 하도록 설정</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>새 항목</value>
@@ -148,15 +151,30 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ko</value>
+    <value>미국에 있어서</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>저 등급</value>
+    <value>저 평가</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>설정</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>동기화...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>동기화</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>이메일 기술 지원/피드백</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>달력</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>찾은 항목이 없습니다. 뭔가 추가!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>요약</value>
   </data>
 </root>

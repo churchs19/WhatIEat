@@ -121,25 +121,28 @@
     <value>के बारे में</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>इस अनुप्रयोग को रेट करें</value>
+    <value>दर इस app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>कॉपीराइट © Shane Church 2013</value>
+    <value>कॉपीराइट © शेन चर्च 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows फोन के लिए एक सरल भोजन जर्नल</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Danny Chapman The Noun प्रोजेक्ट से द्वारा डिज़ाइन किए गए खाने</value>
+    <value>डैनी फेरीवाला संज्ञा परियोजना से द्वारा डिजाइन खाना</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>अनुप्रयोग चिह्न</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>क्या मैं खाने</value>
+    <value>क्या मैं खाना</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>कुछ भी नहीं इस दिनांक पर है। कुछ जोड़!</value>
+    <value>इस तिथि पर कुछ भी नहीं। कुछ जोड़!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>सिंक्रनाइज़ेशन सक्षम करें</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>नई प्रविष्टि</value>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>hi</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>मेरे दर</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>सेटिंग्स</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>सिंक्रनाइज़ कर रहा है...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>सिंक</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>तकनीकी समर्थन/प्रतिक्रिया ई-मेल</value>
+    <value>तकनीकी समर्थन/प्रतिक्रिया ईमेल</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>कैलेंडर</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>कोई प्रविष्टियाँ नहीं मिलीं। कुछ जोड़!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>सारांश</value>
   </data>
 </root>

@@ -124,7 +124,7 @@
     <value>Įvertinkite šią programą</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane bažnyčios 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows telefonas paprastas maisto žurnalą</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Nieko šią datą. Pridėti ką nors!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>sinchronizaciją</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>naujas įrašas</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>lt</value>
+    <value>LT</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>kurso me</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>parametrai</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sinchronizuojamas...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sinchronizavimo</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>techninės paramos/atsiliepimų el. paštas</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>kalendorius</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Rasti įrašus. Pridėti ką nors!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>santrauka</value>
   </data>
 </root>

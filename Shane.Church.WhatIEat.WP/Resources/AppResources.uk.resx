@@ -124,7 +124,7 @@
     <value>Оцінити цю app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Шейн церкви 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>просту їжу журнал для windows телефон</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Нічого на цю дату. Додати щось!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>Увімкнення синхронізації</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>новий запис</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>uk</value>
+    <value>EN US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>оцінити me</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>Параметри</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>Синхронізація...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Синхронізація</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>Технічна підтримка/відгук електронною поштою</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Календар</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Елементів не знайдено. Додати щось!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>резюме</value>
   </data>
 </root>

@@ -118,28 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutLabel" xml:space="preserve">
-    <value>à propos</value>
+    <value>sur</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Cette application de taux</value>
+    <value>noter ce $ $ etAPP</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane église 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>un journal des aliments simples pour windows phone</value>
+    <value>un journal alimentaire simple pour windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Manger conçus par Danny Chapman le substantif projet</value>
+    <value>Manger conçu par Danny Chapman de The Noun Project</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>icône de l'application</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>JE MANGE</value>
+    <value>CE QUE JE MANGE</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Rien à cette date. Ajouter quelque chose !</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>activer la synchronisation</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>nouvelle entrée</value>
@@ -148,15 +151,30 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>fr</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>taux me</value>
+    <value>noter moi</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
-    <value>paramètres</value>
+    <value>Paramètres</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>synchronisation...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Sync</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>e-mail du support technique/feedback</value>
+    <value>e-mail de soutien technique/commentaires</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>calendrier</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Aucune entrée trouvée. Ajouter quelque chose !</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Résumé</value>
   </data>
 </root>

@@ -121,16 +121,16 @@
     <value>over</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Beoordeel dit app</value>
+    <value>Stem op dit app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane kerk 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>een eenvoudige voedsel dagboek voor windows telefoon</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Ontworpen door Danny Chapman van het zelfstandig naamwoord Project eten</value>
+    <value>Eten ontworpen door Danny Chapman van het zelfstandig naamwoord Project</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>toepassingspictogram</value>
@@ -139,24 +139,42 @@
     <value>WAT IK EET</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Niets op deze datum. Iets toevoegen!</value>
+    <value>Niets op deze datum. Voeg iets!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>synchronisatie inschakelen</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
-    <value>nieuwe post</value>
+    <value>Nieuw item</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>nl</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>Beoordeel me</value>
+    <value>Stem op mij</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
-    <value>instellingen</value>
+    <value>Instellingen</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>synchroniseren...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Sync</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>technische ondersteuning/feedback e-mailadres</value>
+    <value>technische ondersteuning/feedback e-mail</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>kalender</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Geen items gevonden. Voeg iets!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Samenvatting</value>
   </data>
 </root>

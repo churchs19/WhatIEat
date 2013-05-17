@@ -121,42 +121,60 @@
     <value>について</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>このアプリケーションを評価します。</value>
+    <value>このアプリを評価します。</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>著作権 © Shane Church 2013</value>
+    <value>著作権 © シェーン教会 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>windows phone の単純な食品ジャーナル</value>
+    <value>windows phone のシンプルな料理誌</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>によってダニー Chapman は名詞のプロジェクトから設計を食べる</value>
+    <value>ダニー ・ チャップマン、名詞プロジェクトで設計を食べる</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>アプリケーションのアイコン</value>
+    <value>アプリケーション アイコン</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>私は何を食べる</value>
+    <value>何を食べる</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>この日は何も。何かを追加します。</value>
+    <value>この日付には何も。何かを追加 ！</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>同期を有効にします。</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
-    <value>新規エントリ</value>
+    <value>新しいエントリ</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ja</value>
+    <value>EN-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>私を評価します。</value>
+    <value>レート私</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>設定</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>同期しています.</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>同期</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>テクニカル サポート/フィードバック e メール</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>カレンダー</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>エントリが見つかりません。何かを追加 ！</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>概要</value>
   </data>
 </root>

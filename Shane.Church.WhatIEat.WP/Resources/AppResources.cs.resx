@@ -121,25 +121,28 @@
     <value>o</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Ohodnotit tuto aplikaci</value>
+    <value>Ohodnoťte tuto aplikaci</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane církve 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>jednoduché potraviny deník pro windows phone</value>
+    <value>jednoduchý jídlo deník pro windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Jíst navrženy tak, že Danny Chapmanova z projektu The substantivum</value>
+    <value>Jezte navrhl Danny Chapman z podstatné jméno projektu</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>Ikona aplikace</value>
+    <value>ikona aplikace</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>I JÍST</value>
+    <value>CO JÍST</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Nic k tomuto datu. Přidáte něco!</value>
+    <value>Nic na toto datum. Přidej něco!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>povolit synchronizaci</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>Nová položka</value>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>cs</value>
+    <value>EN US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Ohodnoťte mi</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>nastavení</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>Probíhá synchronizace...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>synchronizace</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>e-mailová technická podpora/názory</value>
+    <value>Technická podpora/zpětná vazba e-mail</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalendář</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Nebyly nalezeny žádné položky. Přidej něco!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Shrnutí</value>
   </data>
 </root>

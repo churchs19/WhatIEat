@@ -35,6 +35,10 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 
 			_dateEntries = new ObservableCollection<CalendarItemViewModel>();
 			_dateEntries.CollectionChanged += _dateEntries_CollectionChanged;
+			_summaryEntries = new ObservableCollection<CalendarItemViewModel>();
+			_summaryEntries.CollectionChanged += _summaryEntries_CollectionChanged;
+			_summaryGroups = new ObservableCollection<DateTime>();
+			_summaryGroups.CollectionChanged += _summaryGroups_CollectionChanged;
 
 			SyncCommand = new AsyncRelayCommand(async (o) =>
 			{
@@ -53,6 +57,16 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			});
 		}
 
+		void _summaryGroups_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+		{
+			RaisePropertyChanged(() => SummaryGroups);
+		}
+
+		void _summaryEntries_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+		{
+			RaisePropertyChanged(() => SummaryEntries);
+		}
+
 		void _dateEntries_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
 		{
 			RaisePropertyChanged(() => DateEntries);
@@ -62,6 +76,24 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 		public ObservableCollection<CalendarItemViewModel> DateEntries
 		{
 			get { return _dateEntries; }
+		}
+
+		private ObservableCollection<CalendarItemViewModel> _summaryEntries;
+		public ObservableCollection<CalendarItemViewModel> SummaryEntries
+		{
+			get { return _summaryEntries; }
+		}
+
+		private ObservableCollection<DateTime> _summaryGroups;
+		public ObservableCollection<DateTime> SummaryGroups
+		{
+			get { return _summaryGroups; }
+		}
+
+		private long _totalEntryCount;
+		public long TotalEntryCount
+		{
+			get { return _totalEntryCount; }
 		}
 
 		public bool SyncEnabled
@@ -89,6 +121,47 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			}
 		}
 
+		public void Initialize()
+		{
+			_summaryEntries.Clear();
+			LoadSummaryGroups();
+			_dateEntries.Clear();
+		}
+
+		public void LoadSummaryGroups()
+		{
+			_summaryGroups.Clear();
+			var keys = _repository.GetAllEntries()
+								  .Select(it => new DateTime(it.EntryDate.Year, it.EntryDate.Month, 1, 0, 0, 0, DateTimeKind.Utc))
+								  .Distinct()
+								  .OrderByDescending(it => it);
+			foreach (var key in keys)
+				_summaryGroups.Add(key);
+		}
+
+		public void LoadNextSummaryItems()
+		{
+			if (SummaryEntries.Count == 0)
+				_totalEntryCount = _repository.GetAllEntries().LongCount();
+			if (SummaryEntries.Count < _totalEntryCount)
+			{
+				var entries = _repository.GetAllEntries()
+										 .OrderByDescending(it => it.EntryDate)
+										 .ThenByDescending(it => it.CreateDateTime)
+										 .Skip(SummaryEntries.Count)
+										 .Take(10);
+				foreach (var e in entries)
+				{
+					var model = new CalendarItemViewModel() { ItemDate = DateTime.SpecifyKind(e.EntryDate, DateTimeKind.Utc), ItemText = e.EntryText };
+					try
+					{
+						SummaryEntries.Add(model);
+					}
+					catch { }
+				}
+			}
+		}
+
 		public void LoadData(DateTime startDate, DateTime endDate)
 		{
 			var specificStartDate = DateTime.SpecifyKind(startDate, DateTimeKind.Utc);
@@ -97,7 +170,11 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			_dateEntries.Clear();
 			foreach (var e in entries)
 			{
-				DateEntries.Add(new CalendarItemViewModel() { ItemDate = DateTime.SpecifyKind(e.EntryDate, DateTimeKind.Utc), ItemText = e.EntryText });
+				try
+				{
+					DateEntries.Add(new CalendarItemViewModel() { ItemDate = DateTime.SpecifyKind(e.EntryDate, DateTimeKind.Utc), ItemText = e.EntryText });
+				}
+				catch { }
 			}
 		}
 	}

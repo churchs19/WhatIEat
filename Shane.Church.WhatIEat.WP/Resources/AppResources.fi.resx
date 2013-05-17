@@ -121,25 +121,28 @@
     <value>tietoja</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Luokittele tämä app</value>
+    <value>Rate this app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane kirkko 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Yksinkertainen ruoka lehden, windows phone</value>
+    <value>yksinkertainen ruoka päiväkirjaa, windows Phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Danny Substantiivien projektista Chapmanin mukaan suunniteltu syö</value>
+    <value>Syödä suunnitellut Danny Chapman substantiivi-projektista</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>sovelluksen kuvake</value>
+    <value>Sovelluksen kuvake</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>SYÖ</value>
+    <value>MITÄ SYÖN</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Mikään ei tänä päivänä. Jotain Lisää!</value>
+    <value>Mitään tänä päivänä. Lisää jotain!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>Ota synkronointi</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>uusi merkintä</value>
@@ -148,15 +151,30 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>fi</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>me luokitella</value>
+    <value>arvostella minua</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>asetukset</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>synkronoidaan...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>synkronointi</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>tekninen tuki ja palaute sähköposti</value>
+    <value>tekninen tuki/palautetta sähköpostitse</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalenteri</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Tietoja ei löytynyt. Lisää jotain!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Yhteenveto</value>
   </data>
 </root>

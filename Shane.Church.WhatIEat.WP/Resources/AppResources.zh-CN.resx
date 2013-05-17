@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutLabel" xml:space="preserve">
-    <value>有关</value>
+    <value>关于</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>评级此应用程序</value>
+    <value>率这个应用程序</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>版权所有 © Shane Church 2013</value>
+    <value>版权所有 © 谢恩教会 2013 年</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>windows 电话的简单食品日志</value>
+    <value>windows 手机简单食品杂志</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>吃由 Danny Chapman 从名词项目设计</value>
+    <value>吃由丹尼 · 查普曼从名词项目设计</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>应用程序图标</value>
@@ -139,24 +139,42 @@
     <value>我吃什么</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>在此日期执行任何操作。添加的内容 ！</value>
+    <value>没有在此日期。添加的东西 ！</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>启用同步</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
-    <value>新的项</value>
+    <value>新条目</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>zh-CN</value>
+    <value>en-美国</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>我的分级</value>
+    <value>率我</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>设置</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>正在同步...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>同步</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>技术支持/反馈电子邮件</value>
+    <value>电子邮件技术支持反馈</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>日历</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>找不到项。添加的东西 ！</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>摘要</value>
   </data>
 </root>

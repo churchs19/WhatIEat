@@ -118,45 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutLabel" xml:space="preserve">
-    <value>kapcsolatban</value>
+    <value>körülbelül</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Ez az alkalmazás gyakorisága</value>
+    <value>arány ez app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane templom 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>a windows phone rendszerhez egyszerű élelmiszer napló</value>
+    <value>egy egyszerű étel napló a windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Danny Chapman Fogalomként a projekt által tervezett eszik</value>
+    <value>Enni Danny Chapman a főnév projekt célja</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>alkalmazás ikonja</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>NEM ESZIK</value>
+    <value>MIT ENNI</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Ezen a napon semmi. Hozzáadás!</value>
+    <value>Semmi ezen a napon. Add hozzá valami.</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>szinkronizálás engedélyezése</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
-    <value>Új bejegyzés</value>
+    <value>új bejegyzés</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>hu</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>me minősítése</value>
+    <value>mértéke én</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>beállítások</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>szinkronizálása...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>szinkron</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>technikai támogatás-visszajelzés e-mailben</value>
+    <value>technikai támogatás, visszajelzést e-mailben</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>naptár</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Nem talált bejegyzéseket. Add hozzá valami.</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Összefoglaló</value>
   </data>
 </root>

@@ -19,6 +19,7 @@ using Shane.Church.WhatIEat.Core.ViewModels;
 using Shane.Church.WhatIEat.WP.Resources;
 using System.Windows.Navigation;
 using Shane.Church.WhatIEat.Core.WP.Commands;
+using Telerik.Windows.Data;
 
 namespace Shane.Church.WhatIEat.WP
 {
@@ -47,7 +48,48 @@ namespace Shane.Church.WhatIEat.WP
 				}
 			};
 
+			GenericGroupDescriptor<CalendarItemViewModel, DateTime> groupByMonth = new GenericGroupDescriptor<CalendarItemViewModel, DateTime>(it =>
+			{
+				return new DateTime(it.ItemDate.Year, it.ItemDate.Month, 1, 0, 0, 0, DateTimeKind.Utc);
+			});
+			groupByMonth.GroupFormatString = "{0:Y}";
+			groupByMonth.SortMode = ListSortMode.Descending;
+			summaryJumpList.GroupDescriptors.Add(groupByMonth);
+			//GenericGroupDescriptor<CalendarItemViewModel, DateTime> groupByDay = new GenericGroupDescriptor<CalendarItemViewModel, DateTime>(it =>
+			//{
+			//	return DateTime.SpecifyKind(it.ItemDate.Date, DateTimeKind.Utc);
+			//});
+			//groupByDay.GroupFormatString = "{0:M}";
+			//groupByDay.SortMode = ListSortMode.Descending;
+			//summaryJumpList.GroupDescriptors.Add(groupByDay);
+			summaryJumpList.DataRequested += this.summaryJumpList_DataRequested;
+			summaryJumpList.GroupPickerItemTap += summaryJumpList_GroupPickerItemTap;
+
 			this.DataContext = _model;
+		}
+
+		void summaryJumpList_GroupPickerItemTap(object sender, GroupPickerItemTapEventArgs e)
+		{
+			while (!summaryJumpList.Groups.Select(it => it.Key).Contains(e.DataItem))
+			{
+				_model.LoadNextSummaryItems();
+				summaryJumpList.RefreshData();
+			}
+			foreach (DataGroup group in summaryJumpList.Groups)
+			{
+				if (object.Equals(e.DataItem, group.Key))
+				{
+					e.ClosePicker = true;
+					e.ScrollToItem = true;
+					e.DataItemToNavigate = group;
+					return;
+				}
+			}
+		}
+
+		private void summaryJumpList_DataRequested(object sender, EventArgs e)
+		{
+			_model.LoadNextSummaryItems();
 		}
 
 		#region Ad Control
@@ -86,7 +128,10 @@ namespace Shane.Church.WhatIEat.WP
 			{
 				NavigationService.RemoveBackEntry();
 			}
+			_model.Initialize();
 			this.MainRadCalendar.AppointmentSource = new EntriesAppointmentSource(_model);
+			this.summaryJumpList.GroupPickerItemsSource = _model.SummaryGroups;
+			this.summaryJumpList.ItemsSource = _model.SummaryEntries;
 			InitializeApplicationBar();
 			base.OnNavigatedTo(e);
 		}

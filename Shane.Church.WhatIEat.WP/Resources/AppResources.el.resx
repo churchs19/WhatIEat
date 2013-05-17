@@ -121,42 +121,60 @@
     <value>σχετικά με</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Βαθμολογήστε αυτό app</value>
+    <value>Βαθμολογήστε αυτό το app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Πνευματικά δικαιώματα © Shane Church 2013</value>
+    <value>Πνευματικά δικαιώματα © Shane εκκλησία 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>εγγραφές απλή τροφίμων για τα windows τηλέφωνο</value>
+    <value>ένα περιοδικό το απλό φαγητό για windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Φάε σχεδιασμένο από Danny Chapman από το ουσιαστικό έργο</value>
+    <value>Τρώνε σχεδιασμένο από Danny Chapman από το ουσιαστικό έργο</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>εικονίδιο εφαρμογής</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>ΤΙ ΦΑΓΗΤΌ</value>
+    <value>Ό, ΤΙ ΤΡΏΩ</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Δεν υπάρχει τίποτα σε αυτήν την ημερομηνία. Προσθήκη κάτι!</value>
+    <value>Τίποτα δεν σχετικά με την ημερομηνία αυτή. Προσθέστε κάτι!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>Ενεργοποίηση συγχρονισμού</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>νέα καταχώρηση</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
-    <value>LeftToRight</value>
+    <value>: LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>el</value>
+    <value>EN-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>χαρακτηρισμός μου</value>
+    <value>ΠΟΣΟΣΤΟ με</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
     <value>ρυθμίσεις</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>Συγχρονισμός...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>συγχρονισμού</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>τεχνική υποστήριξη/σχόλια ηλεκτρονικού ταχυδρομείου</value>
+    <value>τεχνική υποστήριξη/ανατροφοδότηση email</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>ημερολόγιο</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Δεν βρέθηκαν καταχωρήσεις. Προσθέστε κάτι!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Περίληψη</value>
   </data>
 </root>

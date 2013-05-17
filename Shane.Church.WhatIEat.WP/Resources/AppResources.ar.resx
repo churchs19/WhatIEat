@@ -124,31 +124,34 @@
     <value>تقييم هذا التطبيق</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>حقوق الطبع والنشر © كنيسة شين 2013</value>
+    <value>حقوق الطبع والنشر © شين الكنيسة 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>دفتر يومية بسيطة الطعام الخاصة ب windows phone</value>
+    <value>مجلة غذاء بسيطة للهاتف windows</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>تناول الطعام تصميم تشابمان داني من "المشروع الاسمية"</value>
+    <value>أكل تصميم داني شابمان من "اسم المشروع"</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>رمز التطبيق</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>أنا يأكل</value>
+    <value>ما تناول الطعام</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>لا يوجد شئ في هذا التاريخ. إضافة أي شيء!</value>
+    <value>لا شيء في هذا التاريخ. إضافة شيء!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>تمكين المزامنة</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>إدخال جديد</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
-    <value>RightToLeft</value>
+    <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ar</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>معدل لي</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>إعدادات</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>مزامنة...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>المزامنة</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>البريد الإلكتروني الدعم الفني/الملاحظات</value>
+    <value>البريد الإلكتروني الدعم التقني/ردود فعل</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>التقويم</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>لم يتم العثور على لا إدخالات. إضافة شيء!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>ملخص</value>
   </data>
 </root>

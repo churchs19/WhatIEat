@@ -124,7 +124,7 @@
     <value>kadar aplikasi ini</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Hakcipta Terpelihara © Shane Church 2013</value>
+    <value>Hakcipta Terpelihara © Shane Gereja 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Jurnal makanan mudah untuk windows phone</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Apa-apa pada tarikh ini. Tambah sesuatu!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>mendayakan penyegerakan</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>entri baru</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ms</value>
+    <value>en-AS</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Saya Nilaikan</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>seting</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>menyegerakkan senarai main...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Segerak</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>e-mel sokongan teknikal/maklum balas</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>kalendar</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Tiada entri dijumpai. Tambah sesuatu!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Ringkasan</value>
   </data>
 </root>

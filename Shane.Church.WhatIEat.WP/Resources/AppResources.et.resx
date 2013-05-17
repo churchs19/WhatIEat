@@ -124,7 +124,7 @@
     <value>hinda seda app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane kirik 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>lihtsa toidu päevikut windows telefon</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Midagi sellel kuupäeval. Midagi lisada!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>luba sünkroonimine</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>Uus kanne</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>et</value>
+    <value>EN-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>hinda mind</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>seaded</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sünkroonimine...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sünkroonimine</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>tehniline tugi/tagasiside e-posti</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Kirjeid ei leitud. Midagi lisada!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Kokkuvõte</value>
   </data>
 </root>

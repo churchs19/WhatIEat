@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutLabel" xml:space="preserve">
-    <value>— informacje</value>
+    <value>o</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Oceń tej aplikacji</value>
+    <value>Oceń ten aplikacja</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane Kościół 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Arkusz proste żywności dla systemu windows phone</value>
+    <value>Dziennik żywności proste dla windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Zaprojektowana przez Danny Chapman z projektu rzeczownik jeść</value>
+    <value>Jeść zaprojektowane przez Danny Chapman od rzeczownika projektu</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
     <value>Ikona aplikacji</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Nic w tym dniu. Dodać coś!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>Włączanie synchronizacji</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>Nowy wpis</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>pl</value>
+    <value>EN US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Oceń mnie</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>Ustawienia</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>Synchronizowanie...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Synchronizacja</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>wsparcie techniczne/opinii e-mail</value>
+    <value>e-mail wsparcie techniczne/Opinie</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalendarz</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Nie znaleziono wpisów. Dodać coś!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Krótki opis</value>
   </data>
 </root>

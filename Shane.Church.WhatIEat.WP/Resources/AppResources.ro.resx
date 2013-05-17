@@ -124,7 +124,7 @@
     <value>rata de acest app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013</value>
+    <value>Copyright © Shane Biserica 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>un jurnal de hrană simplă pentru windows phone</value>
@@ -141,6 +141,9 @@
   <data name="EmptyEntryListLabel" xml:space="preserve">
     <value>Nimic pe această dată. Adauga ceva!</value>
   </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>permite sincronizarea</value>
+  </data>
   <data name="NewEntryLabel" xml:space="preserve">
     <value>Noua intrare</value>
   </data>
@@ -148,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ro</value>
+    <value>en-US</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>rata de mine</value>
@@ -156,7 +159,22 @@
   <data name="SettingsLabel" xml:space="preserve">
     <value>Setări</value>
   </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sincronizarea...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sincronizare</value>
+  </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>suport tehnic/feedback-ul e-mail</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>calendarul</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Nicio intrare găsită. Adauga ceva!</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Rezumat</value>
   </data>
 </root>
