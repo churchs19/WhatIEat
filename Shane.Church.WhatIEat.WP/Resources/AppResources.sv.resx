@@ -124,7 +124,7 @@
     <value>Betygsätt denna app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane kyrkan 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>en enkel mat tidning för windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>sv</value>
+    <value>sv-SE</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Betygsätt mig</value>

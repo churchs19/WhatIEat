@@ -118,63 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutLabel" xml:space="preserve">
-    <value>tentang</value>
+    <value>Acerca de</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>tingkat app ini</value>
+    <value>Esta aplicación de la tarifa</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Hak cipta © Shane Church 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>jurnal makanan sederhana untuk windows telepon</value>
+    <value>un diario de comida sencilla para windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Makan dirancang oleh Danny Chapman dari kata benda proyek</value>
+    <value>Comer diseñado por Danny Chapman el proyecto Sustantivo</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>aplikasi ikon</value>
+    <value>icono de la aplicación</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>APA YANG SAYA MAKAN</value>
+    <value>¿QUÉ COMER</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Tidak ada tanggal ini. Menambahkan sesuatu!</value>
+    <value>Nada en esta fecha. Añadir algo!</value>
   </data>
   <data name="EnableSyncLabel" xml:space="preserve">
-    <value>mengaktifkan sinkronisasi</value>
+    <value>activar la sincronización</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
-    <value>entri baru</value>
+    <value>nueva entrada</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>id-ID</value>
+    <value>es-MX</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>tingkat saya</value>
+    <value>Califícame</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
-    <value>pengaturan</value>
+    <value>Configuración</value>
   </data>
   <data name="SynchronizingLabel" xml:space="preserve">
-    <value>sinkronisasi...</value>
+    <value>sincronización...</value>
   </data>
   <data name="SyncLabel" xml:space="preserve">
     <value>Sync</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>email teknis dukungan/umpan balik</value>
+    <value>correo electrónico de apoyo/sugerencias técnicas</value>
   </data>
   <data name="CalendarLabel" xml:space="preserve">
-    <value>Kalender</value>
+    <value>calendario</value>
   </data>
   <data name="EmptySummaryListLabel" xml:space="preserve">
-    <value>Tidak ada entri yang ditemukan. Menambahkan sesuatu!</value>
+    <value>No hay entradas encontradas. Añadir algo!</value>
   </data>
   <data name="SummaryLabel" xml:space="preserve">
-    <value>Ringkasan</value>
+    <value>Resumen</value>
   </data>
 </root>

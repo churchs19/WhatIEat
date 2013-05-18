@@ -124,7 +124,7 @@
     <value>Esta aplicación de la tarifa</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane iglesia 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>un diario de comida sencilla para windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>es</value>
+    <value>es-ES</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Califícame</value>
@@ -163,7 +163,7 @@
     <value>sincronización...</value>
   </data>
   <data name="SyncLabel" xml:space="preserve">
-    <value>Sync</value>
+    <value>sinc</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
     <value>correo electrónico de apoyo/sugerencias técnicas</value>
@@ -175,6 +175,6 @@
     <value>No hay entradas encontradas. Añadir algo!</value>
   </data>
   <data name="SummaryLabel" xml:space="preserve">
-    <value>Resumen</value>
+    <value>resumen</value>
   </data>
 </root>

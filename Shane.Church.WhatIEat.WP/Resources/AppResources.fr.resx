@@ -124,7 +124,7 @@
     <value>noter ce $ $ etAPP</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane église 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>un journal alimentaire simple pour windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>fr</value>
+    <value>fr-FR</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>noter moi</value>

@@ -124,7 +124,7 @@
     <value>Rate this app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane kirkko 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>yksinkertainen ruoka päiväkirjaa, windows Phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>fi</value>
+    <value>fi-FI</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>arvostella minua</value>

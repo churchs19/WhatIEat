@@ -124,7 +124,7 @@
     <value>Hodnotiť tento app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane cirkvi 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>jednoduché jedlo denník pre windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>sk</value>
+    <value>sk-SK</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>hodnotiť me</value>

@@ -124,7 +124,7 @@
     <value>novērtēt šo app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane baznīcas 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows tālrunis vienkāršu ēdienu žurnālu</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>lv</value>
+    <value>lv-LV</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>mani novērtēja</value>

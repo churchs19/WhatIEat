@@ -124,7 +124,7 @@
     <value>kadar aplikasi ini</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Hakcipta Terpelihara © Shane Gereja 2013</value>
+    <value>Hakcipta Terpelihara © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Jurnal makanan mudah untuk windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>ms</value>
+    <value>ms-MY</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Saya Nilaikan</value>

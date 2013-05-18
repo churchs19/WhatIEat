@@ -121,25 +121,25 @@
     <value>sobre</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Classifique este app</value>
+    <value>Avalie este aplicativo</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Igreja 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>um diário de comida simples para windows phone</value>
+    <value>um diário de alimentos simples para o windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Comer projetado por Danny Chapman com o projeto de substantivo</value>
+    <value>Comer projetado por Danny Chapman do projeto do substantivo</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>ícone de aplicativo</value>
+    <value>ícone do aplicativo</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>O QUE COMER</value>
+    <value>O QUE POSSO COMER</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Nada nesta data. Acrescentar algo!</value>
+    <value>Nada nessa data. Adicione alguma coisa!</value>
   </data>
   <data name="EnableSyncLabel" xml:space="preserve">
     <value>habilitar a sincronização</value>
@@ -151,13 +151,13 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>pt</value>
+    <value>pt-BR</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>Rate me</value>
+    <value>a taxa de mim</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
-    <value>Configurações</value>
+    <value>configurações</value>
   </data>
   <data name="SynchronizingLabel" xml:space="preserve">
     <value>Sincronizando...</value>
@@ -166,13 +166,13 @@
     <value>sincronização</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>e-mail de suporte/feedback técnico</value>
+    <value>email de suporte técnico/comentários</value>
   </data>
   <data name="CalendarLabel" xml:space="preserve">
-    <value>calendário</value>
+    <value>Calendário</value>
   </data>
   <data name="EmptySummaryListLabel" xml:space="preserve">
-    <value>Nenhuma entrada encontrada. Acrescentar algo!</value>
+    <value>Nenhuma entrada encontrada. Adicione alguma coisa!</value>
   </data>
   <data name="SummaryLabel" xml:space="preserve">
     <value>Resumo</value>

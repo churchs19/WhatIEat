@@ -124,7 +124,7 @@
     <value>Oceń ten aplikacja</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Kościół 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Dziennik żywności proste dla windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>pl</value>
+    <value>pl-PL</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>Oceń mnie</value>

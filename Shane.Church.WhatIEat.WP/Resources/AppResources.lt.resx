@@ -124,7 +124,7 @@
     <value>Įvertinkite šią programą</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane bažnyčios 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows telefonas paprastas maisto žurnalą</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>lt</value>
+    <value>lt-LT</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>kurso me</value>

@@ -124,7 +124,7 @@
     <value>hinda seda app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane kirik 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>lihtsa toidu päevikut windows telefon</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>et</value>
+    <value>et-EE</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>hinda mind</value>

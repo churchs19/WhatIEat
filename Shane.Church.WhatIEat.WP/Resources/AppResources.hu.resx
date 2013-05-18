@@ -124,7 +124,7 @@
     <value>arány ez app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane templom 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>egy egyszerű étel napló a windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>hu</value>
+    <value>hu-HU</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>mértéke én</value>

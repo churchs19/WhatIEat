@@ -16,7 +16,7 @@
     <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
     <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>ar%3bbg%3bca%3bzh-CN%3bzh-TW%3bcs%3bda%3bnl%3bet%3bfi%3bfr%3bde%3bel%3bhe%3bhi%3bhu%3bid%3bit%3bja%3bko%3blv%3blt%3bms%3bno%3bfa%3bpl%3bpt%3bro%3bru%3bsk%3bes%3bsv%3bth%3btr%3buk%3bvi</SupportedCultures>
+    <SupportedCultures>ar%3bbg%3bca%3bzh-CN%3bzh-TW%3bcs%3bda%3bnl%3bet%3bfi%3bfr%3bde%3bel%3bhe%3bhi%3bhu%3bid%3bit%3bja%3bko%3blv%3blt%3bms%3bno%3bfa%3bpl%3bpt%3bro%3bru%3bsk%3bes%3bsv%3bth%3btr%3buk%3bvi%3ben-GB%3ben-US%3bpt-BR%3bpt-PT</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>Shane.Church.WhatIEat.WP.xap</XapFilename>
@@ -253,7 +253,8 @@
     <EmbeddedResource Include="Resources\AppResources.da.resx" />
     <EmbeddedResource Include="Resources\AppResources.de.resx" />
     <EmbeddedResource Include="Resources\AppResources.el.resx" />
-    <EmbeddedResource Include="Resources\AppResources.es.resx" />
+    <EmbeddedResource Include="Resources\AppResources.en-US.resx" />
+    <EmbeddedResource Include="Resources\AppResources.es-ES.resx" />
     <EmbeddedResource Include="Resources\AppResources.et.resx" />
     <EmbeddedResource Include="Resources\AppResources.fa.resx" />
     <EmbeddedResource Include="Resources\AppResources.fi.resx" />
@@ -271,6 +272,7 @@
     <EmbeddedResource Include="Resources\AppResources.nl.resx" />
     <EmbeddedResource Include="Resources\AppResources.no.resx" />
     <EmbeddedResource Include="Resources\AppResources.pl.resx" />
+    <EmbeddedResource Include="Resources\AppResources.pt-PT.resx" />
     <EmbeddedResource Include="Resources\AppResources.pt.resx" />
     <EmbeddedResource Include="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -287,6 +289,12 @@
     <EmbeddedResource Include="Resources\AppResources.vi.resx" />
     <EmbeddedResource Include="Resources\AppResources.zh-CN.resx" />
     <EmbeddedResource Include="Resources\AppResources.zh-TW.resx" />
+    <EmbeddedResource Include="Resources\AppResources.en-GB.resx">
+      <LastGenOutput>AppResources.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.pt-BR.resx" />
+    <EmbeddedResource Include="Resources\AppResources.es-MX.resx" />
+    <EmbeddedResource Include="Resources\AppResources.es.resx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shane.Church.Utility.Core.WP\Shane.Church.Utility.Core.WP.csproj">

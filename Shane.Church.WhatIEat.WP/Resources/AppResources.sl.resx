@@ -124,7 +124,7 @@
     <value>Ocenite to app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane cerkev 2013</value>
+    <value>Copyright © Shane Church 2013</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>preprosto hrano revija za windows phone</value>
@@ -151,7 +151,7 @@
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
-    <value>sl</value>
+    <value>sl-SL</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>stopnja me</value>
