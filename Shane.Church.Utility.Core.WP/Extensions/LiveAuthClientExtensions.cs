@@ -15,9 +15,13 @@ namespace Shane.Church.Utility.Core.WP.Extensions
 			  new TaskCompletionSource<LiveLoginResult>();
 			client.LoginCompleted += (sender, args) =>
 			{
-				if (args.Error != null) tcs.SetException(args.Error);
-				else if (args.Cancelled) tcs.SetCanceled();
-				else tcs.SetResult(new LiveLoginResult(args.Status, args.Session));
+				try
+				{
+					if (args.Error != null) tcs.SetException(args.Error);
+					else if (args.Cancelled) tcs.SetCanceled();
+					else tcs.SetResult(new LiveLoginResult(args.Status, args.Session));
+				}
+				catch (InvalidOperationException) { }
 			};
 			if (userState == null)
 				client.LoginAsync(scopes);
@@ -32,9 +36,13 @@ namespace Shane.Church.Utility.Core.WP.Extensions
 			  new TaskCompletionSource<LiveLoginResult>();
 			client.InitializeCompleted += (sender, args) =>
 			{
-				if (args.Error != null) tcs.SetException(args.Error);
-				else if (args.Cancelled) tcs.SetCanceled();
-				else tcs.SetResult(new LiveLoginResult(args.Status, args.Session));
+				try
+				{
+					if (args.Error != null) tcs.SetException(args.Error);
+					else if (args.Cancelled) tcs.SetCanceled();
+					else tcs.SetResult(new LiveLoginResult(args.Status, args.Session));
+				}
+				catch (InvalidOperationException) { }
 			};
 			if (userState == null)
 				client.InitializeAsync(scopes);

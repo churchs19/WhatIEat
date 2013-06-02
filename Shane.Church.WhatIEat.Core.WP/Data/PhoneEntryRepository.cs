@@ -42,8 +42,9 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 			lock (_lock)
 			{
 				var filterDelegate = filter.Compile();
-				var results = _context.Entries.Select(it => (IEntry)it).ToList().Where(it => includeDeleted ? filterDelegate(it) : filterDelegate(it) && (!it.IsDeleted.HasValue || (it.IsDeleted.HasValue && !it.IsDeleted.Value))).AsQueryable();
-				return results;
+				var allResults = _context.Entries.Select(it => (IEntry)it).ToList();
+				var results = allResults.Where(it => includeDeleted ? filterDelegate(it) : filterDelegate(it) && (!it.IsDeleted.HasValue || (it.IsDeleted.HasValue && !it.IsDeleted.Value))).ToList();
+				return results.AsQueryable();
 			}
 		}
 

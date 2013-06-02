@@ -130,7 +130,9 @@ namespace Shane.Church.WhatIEat.WP
 			}
 			_model.Initialize();
 			this.MainRadCalendar.AppointmentSource = new EntriesAppointmentSource(_model);
+			this.summaryJumpList.GroupPickerItemsSource = null;
 			this.summaryJumpList.GroupPickerItemsSource = _model.SummaryGroups;
+			this.summaryJumpList.ItemsSource = null;
 			this.summaryJumpList.ItemsSource = _model.SummaryEntries;
 			InitializeApplicationBar();
 			base.OnNavigatedTo(e);

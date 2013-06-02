@@ -15,9 +15,13 @@ namespace Shane.Church.Utility.Core.WP.Extensions
 			  new TaskCompletionSource<LiveOperationResult>();
 			client.GetCompleted += (sender, args) =>
 			{
-				if (args.Error != null) tcs.SetException(args.Error);
-				else if (args.Cancelled) tcs.SetCanceled();
-				else tcs.SetResult(new LiveOperationResult(args.Result, args.RawResult));
+				try
+				{
+					if (args.Error != null) tcs.SetException(args.Error);
+					else if (args.Cancelled) tcs.SetCanceled();
+					else tcs.SetResult(new LiveOperationResult(args.Result, args.RawResult));
+				}
+				catch (InvalidOperationException) { }
 			};
 			if (userState == null)
 				client.GetAsync(path);
