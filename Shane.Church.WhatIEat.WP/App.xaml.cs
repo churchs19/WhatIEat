@@ -125,17 +125,29 @@ namespace Shane.Church.WhatIEat.WP
 			rateReminder.RecurrencePerUsageCount = 5;
 			rateReminder.AllowUsersToSkipFurtherReminders = true;
 
-			if (Mangopollo.Utils.CanUseLiveTiles)
+			//if (Mangopollo.Utils.CanUseLiveTiles)
+			//{
+			//	var tile = ShellTile.ActiveTiles.First();
+			//	var flipTileData = new Mangopollo.Tiles.FlipTileData
+			//			{
+			//				Title = AppResources.AppTitle,
+			//				SmallBackgroundImage = new Uri("/SmallApplicationIcon.png", UriKind.Relative),
+			//				BackgroundImage = new Uri("/MediumApplicationIcon.png", UriKind.Relative),
+			//				WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative),
+			//			};
+			//	tile.Update(flipTileData);
+			//}
+			if (LiveTileHelper.AreNewTilesSupported)
 			{
 				var tile = ShellTile.ActiveTiles.First();
-				var flipTileData = new Mangopollo.Tiles.FlipTileData
-						{
-							Title = AppResources.AppTitle,
-							SmallBackgroundImage = new Uri("/SmallApplicationIcon.png", UriKind.Relative),
-							BackgroundImage = new Uri("/MediumApplicationIcon.png", UriKind.Relative),
-							WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative),
-						};
-				tile.Update(flipTileData);
+				var flipTileData = new RadFlipTileData()
+				{
+					Title = AppResources.AppTitle,
+					SmallBackgroundImage = new Uri("/SmallApplicationIcon.png", UriKind.Relative),
+					BackgroundImage = new Uri("/MediumApplicationIcon.png", UriKind.Relative),
+					WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative)
+				};
+				LiveTileHelper.UpdateTile(tile, flipTileData);
 			}
 		}
 

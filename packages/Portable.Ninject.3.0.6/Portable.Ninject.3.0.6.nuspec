@@ -15,13 +15,8 @@
 Portable version of Ninject for .NET4, SL4, WP7.5+ and Store apps</description>
     <summary>IoC container for .NET</summary>
     <releaseNotes>This version has been combined into a single package using NuGet 2.1</releaseNotes>
+    <copyright />
+    <language />
     <tags>Ninject ioc di portable pcl</tags>
-    <references>
-      <reference file="Ninject.Common.dll" />
-      <reference file="Ninject.NetFx.dll" />
-      <reference file="Ninject.WinRT.dll" />
-      <reference file="Ninject.WP.dll" />
-      <reference file="Ninject.SL4.dll" />
-    </references>
   </metadata>
 </package>
