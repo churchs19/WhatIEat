@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{398C5803-9390-4C89-AD1C-2EA4D1E94482}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shane.Church.WhatIEat.WP</RootNamespace>
+    <AssemblyName>WhatIEat.WP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>ar%3bbg%3bca%3bzh-CN%3bzh-TW%3bcs%3bda%3bnl%3ben-GB%3ben-US%3bet%3bfi%3bfr%3bde%3bel%3bhe%3bhi%3bhu%3bid%3bit%3bja%3bko%3blv%3blt%3bms%3bno%3bfa-IR%3bpl%3bpt%3bpt-BR%3bpt-PT%3bro%3bru%3bsk%3bes%3bsv%3bth%3btr%3buk%3bvi</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Shane.Church.WhatIEat.WP8_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Shane.Church.WhatIEat.WP.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\EntryTemplateSelector.cs">
+      <Link>Helpers\EntryTemplateSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\LocalizedDateConverter.cs">
+      <Link>Helpers\LocalizedDateConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\NonEmptyDateValidator.cs">
+      <Link>Helpers\NonEmptyDateValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\TextBinding.cs">
+      <Link>Helpers\TextBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.Designer.cs">
+      <Link>Resources\AppResources.Designer.cs</Link>
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DateEdit.xaml.cs">
+      <DependentUpon>DateEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainCalendar.xaml.cs">
+      <DependentUpon>MainCalendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\EntriesAppointmentSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Fonts\LiveSymbol.ttf" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\About.png">
+      <Link>Images\About.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\Add.png">
+      <Link>Images\Add.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\DateTimePickerCancel.png">
+      <Link>Images\DateTimePickerCancel.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\DateTimePickerOk.png">
+      <Link>Images\DateTimePickerOk.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\Microsoft-Windows.png">
+      <Link>Images\Microsoft-Windows.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\Rating.png">
+      <Link>Images\Rating.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\Remove.png">
+      <Link>Images\Remove.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\Settings.png">
+      <Link>Images\Settings.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\Synchronize.png">
+      <Link>Images\Synchronize.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ApplicationIcon.png" />
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Background.png" />
+    <Content Include="MediumApplicationIcon.png" />
+    <Content Include="SmallApplicationIcon.png" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="SplashScreenImage.Screen-720p.jpg" />
+    <Content Include="SplashScreenImage.Screen-WVGA.jpg" />
+    <Content Include="SplashScreenImage.Screen-WXGA.jpg" />
+    <Content Include="WideApplicationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=6.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=6.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Live, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LiveSDK.5.4\lib\WindowsPhone8\Microsoft.Live.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Live.Controls, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LiveSDK.5.4\lib\WindowsPhone8\Microsoft.Live.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\wp8\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\wp8\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Phone">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\wp8\Microsoft.Threading.Tasks.Extensions.Phone.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\packages\WindowsAzure.MobileServices.1.0.1\lib\wp8\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\packages\WindowsAzure.MobileServices.1.0.1\lib\wp8\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.UI">
+      <HintPath>..\packages\WindowsAzure.MobileServices.1.0.1\lib\wp8\Microsoft.WindowsAzure.Mobile.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Common">
+      <HintPath>..\packages\Portable.Ninject.3.0.6\lib\sl4-wp71\Ninject.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.WP">
+      <HintPath>..\packages\Portable.Ninject.3.0.6\lib\sl4-wp71\Ninject.WP.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.1.10\lib\sl4-windowsphone71\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.1.10\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.1.10\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Data, Version=2013.2.704.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCWP\2013.2.704.3040\Telerik.Windows.Controls.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Input, Version=2013.2.704.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCWP\2013.2.704.3040\Telerik.Windows.Controls.Input.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Primitives, Version=2013.2.704.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCWP\2013.2.704.3040\Telerik.Windows.Controls.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Core, Version=2013.2.704.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCWP\2013.2.704.3040\Telerik.Windows.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Data, Version=2013.2.704.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCWP\2013.2.704.3040\Telerik.Windows.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.ar.resx">
+      <Link>Resources\AppResources.ar.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.bg.resx">
+      <Link>Resources\AppResources.bg.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.ca.resx">
+      <Link>Resources\AppResources.ca.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.cs.resx">
+      <Link>Resources\AppResources.cs.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.da.resx">
+      <Link>Resources\AppResources.da.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.de.resx">
+      <Link>Resources\AppResources.de.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.el.resx">
+      <Link>Resources\AppResources.el.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.en-GB.resx">
+      <Link>Resources\AppResources.en-GB.resx</Link>
+      <LastGenOutput>AppResources.en-GB.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.en-US.resx">
+      <Link>Resources\AppResources.en-US.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.es-ES.resx">
+      <Link>Resources\AppResources.es-ES.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.es-MX.resx">
+      <Link>Resources\AppResources.es-MX.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.es.resx">
+      <Link>Resources\AppResources.es.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.et.resx">
+      <Link>Resources\AppResources.et.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.fa.resx">
+      <Link>Resources\AppResources.fa.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.fi.resx">
+      <Link>Resources\AppResources.fi.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.fr.resx">
+      <Link>Resources\AppResources.fr.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.he.resx">
+      <Link>Resources\AppResources.he.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.hi.resx">
+      <Link>Resources\AppResources.hi.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.hu.resx">
+      <Link>Resources\AppResources.hu.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.id.resx">
+      <Link>Resources\AppResources.id.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.it.resx">
+      <Link>Resources\AppResources.it.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.ja.resx">
+      <Link>Resources\AppResources.ja.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.ko.resx">
+      <Link>Resources\AppResources.ko.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.lt.resx">
+      <Link>Resources\AppResources.lt.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.lv.resx">
+      <Link>Resources\AppResources.lv.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.ms.resx">
+      <Link>Resources\AppResources.ms.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.nl.resx">
+      <Link>Resources\AppResources.nl.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.no.resx">
+      <Link>Resources\AppResources.no.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.pl.resx">
+      <Link>Resources\AppResources.pl.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.pt-BR.resx">
+      <Link>Resources\AppResources.pt-BR.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.pt-PT.resx">
+      <Link>Resources\AppResources.pt-PT.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.pt.resx">
+      <Link>Resources\AppResources.pt.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.resx">
+      <Link>Resources\AppResources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.ro.resx">
+      <Link>Resources\AppResources.ro.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.ru.resx">
+      <Link>Resources\AppResources.ru.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.sk.resx">
+      <Link>Resources\AppResources.sk.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.sl.resx">
+      <Link>Resources\AppResources.sl.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.sv.resx">
+      <Link>Resources\AppResources.sv.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.th.resx">
+      <Link>Resources\AppResources.th.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.tr.resx">
+      <Link>Resources\AppResources.tr.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.uk.resx">
+      <Link>Resources\AppResources.uk.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.vi.resx">
+      <Link>Resources\AppResources.vi.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.zh-CN.resx">
+      <Link>Resources\AppResources.zh-CN.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.WhatIEat.WP\Resources\AppResources.zh-TW.resx">
+      <Link>Resources\AppResources.zh-TW.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\Shane.Church.WhatIEat.WP\Calendar.xaml">
+      <Link>Calendar.xaml</Link>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DateEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainCalendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shane.Church.Utility.Core.WP\Shane.Church.Utility.Core.WP.csproj">
+      <Project>{75A3873F-015F-4784-B6A6-8A4484FBE48D}</Project>
+      <Name>Shane.Church.Utility.Core.WP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shane.Church.Utility.Core\Shane.Church.Utility.Core.csproj">
+      <Project>{A28A5353-AFBB-4F9E-A1AA-1C9B49523028}</Project>
+      <Name>Shane.Church.Utility.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shane.Church.WhatIEat.Core.WP\Shane.Church.WhatIEat.Core.WP.csproj">
+      <Project>{3EE5E38D-6925-4986-A255-E5CBEAEF1F1E}</Project>
+      <Name>Shane.Church.WhatIEat.Core.WP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shane.Church.WhatIEat.Core\Shane.Church.WhatIEat.Core.csproj">
+      <Project>{48CE040C-6715-4630-891F-84F47BD96CA4}</Project>
+      <Name>Shane.Church.WhatIEat.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.7\tools\Microsoft.Bcl.Build.targets" />
+</Project>

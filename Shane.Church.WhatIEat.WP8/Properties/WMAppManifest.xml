@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en" />
+  <Languages xmlns="">
+    <Language code="ar" />
+    <Language code="bg" />
+    <Language code="ca" />
+    <Language code="zh-CN" />
+    <Language code="zh-TW" />
+    <Language code="cs" />
+    <Language code="da" />
+    <Language code="nl" />
+    <Language code="en" />
+    <Language code="en-GB" />
+    <Language code="en-US" />
+    <Language code="et" />
+    <Language code="fi" />
+    <Language code="fr" />
+    <Language code="de" />
+    <Language code="he" />
+    <Language code="el" />
+    <Language code="hi" />
+    <Language code="hu" />
+    <Language code="id" />
+    <Language code="it" />
+    <Language code="ja" />
+    <Language code="ko" />
+    <Language code="lv" />
+    <Language code="lt" />
+    <Language code="ms" />
+    <Language code="no" />
+    <Language code="fa" />
+    <Language code="pl" />
+    <Language code="pt" />
+    <Language code="pt-BR" />
+    <Language code="pt-PT" />
+    <Language code="ro" />
+    <Language code="ru" />
+    <Language code="sk" />
+    <Language code="es" />
+    <Language code="sv" />
+    <Language code="th" />
+    <Language code="tr" />
+    <Language code="uk" />
+    <Language code="vi" />
+  </Languages>
+  <App xmlns="" ProductID="{d2c8145e-8508-40ba-9828-175d5b1efabe}" Title="What I Eat" RuntimeType="Silverlight" Version="2.2.0.0" Genre="apps.normal" Author="Shane Church" Description="A simple food journal for Windows Phone" Publisher="Shane Church" PublisherID="{4526ac90-c781-4afd-8e92-30c4887c2ad4}">
+    <IconPath IsRelative="true" IsResource="false">MediumApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainCalendar.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="DataBoundToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">SmallApplicationIcon.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">MediumApplicationIcon.png</BackgroundImageURI>
+          <Title>What I Eat</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">WideApplicationIcon.png</LargeBackgroundImageURI>
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
+          </LargeBackBackgroundImageURI>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>True</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
