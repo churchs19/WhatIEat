@@ -433,6 +433,10 @@
       <Project>{A28A5353-AFBB-4F9E-A1AA-1C9B49523028}</Project>
       <Name>Shane.Church.Utility.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Shane.Church.WhatIEat.Core.WP8\Shane.Church.WhatIEat.Core.WP8.csproj">
+      <Project>{6FD9D4E2-2279-46A1-B868-D34D3F8FC586}</Project>
+      <Name>Shane.Church.WhatIEat.Core.WP8</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shane.Church.WhatIEat.Core.WP\Shane.Church.WhatIEat.Core.WP.csproj">
       <Project>{3EE5E38D-6925-4986-A255-E5CBEAEF1F1E}</Project>
       <Name>Shane.Church.WhatIEat.Core.WP</Name>

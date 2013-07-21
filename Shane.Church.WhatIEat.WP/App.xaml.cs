@@ -27,6 +27,7 @@ using System.Windows.Markup;
 using System.Diagnostics;
 using System.Reflection;
 using Microsoft.WindowsAzure.MobileServices;
+using Shane.Church.WhatIEat.Core.WP7.Services;
 
 namespace Shane.Church.WhatIEat.WP
 {
@@ -87,7 +88,7 @@ namespace Shane.Church.WhatIEat.WP
 				client.SerializerSettings.Converters.Remove(client.SerializerSettings.Converters.Where(its => its is Microsoft.WindowsAzure.MobileServices.MobileServiceIsoDateTimeConverter).FirstOrDefault());
 				return client;
 			});
-			KernelService.Kernel.Bind<SyncService>().To<PhoneSyncService>().InSingletonScope();
+			KernelService.Kernel.Bind<SyncService>().To<WP7SyncService>().InSingletonScope();
 
 			// Show graphics profiling information while debugging.
 			if (System.Diagnostics.Debugger.IsAttached)
@@ -231,7 +232,7 @@ namespace Shane.Church.WhatIEat.WP
 
 			if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
 			{
-				if (await ((PhoneSyncService)KernelService.Kernel.Get<SyncService>()).LiveLoginSilent())
+				if (await ((WP7SyncService)KernelService.Kernel.Get<SyncService>()).LiveLoginSilent())
 				{
 					KernelService.Kernel.Get<MainViewModel>().SyncCommand.Execute(null);
 				}
@@ -249,7 +250,7 @@ namespace Shane.Church.WhatIEat.WP
 
 				if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
 				{
-					if (await ((PhoneSyncService)KernelService.Kernel.Get<SyncService>()).LiveLoginSilent())
+					if (await ((WP7SyncService)KernelService.Kernel.Get<SyncService>()).LiveLoginSilent())
 					{
 						KernelService.Kernel.Get<MainViewModel>().SyncCommand.Execute(null);
 					}

@@ -209,6 +209,7 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Shane.Church.WhatIEat.WP_2013_07_21_16_41_17.sap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">
@@ -342,6 +343,10 @@
     <ProjectReference Include="..\Shane.Church.Utility.Core\Shane.Church.Utility.Core.csproj">
       <Project>{A28A5353-AFBB-4F9E-A1AA-1C9B49523028}</Project>
       <Name>Shane.Church.Utility.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shane.Church.WhatIEat.Core.WP7\Shane.Church.WhatIEat.Core.WP7.csproj">
+      <Project>{46BA9DE0-E6BC-4793-8414-49EC2C1C656B}</Project>
+      <Name>Shane.Church.WhatIEat.Core.WP7</Name>
     </ProjectReference>
     <ProjectReference Include="..\Shane.Church.WhatIEat.Core.WP\Shane.Church.WhatIEat.Core.WP.csproj">
       <Project>{3EE5E38D-6925-4986-A255-E5CBEAEF1F1E}</Project>
