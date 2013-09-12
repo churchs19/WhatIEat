@@ -24,6 +24,12 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			protected set;
 		}
 
+        public ICommand OtherAppsCommand
+        {
+            get;
+            protected set;
+        }
+
 		public ICommand GoToSChurchNetCommand
 		{
 			get;

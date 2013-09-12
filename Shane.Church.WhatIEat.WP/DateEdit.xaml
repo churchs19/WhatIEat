@@ -6,7 +6,6 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:ad="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
 	xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
     xmlns:System="clr-namespace:System;assembly=mscorlib" 
 	xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Binding"
@@ -154,16 +153,19 @@
 										  ExecuteActionOnReturn="True"
 										  TextChanged="newEntry_TextChanged" />
 			<Border BorderBrush="{StaticResource AppBaseColor2Brush}" BorderThickness="0,1,0,0" Grid.Row="1"/>
-			<StackPanel Grid.Row="2">
-				<ad:AdControl Name="AdControl" 
-					Height="80" 
-					Width="480" 
-					Margin="0,0,0,30"
-					IsAutoRefreshEnabled="True"
-					ErrorOccurred="AdControl_ErrorOccurred"
-					AdRefreshed="AdControl_AdRefreshed"/>
-			</StackPanel>
-		</Grid>
+            <StackPanel Grid.Row="2" MaxHeight="110">
+                <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
+                                  AppID="ShaneChurch_WhatIEat_WP"
+                                  AdType="IaAdType_Banner"
+                                  ReloadTime="30"
+                                  Keywords="food,health,weight,weight loss,gourmet,loss,diet,crossfit,exercise"
+                                  OptionalAdHeight="80"
+                                  OptionalAdWidth="480"
+                                  AdAlignment="BOTTOM_CENTER"
+                                  Margin="0,0,0,30"
+                                  Name="AdControl" />
+            </StackPanel>
+        </Grid>
     </Grid>
 
 </phone:PhoneApplicationPage>

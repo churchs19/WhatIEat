@@ -130,6 +130,7 @@
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\OtherAppCommand.cs" />
     <Compile Include="Commands\RateThisAppCommand.cs" />
     <Compile Include="Commands\SendAnEmailCommand.cs" />
     <Compile Include="Data\PhoneDataContext.cs" />

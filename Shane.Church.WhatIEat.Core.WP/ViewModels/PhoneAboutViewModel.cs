@@ -14,6 +14,7 @@ namespace Shane.Church.WhatIEat.Core.WP.ViewModels
 		{
 			RateThisAppCommand = new RateThisAppCommand();
 			SendAnEmailCommand = new SendAnEmailCommand();
+            OtherAppsCommand = new OtherAppsCommand();
 
 			var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
 			Version = versionAttrib.Version.ToString();

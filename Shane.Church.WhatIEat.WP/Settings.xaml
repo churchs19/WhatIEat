@@ -6,7 +6,6 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:ad="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
     xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
     xmlns:viewModels="clr-namespace:Shane.Church.WhatIEat.WP.ViewModels"
     xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
@@ -79,15 +78,18 @@
 				</Button>
 			</StackPanel>
 
-			<StackPanel Grid.Row="1">
-				<ad:AdControl x:Name="AdControl" 
-					Height="80" 
-					Width="480" 
-					Margin="0,0,0,0"
-					IsAutoRefreshEnabled="True"
-					ErrorOccurred="AdControl_ErrorOccurred"
-					AdRefreshed="AdControl_AdRefreshed"/>
-			</StackPanel>
+			<StackPanel Grid.Row="1" MaxHeight="110">
+                <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
+                                  AppID="ShaneChurch_WhatIEat_WP"
+                                  AdType="IaAdType_Banner"
+                                  ReloadTime="30"
+                                  Keywords="food,health,weight,weight loss,gourmet,loss,diet,crossfit,exercise"
+                                  OptionalAdHeight="80"
+                                  OptionalAdWidth="480"
+                                  AdAlignment="BOTTOM_CENTER"
+                                  Margin="0,0,0,30"
+                                  Name="AdControl" />
+            </StackPanel>
 		</Grid>
 
 		<telerikPrimitives:RadBusyIndicator 

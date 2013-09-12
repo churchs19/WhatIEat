@@ -177,4 +177,7 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>summary</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>other apps by Shane Church</value>
+  </data>
 </root>

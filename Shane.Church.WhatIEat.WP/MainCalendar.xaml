@@ -10,7 +10,6 @@
     xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
     xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
 	xmlns:telerikData="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Data"
-	xmlns:ad="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
     xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
     xmlns:viewModels="clr-namespace:Shane.Church.WhatIEat.WP.ViewModels"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
@@ -157,17 +156,20 @@
 		</Controls:Pivot>
 
 
-		<StackPanel Grid.Row="1">
-			<ad:AdControl Name="AdControl" 
-					Height="80" 
-					Width="480" 
-					Margin="0,0,0,30"
-					IsAutoRefreshEnabled="True"
-					ErrorOccurred="AdControl_ErrorOccurred"
-					AdRefreshed="AdControl_AdRefreshed"/>
-		</StackPanel>
+        <StackPanel Grid.Row="1" MaxHeight="110">
+            <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
+                                  AppID="ShaneChurch_WhatIEat_WP"
+                                  AdType="IaAdType_Banner"
+                                  ReloadTime="30"
+                                  Keywords="food,health,weight,weight loss,gourmet,loss,diet,crossfit,exercise"
+                                  OptionalAdHeight="80"
+                                  OptionalAdWidth="480"
+                                  AdAlignment="BOTTOM_CENTER"
+                                  Margin="0,0,0,30"
+                                  Name="AdControl" />
+        </StackPanel>
 
-		<telerikPrimitives:RadBusyIndicator 
+        <telerikPrimitives:RadBusyIndicator 
 			Grid.Row="0" 
 			Grid.Column="0" 
 			Grid.RowSpan="2" 

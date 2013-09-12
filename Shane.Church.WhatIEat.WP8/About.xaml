@@ -33,6 +33,7 @@
 				<RowDefinition Height="Auto"/>
 				<RowDefinition Height="Auto"/>
 				<RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
 				<RowDefinition />
 			</Grid.RowDefinitions>
 
@@ -71,8 +72,16 @@
                 Foreground="{StaticResource AppBaseColor3Brush}" 
                 FontSize="{StaticResource PhoneFontSizeNormal}" 
                 Command="{Binding RateThisAppCommand}"/>
-			<StackPanel
-				Grid.Row="4"
+            <HyperlinkButton 
+                Grid.Row="4"
+                Content="{Binding LocalizedResources.AboutOtherAppsLabel, Source={StaticResource LocalizedStrings}}" 
+                Margin="0,12,0,0" 
+                HorizontalAlignment="Left" 
+                Foreground="{StaticResource AppBaseColor3Brush}" 
+                FontSize="{StaticResource PhoneFontSizeNormal}" 
+                Command="{Binding OtherAppsCommand}"/>
+            <StackPanel
+				Grid.Row="5"
 				Margin="12,12,12,0"
 				VerticalAlignment="Top">
 				<TextBlock
@@ -87,7 +96,7 @@
 					Foreground="{StaticResource AppBaseColor2Brush}" 
 					FontSize="{StaticResource PhoneFontSizeNormal}" />
 			</StackPanel>
-			<StackPanel Grid.Row="5" Margin="12,0,12,50" VerticalAlignment="Bottom">
+			<StackPanel Grid.Row="6" Margin="12,0,12,50" VerticalAlignment="Bottom">
 				<TextBlock 
                     Text="{Binding LocalizedResources.AppCopyright, Source={StaticResource LocalizedStrings}}" 
                     Margin="0,12,0,0" 
