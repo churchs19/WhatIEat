@@ -13,7 +13,7 @@
     xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="False">
 
 	<phone:PhoneApplicationPage.Resources>
 		<telerik:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
@@ -75,7 +75,7 @@
 				</Button>
 			</StackPanel>
 
-			<StackPanel Grid.Row="1">
+            <StackPanel x:Name="AdPanel" Grid.Row="1" Margin="0,0,0,30">
                 <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
                                   AppID="ShaneChurch_WhatIEat_WP"
                                   AdType="IaAdType_Banner"
@@ -84,7 +84,6 @@
                                   OptionalAdHeight="80"
                                   OptionalAdWidth="480"
                                   AdAlignment="BOTTOM_CENTER"
-                                  Margin="0,0,0,30"
                                   Name="AdControl" />
             </StackPanel>
 		</Grid>

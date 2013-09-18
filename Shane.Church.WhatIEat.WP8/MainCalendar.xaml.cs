@@ -93,8 +93,8 @@ namespace Shane.Church.WhatIEat.WP
 			AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
 
 #if PERSONAL
-			AdControl.IsEnabled = false;
-			AdControl.Height = 0;
+			AdPanel.Children.Remove(AdControl);
+			AdControl = null;
 #endif
 		}
 

@@ -30,8 +30,8 @@ namespace Shane.Church.WhatIEat.WP
 			AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
 
 #if PERSONAL
-			AdControl.IsEnabled = false;
-			AdControl.Height = 0;
+			AdPanel.Children.Remove(AdControl);
+			AdControl = null;
 #endif
 		}
 
@@ -160,6 +160,7 @@ namespace Shane.Church.WhatIEat.WP
 
 		private void entryModel_SaveActionCompleted(object sender, EventArgs e)
 		{
+			FlurryWP8SDK.Api.LogEvent("Entry_Saved");
 			if (sender is EntryViewModel)
 			{
 				Dispatcher.BeginInvoke(() =>

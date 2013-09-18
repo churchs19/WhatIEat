@@ -70,6 +70,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FlurryWP8SDK">
+      <HintPath>..\lib\Flurry WindowsPhone SDK vWP8 3.1.2\FlurryWP8SDK.dll</HintPath>
+    </Reference>
     <Reference Include="Inneractive.Ad">
       <HintPath>..\lib\InneractiveAdSDK\WP7\Inneractive.Ad.dll</HintPath>
     </Reference>
