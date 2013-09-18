@@ -1,0 +1,22 @@
+Link targets with SiteCatalyst tags
+
+300x50	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+300x75	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+216x36	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+216x54	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+168x42	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+168x28	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+120x20	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+120x30	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+728x90	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+468x60	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+300x250	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+234x60	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+160x600	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+120x600	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+320x53	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+300x250	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+300x50	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+216x36	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+168x28	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
+120x20	http://www.windowsphone.com/en-us/store/app/what-i-eat/225b965d-d41f-440b-9e56-f03a550052e8
