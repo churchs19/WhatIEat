@@ -178,6 +178,15 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to no.
+        /// </summary>
+        public static string No {
+            get {
+                return ResourceManager.GetString("No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {
@@ -246,6 +255,33 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         public static string TechnicalSupportEmailLabel {
             get {
                 return ResourceManager.GetString("TechnicalSupportEmailLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An upgrade is available! Do you want to install the upgrade now?.
+        /// </summary>
+        public static string UpgradeText {
+            get {
+                return ResourceManager.GetString("UpgradeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upgrade Available!.
+        /// </summary>
+        public static string UpgradeTitle {
+            get {
+                return ResourceManager.GetString("UpgradeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to yes.
+        /// </summary>
+        public static string Yes {
+            get {
+                return ResourceManager.GetString("Yes", resourceCulture);
             }
         }
     }

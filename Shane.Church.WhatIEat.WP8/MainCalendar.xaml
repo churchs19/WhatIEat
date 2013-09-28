@@ -12,14 +12,21 @@
 	xmlns:telerikData="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Data"
     xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
     xmlns:viewModels="clr-namespace:Shane.Church.WhatIEat.WP.ViewModels"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
+	d:DesignHeight="800" 
+	d:DesignWidth="480"
     shell:SystemTray.IsVisible="False">
 
-	<Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
+    <i:Interaction.Behaviors>
+        <helpers:UpgradeBehavior x:Name="upgradeBehavior"/>
+    </i:Interaction.Behaviors>
+    
+    <Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"/>
 			<RowDefinition Height="Auto"/>

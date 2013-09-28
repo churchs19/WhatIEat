@@ -5,6 +5,7 @@ using Ninject;
 using Shane.Church.WhatIEat.Core.Data;
 using Shane.Church.WhatIEat.Core.Services;
 using Shane.Church.WhatIEat.Core.ViewModels;
+using Shane.Church.WhatIEat.Core.WP;
 using Shane.Church.WhatIEat.Core.WP.Data;
 using Shane.Church.WhatIEat.Core.WP.Services;
 using Shane.Church.WhatIEat.Core.WP.ViewModels;
@@ -221,7 +222,7 @@ namespace Shane.Church.WhatIEat.WP
 			//Before using any of the ApplicationBuildingBlocks, this class should be initialized with the version of the application.
 			var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
 			ApplicationUsageHelper.Init(versionAttrib.Version.ToString());
-			FlurryWP8SDK.Api.StartSession("93H3RHMX3CW4N7XXDVFZ");
+			FlurryWP8SDK.Api.StartSession(FlurryConfig.ApiKey);
 
 			if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
 			{
@@ -236,7 +237,7 @@ namespace Shane.Church.WhatIEat.WP
 		// This code will not execute when the application is first launched
 		private async void Application_Activated(object sender, ActivatedEventArgs e)
 		{
-			FlurryWP8SDK.Api.StartSession("93H3RHMX3CW4N7XXDVFZ");
+			FlurryWP8SDK.Api.StartSession(FlurryConfig.ApiKey);
 			if (!e.IsApplicationInstancePreserved)
 			{
 				//This will ensure that the ApplicationUsageHelper is initialized again if the application has been in Tombstoned state.

@@ -180,4 +180,16 @@
   <data name="AboutOtherAppsLabel" xml:space="preserve">
     <value>other apps by Shane Church</value>
   </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>An upgrade is available! Do you want to install the upgrade now?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade Available!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>yes</value>
+  </data>
 </root>
