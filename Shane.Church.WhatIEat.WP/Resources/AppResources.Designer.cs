@@ -142,6 +142,24 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export CSV.
+        /// </summary>
+        public static string CsvExportLabel {
+            get {
+                return ResourceManager.GetString("CsvExportLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nothing on this date. Add something!.
         /// </summary>
         public static string EmptyEntryListLabel {
@@ -169,6 +187,33 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export to SkyDrive.
+        /// </summary>
+        public static string ExcelExportButtonLabel {
+            get {
+                return ResourceManager.GetString("ExcelExportButtonLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to excel export.
+        /// </summary>
+        public static string ExcelExportLabel {
+            get {
+                return ResourceManager.GetString("ExcelExportLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This will export all of your journal entries as a Excel-compatible CSV file to your SkyDrive..
+        /// </summary>
+        public static string ExcelExportText {
+            get {
+                return ResourceManager.GetString("ExcelExportText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to new entry.
         /// </summary>
         public static string NewEntryLabel {
@@ -183,6 +228,15 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         public static string No {
             get {
                 return ResourceManager.GetString("No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ok.
+        /// </summary>
+        public static string Ok {
+            get {
+                return ResourceManager.GetString("Ok", resourceCulture);
             }
         }
         
@@ -273,6 +327,51 @@ namespace Shane.Church.WhatIEat.WP.Resources {
         public static string UpgradeTitle {
             get {
                 return ResourceManager.GetString("UpgradeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unfortunately your data could not be exported to SkyDrive at this time. Please try again later..
+        /// </summary>
+        public static string UploadFailedMessage {
+            get {
+                return ResourceManager.GetString("UploadFailedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload Failed.
+        /// </summary>
+        public static string UploadFailedTitle {
+            get {
+                return ResourceManager.GetString("UploadFailedTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to uploading....
+        /// </summary>
+        public static string UploadingLabel {
+            get {
+                return ResourceManager.GetString("UploadingLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your data has been successfully uploaded to SkyDrive..
+        /// </summary>
+        public static string UploadSuccessMessage {
+            get {
+                return ResourceManager.GetString("UploadSuccessMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload Successful!.
+        /// </summary>
+        public static string UploadSuccessTitle {
+            get {
+                return ResourceManager.GetString("UploadSuccessTitle", resourceCulture);
             }
         }
         

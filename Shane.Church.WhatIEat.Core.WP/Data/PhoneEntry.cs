@@ -1,11 +1,7 @@
 ﻿using Shane.Church.WhatIEat.Core.Data;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
-using System.Linq;
-using System.Text;
 
 namespace Shane.Church.WhatIEat.Core.WP.Data
 {
@@ -89,6 +85,11 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 			{
 				Set(() => IsDeleted, ref _isDeleted, value);
 			}
+		}
+
+		public string ToCsvString()
+		{
+			return "\"" + String.Join("\",\"", EntryId, EntryGuid, EntryDate, EntryText, CreateDateTime, EditDateTime) + "\"";
 		}
 	}
 }

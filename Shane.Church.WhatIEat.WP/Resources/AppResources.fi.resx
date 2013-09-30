@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Yhteenveto</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>muut sovellukset Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Päivitys on saatavilla ! Haluatko asentaapäivityksen nyt ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Päivitys saatavilla !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ei</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>kyllä</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Vie CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel vienti</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Tämä vie kaikki päiväkirjamerkintöjä kutenExcel - yhteensopiva CSV SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Vie SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>lataamalla ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Lähetys onnistui !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Tiedot on ladattu onnistuneesti SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>kunnossa</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>peruuttaa</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Lataus epäonnistui</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Valitettavasti tietoja ei voitu viedä SkyDrive tällä hetkellä . Yritä myöhemmin uudelleen .</value>
+  </data>
 </root>

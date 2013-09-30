@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>概要</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>シェーン教会で他のアプリ</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>アップグレードが可能です！あなたは今、アップグレードをインストールしますか？</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>利用可能なアップグレード！</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ノー</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>エクスポートCSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excelエクスポート</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>これはあなたのSkyDriveのにExcel互換のCSVファイルとして仕訳のすべてをエクスポートします。</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>SkyDriveのへのエクスポート</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>アップロード...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>成功アップロード！</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>あなたのデータが正常にSkyDriveのようにアップロードされています。</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>アップロードに失敗しました</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>残念なことにあなたのデータは、この時点でSkyDriveのにエクスポートすることができませんでした。後ほどおかけ直しください。</value>
+  </data>
 </root>

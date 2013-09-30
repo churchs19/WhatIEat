@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Samenvatting</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>andere apps door Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Een upgrade beschikbaar is ! Wilt u de upgrade nu installeren?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade beschikbaar !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>geen</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Dit zal al uw journaalposten exporteren als een Excel - compatibele CSV -bestand naar uw SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exporteren naar SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>uploaden ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Upload Succesvol !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Uw data is geüpload naar SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>goed</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>annuleren</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Upload mislukt</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Helaas uw gegevens kan niet worden geëxporteerd naar SkyDrive op dit moment. Probeer het later opnieuw .</value>
+  </data>
 </root>

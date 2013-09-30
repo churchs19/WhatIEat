@@ -37,19 +37,28 @@ namespace Shane.Church.WhatIEat.WP
 
 		void AdControl_DefaultAdReceived(object sender)
 		{
+			FlurryWP8SDK.Api.LogEvent("Unpaid Ad Received");
 			AdControl.Visibility = System.Windows.Visibility.Visible;
 		}
 
 		private void AdControl_AdReceived(object sender)
 		{
+			FlurryWP8SDK.Api.LogEvent("Paid Ad Received");
 			AdControl.Visibility = System.Windows.Visibility.Visible;
 		}
 
 		private void AdControl_AdFailed(object sender)
 		{
+			FlurryWP8SDK.Api.LogEvent("No Ad Received");
 			AdControl.Visibility = System.Windows.Visibility.Collapsed;
 		}
 		#endregion
+
+		protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+		{
+			FlurryWP8SDK.Api.LogPageView();
+			base.OnNavigatedTo(e);
+		}
 
 		private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
 		{

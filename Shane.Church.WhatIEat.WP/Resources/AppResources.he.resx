@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>סיכום</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>יישומים אחרים על ידי כנסיית שיין</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>שדרוג זמין ! האם ברצונך להתקין את השדרוג עכשיו?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>שדרוג זמין !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>לא</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>יצוא CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>יצוא Excel</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>זו תייצא את כל תנועות היומן שלךכקובץ Excel תואם CSV ל SkyDrive שלך ​​.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>יצוא ל- SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>העלאה ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>העלה מוצלח!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>הנתונים שלך כבר הועלה בהצלחה אל SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>בסדר</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>לבטל</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>ההעלאה נכשל</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>למרבה הצער הנתונים שלך לא יכולים להיות מיוצאיםלSkyDrive בשלב זה . אנא נסה שוב מאוחר יותר.</value>
+  </data>
 </root>

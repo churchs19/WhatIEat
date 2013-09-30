@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Povzetek</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>druge aplikacije, s Shane Cerkve</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Nadgradnja je na voljo! Ali želite namestiti nadgradnjo zdaj ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Nadgradite na voljo !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>izvoz CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel izvoz</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>To bo izvoz vseh vaših vknjižb kot Excel - združljive datoteke CSV v vaš SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Izvoz storitev SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>nalaganje ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Naloži uspešno!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Vaši podatki so uspešno prenesli v storitev SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>preklic</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>nalaganje ni uspelo</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Žal vaših podatkov ni mogoče izvoziti v storitev SkyDrive v tem trenutku. Prosimo, poskusite znova pozneje .</value>
+  </data>
 </root>

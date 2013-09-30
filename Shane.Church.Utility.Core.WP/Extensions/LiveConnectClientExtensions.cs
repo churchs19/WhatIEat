@@ -1,8 +1,7 @@
 ﻿using Microsoft.Live;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Shane.Church.Utility.Core.WP.Extensions
@@ -27,6 +26,48 @@ namespace Shane.Church.Utility.Core.WP.Extensions
 				client.GetAsync(path);
 			else
 				client.GetAsync(path, userState);
+			return tcs.Task;
+		}
+
+		public static Task<IDictionary<string, object>> UploadAsyncTask(this LiveConnectClient client, string path, string fileName, Stream inputStream, OverwriteOption option = OverwriteOption.DoNotOverwrite)
+		{
+			TaskCompletionSource<IDictionary<string, object>> tcs = new TaskCompletionSource<IDictionary<string, object>>();
+			client.UploadCompleted += (sender, args) =>
+			{
+				if (args.Cancelled) tcs.TrySetCanceled();
+				if (args.Error != null) tcs.TrySetException(args.Error);
+
+				tcs.TrySetResult(args.Result);
+			};
+			client.UploadAsync(path, fileName, inputStream, option);
+			return tcs.Task;
+		}
+
+		public static Task<IDictionary<string, object>> PutAsyncTask(this LiveConnectClient client, string path, IDictionary<string, object> body)
+		{
+			TaskCompletionSource<IDictionary<string, object>> tcs = new TaskCompletionSource<IDictionary<string, object>>();
+			client.PutCompleted += (sender, args) =>
+			{
+				if (args.Cancelled) tcs.TrySetCanceled();
+				if (args.Error != null) tcs.TrySetException(args.Error);
+
+				tcs.TrySetResult(args.Result);
+			};
+			client.PutAsync(path, body);
+			return tcs.Task;
+		}
+
+		public static Task<IDictionary<string, object>> PostAsyncTask(this LiveConnectClient client, string path, IDictionary<string, object> body)
+		{
+			TaskCompletionSource<IDictionary<string, object>> tcs = new TaskCompletionSource<IDictionary<string, object>>();
+			client.PostCompleted += (sender, args) =>
+			{
+				if (args.Cancelled) tcs.TrySetCanceled();
+				if (args.Error != null) tcs.TrySetException(args.Error);
+
+				tcs.TrySetResult(args.Result);
+			};
+			client.PostAsync(path, body);
 			return tcs.Task;
 		}
 	}

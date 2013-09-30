@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Özet</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>Shane Church tarafından diğer uygulamalar</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Yükseltme mevcuttur! Şimdi yükseltme yüklemek istiyor musunuz ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Mevcut yükseltin!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>yok</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>evet</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>ihracat CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel ihracat</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Bu SkyDrive için bir Excel uyumlu CSV dosyası olarak günlük girişleri tüm ihraç edecek .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>SkyDrive aktar</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>yükleme ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Başarılı yükle!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Verilerinizi başarıyla SkyDrive için yüklendi.</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>tamam</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>iptal</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Yükleme Başarısız</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Ne yazık ki verilerinizi şu anda SkyDrive ihraç edilemedi . Daha sonra tekrar deneyiniz .</value>
+  </data>
 </root>

@@ -91,6 +91,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\Shane.Church.WhatIEat.WP\ExcelExport.xaml.cs">
+      <Link>ExcelExport.xaml.cs</Link>
+      <DependentUpon>ExcelExport.xaml</DependentUpon>
+    </Compile>
     <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\EntryTemplateSelector.cs">
       <Link>Helpers\EntryTemplateSelector.cs</Link>
     </Compile>
@@ -153,6 +157,10 @@
     </Content>
     <Content Include="..\Shane.Church.WhatIEat.WP\Images\DateTimePickerOk.png">
       <Link>Images\DateTimePickerOk.png</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shane.Church.WhatIEat.WP\Images\Excel-Export.png">
+      <Link>Images\Excel-Export.png</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Shane.Church.WhatIEat.WP\Images\Microsoft-Windows.png">
@@ -414,6 +422,11 @@
     <Page Include="..\Shane.Church.WhatIEat.WP\Calendar.xaml">
       <Link>Calendar.xaml</Link>
       <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Shane.Church.WhatIEat.WP\ExcelExport.xaml">
+      <Link>ExcelExport.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="About.xaml">

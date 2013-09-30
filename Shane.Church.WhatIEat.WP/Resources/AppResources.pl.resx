@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Krótki opis</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>inne aplikacje przez Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Aktualizacja jest dostępna! Czy chcesz zainstalować aktualizację teraz?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade dostępny!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nie</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>tak</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Eksport CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Będzie to eksport z zapisów księgowych w Excel- kompatybilnego pliku CSV do swojej usłudze SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Eksport do usługi SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>ładowanie ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Prześlij powodzeniem!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Twoje dane zostały pomyślnie przesłane do usługi SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>dobrze</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>anulować</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Prześlij Nie</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Niestety dane nie mogą być eksportowane do usługi SkyDrive w tym czasie. Spróbuj ponownie później .</value>
+  </data>
 </root>

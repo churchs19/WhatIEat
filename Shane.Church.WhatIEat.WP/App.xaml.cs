@@ -82,6 +82,8 @@ namespace Shane.Church.WhatIEat.WP
 				return client;
 			});
 			KernelService.Kernel.Bind<SyncService>().To<WP7SyncService>().InSingletonScope();
+			KernelService.Kernel.Bind<ILoggingService>().To<PhoneLoggingService>().InSingletonScope();
+			KernelService.Kernel.Bind<ISkyDriveService>().To<WP7SkyDriveService>();
 
 			// Show graphics profiling information while debugging.
 			if (System.Diagnostics.Debugger.IsAttached)
@@ -223,6 +225,7 @@ namespace Shane.Church.WhatIEat.WP
 			var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
 			ApplicationUsageHelper.Init(versionAttrib.Version.ToString());
 			FlurryWP8SDK.Api.StartSession(FlurryConfig.ApiKey);
+			FlurryWP8SDK.Api.SetVersion(versionAttrib.Version.ToString());
 
 			if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
 			{
@@ -237,7 +240,9 @@ namespace Shane.Church.WhatIEat.WP
 		// This code will not execute when the application is first launched
 		private async void Application_Activated(object sender, ActivatedEventArgs e)
 		{
+			var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
 			FlurryWP8SDK.Api.StartSession(FlurryConfig.ApiKey);
+			FlurryWP8SDK.Api.SetVersion(versionAttrib.Version.ToString());
 			if (!e.IsApplicationInstancePreserved)
 			{
 				//This will ensure that the ApplicationUsageHelper is initialized again if the application has been in Tombstoned state.
@@ -272,6 +277,7 @@ namespace Shane.Church.WhatIEat.WP
 		// Code to execute if a navigation fails
 		private void RootFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
 		{
+			FlurryWP8SDK.Api.LogError("Navigation Failed - " + e.Uri.ToString(), e.Exception);
 			if (System.Diagnostics.Debugger.IsAttached)
 			{
 				// A navigation has failed; break into the debugger
@@ -282,6 +288,7 @@ namespace Shane.Church.WhatIEat.WP
 		// Code to execute on Unhandled Exceptions
 		private void Application_UnhandledException(object sender, ApplicationUnhandledExceptionEventArgs e)
 		{
+			FlurryWP8SDK.Api.LogError("Unhandled Exception", e.ExceptionObject);
 			if (System.Diagnostics.Debugger.IsAttached)
 			{
 				// An unhandled exception has occurred; break into the debugger

@@ -42,7 +42,7 @@
 			<TextBlock Text="{Binding LocalizedResources.SettingsLabel, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource AppBaseColor4Brush}"/>
 		</StackPanel>
 
-		<Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
+		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="*"/>
 				<RowDefinition Height="Auto"/>

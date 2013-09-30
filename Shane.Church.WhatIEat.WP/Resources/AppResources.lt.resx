@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>santrauka</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>kitas programas Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Atnaujinimas yra prieinamas! Ar norite įdiegti naujinimą dabar ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Atnaujinkite prieinamas!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ne</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>taip</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>eksporto CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel eksporto</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Tai bus eksportuoti visus savo žurnalo įrašus kaip Excel suderinama CSV failą į "SkyDrive" .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Eksportuoti į "SkyDrive"</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>įkelti ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Įkelkite sėkmingai!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Jūsų duomenys buvo sėkmingai įkeltas į "SkyDrive" .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>gerai</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>atšaukti</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Įkelkite nepavyko</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Deja, jūsų duomenys gali būti eksportuojami į "SkyDrive" šiuo metu. Prašome pabandyti vėliau.</value>
+  </data>
 </root>

@@ -33,7 +33,7 @@
 		</Grid.RowDefinitions>
 
 		<!--Pivot Control-->
-		<Controls:Pivot Grid.Row="0" Foreground="{StaticResource AppBaseColor4Brush}">
+		<Controls:Pivot Grid.Row="0" Foreground="{StaticResource AppBaseColor4Brush}" SelectionChanged="Pivot_SelectionChanged">
 			<Controls:Pivot.HeaderTemplate>
 				<DataTemplate>
 					<TextBlock Text="{Binding}" Foreground="{StaticResource AppBaseColor4Brush}"></TextBlock>

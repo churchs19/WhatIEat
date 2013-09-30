@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>สรุป</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>ปพลิเคชัน อื่น ๆ เชนโดย คริสตจักร</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>อัพเกรดเป็น ใช้ได้! คุณต้องการที่จะ ติดตั้ง อัพเกรดตอนนี้</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>อัพเกรด ว่าง!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ไม่</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ใช่</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>ส่งออก CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>การส่งออก Excel</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>นี้จะ ส่งออก ทั้งหมด ของ รายการบันทึก ของคุณเป็นExcel เข้ากันได้กับ ไฟล์ CSV ไปยัง SkyDrive ของคุณ</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>การส่งออก ไปยัง SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>อัพโหลด ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>อัพโหลด ที่ประสบความสำเร็จ !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>ข้อมูลของคุณ ได้รับการ ประสบความสำเร็จใน การอัปโหลด ไปยัง SkyDrive</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>อัพโหลด ล้มเหลว</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>แต่น่าเสียดายที่ ข้อมูลของคุณ ไม่สามารถ ส่งออกไปยัง SkyDrive ในเวลานี้ โปรดลอง อีกครั้งในภายหลัง</value>
+  </data>
 </root>

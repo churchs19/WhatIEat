@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Résumé</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>d'autres applications par Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Une mise à jour est disponible! Voulez-vous installer la mise à niveau maintenant?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Mise à jour disponible!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>pas</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>oui</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel exportation</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Cela va exporter toutes vos entrées de journal dans un fichier CSV compatible avec Excel sur votre SkyDrive.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exporter vers SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>télécharge ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Téléchargez réussie!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Vos données a été transféré avec succès sur SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>résilier</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Échec du transfert</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Malheureusement, vos données ne pouvaient pas être exportés vers SkyDrive en ce moment. S'il vous plaît réessayer plus tard .</value>
+  </data>
 </root>

@@ -1,23 +1,20 @@
 ﻿using Microsoft.WindowsAzure.MobileServices;
-using Ninject;
-using Shane.Church.WhatIEat.Core.Data;
-using Shane.Church.WhatIEat.Core.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Shane.Church.WhatIEat.Core.Data;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Shane.Church.WhatIEat.Core.Services
 {
 	public abstract class SyncService
 	{
-		private ISettingsService _settingsService;
-		private IRepository<IEntry> _entries;
+		protected ISettingsService _settingsService;
+		protected IRepository<IEntry> _entries;
+		protected ILoggingService _log;
 
-		public SyncService(IMobileServiceClient client, ISettingsService settings, IRepository<IEntry> entries)
+		public SyncService(IMobileServiceClient client, ISettingsService settings, IRepository<IEntry> entries, ILoggingService log)
 		{
 			if (settings == null)
 				throw new ArgumentNullException("settings");
@@ -28,6 +25,9 @@ namespace Shane.Church.WhatIEat.Core.Services
 			if (client == null)
 				throw new ArgumentNullException("client");
 			Client = client;
+			if (log == null)
+				throw new ArgumentNullException("log");
+			_log = log;
 		}
 
 		private IMobileServiceClient _client;
@@ -104,7 +104,7 @@ namespace Shane.Church.WhatIEat.Core.Services
 			}
 			catch (Exception ex)
 			{
-				//TODO: Log Exception - Throw error
+				_log.LogException(ex, "Sync Error");
 				throw ex;
 			}
 		}

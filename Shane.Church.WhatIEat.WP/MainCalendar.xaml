@@ -34,7 +34,7 @@
 		</Grid.RowDefinitions>
 
 		<!--Pivot Control-->
-		<Controls:Pivot Grid.Row="0" Foreground="{StaticResource AppBaseColor4Brush}">
+        <Controls:Pivot Grid.Row="0" Foreground="{StaticResource AppBaseColor4Brush}" SelectionChanged="Pivot_SelectionChanged">
 			<Controls:Pivot.HeaderTemplate>
 				<DataTemplate>
 					<TextBlock Text="{Binding}" Foreground="{StaticResource AppBaseColor4Brush}"/>
@@ -176,7 +176,6 @@
 		<telerikPrimitives:RadBusyIndicator 
 			Grid.Row="0" 
 			Grid.Column="0" 
-			Grid.RowSpan="2" 
 			Foreground="{StaticResource AppBaseColor4Brush}"
 			Content="{Binding LocalizedResources.SynchronizingLabel, Source={StaticResource LocalizedStrings}}"
 			IsRunning="{Binding SyncRunning}" 

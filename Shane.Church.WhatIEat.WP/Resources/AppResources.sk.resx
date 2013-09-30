@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Zhrnutie</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>ďalšie aplikácie Shane cirkvi</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Aktualizácia je k dispozícii ! Chcete nainštalovať upgrade teraz ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade k dispozícii !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nie</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>áno</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>exportovať do CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>To bude exportovať všetky vaše zápisov ako Excel kompatibilný CSV súboru do vášho SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Export do služby SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>nahrávanie ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Pridať Úspešné !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Vaše údaje boli úspešne nahraté na SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>zrušiť</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Odovzdávanie zlyhalo</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Bohužiaľ , Vaše dáta nemohla byť vyvážané do služby SkyDrive v tomto okamihu . Skúste to znova neskôr .</value>
+  </data>
 </root>

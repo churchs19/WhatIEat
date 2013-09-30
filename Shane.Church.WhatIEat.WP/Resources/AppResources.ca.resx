@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>resum</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>altres aplicacions de Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Una actualització està disponible ! Voleu instal · lar l'actualització ara ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Actualització disponible !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>si</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel exportació</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Això exportar tots els seients de diari en un fitxer CSV compatible amb Excel al seu SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exporta a SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>carregant ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Pujar èxit !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Les seves dades s'ha carregat correctament en SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>bo</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>cancel · lar</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>error en la càrrega</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Per desgràcia , les dades no podien ser exportats a SkyDrive en aquest moment . Si us plau intenta-ho de nou més tard .</value>
+  </data>
 </root>

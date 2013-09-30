@@ -1,17 +1,11 @@
 ﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using Ninject;
-using Shane.Church.WhatIEat.Core.Data;
 using Shane.Church.Utility.Core.Command;
+using Shane.Church.WhatIEat.Core.Data;
+using Shane.Church.WhatIEat.Core.Services;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Windows.Input;
-using Shane.Church.WhatIEat.Core.Services;
-using System.Threading.Tasks;
-using Shane.Church.WhatIEat.Core.Exceptions;
 
 namespace Shane.Church.WhatIEat.Core.ViewModels
 {
@@ -20,8 +14,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 		protected IRepository<IEntry> _repository;
 		protected ISettingsService _settings;
 		protected SyncService _syncService;
+		protected ILoggingService _log;
 
-		public MainViewModel(IRepository<IEntry> repository, ISettingsService settings, SyncService sync)
+		public MainViewModel(IRepository<IEntry> repository, ISettingsService settings, SyncService sync, ILoggingService log)
 		{
 			if (repository == null)
 				throw new ArgumentNullException("repository");
@@ -32,6 +27,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			if (sync == null)
 				throw new ArgumentNullException("sync");
 			_syncService = sync;
+			if (log == null)
+				throw new ArgumentNullException("log");
+			_log = log;
 
 			_dateEntries = new ObservableCollection<CalendarItemViewModel>();
 			_dateEntries.CollectionChanged += _dateEntries_CollectionChanged;
@@ -157,7 +155,10 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 					{
 						SummaryEntries.Add(model);
 					}
-					catch { }
+					catch (Exception ex)
+					{
+						_log.LogException(ex);
+					}
 				}
 			}
 		}
@@ -174,7 +175,10 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				{
 					DateEntries.Add(new CalendarItemViewModel() { ItemDate = DateTime.SpecifyKind(e.EntryDate, DateTimeKind.Utc), ItemText = e.EntryText });
 				}
-				catch { }
+				catch (Exception ex)
+				{
+					_log.LogException(ex);
+				}
 			}
 		}
 	}

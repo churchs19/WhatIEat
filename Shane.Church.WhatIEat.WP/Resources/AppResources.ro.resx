@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Rezumat</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>alte aplicații de Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Un upgrade este disponibil ! Nu doriți să instalați upgrade-ul acum ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade disponibile !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nu</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>da</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Acest lucru va exporta toate înregistrările jurnal ca un fisier CSV Excel - compatibil cu SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exportul în SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>încărcarea ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Încărcați cu succes !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Datele dvs. a fost încărcat cu succes în SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>bine</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>anula</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Încărcare eșuată</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Din păcate, datele nu pot fi exportate în SkyDrive în acest moment . Vă rugăm să încercați din nou mai târziu .</value>
+  </data>
 </root>

@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>summary</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>other apps by Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>An upgrade is available! Do you want to install the upgrade now?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade Available!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>This will export all of your journal entries as a Excel-compatible CSV file to your SkyDrive.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Export to SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>uploading...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Upload Successful!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Your data has been successfully uploaded to SkyDrive.</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Upload Failed</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Unfortunately your data could not be exported to SkyDrive at this time. Please try again later.</value>
+  </data>
 </root>

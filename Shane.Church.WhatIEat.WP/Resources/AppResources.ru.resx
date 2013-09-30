@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Резюме</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>другие приложения по Шейн Церкви</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Обновление доступно ! Вы хотите, чтобы установить обновление сейчас?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Обновления доступны !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>нет</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>да</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Экспорт CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel экспорт</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Это позволит экспортировать все ваши записи в журнале как Excel -совместимых CSV файла на SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Экспорт в SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>загрузка ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Успешно загружены !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Ваши данные успешно загружены на SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>хорошо</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>отменить</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Сбой при загрузке</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>К сожалению, ваши данные не могут быть экспортированы в SkyDrive в это время. Пожалуйста, повторите попытку позже.</value>
+  </data>
 </root>

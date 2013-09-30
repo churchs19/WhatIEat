@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Összefoglaló</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>más alkalmazások a Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Frissítés elérhető ! Szeretnéd , hogy telepítse a frissítést most?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Frissítés elérhető!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nincs</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>igen</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Ez exportálja az összes naplóbejegyzés egy Excel - kompatibilis CSV fájlt a SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exportálás SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>feltöltés ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Feltöltés sikerült !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Adatait sikeresen feltöltött SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>rendben</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>törlése</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>sikertelen feltöltés</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Sajnos az adatokat nem lehet exportálni a SkyDrive ebben az időben . Kérjük, próbálkozzon később .</value>
+  </data>
 </root>

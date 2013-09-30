@@ -1,9 +1,6 @@
 ﻿using Shane.Church.WhatIEat.Core.Services;
 using System;
-using System.Collections.Generic;
 using System.IO.IsolatedStorage;
-using System.Linq;
-using System.Text;
 
 namespace Shane.Church.WhatIEat.Core.WP.Services
 {
@@ -66,8 +63,9 @@ namespace Shane.Church.WhatIEat.Core.WP.Services
 					return default(T);
 				}
 			}
-			catch
+			catch (Exception ex)
 			{
+				FlurryWP8SDK.Api.LogError("LoadSetting Exception", ex);
 				return default(T);
 			}
 		}

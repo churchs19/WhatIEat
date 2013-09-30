@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Tóm tắt</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>các ứng dụng khác Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Nâng cấp có sẵn ! Bạn có muốn cài đặt các nâng cấp bây giờ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Nâng cấp có sẵn !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>không</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>vâng</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>xuất khẩu CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel xuất khẩu</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Điều này sẽ xuất khẩu tất cả các mục tạp chí của bạn như một tập tin CSV Excel tương thích với SkyDrive của bạn .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Xuất khẩu sang SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>tải lên ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Tải lên thành công!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Dữ liệu của bạn đã được tải lên thành công SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>hủy bỏ</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Không tải lên</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Thật không may dữ liệu của bạn không có thể được xuất khẩu sang SkyDrive vào thời điểm này . Vui lòng thử lại sau .</value>
+  </data>
 </root>

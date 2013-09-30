@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Περίληψη</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>άλλες εφαρμογές από τον Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Η αναβάθμιση είναι διαθέσιμη! Θέλετε να εγκαταστήσετε την αναβάθμιση τώρα;</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Αναβάθμιση Available !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>όχι</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ναί</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Εξαγωγή CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel εξαγωγές</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Αυτό θα εξάγει το σύνολο των εγγραφών περιοδικού σας ως Excel συμβατό αρχείο CSV στο SkyDrive σας .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Εξαγωγή στο SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>μεταφόρτωση ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Ανεβάστε επιτυχής !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Τα δεδομένα σας έχει φορτωθεί επιτυχώς στο SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>εντάξει</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>ακύρωση</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Η μεταφόρτωση απέτυχε</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Δυστυχώς, τα δεδομένα σας δεν μπορούν να εξάγονται στο SkyDrive αυτή τη στιγμή . Παρακαλώ δοκιμάστε ξανά αργότερα .</value>
+  </data>
 </root>

@@ -186,6 +186,9 @@
     <Compile Include="DateEdit.xaml.cs">
       <DependentUpon>DateEdit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExcelExport.xaml.cs">
+      <DependentUpon>ExcelExport.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\EntryTemplateSelector.cs" />
     <Compile Include="Helpers\LocalizedDateConverter.cs" />
     <Compile Include="Helpers\NonEmptyDateValidator.cs" />
@@ -235,6 +238,9 @@
     <Content Include="Images\DateTimePickerOk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Excel-Export.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Microsoft-Windows.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -277,6 +283,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="DateEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExcelExport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

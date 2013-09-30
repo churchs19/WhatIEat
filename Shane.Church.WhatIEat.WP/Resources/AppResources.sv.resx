@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Sammanfattning</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>andra program från Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>En uppgradering är tillgänglig ! Vill du installera uppgraderingen nu ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Uppgradera tillgängligt !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ingen</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Detta kommer att exportera alla dina journalanteckningar som ett Excel - kompatibelt CSV-fil till din SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exportera till SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>uppladdning ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Ladda lyckades!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Din data har laddats upp till SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>avbryta</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Ladda misslyckades</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Tyvärr dina uppgifter inte skulle kunna exporteras till SkyDrive vid denna tid . Försök igen senare .</value>
+  </data>
 </root>

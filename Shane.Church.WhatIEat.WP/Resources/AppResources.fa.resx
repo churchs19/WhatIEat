@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>خلاصه</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>برنامه های دیگر توسط کلیسای شین</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>ارتقاء در دسترس است ! آیا شما می خواهید برای نصببه روز رسانی در حال حاضر ؟</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>به روز رسانی می کند!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>هیچ</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>صادرات CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>اکسل صادرات</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>این همه از نوشته های مجله خود را به عنوان یک فایل اکسل CSV سازگار به SkyDrive خود را صادر می کنند.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>صادرات به SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>آپلود ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>بارگذاری موفقیت آمیز !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>اطلاعات شما با موفقیت آپلود شده به SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>خوب</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>لغو کردن</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>آپلود نشد</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>متاسفانه داده های خود را نمی تواند صادر شود به SkyDrive در این زمان است . لطفا بعدا دوباره امتحان کنید .</value>
+  </data>
 </root>

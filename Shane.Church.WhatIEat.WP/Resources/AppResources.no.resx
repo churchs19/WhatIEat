@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Sammendrag</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>andre applikasjoner etter Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>En oppgradering er tilgjengelig! Ønsker du å installere oppgraderingen nå ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Oppgrader tilgjengelig!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Eksporter CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel eksport</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Dette vil eksportere alle dine posteringer som et Excel - kompatibelt CSV -filen til SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Eksporter til SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>opplasting ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Last vellykket!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Dine data er lastet opp til SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>avbryte</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Last mislyktes</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Dessverre dataene ikke kunne eksporteres til SkyDrive på dette tidspunktet. Vennligst prøv igjen senere .</value>
+  </data>
 </root>

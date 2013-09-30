@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Резюме</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>други приложения от Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Надстройка е в наличност! Искате ли да инсталирате актуализацията сега?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Ъпгрейд на разположение!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>не</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>да</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel износ</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Така ще се експортират всички ваши записи в регистрите като Excel- съвместими файл CSV към вашия SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Износ за SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>качване ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Качи успешен !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Вашият данни са качени на SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>добре</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>затвори</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Неуспешно качване</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>За съжаление данните не могат да бъдат изнесени в SkyDrive в този момент. Моля, опитайте отново по-късно .</value>
+  </data>
 </root>

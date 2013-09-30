@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>resumen</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>otras aplicaciones de Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Una actualización está disponible ! ¿Desea instalar la actualización ahora?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Actualización disponible !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>sí</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel exportación</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Esto exportar todos los asientos de diario en un archivo CSV compatible con Excel a su SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exportar a SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>cargando ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Subir éxito!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Sus datos se ha cargado correctamente en SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>bueno</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>cancelar</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Error en la carga</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Por desgracia, los datos no podían ser exportados a SkyDrive en este momento . Por favor inténtelo de nuevo más tarde.</value>
+  </data>
 </root>

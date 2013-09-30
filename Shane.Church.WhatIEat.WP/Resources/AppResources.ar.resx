@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>ملخص</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>تطبيقات أخرى من قبل شين الكنيسة</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>ترقية متاح! هل تريد تثبيت الترقية الآن ؟</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>ترقية متاح !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>تصدير CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>إكسل</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>وبذلك يتم تصدير كل مقالات مجلة الخاص بك كملف CSV إكسل متوافقة إلى SkyDrive الخاص بك.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>تصدير إلى SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>تحميل ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>تحميل ناجحة!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>تم تحميل البيانات الخاصة بك بنجاح إلى SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>حسنا</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>فشل التحميل</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>للأسف لا يمكن تصدير البيانات الخاصة بك إلى SkyDrive في هذا الوقت . يرجى المحاولة مرة أخرى في وقت لاحق .</value>
+  </data>
 </root>

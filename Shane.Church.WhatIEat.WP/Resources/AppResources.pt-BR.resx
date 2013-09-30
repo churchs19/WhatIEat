@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Resumo</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>outros aplicativos por Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Uma atualização está disponível ! Você quer instalar a atualização agora?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Atualize disponível!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>não</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>sim</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>exportação CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel exportação</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Isto irá exportar todas as suas entradas de diário como um arquivo CSV Excel- compatível com o seu SkyDrive.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exportar para o SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>upload ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Carregar com sucesso!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Seus dados foi enviado com sucesso para o SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>cancelar</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Falha no upload</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Infelizmente, os dados não podem ser exportados para o SkyDrive neste momento. Por favor, tente novamente mais tarde.</value>
+  </data>
 </root>

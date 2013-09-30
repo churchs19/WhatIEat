@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>摘要</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>其他应用程序由Shane教会</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>有可用的升级！你想现在安装升级？</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>升级可用！</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>没有</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>导出CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel导出</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>这将你的日记条目导出为Excel兼容的CSV文件到您的SkyDrive 。</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>导出到SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>上传...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>上传成功！</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>你的数据已经成功上传到SkyDrive 。</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>上传失败</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>不幸的是，你的数据无法导出到SkyDrive在这个时候。请稍后再试。</value>
+  </data>
 </root>

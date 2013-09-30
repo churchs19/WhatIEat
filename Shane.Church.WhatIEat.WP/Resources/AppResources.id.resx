@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Ringkasan</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>aplikasi lain oleh Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Upgrade tersedia ! Apakah Anda ingin menginstal upgrade sekarang?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Tersedia meng-upgrade !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>tidak</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ya</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>ekspor CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel ekspor</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Ini akan mengekspor semua entri jurnal Anda sebagai file CSV Excel - kompatibel ke SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Ekspor ke SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>upload ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Unggah Sukses!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Data Anda telah berhasil diunggah ke SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>membatalkan</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Upload Gagal</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Sayangnya data Anda tidak dapat diekspor ke SkyDrive pada saat ini . Silakan coba lagi nanti .</value>
+  </data>
 </root>

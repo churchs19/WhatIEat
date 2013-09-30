@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Zusammenfassung</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>andere Apps Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Ein Upgrade ist verfügbar ! Möchten Sie das Upgrade jetzt installieren?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade möglich !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>keine</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Export CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel-Export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Dies wird alle Ihre Journaleinträge als Excel -kompatible CSV -Datei auf Ihren SkyDrive exportieren.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Export auf SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>uploading ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Laden Sie erfolgreich!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Ihre Daten wurden erfolgreich hochgeladen auf SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>stornieren</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Upload fehlgeschlagen</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Leider konnten Ihre Daten nicht exportiert zu diesem Zeitpunkt SkyDrive werden. Bitte versuchen Sie es später erneut.</value>
+  </data>
 </root>

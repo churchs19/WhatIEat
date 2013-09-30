@@ -64,15 +64,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CoreResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\ILoggingService.cs" />
     <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Services\ISettingsService.cs" />
+    <Compile Include="Services\ISkyDriveService.cs" />
     <Compile Include="Services\IWebNavigationService.cs" />
     <Compile Include="Services\KernelService.cs" />
+    <Compile Include="Services\SkyDriveSaveArgs.cs" />
     <Compile Include="Services\SyncService.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\CalendarItemViewModel.cs" />
     <Compile Include="ViewModels\DateEditViewModel.cs" />
     <Compile Include="ViewModels\EntryViewModel.cs" />
+    <Compile Include="ViewModels\ExcelExportViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\SettingsViewModel.cs" />
   </ItemGroup>

@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>Kokkuvõte</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>teiste apps Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Uuendus on saadaval! Kas soovite installida upgrade nüüd ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade saadaval!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ei</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>jah</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Ekspordi CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Exceli eksport</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>See eksportida kõik oma päevikut naguExcel - ühilduv CSV fail oma SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Ekspordi SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>üleslaadimiseks ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Täiendava edukas !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Sinu andmed on edukalt üles laetud SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>korras</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>tühistama</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Täiendava ebaõnnestus</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Kahjuks oma andmeid ei tohi eksportida SkyDrive seekord. Palun proovi hiljem uuesti.</value>
+  </data>
 </root>

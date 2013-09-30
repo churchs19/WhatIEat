@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>요약</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>셰인 교회가 다른 애플 리케이션</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>업그레이드가 가능합니다 ! 이제 업그레이드를 설치 하시겠습니까?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>사용 가능한 업그레이드하세요!</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>아니</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>예</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>CSV 내보내기</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>엑셀 내보내기</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>이것은 당신의 SkyDrive에 로엑셀 호환 CSV 파일로 분개 를 모두 내 보냅니다.</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>SkyDrive에 로 내보내기</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>업로드 ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>업로드 성공 !</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>데이터 가 성공적으로 SkyDrive에 업로드 할 수 있다.</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK (확인)</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>업로드 실패</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>불행히도 데이터 가 이 시간에 SkyDrive에 에 수출 할 수 없습니다. 나중에 다시 시도하십시오.</value>
+  </data>
 </root>

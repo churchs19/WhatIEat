@@ -177,4 +177,52 @@
   <data name="SummaryLabel" xml:space="preserve">
     <value>kopsavilkums</value>
   </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>citas progr Shane Church</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Jauninājums ir pieejams ! Vai jūs vēlaties instalēt jaunināšanas tagad ?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade pieejams !</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nē</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>jā</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Eksportēt CSV</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel eksports</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Tas eksportēt visu jūsu žurnāla ierakstiem , kā Excel - saderīgu CSV failu jūsu SkyDrive .</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Eksports uz SkyDrive</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>augšupielādējot ...</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Augšupielādēt veiksmīga!</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Jūsu dati ir veiksmīgi augšupielādēts SkyDrive .</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>labi</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>atcelt</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>augšupielādēt Neizdevās</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Diemžēl jūsu dati nevar tikt eksportētas uz SkyDrive šajā laikā . Lūdzu, mēģiniet vēlreiz vēlāk .</value>
+  </data>
 </root>
