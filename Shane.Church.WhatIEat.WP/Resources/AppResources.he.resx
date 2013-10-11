@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>למרבה הצער הנתונים שלך לא יכולים להיות מיוצאיםלSkyDrive בשלב זה . אנא נסה שוב מאוחר יותר.</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>שגיאת יישום</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>היישום נתקל בבעיה . אני מצטער על אי הנוחות.
+
+אני מעריך את עזרתך על ידי שליחתדוח השגיאה המוכנה. זה יעזור לו בפתרון הבעיה מהר יותר.</value>
+  </data>
 </root>

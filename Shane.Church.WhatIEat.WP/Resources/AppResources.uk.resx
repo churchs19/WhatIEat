@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>На жаль , ваші дані не можуть бути експортовані в SkyDrive в цей час. Будь ласка , спробуйте ще раз пізніше .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Помилка програми</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Додаток виявлена ​​помилка. Я прошу вибачення за заподіяні незручності.
+
+Буду вдячний Вам за допомогу , відправивши підготовлене повідомити про помилку . Це допоможе з вирішенням проблеми швидше.</value>
+  </data>
 </root>

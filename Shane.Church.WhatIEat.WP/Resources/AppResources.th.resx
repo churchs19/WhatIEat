@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>แต่น่าเสียดายที่ ข้อมูลของคุณ ไม่สามารถ ส่งออกไปยัง SkyDrive ในเวลานี้ โปรดลอง อีกครั้งในภายหลัง</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>ข้อผิดพลาดโปรแกรม</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>โปรแกรมพบปัญหา ฉันขอโทษ สำหรับ ความไม่สะดวก
+
+ฉันอยากจะขอบคุณ ความช่วยเหลือ ของคุณ โดยการส่ง รายงานข้อผิดพลาด ที่เตรียมไว้ นี้จะ ช่วยให้มีการ แก้ไขปัญหาได้เร็วขึ้น</value>
+  </data>
 </root>

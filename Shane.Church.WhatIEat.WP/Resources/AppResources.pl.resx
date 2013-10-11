@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Niestety dane nie mogą być eksportowane do usługi SkyDrive w tym czasie. Spróbuj ponownie później .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Błąd aplikacji</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Aplikacja napotkał problem . Przepraszam za utrudnienia .
+
+Będę wdzięczny za pomoc , wysyłając przygotowanego raportu o błędzie . To pomoże w rozwiązaniu problemu szybciej.</value>
+  </data>
 </root>

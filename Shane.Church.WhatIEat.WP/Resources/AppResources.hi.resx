@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>दुर्भाग्य से अपने डेटा इस समय SkyDrive पर निर्यात नहीं किया जा सकता है . बाद में पुन: प्रयास करें .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>अनुप्रयोग त्रुटि</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>आवेदन एक समस्या का सामना किया है . मैं असुविधा के लिए खेद है.
+
+मैं तैयार त्रुटि रिपोर्ट भेजने के द्वारा आपकी सहायता की सराहना करते हैं. इस तेजी से समस्या को हल करने में मदद करेगा.</value>
+  </data>
 </root>

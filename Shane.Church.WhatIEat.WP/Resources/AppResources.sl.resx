@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Žal vaših podatkov ni mogoče izvoziti v storitev SkyDrive v tem trenutku. Prosimo, poskusite znova pozneje .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Napaka Application</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Vloga je naletel na težavo . Žal mi je za neprijetnosti .
+
+Hvaležen bi vašo pomoč s pošiljanjem pripravljeno poročilo o napaki . To bo pomagalo pri reševanju problematike hitreje.</value>
+  </data>
 </root>

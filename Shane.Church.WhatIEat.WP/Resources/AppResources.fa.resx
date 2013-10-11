@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>متاسفانه داده های خود را نمی تواند صادر شود به SkyDrive در این زمان است . لطفا بعدا دوباره امتحان کنید .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>خطا در برنامه</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>نرم افزار با مشکل مواجه کرده است. من متاسفم برای ناراحتی هستم .
+
+من می خواهم که کمک های خود را با ارسال گزارش خطا آماده قدردانی میکنیم. این کار را با حل و فصل مشکل سریع تر کمک خواهد کرد .</value>
+  </data>
 </root>

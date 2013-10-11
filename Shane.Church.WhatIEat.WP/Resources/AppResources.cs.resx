@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Bohužel, Vaše data nemohla být vyváženy do služby SkyDrive v tomto okamžiku. Zkuste to prosím znovu později.</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Chyba aplikace</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Aplikace došlo k problému . Omlouvám se za způsobené nepříjemnosti .
+
+Ocenil bych vaši pomoc zasláním připravený chybové hlášení. To vám pomůže s řešením problému rychleji.</value>
+  </data>
 </root>

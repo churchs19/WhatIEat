@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Diemžēl jūsu dati nevar tikt eksportētas uz SkyDrive šajā laikā . Lūdzu, mēģiniet vēlreiz vēlāk .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Application Error</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Pieteikums ir radusies problēma . Es atvainojos par sagādātajām neērtībām .
+
+Es novērtējam jūsu palīdzību, nosūtot sagatavoto kļūdas ziņojumu . Tas palīdzēs ar atrisināt problēmu ātrāk .</value>
+  </data>
 </root>

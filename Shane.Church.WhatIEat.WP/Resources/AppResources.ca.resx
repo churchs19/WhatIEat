@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Per desgràcia , les dades no podien ser exportats a SkyDrive en aquest moment . Si us plau intenta-ho de nou més tard .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>error de l'aplicació</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>L'aplicació ha detectat un problema . Ho sento per les molèsties .
+
+Li agrairia la seva ajuda mitjançant l'enviament de l'informe d'errors preparada . Això l'ajudarà a resoldre el problema més ràpid .</value>
+  </data>
 </root>

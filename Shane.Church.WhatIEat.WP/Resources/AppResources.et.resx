@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Kahjuks oma andmeid ei tohi eksportida SkyDrive seekord. Palun proovi hiljem uuesti.</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Application Error</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Taotlus on tekkinud probleem . Ma vabandan ebameeldivuste pärast .
+
+Oleksin väga tänulik teie abi , saates ettevalmistatud veateate . See aitab koos probleemi lahendada kiiremini .</value>
+  </data>
 </root>

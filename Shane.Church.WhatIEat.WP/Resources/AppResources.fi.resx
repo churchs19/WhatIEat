@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Valitettavasti tietoja ei voitu viedä SkyDrive tällä hetkellä . Yritä myöhemmin uudelleen .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Application Error</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Hakemus on havainnut virheen . Olen pahoillanihaittaa .
+
+Olisin kiitollinen avusta lähettämällävalmis virheraportin . Tämä auttaa ratkaisemaanongelman nopeammin .</value>
+  </data>
 </root>

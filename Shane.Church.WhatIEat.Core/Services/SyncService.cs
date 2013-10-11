@@ -72,40 +72,43 @@ namespace Shane.Church.WhatIEat.Core.Services
 				{
 					await Authenticate();
 
-					DateTimeOffset lastSuccessfulSyncDate = _settingsService.LoadSetting<DateTimeOffset>("LastSuccessfulSync");
-
-					var localEntries = _entries.GetFilteredEntries(it => it.EditDateTime > lastSuccessfulSyncDate, true).Select(it => new AzureEntry(it));
-
-					JsonSerializer serializer = JsonSerializer.Create(Client.SerializerSettings);
-					JArray arr = JArray.FromObject(localEntries, serializer);
-
-					JObject body = new JObject();
-					body.Add("entries", arr);
-					body.Add("lastSyncDate", lastSuccessfulSyncDate);
-
-					var results = await Client.GetTable("AzureSync").InsertAsync(body);
-
-					foreach (var item in results["ServerChanges"])
+					if (User != null)
 					{
-						try
-						{
-							var entry = item.ToObject<AzureEntry>(serializer).GetEntry();
-							entry.EntryDate = DateTime.SpecifyKind(entry.EntryDate, DateTimeKind.Utc);
-							_entries.AddOrUpdateEntry(entry);
-						}
-						catch
-						{
-							throw;
-						}
-					}
+						DateTimeOffset lastSuccessfulSyncDate = _settingsService.LoadSetting<DateTimeOffset>("LastSuccessfulSync");
 
-					_settingsService.SaveSetting<DateTimeOffset>(DateTimeOffset.Now, "LastSuccessfulSync");
+						var localEntries = _entries.GetFilteredEntries(it => it.EditDateTime > lastSuccessfulSyncDate, true).Select(it => new AzureEntry(it));
+
+						JsonSerializer serializer = JsonSerializer.Create(Client.SerializerSettings);
+						JArray arr = JArray.FromObject(localEntries, serializer);
+
+						JObject body = new JObject();
+						body.Add("entries", arr);
+						body.Add("lastSyncDate", lastSuccessfulSyncDate);
+
+						var results = await Client.GetTable("AzureSync").InsertAsync(body);
+
+						foreach (var item in results["ServerChanges"])
+						{
+							try
+							{
+								var entry = item.ToObject<AzureEntry>(serializer).GetEntry();
+								entry.EntryDate = DateTime.SpecifyKind(entry.EntryDate, DateTimeKind.Utc);
+								_entries.AddOrUpdateEntry(entry);
+							}
+							catch
+							{
+								throw;
+							}
+						}
+
+						_settingsService.SaveSetting<DateTimeOffset>(DateTimeOffset.Now, "LastSuccessfulSync");
+					}
 				}
 			}
 			catch (Exception ex)
 			{
 				_log.LogException(ex, "Sync Error");
-				throw ex;
+				//TODO: Do I need a message here?
 			}
 		}
 	}

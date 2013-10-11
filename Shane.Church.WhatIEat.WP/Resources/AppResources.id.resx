@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Sayangnya data Anda tidak dapat diekspor ke SkyDrive pada saat ini . Silakan coba lagi nanti .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>aplikasi Error</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Aplikasi ini telah mengalami masalah . Saya minta maaf atas ketidaknyamanan ini .
+
+Saya akan sangat menghargai bantuan Anda dengan mengirimkan laporan kesalahan disiapkan . Ini akan membantu menyelesaikan masalah dengan lebih cepat .</value>
+  </data>
 </root>

@@ -2,7 +2,6 @@
 using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json.Linq;
 using Shane.Church.WhatIEat.Core.Data;
-using Shane.Church.WhatIEat.Core.Exceptions;
 using Shane.Church.WhatIEat.Core.Services;
 using Shane.Church.WhatIEat.Core.WP;
 using System;
@@ -55,7 +54,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 			catch (Exception ex)
 			{
 				_log.LogException(ex, "Sync Exception");
-				throw new SyncException(ex.Message, ex);
+				return false;
 			}
 		}
 
@@ -83,29 +82,37 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 						else
 						{
 							_session = null;
-							MessageBox.Show("You must be logged in to sync.");
-							throw new SyncException("You must be logged in to sync");
+							Deployment.Current.Dispatcher.BeginInvoke(() =>
+							{
+								MessageBox.Show(Properties.Resources.SyncLoginError);
+							});
 						}
 					}
 				}
 				catch (Exception ex)
 				{
 					_log.LogException(ex, "Sync Exception");
-					throw new SyncException(ex.Message, ex);
 				}
 			}
 			try
 			{
-				LiveConnectClient client = new LiveConnectClient(_session);
-				LiveOperationResult meResult = await client.GetAsync("me");
-				JObject token = JObject.Parse("{\"authenticationToken\": \"" + _session.AuthenticationToken + "\"}");
-				return await this.Client.LoginAsync(MobileServiceAuthenticationProvider.MicrosoftAccount, token);
+				if (_session != null)
+				{
+					LiveConnectClient client = new LiveConnectClient(_session);
+					LiveOperationResult meResult = await client.GetAsync("me");
+					JObject token = JObject.Parse("{\"authenticationToken\": \"" + _session.AuthenticationToken + "\"}");
+					return await this.Client.LoginAsync(MobileServiceAuthenticationProvider.MicrosoftAccount, token);
+				}
 			}
 			catch (Exception ex)
 			{
 				_log.LogException(ex, "Sync Exception");
-				throw new SyncException(ex.Message, ex);
+				Deployment.Current.Dispatcher.BeginInvoke(() =>
+				{
+					MessageBox.Show(Properties.Resources.SyncUnknownError);
+				});
 			}
+			return null;
 		}
 
 		public override Task<bool> IsNetworkConnected()
@@ -122,7 +129,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 				catch (Exception ex)
 				{
 					_log.LogException(ex, "IsNetworkConnected Exception");
-					tcs.SetException(ex);
+					tcs.SetResult(false);
 				}
 			});
 			return tcs.Task;

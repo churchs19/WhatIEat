@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Ne yazık ki verilerinizi şu anda SkyDrive ihraç edilemedi . Daha sonra tekrar deneyiniz .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>uygulama Hatası</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Uygulama bir sorunla karşılaştı . Ben rahatsızlıktan dolayı özür dilerim .
+
+Ben Hazırlanan hata raporu göndererek yardım seviniriz . Bu daha hızlısorunu çözme ile yardımcı olacaktır .</value>
+  </data>
 </root>

@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Bohužiaľ , Vaše dáta nemohla byť vyvážané do služby SkyDrive v tomto okamihu . Skúste to znova neskôr .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>chyba aplikácie</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Aplikácie došlo k problému . Ospravedlňujem sa za spôsobené nepríjemnosti .
+
+Ocenil by som vašu pomoc zaslaním pripravený chybové hlásenie . To vám pomôže s riešením problému rýchlejšie .</value>
+  </data>
 </root>

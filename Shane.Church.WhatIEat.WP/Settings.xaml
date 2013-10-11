@@ -78,7 +78,7 @@
 				</Button>
 			</StackPanel>
 
-			<StackPanel x:Name="AdPanel" Grid.Row="1" MaxHeight="110" Margin="0,0,0,30">
+			<StackPanel x:Name="AdPanel" Grid.Row="1" MaxHeight="110" Margin="0">
                 <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
                                   AppID="ShaneChurch_WhatIEat_WP"
                                   AdType="IaAdType_Banner"

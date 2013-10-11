@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Thật không may dữ liệu của bạn không có thể được xuất khẩu sang SkyDrive vào thời điểm này . Vui lòng thử lại sau .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Lỗi ứng dụng</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Ứng dụng này đã gặp phải một vấn đề . Tôi xin lỗi vì sự bất tiện này .
+
+Tôi sẽ đánh giá cao sự hỗ trợ của bạn bằng cách gửi báo cáo lỗi chuẩn bị . Điều này sẽ giúp giải quyết vấn đề nhanh hơn.</value>
+  </data>
 </root>

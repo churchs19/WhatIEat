@@ -225,4 +225,12 @@
   <data name="UploadFailedMessage" xml:space="preserve">
     <value>Din păcate, datele nu pot fi exportate în SkyDrive în acest moment . Vă rugăm să încercați din nou mai târziu .</value>
   </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Eroare de aplicație</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Cererea a întâmpinat o problemă . Îmi pare rău pentru neplăcerile create .
+
+Mi-ar aprecia de ajutorul tău , prin trimiterea raportului de eroare pregătit . Acest lucru va ajuta la rezolvarea problemei mai repede .</value>
+  </data>
 </root>
