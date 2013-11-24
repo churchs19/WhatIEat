@@ -233,4 +233,16 @@
 
 Буду вдячний Вам за допомогу , відправивши підготовлене повідомити про помилку . Це допоможе з вирішенням проблеми швидше.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>давати зворотний зв'язок</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>Ні, дякую</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Як я можу поліпшити це додаток так , щоб ви були б готові , щоб оцінити його 5 зірок на ринку?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Чи можу я зробити це краще?</value>
+  </data>
 </root>

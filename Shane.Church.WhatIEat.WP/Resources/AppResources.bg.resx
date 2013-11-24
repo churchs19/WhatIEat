@@ -233,4 +233,16 @@
 
 Бих се радвал вашата помощ чрез изпращане на доклад, изготвен в грешка . Това ще ви помогне с решаването на проблема по-бързо .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>дадете отзиви</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>не, благодаря</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Как мога да подобря това приложение , така че вие ще бъдете готови да го оценят 5 звезди на пазара ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Мога ли да направя по-добре?</value>
+  </data>
 </root>

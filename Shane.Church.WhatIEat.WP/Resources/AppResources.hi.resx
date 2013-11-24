@@ -233,4 +233,16 @@
 
 मैं तैयार त्रुटि रिपोर्ट भेजने के द्वारा आपकी सहायता की सराहना करते हैं. इस तेजी से समस्या को हल करने में मदद करेगा.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>प्रतिक्रिया देने के</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>नहीं धन्यवाद</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>आप इसे बाजार में 5 सितारे दर करने के लिए तैयार किया जाएगा कि इतना कैसे मैं इस आवेदन में सुधार कर सकते हैं ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>मैं इसे बेहतर बना सकते हैं?</value>
+  </data>
 </root>

@@ -233,4 +233,16 @@
 
 ฉันอยากจะขอบคุณ ความช่วยเหลือ ของคุณ โดยการส่ง รายงานข้อผิดพลาด ที่เตรียมไว้ นี้จะ ช่วยให้มีการ แก้ไขปัญหาได้เร็วขึ้น</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>ให้ข้อเสนอแนะ</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>ไม่ขอบคุณ</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>ฉันจะปรับปรุง โปรแกรมนี้ เพื่อที่คุณ จะยินดี ให้คะแนน 5 ดาว ในตลาด?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>ฉันสามารถทำให้ ดีขึ้นได้อย่างไร</value>
+  </data>
 </root>

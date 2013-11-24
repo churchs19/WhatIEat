@@ -233,4 +233,16 @@
 
 I would appreciate your assistance by sending the prepared error report. This will help with resolving the problem faster.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>give feedback</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>no thanks</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>How can I improve this application so that you would be willing to rate it 5 stars in the marketplace?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Can I make it better?</value>
+  </data>
 </root>

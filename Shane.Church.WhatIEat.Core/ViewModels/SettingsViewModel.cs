@@ -1,10 +1,8 @@
 ﻿using GalaSoft.MvvmLight;
 using Shane.Church.Utility.Core.Command;
+using Shane.Church.WhatIEat.Core.Resources;
 using Shane.Church.WhatIEat.Core.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Input;
 
 namespace Shane.Church.WhatIEat.Core.ViewModels
@@ -88,9 +86,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			get
 			{
 				if (!_syncService.IsConnected)
-					return Resources.CoreResources.ConnectLabel;
+					return CoreResources.ConnectLabel;
 				else
-					return Resources.CoreResources.ConnectedLabel;
+					return CoreResources.ConnectedLabel;
 			}
 		}
 
@@ -129,9 +127,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			get
 			{
 				if (SyncEnabled)
-					return Resources.CoreResources.OnText;
+					return CoreResources.OnText;
 				else
-					return Resources.CoreResources.OffText;
+					return CoreResources.OffText;
 			}
 		}
 	}

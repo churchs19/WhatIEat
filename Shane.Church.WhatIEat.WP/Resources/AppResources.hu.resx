@@ -233,4 +233,16 @@
 
 Nagyra értékelném a segítséget küldött az elkészített hibajelentés . Ez segít a probléma megoldásában gyorsabb.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>visszajelzéseket ad</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>kösz, nem</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Hogyan javíthatom ezt az alkalmazást úgy, hogy hajlandó lenne értékelni, hogy 5 csillagos a piacon ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Tudom, hogy jobb ?</value>
+  </data>
 </root>

@@ -233,4 +233,16 @@
 
 Saya akan sangat menghargai bantuan Anda dengan mengirimkan laporan kesalahan disiapkan . Ini akan membantu menyelesaikan masalah dengan lebih cepat .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>memberikan umpan balik</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>tidak, terima kasih</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Bagaimana saya bisa memperbaiki aplikasi ini sehingga Anda akan bersedia untuk menilai itu 5 di pasar ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Dapatkah saya membuatnya lebih baik ?</value>
+  </data>
 </root>

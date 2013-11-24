@@ -33,6 +33,9 @@ namespace Shane.Church.WhatIEat.WP
 
 			InitializeAdControl();
 
+			//Shows the rate reminder message, according to the settings of the RateReminder.
+			(App.Current as App).rateReminder.Notify();
+
 			_model = KernelService.Kernel.Get<MainViewModel>();
 
 			_model.PropertyChanged += (s, e) =>

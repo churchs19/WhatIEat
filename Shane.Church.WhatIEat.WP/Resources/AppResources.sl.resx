@@ -233,4 +233,16 @@
 
 Hvaležen bi vašo pomoč s pošiljanjem pripravljeno poročilo o napaki . To bo pomagalo pri reševanju problematike hitreje.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>daje povratne informacije</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>ne hvala</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Kako lahko izboljšamo te vloge tako, da bi bili pripravljeni , da ga ocenjujejo 5 zvezdic na trgu ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Lahko bi bilo bolje ?</value>
+  </data>
 </root>

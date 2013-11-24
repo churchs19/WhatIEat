@@ -233,4 +233,16 @@
 
 Saya akan menghargai bantuan anda dengan menghantar laporan ralat disediakan. Ini akan membantu menyelesaikan masalah dengan lebih cepat.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>memberi maklum balas</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>tidak bersyukur</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Bagaimana saya boleh memperbaiki permohonan ini supaya anda akan bersedia untuk menilai 5 bintang di pasaran?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Bolehkah saya membuat lebih baik?</value>
+  </data>
 </root>

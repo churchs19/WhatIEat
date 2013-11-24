@@ -233,4 +233,16 @@
 
 Mi-ar aprecia de ajutorul tău , prin trimiterea raportului de eroare pregătit . Acest lucru va ajuta la rezolvarea problemei mai repede .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>da feedback-ul</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>nu, mulțumesc</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Cum pot îmbunătăți această aplicație , astfel încât să -ar fi dispus sa il votezi 5 stele de pe piata ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Pot face asta mai bine ?</value>
+  </data>
 </root>

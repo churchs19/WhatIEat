@@ -233,4 +233,16 @@
 
 Oleksin väga tänulik teie abi , saates ettevalmistatud veateate . See aitab koos probleemi lahendada kiiremini .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>annab tagasisidet</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>Ei, tänan</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Kuidas ma saan parandada selle taotluse nii, et sul oleks nõus hinnata seda 5 tärni turul ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Kas ma saan teha seda paremini ?</value>
+  </data>
 </root>

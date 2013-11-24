@@ -233,4 +233,16 @@
 
 Es novērtējam jūsu palīdzību, nosūtot sagatavoto kļūdas ziņojumu . Tas palīdzēs ar atrisināt problēmu ātrāk .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>sniegt atsauksmes</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>nē paldies</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Kā es varu uzlabot šo pieteikumu , lai jūs būtu gatavi to novērtēt 5 zvaigznes tirgū ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Es varu darīt labāk ?</value>
+  </data>
 </root>

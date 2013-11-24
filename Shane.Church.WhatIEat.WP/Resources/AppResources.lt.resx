@@ -233,4 +233,16 @@
 
 Aš vertiname jūsų pagalbą siunčiant paruoštą pranešimą apie klaidą . Tai padės su šią problemą išspręsti greičiau.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>pateikti atsiliepimus</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>no thanks</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Kaip galiu pagerinti šį prašymą , kad Jums būtų pasirengusi vertinti jį 5 žvaigždutes rinkoje ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Ar galiu padaryti geriau ?</value>
+  </data>
 </root>

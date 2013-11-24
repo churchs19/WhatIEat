@@ -233,4 +233,16 @@
 
 Li agrairia la seva ajuda mitjançant l'enviament de l'informe d'errors preparada . Això l'ajudarà a resoldre el problema més ràpid .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>donar la seva opinió</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>No, gràcies</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Com puc millorar aquesta aplicació perquè vostè estaria disposat a valorar 5 estrelles situat al mercat ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Puc fer-ho millor ?</value>
+  </data>
 </root>

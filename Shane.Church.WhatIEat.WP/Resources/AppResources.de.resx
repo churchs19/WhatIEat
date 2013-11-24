@@ -233,4 +233,16 @@
 
 Ich würde Ihre Unterstützung , indem Sie die vorbereitete Fehlerbericht zu schätzen wissen. Dies wird mit der Lösung des Problems schneller zu helfen.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>Feedback geben</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>nein danke</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Wie kann ich diese Anwendung , so dass Sie bereit wären, Urteil 5 Sternen auf dem Markt ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Kann ich es besser machen ?</value>
+  </data>
 </root>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42873B47-3E08-4847-A4A0-82D670E32CAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shane.Church.Utility.Core</RootNamespace>
+    <AssemblyName>Shane.Church.Utility.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile158</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.165\lib\portable-net40+sl4+win8+wp71\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.165\lib\portable-net40+sl4+win8+wp71\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.6\lib\portable-net40+sl5+win8+wp8\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.6\lib\portable-net40+sl5+win8+wp8\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.6\lib\portable-net40+sl5+win8+wp8\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.ar.resx">
+      <Link>Resources\UtilityResources.ar.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.bg.resx">
+      <Link>Resources\UtilityResources.bg.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.ca.resx">
+      <Link>Resources\UtilityResources.ca.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.cs.resx">
+      <Link>Resources\UtilityResources.cs.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.da.resx">
+      <Link>Resources\UtilityResources.da.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.de.resx">
+      <Link>Resources\UtilityResources.de.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.el.resx">
+      <Link>Resources\UtilityResources.el.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.es.resx">
+      <Link>Resources\UtilityResources.es.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.et.resx">
+      <Link>Resources\UtilityResources.et.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.fa.resx">
+      <Link>Resources\UtilityResources.fa.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.fi.resx">
+      <Link>Resources\UtilityResources.fi.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.fr.resx">
+      <Link>Resources\UtilityResources.fr.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.he.resx">
+      <Link>Resources\UtilityResources.he.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.hi.resx">
+      <Link>Resources\UtilityResources.hi.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.hu.resx">
+      <Link>Resources\UtilityResources.hu.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.id.resx">
+      <Link>Resources\UtilityResources.id.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.it.resx">
+      <Link>Resources\UtilityResources.it.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.ja.resx">
+      <Link>Resources\UtilityResources.ja.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.ko.resx">
+      <Link>Resources\UtilityResources.ko.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.lt.resx">
+      <Link>Resources\UtilityResources.lt.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.lv.resx">
+      <Link>Resources\UtilityResources.lv.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.ms.resx">
+      <Link>Resources\UtilityResources.ms.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.nl.resx">
+      <Link>Resources\UtilityResources.nl.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.no.resx">
+      <Link>Resources\UtilityResources.no.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.pl.resx">
+      <Link>Resources\UtilityResources.pl.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.pt.resx">
+      <Link>Resources\UtilityResources.pt.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.resx">
+      <Link>Resources\UtilityResources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UtilityResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.ro.resx">
+      <Link>Resources\UtilityResources.ro.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.ru.resx">
+      <Link>Resources\UtilityResources.ru.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.sk.resx">
+      <Link>Resources\UtilityResources.sk.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.sl.resx">
+      <Link>Resources\UtilityResources.sl.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.sv.resx">
+      <Link>Resources\UtilityResources.sv.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.th.resx">
+      <Link>Resources\UtilityResources.th.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.tr.resx">
+      <Link>Resources\UtilityResources.tr.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.uk.resx">
+      <Link>Resources\UtilityResources.uk.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.vi.resx">
+      <Link>Resources\UtilityResources.vi.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.zh-CHS.resx">
+      <Link>Resources\UtilityResources.zh-CHS.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.zh-CN.resx">
+      <Link>Resources\UtilityResources.zh-CN.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.zh-TW.resx">
+      <Link>Resources\UtilityResources.zh-TW.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\ActionCompleteEventHandler.cs">
+      <Link>Command\ActionCompleteEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\AsyncRelayCommand.cs">
+      <Link>Command\AsyncRelayCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\AsyncRelayCommandGeneric.cs">
+      <Link>Command\AsyncRelayCommandGeneric.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\IExecuteWithObject.cs">
+      <Link>Command\IExecuteWithObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\IExecuteWithObjectAndResult.cs">
+      <Link>Command\IExecuteWithObjectAndResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\RelayCommand.cs">
+      <Link>Command\RelayCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\RelayCommandGeneric.cs">
+      <Link>Command\RelayCommandGeneric.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\WeakAction.cs">
+      <Link>Command\WeakAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\WeakActionGeneric.cs">
+      <Link>Command\WeakActionGeneric.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\WeakFunc.cs">
+      <Link>Command\WeakFunc.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Command\WeakFuncGeneric.cs">
+      <Link>Command\WeakFuncGeneric.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Extensions\BindingDefinition.cs">
+      <Link>Extensions\BindingDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Extensions\InterfaceTypeDefinition.cs">
+      <Link>Extensions\InterfaceTypeDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Extensions\TypeExtensions.cs">
+      <Link>Extensions\TypeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\ObservableObject.cs">
+      <Link>ObservableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\Resources\UtilityResources.Designer.cs">
+      <Link>Resources\UtilityResources.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilityResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\Shane.Church.Utility.Core\ValidationException.cs">
+      <Link>ValidationException.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

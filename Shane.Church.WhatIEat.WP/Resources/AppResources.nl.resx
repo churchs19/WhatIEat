@@ -233,4 +233,16 @@
 
 Ik zou uw hulp op prijs stellen door het sturen van de voorbereide foutmelding. Dit zal helpen bij het ​​oplossen van het probleem sneller .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>feedback geven</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>geen dank</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Hoe kan ik deze applicatie te verbeteren, zodat je bereid bent om het 5 sterren in de markt zou zijn ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Ik kan het beter ?</value>
+  </data>
 </root>

@@ -233,4 +233,16 @@
 
 私は、準備されたエラーレポートを送信することでご協力をお願い申し上げます。これは、迅速な問題の解決に役立ちます。</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>フィードバックを与える</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>全く感謝しない</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>あなたはそれを市場で5つ星を評価することをいとわないようにするにはどうすればこのアプリケーションを改善できますか？</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>私はそれを改善することはできますか？</value>
+  </data>
 </root>

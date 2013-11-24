@@ -233,4 +233,16 @@
 
 Ben Hazırlanan hata raporu göndererek yardım seviniriz . Bu daha hızlısorunu çözme ile yardımcı olacaktır .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>geribildirim vermek</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>hayır, teşekkürler</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Eğer pazarda 5 yıldızlı oran için istekli olacağını , böylece nasıl bu uygulama geliştirebilir ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Ben daha iyi yapabilir miyim ?</value>
+  </data>
 </root>

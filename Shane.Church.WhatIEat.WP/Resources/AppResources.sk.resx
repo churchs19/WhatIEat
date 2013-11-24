@@ -233,4 +233,16 @@
 
 Ocenil by som vašu pomoc zaslaním pripravený chybové hlásenie . To vám pomôže s riešením problému rýchlejšie .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>poskytovať spätnú väzbu</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>nie, vďaka</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Ako môžem zlepšiť túto aplikáciu tak , že by ste boli ochotní ho ohodnotiť 5 hviezdičiek na trhu ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Môžem to lepšie ?</value>
+  </data>
 </root>

@@ -233,4 +233,16 @@
 
 Tôi sẽ đánh giá cao sự hỗ trợ của bạn bằng cách gửi báo cáo lỗi chuẩn bị . Điều này sẽ giúp giải quyết vấn đề nhanh hơn.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>cho ý kiến ​​phản hồi</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>không nhờ</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Làm thế nào tôi có thể cải thiện ứng dụng này để bạn sẽ sẵn sàng để đánh giá nó 5 sao trên thị trường ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Tôi có thể làm cho nó tốt hơn?</value>
+  </data>
 </root>

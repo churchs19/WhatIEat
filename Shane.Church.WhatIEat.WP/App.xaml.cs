@@ -1,5 +1,6 @@
 ﻿using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Microsoft.Phone.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using Ninject;
 using Shane.Church.WhatIEat.Core.Data;
@@ -12,6 +13,7 @@ using Shane.Church.WhatIEat.Core.WP.ViewModels;
 using Shane.Church.WhatIEat.Core.WP7.Services;
 using Shane.Church.WhatIEat.WP.Resources;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
@@ -38,7 +40,7 @@ namespace Shane.Church.WhatIEat.WP
 		/// <summary>
 		/// Component used to raise a notification to the end users to rate the application on the marketplace.
 		/// </summary>
-		public static RadRateApplicationReminder rateReminder;
+		public RadRateApplicationReminder rateReminder;
 		/// <summary>
 		/// Provides easy access to the root frame of the Phone Application.
 		/// </summary>
@@ -125,18 +127,8 @@ namespace Shane.Church.WhatIEat.WP
 			rateReminder.RecurrencePerUsageCount = 5;
 			rateReminder.AllowUsersToSkipFurtherReminders = true;
 
-			//if (Mangopollo.Utils.CanUseLiveTiles)
-			//{
-			//	var tile = ShellTile.ActiveTiles.First();
-			//	var flipTileData = new Mangopollo.Tiles.FlipTileData
-			//			{
-			//				Title = AppResources.AppTitle,
-			//				SmallBackgroundImage = new Uri("/SmallApplicationIcon.png", UriKind.Relative),
-			//				BackgroundImage = new Uri("/MediumApplicationIcon.png", UriKind.Relative),
-			//				WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative),
-			//			};
-			//	tile.Update(flipTileData);
-			//}
+			rateReminder.ReminderClosed += rateReminder_ReminderClosed;
+
 			if (LiveTileHelper.AreNewTilesSupported)
 			{
 				var tile = ShellTile.ActiveTiles.First();
@@ -148,6 +140,26 @@ namespace Shane.Church.WhatIEat.WP
 					WideBackgroundImage = new Uri("/WideApplicationIcon.png", UriKind.Relative)
 				};
 				LiveTileHelper.UpdateTile(tile, flipTileData);
+			}
+		}
+
+		void rateReminder_ReminderClosed(object sender, ReminderClosedEventArgs e)
+		{
+			if (e.MessageBoxEventArgs.Result == DialogResult.Cancel)
+			{
+				RadMessageBox.Show(buttonsContent: new List<object>() { AppResources.GiveFeedbackButton, AppResources.NoThanksButton },
+					title: AppResources.FeedbackTitle,
+					message: AppResources.FeedbackContent,
+					closedHandler: (eArgs) =>
+					{
+						if (eArgs.ButtonIndex == 0)
+						{
+							EmailComposeTask emailTask = new EmailComposeTask();
+							emailTask.To = "shane@s-church.net";
+							emailTask.Subject = emailTask.Subject = Core.WP.Resources.WPCoreResources.TechnicalSupportEmailSubject;
+							emailTask.Show();
+						}
+					});
 			}
 		}
 

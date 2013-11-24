@@ -233,4 +233,16 @@
 
 Jag skulle uppskatta din hjälp genom att skicka förberedda felrapport . Detta kommer att hjälpa till med att lösa problemet snabbare .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>ge feedback</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>nej tack</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Hur kan jag förbättra det här programmet så att du skulle vara villig att gradera det 5 stjärnor på marknaden ?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Kan jag göra det bättre ?</value>
+  </data>
 </root>

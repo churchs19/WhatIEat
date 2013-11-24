@@ -233,4 +233,16 @@
 
 Θα εκτιμούσα τη βοήθειά σας με την αποστολή του προετοιμασμένη έκθεση σφάλματος . Αυτό θα βοηθήσει στην επίλυση του προβλήματος γρηγορότερα .</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>να δώσουν ανατροφοδότηση</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>no thanks</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Πώς μπορώ να βελτιώσω την αίτηση αυτή , έτσι ώστε θα είναι πρόθυμοι να το αξιολογήσουν 5 αστέρων στην αγορά ;</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Μπορώ να κάνω το καλύτερο;</value>
+  </data>
 </root>

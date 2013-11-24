@@ -233,4 +233,16 @@
 
 Gradirei il vostro aiuto con l'invio del rapporto di errore preparato. Questo aiuterà a risolvere il problema più velocemente.</value>
   </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>Fornisci feedback...</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>No grazie</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Come posso migliorare questa applicazione affinché si sarebbe disposti a votarla 5 stelle sul mercato?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Posso renderlo migliore?</value>
+  </data>
 </root>
