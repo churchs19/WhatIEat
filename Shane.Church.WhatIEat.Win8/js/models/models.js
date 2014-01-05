@@ -1,0 +1,1 @@
+﻿angular.module('whatieat.models', ['whatieat.services']);

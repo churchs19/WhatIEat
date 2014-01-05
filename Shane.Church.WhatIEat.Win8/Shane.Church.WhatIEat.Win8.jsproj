@@ -48,7 +48,7 @@
   <PropertyGroup>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
-    <DefaultLanguage>en</DefaultLanguage>
+    <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>Shane.Church.WhatIEat.Win8_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>8D9CE89C7D12E99707642CF1D78959199613F6D7</PackageCertificateThumbprint>
   </PropertyGroup>
@@ -150,6 +150,10 @@
     <Content Include="js\MobileServices.min.js" />
     <Content Include="js\MobileServices.pri" />
     <None Include="Package.StoreAssociation.xml" />
+    <Content Include="js\models\entry.js" />
+    <Content Include="js\models\models.js" />
+    <Content Include="js\services\azure-mobile-service.js" />
+    <Content Include="js\services\services.js" />
     <Content Include="js\wl.js" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-animate.js" />
@@ -181,6 +185,7 @@
     <Content Include="Scripts\angular-ui.js" />
     <Content Include="Scripts\angular-ui.min.js" />
     <Content Include="Scripts\angular-ui.min.js.map" />
+    <Content Include="Scripts\angular-winjs.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -446,13 +451,16 @@
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\linq-vsdoc.js" />
+    <Content Include="Scripts\linq.js" />
+    <Content Include="Scripts\linq.min.js" />
     <Content Include="Scripts\select2.js" />
     <Content Include="Scripts\select2.min.js" />
-    <Content Include="Scripts\ui-bootstrap-0.7.0.js" />
-    <Content Include="Scripts\ui-bootstrap-0.7.0.min.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.7.0.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.7.0.min.js" />
     <None Include="Shane.Church.WhatIEat.Win8_StoreKey.pfx" />
+    <Content Include="Scripts\ui-bootstrap-0.9.0.js" />
+    <Content Include="Scripts\ui-bootstrap-0.9.0.min.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.9.0.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.9.0.min.js" />
     <Content Include="views\calendar\index.html" />
     <None Include="Shane.Church.WhatIEat.Win8_TemporaryKey.pfx" />
   </ItemGroup>
@@ -460,10 +468,8 @@
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\models\" />
     <Folder Include="js\directives\" />
     <Folder Include="js\filters\" />
-    <Folder Include="js\services\" />
     <Folder Include="strings\en\" />
     <Folder Include="template\" />
   </ItemGroup>

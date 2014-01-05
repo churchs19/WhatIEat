@@ -91,6 +91,10 @@ js\MobileServices.intellisense.js
 js\MobileServices.js
 js\MobileServices.min.js
 js\MobileServices.pri
+js\models\entry.js
+js\models\models.js
+js\services\azure-mobile-service.js
+js\services\services.js
 js\wl.js
 packages.config
 Scripts\angular.js
@@ -127,6 +131,7 @@ Scripts\angular-ui.min.js
 Scripts\angular-ui.min.js.map
 Scripts\angular-ui-ieshiv.js
 Scripts\angular-ui-ieshiv.min.js
+Scripts\angular-winjs.js
 Scripts\bootstrap.js
 Scripts\bootstrap.min.js
 Scripts\errors.json
@@ -387,10 +392,13 @@ Scripts\jquery-2.0.3.min.js.map
 Scripts\jquery-2.0.3.min.map
 Scripts\jquery-ui-1.10.3.js
 Scripts\jquery-ui-1.10.3.min.js
+Scripts\linq.js
+Scripts\linq.min.js
+Scripts\linq-vsdoc.js
 Scripts\select2.js
 Scripts\select2.min.js
-Scripts\ui-bootstrap-0.7.0.js
-Scripts\ui-bootstrap-0.7.0.min.js
-Scripts\ui-bootstrap-tpls-0.7.0.js
-Scripts\ui-bootstrap-tpls-0.7.0.min.js
+Scripts\ui-bootstrap-0.9.0.js
+Scripts\ui-bootstrap-0.9.0.min.js
+Scripts\ui-bootstrap-tpls-0.9.0.js
+Scripts\ui-bootstrap-tpls-0.9.0.min.js
 views\calendar\index.html
