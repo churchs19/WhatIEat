@@ -79,10 +79,12 @@ fonts\glyphicons-halflings-regular.svg
 fonts\glyphicons-halflings-regular.ttf
 fonts\glyphicons-halflings-regular.woff
 fonts\LiveSymbol.ttf
+images\authlogo.png
 images\logo.png
 images\smalllogo.png
 images\splashscreen.png
 images\storelogo.png
+images\widelogo.png
 images\WideLogo.scale-100.png
 InneractiveAd.html
 js\controllers\calendar.js

@@ -136,10 +136,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\LiveSymbol.ttf" />
+    <Content Include="images\authlogo.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="images\widelogo.png" />
     <Content Include="images\WideLogo.scale-100.png" />
     <Content Include="InneractiveAd.html" />
     <Content Include="js\controllers\calendar.js" />

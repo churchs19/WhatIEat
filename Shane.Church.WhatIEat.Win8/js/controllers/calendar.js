@@ -45,22 +45,6 @@
             });
         });
 
-//        $scope.events = function (start, end, callback) {
-        //    Entry.getFilteredList(start, end)
-        //        .then(function (results) {
-        //            var items = [];
-        //            angular.forEach(results, function (result) {
-        //                items.push({
-        //                    title: result.EntryText,
-        //                    start: result.EntryDate,
-        //                    allDay: true
-        //                });
-            //            });
-            //var items = [];
-            //callback(items);
-        //        });
-//        };
-
         $scope.events = [];
 
         $scope.entries = [$scope.events];
