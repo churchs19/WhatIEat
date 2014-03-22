@@ -498,7 +498,7 @@
 
     // This guy is a real odd-ball, you really need to coordinate with the settings 
     // event which fires, I need to think more about this.
-    WinJS.UI.SettingsFlyout;
+    //WinJS.UI.SettingsFlyout;
 
     // Do not support explicitly, use ng-repeat
     //WinJS.UI.Repeater;

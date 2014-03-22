@@ -199,10 +199,10 @@
     <value>엑셀 내보내기</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>이것은 당신의 SkyDrive에 로엑셀 호환 CSV 파일로 분개 를 모두 내 보냅니다.</value>
+    <value>이것은 당신의 OneDrive에 로엑셀 호환 CSV 파일로 분개 를 모두 내 보냅니다.</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>SkyDrive에 로 내보내기</value>
+    <value>OneDrive에 로 내보내기</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>업로드 ...</value>
@@ -211,7 +211,7 @@
     <value>업로드 성공 !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>데이터 가 성공적으로 SkyDrive에 업로드 할 수 있다.</value>
+    <value>데이터 가 성공적으로 OneDrive에 업로드 할 수 있다.</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>OK (확인)</value>
@@ -223,7 +223,7 @@
     <value>업로드 실패</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>불행히도 데이터 가 이 시간에 SkyDrive에 에 수출 할 수 없습니다. 나중에 다시 시도하십시오.</value>
+    <value>불행히도 데이터 가 이 시간에 OneDrive에 에 수출 할 수 없습니다. 나중에 다시 시도하십시오.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>응용 프로그램 오류</value>

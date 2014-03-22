@@ -199,10 +199,10 @@
     <value>excel esportazione</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Questo esporterà tutte le voci del diario come file CSV compatibile con Excel per la tua SkyDrive .</value>
+    <value>Questo esporterà tutte le voci del diario come file CSV compatibile con Excel per la tua OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Esporta in SkyDrive</value>
+    <value>Esporta in OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>caricamento ...</value>
@@ -211,7 +211,7 @@
     <value>Carica di successo!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>I tuoi dati è stato caricato con successo su SkyDrive .</value>
+    <value>I tuoi dati è stato caricato con successo su OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>caricamento non riuscito</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Purtroppo i dati non possono essere esportati su SkyDrive in questo momento. Riprova più tardi .</value>
+    <value>Purtroppo i dati non possono essere esportati su OneDrive in questo momento. Riprova più tardi .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Errore di applicazione</value>

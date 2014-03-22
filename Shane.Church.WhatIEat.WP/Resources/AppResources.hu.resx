@@ -199,10 +199,10 @@
     <value>excel export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Ez exportálja az összes naplóbejegyzés egy Excel - kompatibilis CSV fájlt a SkyDrive .</value>
+    <value>Ez exportálja az összes naplóbejegyzés egy Excel - kompatibilis CSV fájlt a OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Exportálás SkyDrive</value>
+    <value>Exportálás OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>feltöltés ...</value>
@@ -211,7 +211,7 @@
     <value>Feltöltés sikerült !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Adatait sikeresen feltöltött SkyDrive .</value>
+    <value>Adatait sikeresen feltöltött OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>rendben</value>
@@ -223,7 +223,7 @@
     <value>sikertelen feltöltés</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Sajnos az adatokat nem lehet exportálni a SkyDrive ebben az időben . Kérjük, próbálkozzon később .</value>
+    <value>Sajnos az adatokat nem lehet exportálni a OneDrive ebben az időben . Kérjük, próbálkozzon később .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Application Error</value>

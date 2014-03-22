@@ -199,10 +199,10 @@
     <value>excel export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>To bude exportovať všetky vaše zápisov ako Excel kompatibilný CSV súboru do vášho SkyDrive .</value>
+    <value>To bude exportovať všetky vaše zápisov ako Excel kompatibilný CSV súboru do vášho OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Export do služby SkyDrive</value>
+    <value>Export do služby OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>nahrávanie ...</value>
@@ -211,7 +211,7 @@
     <value>Pridať Úspešné !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Vaše údaje boli úspešne nahraté na SkyDrive .</value>
+    <value>Vaše údaje boli úspešne nahraté na OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>Odovzdávanie zlyhalo</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Bohužiaľ , Vaše dáta nemohla byť vyvážané do služby SkyDrive v tomto okamihu . Skúste to znova neskôr .</value>
+    <value>Bohužiaľ , Vaše dáta nemohla byť vyvážané do služby OneDrive v tomto okamihu . Skúste to znova neskôr .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>chyba aplikácie</value>

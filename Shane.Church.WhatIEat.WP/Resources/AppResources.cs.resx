@@ -199,10 +199,10 @@
     <value>excel export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>To bude exportovat všechny vaše zápisů jako Excel kompatibilní CSV souboru do vašeho SkyDrive .</value>
+    <value>To bude exportovat všechny vaše zápisů jako Excel kompatibilní CSV souboru do vašeho OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Export do služby SkyDrive</value>
+    <value>Export do služby OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>nahrávání ...</value>
@@ -211,7 +211,7 @@
     <value>Přidat Úspěšné !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Vaše údaje byly úspěšně nahrány na SkyDrive .</value>
+    <value>Vaše údaje byly úspěšně nahrány na OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>Nahrání se nezdařilo</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Bohužel, Vaše data nemohla být vyváženy do služby SkyDrive v tomto okamžiku. Zkuste to prosím znovu později.</value>
+    <value>Bohužel, Vaše data nemohla být vyváženy do služby OneDrive v tomto okamžiku. Zkuste to prosím znovu později.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Chyba aplikace</value>

@@ -145,18 +145,28 @@
     <Content Include="images\WideLogo.scale-100.png" />
     <Content Include="InneractiveAd.html" />
     <Content Include="js\controllers\calendar.js" />
+    <Content Include="js\controllers\login.js" />
+    <Content Include="js\controllers\settings.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
-    <Content Include="js\MobileServices.intellisense.js" />
-    <Content Include="js\MobileServices.js" />
-    <Content Include="js\MobileServices.min.js" />
-    <Content Include="js\MobileServices.pri" />
+    <Content Include="js\directives\directives.js" />
+    <Content Include="js\directives\wl-login-button.js" />
+    <Content Include="js\models\settings.js" />
+    <Content Include="Scripts\MobileServices.intellisense.js" />
+    <Content Include="Scripts\MobileServices.js" />
+    <Content Include="Scripts\MobileServices.min.js" />
+    <Content Include="Scripts\MobileServices.pri" />
+    <Content Include="Scripts\wl.js" />
+    <Content Include="template\wl-login-button.html" />
+    <Content Include="views\calendar.html" />
+    <Content Include="views\login.html" />
+    <Content Include="views\settings.html" />
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="js\models\entry.js" />
     <Content Include="js\models\models.js" />
     <Content Include="js\services\azure-mobile-service.js" />
+    <Content Include="js\services\live-connect.js" />
     <Content Include="js\services\services.js" />
-    <Content Include="js\wl.js" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -463,17 +473,14 @@
     <Content Include="Scripts\ui-bootstrap-0.9.0.min.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.9.0.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.9.0.min.js" />
-    <Content Include="views\calendar\index.html" />
     <None Include="Shane.Church.WhatIEat.Win8_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\directives\" />
     <Folder Include="js\filters\" />
     <Folder Include="strings\en\" />
-    <Folder Include="template\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

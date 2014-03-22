@@ -199,10 +199,10 @@
     <value>excel izvoz</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>To bo izvoz vseh vaših vknjižb kot Excel - združljive datoteke CSV v vaš SkyDrive .</value>
+    <value>To bo izvoz vseh vaših vknjižb kot Excel - združljive datoteke CSV v vaš OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Izvoz storitev SkyDrive</value>
+    <value>Izvoz storitev OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>nalaganje ...</value>
@@ -211,7 +211,7 @@
     <value>Naloži uspešno!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Vaši podatki so uspešno prenesli v storitev SkyDrive .</value>
+    <value>Vaši podatki so uspešno prenesli v storitev OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>nalaganje ni uspelo</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Žal vaših podatkov ni mogoče izvoziti v storitev SkyDrive v tem trenutku. Prosimo, poskusite znova pozneje .</value>
+    <value>Žal vaših podatkov ni mogoče izvoziti v storitev OneDrive v tem trenutku. Prosimo, poskusite znova pozneje .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Napaka Application</value>

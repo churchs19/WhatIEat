@@ -199,10 +199,10 @@
     <value>Exceli eksport</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>See eksportida kõik oma päevikut naguExcel - ühilduv CSV fail oma SkyDrive .</value>
+    <value>See eksportida kõik oma päevikut naguExcel - ühilduv CSV fail oma OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Ekspordi SkyDrive</value>
+    <value>Ekspordi OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>üleslaadimiseks ...</value>
@@ -211,7 +211,7 @@
     <value>Täiendava edukas !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Sinu andmed on edukalt üles laetud SkyDrive .</value>
+    <value>Sinu andmed on edukalt üles laetud OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>korras</value>
@@ -223,7 +223,7 @@
     <value>Täiendava ebaõnnestus</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Kahjuks oma andmeid ei tohi eksportida SkyDrive seekord. Palun proovi hiljem uuesti.</value>
+    <value>Kahjuks oma andmeid ei tohi eksportida OneDrive seekord. Palun proovi hiljem uuesti.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Application Error</value>

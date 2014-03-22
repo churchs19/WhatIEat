@@ -199,10 +199,10 @@
     <value>cemerlang eksport</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Ini akan mengeksport semua catatan jurnal anda sebagai fail CSV Excel- serasi untuk SkyDrive anda.</value>
+    <value>Ini akan mengeksport semua catatan jurnal anda sebagai fail CSV Excel- serasi untuk OneDrive anda.</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Eksport ke SkyDrive</value>
+    <value>Eksport ke OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>memuat naik ...</value>
@@ -211,7 +211,7 @@
     <value>Memuat naik berjaya!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Data anda telah berjaya dimuat naik ke SkyDrive .</value>
+    <value>Data anda telah berjaya dimuat naik ke OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>Gagal memuat naik</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Malangnya data anda tidak boleh dieksport ke SkyDrive pada masa ini. Sila cuba lagi kemudian.</value>
+    <value>Malangnya data anda tidak boleh dieksport ke OneDrive pada masa ini. Sila cuba lagi kemudian.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Ralat permohonan</value>

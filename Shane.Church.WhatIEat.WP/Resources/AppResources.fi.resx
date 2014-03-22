@@ -199,10 +199,10 @@
     <value>excel vienti</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Tämä vie kaikki päiväkirjamerkintöjä kutenExcel - yhteensopiva CSV SkyDrive .</value>
+    <value>Tämä vie kaikki päiväkirjamerkintöjä kutenExcel - yhteensopiva CSV OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Vie SkyDrive</value>
+    <value>Vie OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>lataamalla ...</value>
@@ -211,7 +211,7 @@
     <value>Lähetys onnistui !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Tiedot on ladattu onnistuneesti SkyDrive .</value>
+    <value>Tiedot on ladattu onnistuneesti OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>kunnossa</value>
@@ -223,7 +223,7 @@
     <value>Lataus epäonnistui</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Valitettavasti tietoja ei voitu viedä SkyDrive tällä hetkellä . Yritä myöhemmin uudelleen .</value>
+    <value>Valitettavasti tietoja ei voitu viedä OneDrive tällä hetkellä . Yritä myöhemmin uudelleen .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Application Error</value>

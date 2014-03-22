@@ -1,0 +1,12 @@
+﻿<div class="col-md-4">
+    <h1>calendar</h1>
+    <div ui-calendar="uiConfig.calendar" ng-model="entries" calendar="eventCalendar"></div>
+</div>
+<div class="col-md-8">
+    <h1>summary</h1>
+    <accordion close-others="false">
+        <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+        {{group.content}}
+        </accordion-group>
+    </accordion>
+</div>

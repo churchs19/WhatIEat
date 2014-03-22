@@ -199,10 +199,10 @@
     <value>Excel-Export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Dies wird alle Ihre Journaleinträge als Excel -kompatible CSV -Datei auf Ihren SkyDrive exportieren.</value>
+    <value>Dies wird alle Ihre Journaleinträge als Excel -kompatible CSV -Datei auf Ihren OneDrive exportieren.</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Export auf SkyDrive</value>
+    <value>Export auf OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>uploading ...</value>
@@ -211,7 +211,7 @@
     <value>Laden Sie erfolgreich!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Ihre Daten wurden erfolgreich hochgeladen auf SkyDrive .</value>
+    <value>Ihre Daten wurden erfolgreich hochgeladen auf OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>Upload fehlgeschlagen</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Leider konnten Ihre Daten nicht exportiert zu diesem Zeitpunkt SkyDrive werden. Bitte versuchen Sie es später erneut.</value>
+    <value>Leider konnten Ihre Daten nicht exportiert zu diesem Zeitpunkt OneDrive werden. Bitte versuchen Sie es später erneut.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Application Error</value>

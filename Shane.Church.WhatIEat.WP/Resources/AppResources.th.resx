@@ -199,10 +199,10 @@
     <value>การส่งออก Excel</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>นี้จะ ส่งออก ทั้งหมด ของ รายการบันทึก ของคุณเป็นExcel เข้ากันได้กับ ไฟล์ CSV ไปยัง SkyDrive ของคุณ</value>
+    <value>นี้จะ ส่งออก ทั้งหมด ของ รายการบันทึก ของคุณเป็นExcel เข้ากันได้กับ ไฟล์ CSV ไปยัง OneDrive ของคุณ</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>การส่งออก ไปยัง SkyDrive</value>
+    <value>การส่งออก ไปยัง OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>อัพโหลด ...</value>
@@ -211,7 +211,7 @@
     <value>อัพโหลด ที่ประสบความสำเร็จ !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>ข้อมูลของคุณ ได้รับการ ประสบความสำเร็จใน การอัปโหลด ไปยัง SkyDrive</value>
+    <value>ข้อมูลของคุณ ได้รับการ ประสบความสำเร็จใน การอัปโหลด ไปยัง OneDrive</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>อัพโหลด ล้มเหลว</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>แต่น่าเสียดายที่ ข้อมูลของคุณ ไม่สามารถ ส่งออกไปยัง SkyDrive ในเวลานี้ โปรดลอง อีกครั้งในภายหลัง</value>
+    <value>แต่น่าเสียดายที่ ข้อมูลของคุณ ไม่สามารถ ส่งออกไปยัง OneDrive ในเวลานี้ โปรดลอง อีกครั้งในภายหลัง</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>ข้อผิดพลาดโปรแกรม</value>

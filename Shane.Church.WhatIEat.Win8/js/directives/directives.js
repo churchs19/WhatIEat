@@ -1,0 +1,1 @@
+﻿angular.module('whatieat.directives', ['ui.bootstrap']);

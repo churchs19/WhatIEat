@@ -199,10 +199,10 @@
     <value>excel exportação</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Isto irá exportar todas as suas entradas de diário como um arquivo CSV Excel- compatível com o seu SkyDrive.</value>
+    <value>Isto irá exportar todas as suas entradas de diário como um arquivo CSV Excel- compatível com o seu OneDrive.</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Exportar para o SkyDrive</value>
+    <value>Exportar para o OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>upload ...</value>
@@ -211,7 +211,7 @@
     <value>Carregar com sucesso!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Seus dados foi enviado com sucesso para o SkyDrive .</value>
+    <value>Seus dados foi enviado com sucesso para o OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>Falha no upload</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Infelizmente, os dados não podem ser exportados para o SkyDrive neste momento. Por favor, tente novamente mais tarde.</value>
+    <value>Infelizmente, os dados não podem ser exportados para o OneDrive neste momento. Por favor, tente novamente mais tarde.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Erro de aplicativo</value>

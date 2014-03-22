@@ -199,10 +199,10 @@
     <value>एक्सेल निर्यात</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>यह आपके SkyDrive के लिए एक एक्सेल संगत सीएसवी फ़ाइल के रूप में अपनी पत्रिका प्रविष्टियों के सभी निर्यात करेगा .</value>
+    <value>यह आपके OneDrive के लिए एक एक्सेल संगत सीएसवी फ़ाइल के रूप में अपनी पत्रिका प्रविष्टियों के सभी निर्यात करेगा .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>SkyDrive पर निर्यात</value>
+    <value>OneDrive पर निर्यात</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>अपलोड ...</value>
@@ -211,7 +211,7 @@
     <value>सफल अपलोड !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>अपने डेटा को सफलतापूर्वक SkyDrive पर अपलोड किया गया है .</value>
+    <value>अपने डेटा को सफलतापूर्वक OneDrive पर अपलोड किया गया है .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ठीक</value>
@@ -223,7 +223,7 @@
     <value>अपलोड विफल</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>दुर्भाग्य से अपने डेटा इस समय SkyDrive पर निर्यात नहीं किया जा सकता है . बाद में पुन: प्रयास करें .</value>
+    <value>दुर्भाग्य से अपने डेटा इस समय OneDrive पर निर्यात नहीं किया जा सकता है . बाद में पुन: प्रयास करें .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>अनुप्रयोग त्रुटि</value>

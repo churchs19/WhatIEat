@@ -17,7 +17,7 @@
 </head>
 <body ng-app="app">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <a class="navbar-brand" href="/">What I Eat</a>
+        <span class="navbar-brand">What I Eat</span>
     </nav>
     <div ng-view id="main-content"></div>
     <iframe src="ms-appx-web:///InneractiveAd.html" id="ad-control"></iframe>
@@ -39,9 +39,9 @@
     <script src="/Scripts/angular-ui.js"></script>
     <script src="Scripts/angular-winjs.js"></script>
     <script src="/Scripts/flurry.js"></script>
-    <script src="/js/wl.js"></script>
-    <script src="/js/MobileServices.js"></script>
-    <script src="Scripts/linq.js"></script>
+    <script src="/Scripts/wl.js"></script>
+    <script src="/Scripts/MobileServices.js"></script>
+    <script src="/Scripts/linq.js"></script>
 
     <!-- Main App -->
     <script src="/js/default.js"></script>
@@ -49,12 +49,18 @@
     <!-- Services -->
     <script src="/js/services/services.js"></script>
     <script src="/js/services/azure-mobile-service.js"></script>
+    <script src="/js/services/live-connect.js"></script>
     <!-- Models -->
     <script src="/js/models/models.js"></script>
     <script src="/js/models/entry.js"></script>
+    <script src="/js/models/settings.js"></script>
     <!-- Filters -->
     <!-- Controllers -->
     <script src="/js/controllers/calendar.js"></script>
+    <script src="/js/controllers/login.js"></script>
+    <script src="/js/controllers/settings.js"></script>
     <!-- Directives -->
+    <script src="js/directives/directives.js"></script>
+    <script src="js/directives/wl-login-button.js"></script>
 </body>
 </html>

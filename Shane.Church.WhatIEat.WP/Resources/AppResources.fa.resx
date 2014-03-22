@@ -199,10 +199,10 @@
     <value>اکسل صادرات</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>این همه از نوشته های مجله خود را به عنوان یک فایل اکسل CSV سازگار به SkyDrive خود را صادر می کنند.</value>
+    <value>این همه از نوشته های مجله خود را به عنوان یک فایل اکسل CSV سازگار به OneDrive خود را صادر می کنند.</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>صادرات به SkyDrive</value>
+    <value>صادرات به OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>آپلود ...</value>
@@ -211,7 +211,7 @@
     <value>بارگذاری موفقیت آمیز !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>اطلاعات شما با موفقیت آپلود شده به SkyDrive .</value>
+    <value>اطلاعات شما با موفقیت آپلود شده به OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>خوب</value>
@@ -223,7 +223,7 @@
     <value>آپلود نشد</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>متاسفانه داده های خود را نمی تواند صادر شود به SkyDrive در این زمان است . لطفا بعدا دوباره امتحان کنید .</value>
+    <value>متاسفانه داده های خود را نمی تواند صادر شود به OneDrive در این زمان است . لطفا بعدا دوباره امتحان کنید .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>خطا در برنامه</value>

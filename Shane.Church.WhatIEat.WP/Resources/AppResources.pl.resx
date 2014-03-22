@@ -199,10 +199,10 @@
     <value>excel export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Będzie to eksport z zapisów księgowych w Excel- kompatybilnego pliku CSV do swojej usłudze SkyDrive .</value>
+    <value>Będzie to eksport z zapisów księgowych w Excel- kompatybilnego pliku CSV do swojej usłudze OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Eksport do usługi SkyDrive</value>
+    <value>Eksport do usługi OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>ładowanie ...</value>
@@ -211,7 +211,7 @@
     <value>Prześlij powodzeniem!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Twoje dane zostały pomyślnie przesłane do usługi SkyDrive .</value>
+    <value>Twoje dane zostały pomyślnie przesłane do usługi OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>dobrze</value>
@@ -223,7 +223,7 @@
     <value>Prześlij Nie</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Niestety dane nie mogą być eksportowane do usługi SkyDrive w tym czasie. Spróbuj ponownie później .</value>
+    <value>Niestety dane nie mogą być eksportowane do usługi OneDrive w tym czasie. Spróbuj ponownie później .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Błąd aplikacji</value>

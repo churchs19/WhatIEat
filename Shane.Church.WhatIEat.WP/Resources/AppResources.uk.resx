@@ -199,10 +199,10 @@
     <value>Excel експорт</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Це дозволить експортувати всі ваші записи в журналі як Excel -сумісних CSV файлу на SkyDrive.</value>
+    <value>Це дозволить експортувати всі ваші записи в журналі як Excel -сумісних CSV файлу на OneDrive.</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Експорт у SkyDrive</value>
+    <value>Експорт у OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>загрузка ...</value>
@@ -211,7 +211,7 @@
     <value>Успішно завантажені !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Ваші дані успішно завантажені на SkyDrive.</value>
+    <value>Ваші дані успішно завантажені на OneDrive.</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>добре</value>
@@ -223,7 +223,7 @@
     <value>збій при завантаженні</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>На жаль , ваші дані не можуть бути експортовані в SkyDrive в цей час. Будь ласка , спробуйте ще раз пізніше .</value>
+    <value>На жаль , ваші дані не можуть бути експортовані в OneDrive в цей час. Будь ласка , спробуйте ще раз пізніше .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Помилка програми</value>

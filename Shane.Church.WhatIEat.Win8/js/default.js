@@ -13,6 +13,11 @@ var appVersion = "1.0.0.0";
     var activation = Windows.ApplicationModel.Activation;
     var nav = WinJS.Navigation;
 
+    app.onsettings = function (e) {
+        e.detail.applicationcommands = { "app": { title: "Settings", href: "#/settings" } };
+        WinJS.UI.SettingsFlyout.populateSettings(e);
+    };
+
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -47,15 +52,24 @@ var appVersion = "1.0.0.0";
         'ui.directives',
         'winjs',
         'whatieat.services',
-        'whatieat.models'
+        'whatieat.models',
+        'whatieat.directives'
     ]).config(function ($routeProvider) {
         $routeProvider
-            .when('/', {
-                templateUrl: 'views/calendar/index.html',
+            .when('/login', {
+                templateUrl: 'views/login.html',
+                controller: 'LoginCtrl'
+            })
+            .when('/calendar', {
+                templateUrl: 'views/calendar.html',
                 controller: 'CalendarCtrl'
             })
+            .when('/settings', {
+                templateUrl: 'views/settings.html',
+                controller: 'SettingsCtrl'
+            })
             .otherwise({
-                redirectTo: '/'
+                redirectTo: '/login'
             });
     });
 

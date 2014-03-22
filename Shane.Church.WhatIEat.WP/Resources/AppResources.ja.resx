@@ -199,10 +199,10 @@
     <value>Excelエクスポート</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>これはあなたのSkyDriveのにExcel互換のCSVファイルとして仕訳のすべてをエクスポートします。</value>
+    <value>これはあなたのOneDriveのにExcel互換のCSVファイルとして仕訳のすべてをエクスポートします。</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>SkyDriveのへのエクスポート</value>
+    <value>OneDriveのへのエクスポート</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>アップロード...</value>
@@ -211,7 +211,7 @@
     <value>成功アップロード！</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>あなたのデータが正常にSkyDriveのようにアップロードされています。</value>
+    <value>あなたのデータが正常にOneDriveのようにアップロードされています。</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>OK</value>
@@ -223,7 +223,7 @@
     <value>アップロードに失敗しました</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>残念なことにあなたのデータは、この時点でSkyDriveのにエクスポートすることができませんでした。後ほどおかけ直しください。</value>
+    <value>残念なことにあなたのデータは、この時点でOneDriveのにエクスポートすることができませんでした。後ほどおかけ直しください。</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>アプリケーションエラー</value>

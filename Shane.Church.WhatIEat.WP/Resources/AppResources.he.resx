@@ -199,10 +199,10 @@
     <value>יצוא Excel</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>זו תייצא את כל תנועות היומן שלךכקובץ Excel תואם CSV ל SkyDrive שלך ​​.</value>
+    <value>זו תייצא את כל תנועות היומן שלךכקובץ Excel תואם CSV ל OneDrive שלך ​​.</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>יצוא ל- SkyDrive</value>
+    <value>יצוא ל- OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>העלאה ...</value>
@@ -211,7 +211,7 @@
     <value>העלה מוצלח!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>הנתונים שלך כבר הועלה בהצלחה אל SkyDrive .</value>
+    <value>הנתונים שלך כבר הועלה בהצלחה אל OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>בסדר</value>
@@ -223,7 +223,7 @@
     <value>ההעלאה נכשל</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>למרבה הצער הנתונים שלך לא יכולים להיות מיוצאיםלSkyDrive בשלב זה . אנא נסה שוב מאוחר יותר.</value>
+    <value>למרבה הצער הנתונים שלך לא יכולים להיות מיוצאיםלOneDrive בשלב זה . אנא נסה שוב מאוחר יותר.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>שגיאת יישום</value>

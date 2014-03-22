@@ -199,10 +199,10 @@
     <value>excel ihracat</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Bu SkyDrive için bir Excel uyumlu CSV dosyası olarak günlük girişleri tüm ihraç edecek .</value>
+    <value>Bu OneDrive için bir Excel uyumlu CSV dosyası olarak günlük girişleri tüm ihraç edecek .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>SkyDrive aktar</value>
+    <value>OneDrive aktar</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>yükleme ...</value>
@@ -211,7 +211,7 @@
     <value>Başarılı yükle!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Verilerinizi başarıyla SkyDrive için yüklendi.</value>
+    <value>Verilerinizi başarıyla OneDrive için yüklendi.</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>tamam</value>
@@ -223,7 +223,7 @@
     <value>Yükleme Başarısız</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Ne yazık ki verilerinizi şu anda SkyDrive ihraç edilemedi . Daha sonra tekrar deneyiniz .</value>
+    <value>Ne yazık ki verilerinizi şu anda OneDrive ihraç edilemedi . Daha sonra tekrar deneyiniz .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>uygulama Hatası</value>

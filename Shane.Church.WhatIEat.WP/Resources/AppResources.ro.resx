@@ -199,10 +199,10 @@
     <value>Excel export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Acest lucru va exporta toate înregistrările jurnal ca un fisier CSV Excel - compatibil cu SkyDrive .</value>
+    <value>Acest lucru va exporta toate înregistrările jurnal ca un fisier CSV Excel - compatibil cu OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Exportul în SkyDrive</value>
+    <value>Exportul în OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>încărcarea ...</value>
@@ -211,7 +211,7 @@
     <value>Încărcați cu succes !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Datele dvs. a fost încărcat cu succes în SkyDrive .</value>
+    <value>Datele dvs. a fost încărcat cu succes în OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>bine</value>
@@ -223,7 +223,7 @@
     <value>Încărcare eșuată</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Din păcate, datele nu pot fi exportate în SkyDrive în acest moment . Vă rugăm să încercați din nou mai târziu .</value>
+    <value>Din păcate, datele nu pot fi exportate în OneDrive în acest moment . Vă rugăm să încercați din nou mai târziu .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Eroare de aplicație</value>

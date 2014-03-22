@@ -199,10 +199,10 @@
     <value>excel export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Detta kommer att exportera alla dina journalanteckningar som ett Excel - kompatibelt CSV-fil till din SkyDrive .</value>
+    <value>Detta kommer att exportera alla dina journalanteckningar som ett Excel - kompatibelt CSV-fil till din OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Exportera till SkyDrive</value>
+    <value>Exportera till OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>uppladdning ...</value>
@@ -211,7 +211,7 @@
     <value>Ladda lyckades!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Din data har laddats upp till SkyDrive .</value>
+    <value>Din data har laddats upp till OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>OK</value>
@@ -223,7 +223,7 @@
     <value>Ladda misslyckades</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Tyvärr dina uppgifter inte skulle kunna exporteras till SkyDrive vid denna tid . Försök igen senare .</value>
+    <value>Tyvärr dina uppgifter inte skulle kunna exporteras till OneDrive vid denna tid . Försök igen senare .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Application Error</value>

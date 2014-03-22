@@ -199,10 +199,10 @@
     <value>Excel износ</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Така ще се експортират всички ваши записи в регистрите като Excel- съвместими файл CSV към вашия SkyDrive .</value>
+    <value>Така ще се експортират всички ваши записи в регистрите като Excel- съвместими файл CSV към вашия OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Износ за SkyDrive</value>
+    <value>Износ за OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>качване ...</value>
@@ -211,7 +211,7 @@
     <value>Качи успешен !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Вашият данни са качени на SkyDrive .</value>
+    <value>Вашият данни са качени на OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>добре</value>
@@ -223,7 +223,7 @@
     <value>Неуспешно качване</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>За съжаление данните не могат да бъдат изнесени в SkyDrive в този момент. Моля, опитайте отново по-късно .</value>
+    <value>За съжаление данните не могат да бъдат изнесени в OneDrive в този момент. Моля, опитайте отново по-късно .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Заявление Грешка</value>

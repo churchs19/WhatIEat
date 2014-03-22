@@ -199,10 +199,10 @@
     <value>excel exportació</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Això exportar tots els seients de diari en un fitxer CSV compatible amb Excel al seu SkyDrive .</value>
+    <value>Això exportar tots els seients de diari en un fitxer CSV compatible amb Excel al seu OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Exporta a SkyDrive</value>
+    <value>Exporta a OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>carregant ...</value>
@@ -211,7 +211,7 @@
     <value>Pujar èxit !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Les seves dades s'ha carregat correctament en SkyDrive .</value>
+    <value>Les seves dades s'ha carregat correctament en OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>bo</value>
@@ -223,7 +223,7 @@
     <value>error en la càrrega</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Per desgràcia , les dades no podien ser exportats a SkyDrive en aquest moment . Si us plau intenta-ho de nou més tard .</value>
+    <value>Per desgràcia , les dades no podien ser exportats a OneDrive en aquest moment . Si us plau intenta-ho de nou més tard .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>error de l'aplicació</value>

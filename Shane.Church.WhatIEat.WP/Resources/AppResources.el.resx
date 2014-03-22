@@ -199,10 +199,10 @@
     <value>excel εξαγωγές</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Αυτό θα εξάγει το σύνολο των εγγραφών περιοδικού σας ως Excel συμβατό αρχείο CSV στο SkyDrive σας .</value>
+    <value>Αυτό θα εξάγει το σύνολο των εγγραφών περιοδικού σας ως Excel συμβατό αρχείο CSV στο OneDrive σας .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Εξαγωγή στο SkyDrive</value>
+    <value>Εξαγωγή στο OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>μεταφόρτωση ...</value>
@@ -211,7 +211,7 @@
     <value>Ανεβάστε επιτυχής !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Τα δεδομένα σας έχει φορτωθεί επιτυχώς στο SkyDrive .</value>
+    <value>Τα δεδομένα σας έχει φορτωθεί επιτυχώς στο OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>εντάξει</value>
@@ -223,7 +223,7 @@
     <value>Η μεταφόρτωση απέτυχε</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Δυστυχώς, τα δεδομένα σας δεν μπορούν να εξάγονται στο SkyDrive αυτή τη στιγμή . Παρακαλώ δοκιμάστε ξανά αργότερα .</value>
+    <value>Δυστυχώς, τα δεδομένα σας δεν μπορούν να εξάγονται στο OneDrive αυτή τη στιγμή . Παρακαλώ δοκιμάστε ξανά αργότερα .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Σφάλμα εφαρμογής</value>

@@ -199,10 +199,10 @@
     <value>excel export</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Dit zal al uw journaalposten exporteren als een Excel - compatibele CSV -bestand naar uw SkyDrive .</value>
+    <value>Dit zal al uw journaalposten exporteren als een Excel - compatibele CSV -bestand naar uw OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Exporteren naar SkyDrive</value>
+    <value>Exporteren naar OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>uploaden ...</value>
@@ -211,7 +211,7 @@
     <value>Upload Succesvol !</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Uw data is geüpload naar SkyDrive .</value>
+    <value>Uw data is geüpload naar OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>goed</value>
@@ -223,7 +223,7 @@
     <value>Upload mislukt</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Helaas uw gegevens kan niet worden geëxporteerd naar SkyDrive op dit moment. Probeer het later opnieuw .</value>
+    <value>Helaas uw gegevens kan niet worden geëxporteerd naar OneDrive op dit moment. Probeer het later opnieuw .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>Application Error</value>

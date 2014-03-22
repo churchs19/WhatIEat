@@ -199,10 +199,10 @@
     <value>excel ekspor</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Ini akan mengekspor semua entri jurnal Anda sebagai file CSV Excel - kompatibel ke SkyDrive .</value>
+    <value>Ini akan mengekspor semua entri jurnal Anda sebagai file CSV Excel - kompatibel ke OneDrive .</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Ekspor ke SkyDrive</value>
+    <value>Ekspor ke OneDrive</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
     <value>upload ...</value>
@@ -211,7 +211,7 @@
     <value>Unggah Sukses!</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Data Anda telah berhasil diunggah ke SkyDrive .</value>
+    <value>Data Anda telah berhasil diunggah ke OneDrive .</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>ok</value>
@@ -223,7 +223,7 @@
     <value>Upload Gagal</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Sayangnya data Anda tidak dapat diekspor ke SkyDrive pada saat ini . Silakan coba lagi nanti .</value>
+    <value>Sayangnya data Anda tidak dapat diekspor ke OneDrive pada saat ini . Silakan coba lagi nanti .</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
     <value>aplikasi Error</value>
