@@ -19,6 +19,12 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 		public event ActionCompleteEventHandler SaveActionCompleted;
 		public event ActionCompleteEventHandler RemoveActionCompleted;
 
+		public EntryViewModel()
+			: this(KernelService.Kernel.Get<IRepository<IEntry>>())
+		{
+
+		}
+
 		[Inject]
 		public EntryViewModel(IRepository<IEntry> repository)
 		{
@@ -70,6 +76,16 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			}
 		}
 
+		private MealType _mealType;
+		public MealType MealType
+		{
+			get { return _mealType; }
+			set
+			{
+				Set(() => MealType, ref _mealType, value);
+			}
+		}
+
 		private ICommand _removeCommand;
 		public ICommand RemoveCommand
 		{
@@ -97,6 +113,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				EntryDate = entry.EntryDate;
 				Entry = entry.EntryText;
 				EntryGuid = entry.EntryGuid;
+				MealType = entry.MealType;
 			}
 		}
 
@@ -106,6 +123,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			EntryDate = entry.EntryDate;
 			Entry = entry.EntryText;
 			EntryGuid = entry.EntryGuid;
+			MealType = entry.MealType;
 		}
 
 		public void RemoveEntry()
@@ -115,6 +133,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			entry.EntryGuid = EntryGuid;
 			entry.EntryId = EntryId;
 			entry.EntryText = Entry;
+			entry.MealType = MealType;
 			_repository.DeleteEntry(entry);
 			if (RemoveActionCompleted != null)
 				RemoveActionCompleted(this, new EventArgs());
@@ -127,6 +146,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			entry.EntryGuid = EntryGuid;
 			entry.EntryId = EntryId;
 			entry.EntryText = Entry;
+			entry.MealType = MealType;
 			_repository.AddOrUpdateEntry(entry);
 			if (SaveActionCompleted != null)
 				SaveActionCompleted(this, new EventArgs());

@@ -25,6 +25,7 @@ namespace Shane.Church.WhatIEat.Core.Data
 			CreateDateTime = source.CreateDateTime;
 			EditDateTime = source.EditDateTime;
 			IsDeleted = source.IsDeleted.HasValue ? source.IsDeleted.Value : false;
+			MealType = source.MealType;
 		}
 
 		[DataMember(Name = "id")]
@@ -43,6 +44,8 @@ namespace Shane.Church.WhatIEat.Core.Data
 		public string UserId { get; set; }
 		[DataMember]
 		public bool IsDeleted { get; set; }
+		[DataMember]
+		public MealType MealType { get; set; }
 
 		public IEntry GetEntry()
 		{
@@ -54,6 +57,7 @@ namespace Shane.Church.WhatIEat.Core.Data
 			entry.CreateDateTime = CreateDateTime;
 			entry.EditDateTime = EditDateTime;
 			entry.IsDeleted = IsDeleted;
+			entry.MealType = MealType;
 			return entry;
 		}
 	}

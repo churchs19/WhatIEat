@@ -7,7 +7,7 @@ public class PhoneDataContext : DataContext
 	// Specify the connection string as a static, used in main page and app.xaml.
 	public static string DBConnectionString = "Data Source=isostore:/WhatIEat.sdf";
 	public static string DBFileName = "WhatIEat.sdf";
-	public static int DBSchemaVersion = 2;
+	public static int DBSchemaVersion = 3;
 
 	// Pass the connection string to the base class.
 	public PhoneDataContext()
@@ -34,7 +34,11 @@ public class PhoneDataContext : DataContext
 					dbUpdater.AddColumn<PhoneEntry>("IsDeleted");
 				}
 
-				//if (dbUpdater.DatabaseSchemaVersion < 3) etc...
+				if (dbUpdater.DatabaseSchemaVersion < 3)
+				{
+					//Perform v3 updates
+					dbUpdater.AddColumn<PhoneEntry>("MealType");
+				}
 
 				// Add the new database version.
 				dbUpdater.DatabaseSchemaVersion = DBSchemaVersion;

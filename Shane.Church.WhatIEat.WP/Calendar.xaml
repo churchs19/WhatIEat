@@ -10,7 +10,11 @@
 	xmlns:telerikTextBox="clr-namespace:Telerik.Windows.Controls.PhoneTextBox;assembly=Telerik.Windows.Controls.Primitives"
 	xmlns:telerikToggleSwitch="clr-namespace:Telerik.Windows.Controls.ToggleSwitch;assembly=Telerik.Windows.Controls.Primitives"
 	xmlns:telerikConverters="clr-namespace:Telerik.Windows.Controls.ImageButton;assembly=Telerik.Windows.Controls.Primitives"
+	xmlns:ListPicker="clr-namespace:Telerik.Windows.Controls.ListPicker;assembly=Telerik.Windows.Controls.Input" xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
+	xmlns:Helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
 	mc:Ignorable="d">
+	
+	<Helpers:NegativeNumberConverter x:Key="NegativeNumberConverter"/>
 	
 	<Color x:Key="AppBaseColor">#FFF6E6FF</Color>
 	<SolidColorBrush x:Key="AppBaseColorBrush" Color="{StaticResource AppBaseColor}"/>
@@ -273,14 +277,14 @@
 								<VisualState x:Name="PressedState">
 									<Storyboard>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
-											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedStateImageSource}"/>
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding PressedStateImageSource, RelativeSource={RelativeSource TemplatedParent}}"/>
 										</ObjectAnimationUsingKeyFrames>
 									</Storyboard>
 								</VisualState>
 								<VisualState x:Name="DisabledState">
 									<Storyboard>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
-											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DisabledStateImageSource}"/>
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding DisabledStateImageSource, RelativeSource={RelativeSource TemplatedParent}}"/>
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}" />
@@ -358,35 +362,29 @@
 								<RowDefinition Height="Auto"/>
 							</Grid.RowDefinitions>
 							<Rectangle x:Name="RectangleButtonBackground"
-									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
-									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
-									Fill="{TemplateBinding Background}"
-									Stroke="{TemplateBinding BorderBrush}"
-									StrokeThickness="{Binding Path=BorderThickness, 
-										RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource ThicknessToDoubleConverter}}" 
-									Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}"/>
+								MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+								MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+								Fill="{TemplateBinding Background}"
+								Stroke="{TemplateBinding BorderBrush}"
+								StrokeThickness="{Binding BorderThickness, Converter={StaticResource ThicknessToDoubleConverter}, RelativeSource={RelativeSource TemplatedParent}}" 
+								Visibility="{Binding ButtonShape, ConverterParameter=Rectangle, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}"/>
 							<Rectangle x:Name="RectangleButtonForeground"
 								Fill="{TemplateBinding Foreground}"
-								Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-									Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}">
+								Visibility="{Binding ButtonShape, ConverterParameter=Rectangle, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
 								<Rectangle.OpacityMask>
 									<ImageBrush x:Name="PART_RectangleOpacityMaskImageBrush"/>
 								</Rectangle.OpacityMask>
 							</Rectangle>
 							<Ellipse x:Name="EllipseButtonBackground"
-									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
-									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
-									Fill="{TemplateBinding Background}"
-									Stroke="{TemplateBinding BorderBrush}"
-									StrokeThickness="{Binding Path=BorderThickness, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ThicknessToDoubleConverter}}"
-									Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}" />
+								MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+								MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+								Fill="{TemplateBinding Background}"
+								Stroke="{TemplateBinding BorderBrush}"
+								StrokeThickness="{Binding BorderThickness, Converter={StaticResource ThicknessToDoubleConverter}, RelativeSource={RelativeSource TemplatedParent}}"
+								Visibility="{Binding ButtonShape, ConverterParameter=Ellipse, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}" />
 							<Ellipse x:Name="EllipseButtonForeground"
 								Fill="{TemplateBinding Foreground}"
-								Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}">
+								Visibility="{Binding ButtonShape, ConverterParameter=Ellipse, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
 								<Ellipse.OpacityMask>
 									<ImageBrush x:Name="PART_EllipseOpacityMaskImageBrush"/>
 								</Ellipse.OpacityMask>
@@ -396,10 +394,10 @@
 								Source="{TemplateBinding RestStateImageSource}"
 								CacheMode="BitmapCache"/>
 							<ContentControl x:Name="ContentControl" Grid.Row="1"
-										Content="{TemplateBinding Content}"
-										ContentTemplate="{TemplateBinding ContentTemplate}"
-										VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-										HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+								Content="{TemplateBinding Content}"
+								ContentTemplate="{TemplateBinding ContentTemplate}"
+								VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+								HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
 						</Grid>
 					</Grid>
 				</ControlTemplate>
@@ -424,14 +422,14 @@
 								<VisualState x:Name="PressedState">
 									<Storyboard>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
-											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=PressedStateImageSource}"/>
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding PressedStateImageSource, RelativeSource={RelativeSource TemplatedParent}}"/>
 										</ObjectAnimationUsingKeyFrames>
 									</Storyboard>
 								</VisualState>
 								<VisualState x:Name="DisabledState">
 									<Storyboard>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ButtonImage" Storyboard.TargetProperty="Source">
-											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=DisabledStateImageSource}"/>
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{Binding DisabledStateImageSource, RelativeSource={RelativeSource TemplatedParent}}"/>
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RectangleButtonBackground" Storyboard.TargetProperty="Stroke">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource AppBaseColor2}" />
@@ -585,39 +583,33 @@
 							</Grid.RowDefinitions>
  
 							<Rectangle x:Name="RectangleButtonBackground"
-									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
-									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
-									Fill="Transparent"
-									Stroke="{StaticResource AppBaseColor4Brush}"
-									StrokeThickness="{Binding Path=BorderThickness, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ThicknessToDoubleConverter}}"
-							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}"/> 
+								MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+								MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+								Fill="Transparent"
+								Stroke="{StaticResource AppBaseColor4Brush}"
+								StrokeThickness="{Binding BorderThickness, Converter={StaticResource ThicknessToDoubleConverter}, RelativeSource={RelativeSource TemplatedParent}}"
+								Visibility="{Binding ButtonShape, ConverterParameter=Rectangle, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}"/> 
 							<Rectangle x:Name="RectangleButtonForeground"
-									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
-									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
-							Fill="{StaticResource AppBaseColor4Brush}"
-							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Rectangle}">
+								MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+								MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+								Fill="{StaticResource AppBaseColor4Brush}"
+								Visibility="{Binding ButtonShape, ConverterParameter=Rectangle, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
 								<Rectangle.OpacityMask>
 									<ImageBrush x:Name="PART_RectangleOpacityMaskImageBrush"/>
 								</Rectangle.OpacityMask>
 							</Rectangle>
 							<Ellipse x:Name="EllipseButtonBackground"
-									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
-									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
-									Fill="Transparent"
-									Stroke="{StaticResource AppBaseColor4Brush}"
-									StrokeThickness="{Binding Path=BorderThickness, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ThicknessToDoubleConverter}}"
-							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}" />
+								MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+								MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+								Fill="Transparent"
+								Stroke="{StaticResource AppBaseColor4Brush}"
+								StrokeThickness="{Binding BorderThickness, Converter={StaticResource ThicknessToDoubleConverter}, RelativeSource={RelativeSource TemplatedParent}}"
+								Visibility="{Binding ButtonShape, ConverterParameter=Ellipse, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}" />
 							<Ellipse x:Name="EllipseButtonForeground"
-									MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
-									MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
-									Fill="{StaticResource AppBaseColor4Brush}"
-							Visibility="{Binding ButtonShape, RelativeSource={RelativeSource TemplatedParent}, 
-										Converter={StaticResource ImageButtonShapeToVisibilityConverter}, ConverterParameter=Ellipse}">
+								MinHeight="{Binding MinHeight, RelativeSource={RelativeSource TemplatedParent}}"
+								MinWidth="{Binding MinWidth, RelativeSource={RelativeSource TemplatedParent}}"
+								Fill="{StaticResource AppBaseColor4Brush}"
+								Visibility="{Binding ButtonShape, ConverterParameter=Ellipse, Converter={StaticResource ImageButtonShapeToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}">
 								<Ellipse.OpacityMask>
 									<ImageBrush x:Name="PART_EllipseOpacityMaskImageBrush"/>
 								</Ellipse.OpacityMask>
@@ -627,10 +619,10 @@
 								Source="{TemplateBinding RestStateImageSource}"
 								CacheMode="BitmapCache"/>
 							<ContentControl x:Name="ContentControl" Grid.Row="1"
-										Content="{TemplateBinding Content}"
-										ContentTemplate="{TemplateBinding ContentTemplate}"
-										VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-										HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+								Content="{TemplateBinding Content}"
+								ContentTemplate="{TemplateBinding ContentTemplate}"
+								VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+								HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
 						</Grid>
 					</Grid>
 				</ControlTemplate>
@@ -807,22 +799,22 @@
 								ContentTemplate="{TemplateBinding HeaderTemplate}"
 								Style="{TemplateBinding HeaderStyle}"/>
 							<TextBlock
-							x:Name="ValidationMessage"
-							Grid.Column="1"
-							Padding="0,0,0,2"
-							Visibility="{Binding ValidationMessage, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TextToVisibilityConverter}}"
-							Text="{TemplateBinding ValidationMessage}"
-							FontSize="{StaticResource PhoneFontSizeNormal}"/>
+								x:Name="ValidationMessage"
+								Grid.Column="1"
+								Padding="0,0,0,2"
+								Visibility="{Binding ValidationMessage, Converter={StaticResource TextToVisibilityConverter}, RelativeSource={RelativeSource TemplatedParent}}"
+								Text="{TemplateBinding ValidationMessage}"
+								FontSize="{StaticResource PhoneFontSizeNormal}"/>
 							<Image
-							x:Name="ValidationImage" 
-							Grid.Column="2"
-							Margin="8,0,0,0" />
+								x:Name="ValidationImage" 
+								Grid.Column="2"
+								Margin="8,0,0,0" />
 						</Grid>
 						<Border Grid.Row="1"
-						x:Name="EnabledBorder"
-						Background="{TemplateBinding Background}"
-						BorderThickness="{TemplateBinding BorderThickness}"
-						BorderBrush="{TemplateBinding BorderBrush}" >
+							x:Name="EnabledBorder"
+							Background="{TemplateBinding Background}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							BorderBrush="{TemplateBinding BorderBrush}" >
 							<Grid>
 								<Grid.ColumnDefinitions>
 									<ColumnDefinition/>
@@ -834,18 +826,18 @@
 									<RowDefinition Height="Auto"/>
 								</Grid.RowDefinitions>
 								<ContentControl
-								x:Name="ContentElement"
-								BorderThickness="0"
-								Padding="{TemplateBinding Padding}"
-								HorizontalContentAlignment="Stretch"
-								VerticalContentAlignment="Stretch"
-								Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
+									x:Name="ContentElement"
+									BorderThickness="0"
+									Padding="{TemplateBinding Padding}"
+									HorizontalContentAlignment="Stretch"
+									VerticalContentAlignment="Stretch"
+									Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
 								<TextBlock x:Name="PART_Watermark"
-								Text="{TemplateBinding Watermark}"
-								TextAlignment="{TemplateBinding TextAlignment}"
-								Foreground="Gray"
-								Padding="{TemplateBinding Padding}"
-								Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
+									Text="{TemplateBinding Watermark}"
+									TextAlignment="{TemplateBinding TextAlignment}"
+									Foreground="Gray"
+									Padding="{TemplateBinding Padding}"
+									Margin="{StaticResource PhoneTextBoxInnerMargin}"/>
 								<telerikTextBox:TextBoxSecondaryButton x:Name="PART_ClearButton" Grid.Column="1" Style="{TemplateBinding ClearButtonStyle}" ButtonType="Clear"/>
 								<telerikTextBox:TextBoxActionButton x:Name="PART_ActionButton" Grid.Column="2" Style="{TemplateBinding ActionButtonStyle}" Visibility="{TemplateBinding ActionButtonVisibility}"/>
 							</Grid>
@@ -853,30 +845,192 @@
 						<Border Grid.Row="1" x:Name="ValidationBorder" BorderThickness="0 0 0 3" />
 						<telerikPrimitives:RadBusyIndicator x:Name="BusyIndicator" Grid.Row="1" Margin="0,0,0,-10" VerticalAlignment="Bottom" Content="{x:Null}" AnimationStyle="AnimationStyle9"/>
 						<Border Grid.Row="1"
-						x:Name="DisabledOrReadonlyBorder"
-						Visibility="Collapsed"
-						Background="Transparent"
-						BorderBrush="{StaticResource AppAccentColorBrush}"
-						BorderThickness="{TemplateBinding BorderThickness}" >
-							<TextBox
-							x:Name="DisabledOrReadonlyContent"
-							Text="{TemplateBinding Text}"
-							Foreground="{StaticResource PhoneDisabledBrush}"
+							x:Name="DisabledOrReadonlyBorder"
+							Visibility="Collapsed"
 							Background="Transparent"
-							SelectionBackground="{TemplateBinding SelectionBackground}"
-							SelectionForeground="{TemplateBinding SelectionForeground}"
-							TextWrapping="{TemplateBinding TextWrapping}"
-							TextAlignment="{TemplateBinding TextAlignment}"
-							IsReadOnly="True"
-							Template="{StaticResource PhoneDisabledTextBoxTemplate}"
-							FontFamily="{TemplateBinding FontFamily}"
-							FontSize="{TemplateBinding FontSize}"
-							FontWeight="{TemplateBinding FontWeight}"
-							FontStyle="{TemplateBinding FontStyle}"/>
+							BorderBrush="{StaticResource AppAccentColorBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}" >
+							<TextBox
+								x:Name="DisabledOrReadonlyContent"
+								Text="{TemplateBinding Text}"
+								Foreground="{StaticResource PhoneDisabledBrush}"
+								Background="Transparent"
+								SelectionBackground="{TemplateBinding SelectionBackground}"
+								SelectionForeground="{TemplateBinding SelectionForeground}"
+								TextWrapping="{TemplateBinding TextWrapping}"
+								TextAlignment="{TemplateBinding TextAlignment}"
+								IsReadOnly="True"
+								Template="{StaticResource PhoneDisabledTextBoxTemplate}"
+								FontFamily="{TemplateBinding FontFamily}"
+								FontSize="{TemplateBinding FontSize}"
+								FontWeight="{TemplateBinding FontWeight}"
+								FontStyle="{TemplateBinding FontStyle}"/>
 						</Border>
 					</Grid>
 				</ControlTemplate>
 			</Setter.Value>
 		</Setter>
+	</Style>
+	<Style x:Key="PopupHeaderStyle" TargetType="ContentControl">
+		<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMedium}"/>
+		<Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiBold}"/>
+		<Setter Property="Margin" Value="0"/>
+		<Setter Property="HorizontalContentAlignment" Value="Left"/>
+		<Setter Property="Visibility" Value="Collapsed" />
+		<Setter Property="MinWidth" Value="44"/>
+		<Setter Property="MinHeight" Value="44"/>
+	</Style>
+	<ListPicker:SelectionModeToBooleanConverter x:Key="SelectionModeToBooleanConverter"/>
+	<Style x:Key="RadListColorPickerStyle" TargetType="telerikInput:RadListPicker">
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HeaderStyle">
+			<Setter.Value>
+				<Style TargetType="ContentControl">
+					<Setter Property="Foreground" Value="{StaticResource PhoneSubtleBrush}"/>
+					<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}"/>
+					<Setter Property="Padding" Value="0"/>
+					<Setter Property="HorizontalAlignment" Value="Left"/>
+				</Style>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+		<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMediumLarge}"/>
+		<Setter Property="PopupHeaderStyle" Value="{StaticResource PopupHeaderStyle}"/>
+		<Setter Property="MinHeight" Value="44"/>
+		<Setter Property="BorderBrush" Value="{StaticResource PhoneForegroundBrush}"/>
+		<Setter Property="ActionButtonVisibility" Value="Collapsed"/>
+		<Setter Property="ActionButtonStyle">
+			<Setter.Value>
+				<Style TargetType="telerikTextBox:TextBoxSecondaryButton">
+					<Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+				</Style>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="PopupOpenAnimation">
+			<Setter.Value>
+				<telerik:RadTileAnimation Duration="0:0:.2" InitialDelay="0:0:.08" IsTranslationEnabled="False" InOutAnimationMode="In" PerspectiveAngleY="0" PerspectiveAngleX="90" SequentialMode="FirstToLast"/>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="PopupCloseAnimation">
+			<Setter.Value>
+				<telerik:RadTileAnimation Duration="0:0:.2" IsTranslationEnabled="False" InOutAnimationMode="Out" PerspectiveAngleY="0" PerspectiveAngleX="90" SequentialMode="FirstToLast" SequentialItemDelay="0"/>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="telerikInput:RadListPicker">
+					<Grid x:Name="LayoutRoot" Margin="{StaticResource PhoneTouchTargetOverhang}">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal"/>
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Background" Storyboard.TargetName="border">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="border">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{TemplateBinding Property=Foreground}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Foreground" Storyboard.TargetName="PopupModeLabel">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{TemplateBinding Foreground}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Expanded">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Background" Storyboard.TargetName="border">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{TemplateBinding Background}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="border">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{TemplateBinding BorderBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="border">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}"/>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Background" Storyboard.TargetName="border">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="Transparent"/>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<ContentControl x:Name="HeaderPresenter" 
+										CacheMode="BitmapCache" 
+										ContentTemplate="{TemplateBinding HeaderTemplate}" 
+										Content="{TemplateBinding Header}" 
+										Style="{TemplateBinding HeaderStyle}" 
+										Visibility="Collapsed"/>
+						<Border x:Name="border" 
+								BorderBrush="{TemplateBinding BorderBrush}" 
+								BorderThickness="{TemplateBinding BorderThickness}" 
+								Background="{TemplateBinding Background}" 
+								CacheMode="BitmapCache">
+							<Grid x:Name="mainLayout">
+								<telerikInput:RadListPickerItem x:Name="PopupModeLabel" 
+																HorizontalAlignment="Stretch" 
+																Style="{TemplateBinding ItemStyle}"/>
+								<Canvas x:Name="ItemsParent"/>
+							</Grid>
+						</Border>
+						<telerikPrimitives:RadWindow x:Name="Popup" 
+							CloseAnimation="{TemplateBinding PopupCloseAnimation}" 
+							IsFullScreen="False"
+							WindowSizeMode="AutoSize"
+							Placement="BottomLeft"
+							IsClosedOnBackButton="True"
+							IsClosedOnOutsideTap="True"
+							IsAnimationEnabled="{TemplateBinding IsAnimationEnabled}" 
+							OpenAnimation="{TemplateBinding PopupOpenAnimation}" 
+							Background="{StaticResource AppBaseColor4Brush}" 
+							PlacementTarget="{Binding Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" 
+							VerticalOffset="{Binding ActualHeight, Converter={StaticResource NegativeNumberConverter}, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}">
+							<Grid Background="{StaticResource AppBaseColor4Brush}" 
+								  telerik:RadTileAnimation.ContainerToAnimate="{Binding ., ElementName=PopupList}"
+								  Width="200">
+								<telerikPrimitives:RadDataBoundListBox x:Name="PopupList" 
+																	   CheckModeDeactivatedOnBackButton="False"
+																	   DisplayMemberPath="{TemplateBinding DisplayMemberPath}" 
+																	   IsCheckModeActive="{Binding SelectionMode, Converter={StaticResource SelectionModeToBooleanConverter}, RelativeSource={RelativeSource TemplatedParent}}" 
+																	   telerik:InteractionEffectManager.IsInteractionEnabled="True" 
+																	   ItemContainerStyle="{TemplateBinding PopupItemStyle}" 
+																	   Style="{TemplateBinding PopupStyle}"/>
+							</Grid>
+						</telerikPrimitives:RadWindow>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="PopupItemStyle">
+			<Setter.Value>
+				<Style TargetType="telerikPrimitives:RadDataBoundListBoxItem">
+					<!--<Setter Property="Padding" Value="24, 26, 0, 26"/>-->
+				</Style>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="PopupStyle">
+			<Setter.Value>
+				<Style TargetType="telerikPrimitives:RadDataBoundListBox">
+					<Setter Property="CheckBoxStyle">
+						<Setter.Value>
+							<Style TargetType="telerikPrimitives:ItemCheckBox">
+								<Setter Property="VerticalAlignment" Value="Center"/>
+								<Setter Property="Margin" Value="0, 0, -18, 0"/>
+							</Style>
+						</Setter.Value>
+					</Setter>
+				</Style>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="BorderThickness" Value="3"/>
+		<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+		<Setter Property="VerticalContentAlignment" Value="Stretch"/>
+		<Setter Property="MinWidth" Value="44"/>
+		<Setter Property="Margin" Value="0"/>
 	</Style>
 </ResourceDictionary>

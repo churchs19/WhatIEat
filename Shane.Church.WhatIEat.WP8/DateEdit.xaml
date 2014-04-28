@@ -9,51 +9,56 @@
 	xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
 	xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
 	xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Binding"
-    SupportedOrientations="Portrait" Orientation="Portrait"
+	xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    SupportedOrientations="Portrait" 
+	Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    shell:SystemTray.IsVisible="False" 
+	Loaded="PhoneApplicationPage_Loaded" 
+	d:DataContext="{d:DesignData /SampleData/DateEditViewModelSampleData.xaml}">
 
-	<phone:PhoneApplicationPage.Resources>
-		<Style x:Key="NewEntryActionButtonStyle" TargetType="telerikPrimitives:RadImageButton">
-			<Setter Property="ButtonShape" Value="Ellipse"/>
-			<Setter Property="ButtonType" Value="Custom"/>
-			<Setter Property="RestStateImageSource" Value="Images/Add.png"/>
-			<Setter Property="BorderBrush" Value="{StaticResource AppBaseColor4Brush}"/>
-			<Setter Property="Background" Value="{StaticResource AppAccentColorBrush}"/>
-			<Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
-		</Style>
-		<Style x:Key="SaveEntryActionButtonStyle" TargetType="telerikPrimitives:RadImageButton">
-			<Setter Property="ButtonShape" Value="Ellipse"/>
-			<Setter Property="ButtonType" Value="Custom"/>
-			<Setter Property="RestStateImageSource" Value="Images/DateTimePickerOk.png"/>
-			<Setter Property="BorderBrush" Value="{StaticResource AppBaseColor4Brush}"/>
-			<Setter Property="Background" Value="{StaticResource AppAccentColorBrush}"/>
-			<Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
-		</Style>
+    <phone:PhoneApplicationPage.Resources>
+        <helpers:MealTypeBrushConverter x:Key="mealTypeBrush"></helpers:MealTypeBrushConverter>
+        <Style x:Key="NewEntryActionButtonStyle" TargetType="telerikPrimitives:RadImageButton">
+            <Setter Property="ButtonShape" Value="Ellipse"/>
+            <Setter Property="ButtonType" Value="Custom"/>
+            <Setter Property="RestStateImageSource" Value="Images/Add.png"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AppBaseColor4Brush}"/>
+            <Setter Property="Background" Value="{StaticResource AppAccentColorBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
+        </Style>
+        <Style x:Key="SaveEntryActionButtonStyle" TargetType="telerikPrimitives:RadImageButton">
+            <Setter Property="ButtonShape" Value="Ellipse"/>
+            <Setter Property="ButtonType" Value="Custom"/>
+            <Setter Property="RestStateImageSource" Value="Images/DateTimePickerOk.png"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AppBaseColor4Brush}"/>
+            <Setter Property="Background" Value="{StaticResource AppAccentColorBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
+        </Style>
 
-		<DataTemplate x:Key="DefaultEntryDataTemplate">
-			<Grid Background="{StaticResource TransparentBrush}">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition/>
-				</Grid.ColumnDefinitions>
-				<TextBlock HorizontalAlignment="Left" 
+        <DataTemplate x:Key="DefaultEntryDataTemplate">
+            <Grid Background="{StaticResource TransparentBrush}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" 
 					Margin="10" 
 					TextWrapping="Wrap" 
 					Text="{Binding Entry}" 
 					VerticalAlignment="Center" 
 					FontSize="{StaticResource PhoneFontSizeMedium}"
 					Foreground="{StaticResource AppBaseColor4Brush}" Padding="10"/>
-				<Border BorderBrush="{StaticResource AppAccentColorBrush}" BorderThickness="0,0,0,2"/>
-			</Grid>
-		</DataTemplate>
-		<DataTemplate x:Key="SelectedEntryDataTemplate">
-			<Grid>
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="*"/>
-					<ColumnDefinition Width="Auto"/>
-				</Grid.ColumnDefinitions>
-				<Rectangle Grid.ColumnSpan="2" Fill="{StaticResource PhoneTextBoxBrush}" Margin="10" StrokeThickness="3" Stroke="{StaticResource PhoneTextBoxBrush}"/>
-				<telerikPrimitives:RadTextBox x:Name="editTextBox" Grid.Column="0"
+                <Border BorderBrush="{StaticResource AppAccentColorBrush}" BorderThickness="0,0,0,2"/>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="SelectedEntryDataTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.ColumnSpan="2" Fill="{StaticResource PhoneTextBoxBrush}" Margin="10" StrokeThickness="3" Stroke="{StaticResource PhoneTextBoxBrush}"/>
+                <telerikPrimitives:RadTextBox x:Name="editTextBox" Grid.Column="0"
 					TextWrapping="Wrap"
 					Text="{Binding Entry, Mode=TwoWay}"
 					VerticalAlignment="Top" 
@@ -68,17 +73,17 @@
 					ActionButtonTap="editTextBox_ActionButtonTap"
 					ExecuteActionOnReturn="True"
 					Loaded="editTextBox_Loaded">
-					<telerikPrimitives:RadTextBox.HeaderStyle>
-						<Style TargetType="ContentControl">
-							<Setter Property="Padding">
-								<Setter.Value>
-									<Thickness>0,0,0,0</Thickness>
-								</Setter.Value>
-							</Setter>
-						</Style>
-					</telerikPrimitives:RadTextBox.HeaderStyle>
-				</telerikPrimitives:RadTextBox>
-				<telerikPrimitives:RadImageButton Content="" 
+                    <telerikPrimitives:RadTextBox.HeaderStyle>
+                        <Style TargetType="ContentControl">
+                            <Setter Property="Padding">
+                                <Setter.Value>
+                                    <Thickness>0,0,0,0</Thickness>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </telerikPrimitives:RadTextBox.HeaderStyle>
+                </telerikPrimitives:RadTextBox>
+                <telerikPrimitives:RadImageButton Content="" 
 					Grid.Column="1" 
 					RestStateImageSource="Images/Remove.png"
 					Command="{Binding RemoveCommand}" 
@@ -88,83 +93,98 @@
 					Margin="-22,6,10,0" 
 					ButtonShape="Ellipse" 
 					BorderThickness="0" HorizontalAlignment="Left" MinHeight="36" MinWidth="36" Padding="0,10,10,10"/>
-				<Border BorderBrush="{StaticResource AppBaseColor4Brush}" BorderThickness="2" Grid.ColumnSpan="2" Grid.Column="0"/>
-			</Grid>
-		</DataTemplate>
-		<helpers:EntryTemplateSelector x:Key="SelectedItemSelector"
+                <Border BorderBrush="{StaticResource AppBaseColor4Brush}" BorderThickness="2" Grid.ColumnSpan="2" Grid.Column="0"/>
+            </Grid>
+        </DataTemplate>
+        <helpers:EntryTemplateSelector x:Key="SelectedItemSelector"
 									   DefaultTemplate="{StaticResource DefaultEntryDataTemplate}"
 									   SelectedTemplate="{StaticResource SelectedEntryDataTemplate}"/>
-	</phone:PhoneApplicationPage.Resources>
+    </phone:PhoneApplicationPage.Resources>
 
-	<phone:PhoneApplicationPage.FontFamily>
-		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
-	</phone:PhoneApplicationPage.FontFamily>
-	<phone:PhoneApplicationPage.FontSize>
-		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
-	</phone:PhoneApplicationPage.FontSize>
-	<phone:PhoneApplicationPage.Foreground>
-		<StaticResource ResourceKey="AppBaseColor4Brush"/>
-	</phone:PhoneApplicationPage.Foreground>
+    <phone:PhoneApplicationPage.FontFamily>
+        <StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+    </phone:PhoneApplicationPage.FontFamily>
+    <phone:PhoneApplicationPage.FontSize>
+        <StaticResource ResourceKey="PhoneFontSizeNormal"/>
+    </phone:PhoneApplicationPage.FontSize>
+    <phone:PhoneApplicationPage.Foreground>
+        <StaticResource ResourceKey="AppBaseColor4Brush"/>
+    </phone:PhoneApplicationPage.Foreground>
 
-	<!--LayoutRoot is the root grid where all page content is placed-->
-	<Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="*"/>
-		</Grid.RowDefinitions>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-		<!--TitlePanel contains the name of the application and page title-->
-		<StackPanel Grid.Row="0" Margin="12,17,0,28">
-			<TextBlock Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource AppAccentColorBrush}"/>
-			<TextBlock Text="{Binding SelectedDate, Converter={StaticResource LocalizedDate}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextLargeStyle}" Foreground="{StaticResource AppBaseColor4Brush}"/>
-		</StackPanel>
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource AppAccentColorBrush}"/>
+            <TextBlock Text="{Binding SelectedDate, Converter={StaticResource LocalizedDate}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextLargeStyle}" Foreground="{StaticResource AppBaseColor4Brush}"/>
+        </StackPanel>
 
-		<!--ContentPanel - place additional content here-->
-		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="Auto"/>
-			</Grid.RowDefinitions>
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-			<telerikPrimitives:RadDataBoundListBox x:Name="Entries" 
-												   Grid.Row="0"
-												   HorizontalAlignment="Stretch"
-												   ItemsSource="{Binding Entries}" 
-												   EmptyContent="{Binding LocalizedResources.EmptyEntryListLabel, Source={StaticResource LocalizedStrings}}" 
-												   IsSynchronizedWithCurrentItem="False" 
-												   IsAsyncBalanceEnabled="True" 
-												   VerticalAlignment="Top" 
-												   ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-												   VerticalContentAlignment="Top"
-												   ItemTemplateSelector="{StaticResource SelectedItemSelector}" SelectionChanging="Entries_SelectionChanging" Foreground="{StaticResource AppBaseColor4Brush}" Tap="Entries_Tap"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-			<telerikPrimitives:RadTextBox Grid.Row="1" x:Name="newEntry" 
-										  TextWrapping="Wrap"
-										  Header="{Binding LocalizedResources.NewEntryLabel, Source={StaticResource LocalizedStrings}}"
-										  Text="{Binding NewEntry, Mode=TwoWay}"
-										  VerticalAlignment="Top" 
-										  HorizontalAlignment="Stretch"
-										  ActionButtonVisibility="Visible"
-										  InputScope="Text"
-										  c4f:TextBinding.UpdateSourceOnChange="True"
-										  ActionButtonStyle="{StaticResource NewEntryActionButtonStyle}"
-										  ActionButtonCommand="{Binding AddEntryCommand}" 
-										  ExecuteActionOnReturn="True"
-										  TextChanged="newEntry_TextChanged" />
-			<Border BorderBrush="{StaticResource AppBaseColor2Brush}" BorderThickness="0,1,0,0" Grid.Row="1"/>
-            <StackPanel x:Name="AdPanel" Grid.Row="2" Margin="0">
+            <telerikPrimitives:RadDataBoundListBox x:Name="Entries" 
+				Grid.Row="0"
+				Grid.ColumnSpan="2"
+				HorizontalAlignment="Stretch"
+				ItemsSource="{Binding Entries}" 
+				EmptyContent="{Binding LocalizedResources.EmptyEntryListLabel, Source={StaticResource LocalizedStrings}}" 
+				IsSynchronizedWithCurrentItem="False" 
+				IsAsyncBalanceEnabled="True" 
+				VerticalAlignment="Top" 
+				ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+				VerticalContentAlignment="Top"
+				ItemTemplateSelector="{StaticResource SelectedItemSelector}" SelectionChanging="Entries_SelectionChanging" Foreground="{StaticResource AppBaseColor4Brush}" Tap="Entries_Tap"/>
+            <Rectangle x:Name="ColorPickerTrigger"
+					   Grid.Row="1"
+					   Grid.Column="0"
+					   Fill="#FFFFFF"
+					   HorizontalAlignment="Left" 
+					   Stroke="{x:Null}" 
+					   VerticalAlignment="Stretch" 
+					   Width="24"/>
+            <telerikPrimitives:RadTextBox x:Name="newEntry" 
+				Grid.Row="1"
+				Grid.Column="2"
+				TextWrapping="Wrap"
+				Header="{Binding LocalizedResources.NewEntryLabel, Source={StaticResource LocalizedStrings}}"
+				Text="{Binding NewEntry, Mode=TwoWay}"
+				VerticalAlignment="Top" 
+				HorizontalAlignment="Stretch"
+				ActionButtonVisibility="Visible"
+				InputScope="Text"
+				c4f:TextBinding.UpdateSourceOnChange="True"
+				ActionButtonStyle="{StaticResource NewEntryActionButtonStyle}"
+				ActionButtonCommand="{Binding AddEntryCommand}" 
+				ExecuteActionOnReturn="True"
+				TextChanged="newEntry_TextChanged" />
+            <Border BorderBrush="{StaticResource AppBaseColor2Brush}" BorderThickness="0,1,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <StackPanel x:Name="AdPanel" Grid.Row="2" Grid.ColumnSpan="2" MaxHeight="110" Margin="0">
                 <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
-                                  AppID="ShaneChurch_WhatIEat_WP"
-                                  AdType="IaAdType_Banner"
-                                  ReloadTime="30"
-                                  Keywords="food,health,weight,weight loss,gourmet,loss,diet,crossfit,exercise"
-                                  OptionalAdHeight="80"
-                                  OptionalAdWidth="480"
-                                  AdAlignment="BOTTOM_CENTER"
-                                  Name="AdControl" />
+					AppID="ShaneChurch_WhatIEat_WP"
+					AdType="IaAdType_Banner"
+					ReloadTime="30"
+					Keywords="food,health,weight,weight loss,gourmet,loss,diet,crossfit,exercise"
+					OptionalAdHeight="80"
+					OptionalAdWidth="480"
+					AdAlignment="BOTTOM_CENTER"
+					x:Name="AdControl" />
             </StackPanel>
-		</Grid>
-	</Grid>
+        </Grid>
+    </Grid>
 
 </phone:PhoneApplicationPage>

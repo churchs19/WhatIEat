@@ -1,0 +1,91 @@
+﻿<ViewModels:DateEditViewModel xmlns:ViewModels="clr-namespace:Shane.Church.WhatIEat.Core.ViewModels;assembly=Shane.Church.WhatIEat.Core" xmlns:System="clr-namespace:System;assembly=mscorlib" NewEntry="Nec non vestibulum adipiscing eleifend" SelectedDate="03/22/2014 22:27:32" MealType="Undefined">
+	<ViewModels:DateEditViewModel.Entries>
+		<ViewModels:EntryViewModel Entry="Morbi adipiscing nulla" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Auctor diam" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Vivamus aliquam parturient" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Dignissim vestibulum congue eget" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Cursus bibendum proin" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Dictum elementum augue facilisis" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Hac aliquet" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Fermentum fringilla dictumst vestibulum lectus" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Leo adipiscing" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+		<ViewModels:EntryViewModel Entry="Parturient mus vestibulum" EntryDate="03/22/2014 22:27:32">
+			<ViewModels:EntryViewModel.EntryId>
+				<System:Int64/>
+			</ViewModels:EntryViewModel.EntryId>
+			<ViewModels:EntryViewModel.EntryGuid>
+				<System:Guid/>
+			</ViewModels:EntryViewModel.EntryGuid>
+		</ViewModels:EntryViewModel>
+	</ViewModels:DateEditViewModel.Entries>
+	<ViewModels:DateEditViewModel.MealTypes>
+		<ViewModels:MealTypeViewModel MealType="Breakfast"/>
+		<ViewModels:MealTypeViewModel MealType="Lunch"/>
+		<ViewModels:MealTypeViewModel MealType="Undefined"/>
+		<ViewModels:MealTypeViewModel MealType="Dinner"/>
+		<ViewModels:MealTypeViewModel MealType="Snack"/>
+	</ViewModels:DateEditViewModel.MealTypes>
+</ViewModels:DateEditViewModel>

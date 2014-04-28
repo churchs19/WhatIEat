@@ -20,6 +20,12 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 
 		public event ActionCompleteEventHandler AddActionCompleted;
 
+		public DateEditViewModel()
+			: this(KernelService.Kernel.Get<IRepository<IEntry>>())
+		{
+
+		}
+
 		[Inject]
 		public DateEditViewModel(IRepository<IEntry> repository)
 		{
@@ -44,6 +50,11 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			}
 		}
 
+		public MealTypeCollection MealTypes
+		{
+			get { return MealTypeCollection.GetCollection(); }
+		}
+
 		private ObservableCollection<EntryViewModel> _entries;
 		public ObservableCollection<EntryViewModel> Entries
 		{
@@ -62,6 +73,16 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			set
 			{
 				Set(() => NewEntry, ref _newEntry, value);
+			}
+		}
+
+		private MealType _mealType = MealType.Undefined;
+		public MealType MealType
+		{
+			get { return _mealType; }
+			set
+			{
+				Set(() => MealType, ref _mealType, value);
 			}
 		}
 
@@ -108,6 +129,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				newEntry.EntryGuid = Guid.NewGuid();
 				newEntry.EntryDate = DateTime.SpecifyKind(SelectedDate.Date, DateTimeKind.Utc);
 				newEntry.EntryText = NewEntry;
+				newEntry.MealType = MealType;
 				newEntry = _repository.AddOrUpdateEntry(newEntry);
 				var evm = KernelService.Kernel.Get<EntryViewModel>();
 				evm.LoadEntry(newEntry);

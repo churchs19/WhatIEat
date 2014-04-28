@@ -15,6 +15,9 @@ namespace Shane.Church.WhatIEat.WP
 {
 	public partial class DateEdit : PhoneApplicationPage
 	{
+		bool colorPickerOpen = false;
+		bool editColorPickerOpen = false;
+
 		public DateEdit()
 		{
 			InitializeComponent();

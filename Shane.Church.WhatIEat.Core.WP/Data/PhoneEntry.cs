@@ -87,9 +87,20 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
 			}
 		}
 
+		private MealType _mealType;
+		[Column(CanBeNull = true)]
+		public MealType MealType
+		{
+			get { return _mealType; }
+			set
+			{
+				Set(() => MealType, ref _mealType, value);
+			}
+		}
+
 		public string ToCsvString()
 		{
-			return "\"" + String.Join("\",\"", EntryId, EntryGuid, EntryDate, EntryText, CreateDateTime, EditDateTime) + "\"";
+			return "\"" + String.Join("\",\"", EntryId, EntryGuid, EntryDate, EntryText, MealType.ToString(), CreateDateTime, EditDateTime) + "\"";
 		}
 	}
 }
