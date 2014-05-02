@@ -5,23 +5,24 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
-	xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
-	xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Binding"
-	xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    xmlns:helpers="clr-namespace:Shane.Church.WhatIEat.WP.Helpers"
+    xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Binding"
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
     xmlns:ContextMenu="clr-namespace:Telerik.Windows.Controls.ContextMenu;assembly=Telerik.Windows.Controls.Primitives"
     xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
     x:Class="Shane.Church.WhatIEat.WP.DateEdit"
     SupportedOrientations="Portrait" 
-	Orientation="Portrait"
+    Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="False" 
-	Loaded="PhoneApplicationPage_Loaded" 
-	d:DataContext="{d:DesignData /SampleData/DateEditViewModelSampleData.xaml}">
+    Loaded="PhoneApplicationPage_Loaded" 
+    d:DataContext="{d:DesignData /SampleData/DateEditViewModelSampleData.xaml}">
 
     <phone:PhoneApplicationPage.Resources>
         <helpers:NegativeNumberConverter x:Key="NegativeConverter"/>
         <helpers:MealTypeBrushConverter x:Key="mealTypeBrush"/>
+        <helpers:PreviousSiblingConverter x:Key="PreviousSiblingConverter"/>
         <Style x:Key="NewEntryActionButtonStyle" TargetType="telerikPrimitives:RadImageButton">
             <Setter Property="ButtonShape" Value="Ellipse"/>
             <Setter Property="ButtonType" Value="Custom"/>
@@ -39,19 +40,18 @@
             <Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
         </Style>
 
-		<DataTemplate x:Key="ColorPickerItemTemplate">
-			<StackPanel Orientation="Horizontal">
-				<Rectangle Height="30"
-					Width="30" 
-					Fill="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
-					Stroke="{StaticResource AppBaseColorBrush}"
-					StrokeThickness="2"
-					Margin="10"/>
-				<TextBlock Text="{Binding MealDescription}" 
-					Foreground="{StaticResource AppBaseColorBrush}"
-					VerticalAlignment="Center"/>
-			</StackPanel>
-		</DataTemplate>
+        <DataTemplate x:Key="ColorPickerItemTemplate">
+            <StackPanel Orientation="Horizontal" Margin="10,10,15,10">
+                <Rectangle Height="30"
+                    Width="30" 
+                    Fill="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
+                    Stroke="{StaticResource AppBaseColorBrush}"
+                    StrokeThickness="2"/>
+                <TextBlock Text="{Binding MealDescription}" 
+                    Foreground="{StaticResource AppBaseColorBrush}"
+                    VerticalAlignment="Center" Margin="15,0,0,0"/>
+            </StackPanel>
+        </DataTemplate>
 
         <DataTemplate x:Key="DefaultEntryDataTemplate">
             <Grid Background="{StaticResource TransparentBrush}">
@@ -68,10 +68,10 @@
                            HorizontalAlignment="Left"
                            Margin="10" 
                            TextWrapping="Wrap" 
-    				       Text="{Binding Entry}" 
-    				       VerticalAlignment="Center" 
-    				       FontSize="{StaticResource PhoneFontSizeMedium}"
-    				       Foreground="{StaticResource AppBaseColor4Brush}" 
+                           Text="{Binding Entry}" 
+                           VerticalAlignment="Center" 
+                           FontSize="{StaticResource PhoneFontSizeMedium}"
+                           Foreground="{StaticResource AppBaseColor4Brush}" 
                            Padding="10"/>
                 <Border Grid.ColumnSpan="2"
                         BorderBrush="{StaticResource AppAccentColorBrush}" 
@@ -95,17 +95,17 @@
                                               TextWrapping="Wrap"
                                               Text="{Binding Entry, Mode=TwoWay}"
                                               VerticalAlignment="Top" 
-    				                          HorizontalAlignment="Stretch"
-    				                          ActionButtonVisibility="Visible"
-    				                          InputScope="Text"
-    				                          c4f:TextBinding.UpdateSourceOnChange="True"
-    				                          SelectionBackground="{StaticResource AppAccentColorBrush}"
-    				                          SelectionForeground="{StaticResource AppBaseColorBrush}"
-    				                          ActionButtonStyle="{StaticResource SaveEntryActionButtonStyle}"
-    				                          ActionButtonCommand="{Binding SaveCommand}" 
-    				                          ActionButtonTap="editTextBox_ActionButtonTap"
-    				                          ExecuteActionOnReturn="True"
-    				                          Loaded="editTextBox_Loaded">
+                                              HorizontalAlignment="Stretch"
+                                              ActionButtonVisibility="Visible"
+                                              InputScope="Text"
+                                              c4f:TextBinding.UpdateSourceOnChange="True"
+                                              SelectionBackground="{StaticResource AppAccentColorBrush}"
+                                              SelectionForeground="{StaticResource AppBaseColorBrush}"
+                                              ActionButtonStyle="{StaticResource SaveEntryActionButtonStyle}"
+                                              ActionButtonCommand="{Binding SaveCommand}" 
+                                              ActionButtonTap="editTextBox_ActionButtonTap"
+                                              ExecuteActionOnReturn="True"
+                                              Loaded="editTextBox_Loaded">
                     <telerikPrimitives:RadTextBox.HeaderStyle>
                         <Style TargetType="ContentControl">
                             <Setter Property="Padding">
@@ -117,15 +117,15 @@
                     </telerikPrimitives:RadTextBox.HeaderStyle>
                 </telerikPrimitives:RadTextBox>
                 <telerikPrimitives:RadImageButton Content="" 
-    				                              Grid.Column="1" 
-    				                              RestStateImageSource="Images/Remove.png"
-    				                              Command="{Binding RemoveCommand}" 
-    				                              VerticalAlignment="Top" 
-    				                              Foreground="{StaticResource PressedStateWithOpacityMaskClearButtonForegroundFillBrush}" 
-    				                              Background="{StaticResource AppAccentColorBrush}" 
-    				                              Margin="-22,6,10,0" 
-    				                              ButtonShape="Ellipse" 
-    				                              BorderThickness="0"
+                                                  Grid.Column="1" 
+                                                  RestStateImageSource="Images/Remove.png"
+                                                  Command="{Binding RemoveCommand}" 
+                                                  VerticalAlignment="Top" 
+                                                  Foreground="{StaticResource PressedStateWithOpacityMaskClearButtonForegroundFillBrush}" 
+                                                  Background="{StaticResource AppAccentColorBrush}" 
+                                                  Margin="-22,6,10,0" 
+                                                  ButtonShape="Ellipse" 
+                                                  BorderThickness="0"
                                                   HorizontalAlignment="Left"
                                                   MinHeight="36" 
                                                   MinWidth="36" 
@@ -134,8 +134,16 @@
             </Grid>
         </DataTemplate>
         <helpers:EntryTemplateSelector x:Key="SelectedItemSelector"
-    		DefaultTemplate="{StaticResource DefaultEntryDataTemplate}"
-    		SelectedTemplate="{StaticResource SelectedEntryDataTemplate}"/>
+            DefaultTemplate="{StaticResource DefaultEntryDataTemplate}"
+            SelectedTemplate="{StaticResource SelectedEntryDataTemplate}"/>
+        <DataTemplate x:Key="mealTypePickerBoxContent">
+            <Grid Margin="-7,-6">
+                <Rectangle
+                           Fill="{Binding Converter={StaticResource mealTypeBrush}}"
+                           Stroke="{Binding Converter={StaticResource mealTypeBrush}}" Margin="0"
+                />
+            </Grid>
+        </DataTemplate>
     </phone:PhoneApplicationPage.Resources>
 
     <phone:PhoneApplicationPage.FontFamily>
@@ -176,51 +184,91 @@
             </Grid.ColumnDefinitions>
 
             <telerikPrimitives:RadDataBoundListBox x:Name="Entries" 
-				Grid.Row="0"
-				Grid.ColumnSpan="2"
-				HorizontalAlignment="Stretch"
-				ItemsSource="{Binding Entries}" 
-				EmptyContent="{Binding LocalizedResources.EmptyEntryListLabel, Source={StaticResource LocalizedStrings}}" 
-				IsSynchronizedWithCurrentItem="False" 
-				IsAsyncBalanceEnabled="True" 
-				VerticalAlignment="Top" 
-				ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-				VerticalContentAlignment="Top"
-				ItemTemplateSelector="{StaticResource SelectedItemSelector}" 
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Stretch"
+                ItemsSource="{Binding Entries}" 
+                EmptyContent="{Binding LocalizedResources.EmptyEntryListLabel, Source={StaticResource LocalizedStrings}}" 
+                IsSynchronizedWithCurrentItem="False" 
+                IsAsyncBalanceEnabled="True" 
+                VerticalAlignment="Top" 
+                ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                VerticalContentAlignment="Top"
+                ItemTemplateSelector="{StaticResource SelectedItemSelector}" 
                 SelectionChanging="Entries_SelectionChanging" 
                 Foreground="{StaticResource AppBaseColor4Brush}" 
                 Tap="Entries_Tap"/>
-            <telerikInput:RadListPicker x:Name="ColorListPicker"
-										Grid.Row="2"
-										Grid.Column="0"
-										Width="20" 
-										Style="{StaticResource RadListColorPickerStyle}" 
-										VerticalAlignment="Stretch" 
-										ItemsSource="{Binding MealTypes}" 
-										NoSelectionContent=""
-										Background="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
-										Foreground="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
-										SelectedValue="{Binding MealType, Mode=TwoWay}" 
-										SelectedValuePath="MealType" 
-                                        ItemTemplate="{StaticResource ColorPickerItemTemplate}" 
-                                        InlineModeThreshold="1"/>				
             <TextBlock Grid.Row="1" 
                        Grid.ColumnSpan="2"
                        Text="{Binding LocalizedResources.NewEntryLabel, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" />
+            <!--<telerikInput:RadListPicker x:Name="ColorListPicker"
+                                        Grid.Row="2"
+                                        Grid.Column="0"
+                                        Width="20" 
+                                        Style="{StaticResource RadListColorPickerStyle}" 
+                                        VerticalAlignment="Stretch" 
+                                        ItemsSource="{Binding MealTypes}" 
+                                        NoSelectionContent=""
+                                        Background="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
+                                        Foreground="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
+                                        SelectedValue="{Binding MealType, Mode=TwoWay}" 
+                                        SelectedValuePath="MealType" 
+                                        ItemTemplate="{StaticResource ColorPickerItemTemplate}" 
+                                        InlineModeThreshold="1"/>-->
+            <!--<telerikPrimitives:RadPickerBox x:Name="ColorListPicker"
+                                        Grid.Row="2"
+                                        Grid.Column="0"
+                                        Width="20" 
+                                        Background="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
+                                        Foreground="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
+                                        VerticalContentAlignment="Top" 
+                                        Content="A" 
+                                        BorderBrush="{StaticResource AppBaseColorBrush}" 
+                                        BorderThickness="2" Margin="12,12,0,0">
+        
+            </telerikPrimitives:RadPickerBox> -->
+            <telerikPrimitives:RadPickerBox x:Name="newMealTypePicker"
+                                            Grid.Row="2"
+                                            Grid.Column="0"
+                                            Content="{Binding MealType}"
+                                            ContentTemplate="{StaticResource mealTypePickerBoxContent}"
+                                            VerticalContentAlignment="Stretch" 
+                                            HorizontalContentAlignment="Stretch" 
+                                            IsPopupOpen="False" 
+                                            IsFullScreen="False" 
+                                            Foreground="{StaticResource AppBaseColorBrush}" 
+                                            PopupSizeMode="AutoSize" 
+                                            PopupVerticalContentAlignment="Bottom" 
+                                            PopupHorizontalContentAlignment="Left" 
+                                            PopupPlacementTarget="{Binding RelativeSource={RelativeSource Self}}" 
+                                            HorizontalPopupOffset="12" 
+                                            PopupOpening="mealTypePicker_PopupOpening" PopupPlacement="BottomLeft">
+                <telerikPrimitives:RadPickerBox.PopupCloseAnimation>
+                    <ContextMenu:ContextMenuOpenAnimation/>
+                </telerikPrimitives:RadPickerBox.PopupCloseAnimation>
+                <telerikPrimitives:RadPickerBox.PopupOpenAnimation>
+                    <ContextMenu:ContextMenuOpenAnimation/>
+                </telerikPrimitives:RadPickerBox.PopupOpenAnimation>
+                <ListBox ItemsSource="{Binding MealTypes}"
+                         ItemTemplate="{StaticResource ColorPickerItemTemplate}" 
+                         SelectedItem="{Binding MealType, Mode=TwoWay}" 
+                         Background="{StaticResource AppBaseColor4Brush}" Foreground="{StaticResource AppBaseColorBrush}">
+                </ListBox>
+            </telerikPrimitives:RadPickerBox>
             <telerikPrimitives:RadTextBox x:Name="newEntry" 
-				Grid.Row="2"
-				Grid.Column="1"
-				TextWrapping="Wrap"
-				Text="{Binding NewEntry, Mode=TwoWay}"
-				VerticalAlignment="Top" 
-				HorizontalAlignment="Stretch"
-				ActionButtonVisibility="Visible"
-				InputScope="Text"
-				c4f:TextBinding.UpdateSourceOnChange="True"
-				ActionButtonStyle="{StaticResource NewEntryActionButtonStyle}"
-				ActionButtonCommand="{Binding AddEntryCommand}" 
-				ExecuteActionOnReturn="True"
-				TextChanged="newEntry_TextChanged">
+                Grid.Row="2"
+                Grid.Column="1"
+                TextWrapping="Wrap"
+                Text="{Binding NewEntry, Mode=TwoWay}"
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Stretch"
+                ActionButtonVisibility="Visible"
+                InputScope="Text"
+                c4f:TextBinding.UpdateSourceOnChange="True"
+                ActionButtonStyle="{StaticResource NewEntryActionButtonStyle}"
+                ActionButtonCommand="{Binding AddEntryCommand}" 
+                ExecuteActionOnReturn="True"
+                TextChanged="newEntry_TextChanged">
                 <telerikPrimitives:RadTextBox.HeaderStyle>
                     <Style TargetType="ContentControl">
                         <Setter Property="Padding">
@@ -236,14 +284,14 @@
                     Grid.Row="1" Grid.ColumnSpan="2"/>
             <StackPanel x:Name="AdPanel" Grid.Row="3" Grid.ColumnSpan="2" MaxHeight="110" Margin="0">
                 <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
-					AppID="ShaneChurch_WhatIEat_WP"
-					AdType="IaAdType_Banner"
-					ReloadTime="30"
-					Keywords="food,health,weight,weight loss,gourmet,loss,diet,crossfit,exercise"
-					OptionalAdHeight="80"
-					OptionalAdWidth="480"
-					AdAlignment="BOTTOM_CENTER"
-					x:Name="AdControl" />
+                    AppID="ShaneChurch_WhatIEat_WP"
+                    AdType="IaAdType_Banner"
+                    ReloadTime="30"
+                    Keywords="food,health,weight,weight loss,gourmet,loss,diet,crossfit,exercise"
+                    OptionalAdHeight="80"
+                    OptionalAdWidth="480"
+                    AdAlignment="BOTTOM_CENTER"
+                    x:Name="AdControl" />
             </StackPanel>
         </Grid>
     </Grid>

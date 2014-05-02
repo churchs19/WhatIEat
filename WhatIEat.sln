@@ -16,8 +16,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FD7C87
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows 8", "Windows 8", "{74D8F651-50AA-41B3-884B-BA9BD0437ED2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Mobile Services Scripts", "Azure Mobile Services Scripts", "{EBD8DDA9-BD6C-4BAF-A0CD-3E57F44C29EA}"
 	ProjectSection(SolutionItems) = preProject
 		AzureEntryDelete.js = AzureEntryDelete.js
@@ -42,8 +40,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shane.Church.WhatIEat.WP8", "Shane.Church.WhatIEat.WP8\Shane.Church.WhatIEat.WP8.csproj", "{398C5803-9390-4C89-AD1C-2EA4D1E94482}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shane.Church.WhatIEat.Core.WP8", "Shane.Church.WhatIEat.Core.WP8\Shane.Church.WhatIEat.Core.WP8.csproj", "{6FD9D4E2-2279-46A1-B868-D34D3F8FC586}"
-EndProject
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Shane.Church.WhatIEat.Win8", "Shane.Church.WhatIEat.Win8\Shane.Church.WhatIEat.Win8.jsproj", "{99695E85-72FA-441A-AFD4-C9B9981F77F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -256,53 +252,6 @@ Global
 		{6FD9D4E2-2279-46A1-B868-D34D3F8FC586}.Release|x64.ActiveCfg = Release|Any CPU
 		{6FD9D4E2-2279-46A1-B868-D34D3F8FC586}.Release|x86.ActiveCfg = Release|x86
 		{6FD9D4E2-2279-46A1-B868-D34D3F8FC586}.Release|x86.Build.0 = Release|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|Any CPU.ActiveCfg = Debug|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|Any CPU.Build.0 = Debug|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|Any CPU.Deploy.0 = Debug|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|ARM.ActiveCfg = Debug|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|ARM.Build.0 = Debug|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|ARM.Deploy.0 = Debug|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|x64.ActiveCfg = Debug|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|x64.Build.0 = Debug|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|x64.Deploy.0 = Debug|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|x86.ActiveCfg = Debug|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|x86.Build.0 = Debug|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug Personal|x86.Deploy.0 = Debug|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|ARM.ActiveCfg = Debug|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|ARM.Build.0 = Debug|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|ARM.Deploy.0 = Debug|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|x64.ActiveCfg = Debug|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|x64.Build.0 = Debug|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|x64.Deploy.0 = Debug|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|x86.ActiveCfg = Debug|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|x86.Build.0 = Debug|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Debug|x86.Deploy.0 = Debug|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|Any CPU.ActiveCfg = Release|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|Any CPU.Build.0 = Release|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|Any CPU.Deploy.0 = Release|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|ARM.ActiveCfg = Release|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|ARM.Build.0 = Release|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|ARM.Deploy.0 = Release|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|x64.ActiveCfg = Release|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|x64.Build.0 = Release|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|x64.Deploy.0 = Release|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|x86.ActiveCfg = Release|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|x86.Build.0 = Release|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release Personal|x86.Deploy.0 = Release|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|ARM.ActiveCfg = Release|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|ARM.Build.0 = Release|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|ARM.Deploy.0 = Release|ARM
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|x64.ActiveCfg = Release|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|x64.Build.0 = Release|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|x64.Deploy.0 = Release|x64
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|x86.ActiveCfg = Release|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|x86.Build.0 = Release|x86
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -318,7 +267,6 @@ Global
 		{46BA9DE0-E6BC-4793-8414-49EC2C1C656B} = {30980837-9EE1-4301-A1A1-B4673D4179ED}
 		{398C5803-9390-4C89-AD1C-2EA4D1E94482} = {CE0D3970-12A2-41E8-ABA4-B67C2F5C848F}
 		{6FD9D4E2-2279-46A1-B868-D34D3F8FC586} = {CE0D3970-12A2-41E8-ABA4-B67C2F5C848F}
-		{99695E85-72FA-441A-AFD4-C9B9981F77F6} = {74D8F651-50AA-41B3-884B-BA9BD0437ED2}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Shane.Church.WhatIEat.Core\Shane.Church.WhatIEat.Core.csproj

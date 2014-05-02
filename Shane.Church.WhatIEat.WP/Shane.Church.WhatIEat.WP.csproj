@@ -198,6 +198,7 @@
     <Compile Include="Helpers\MealTypeBrushConverter.cs" />
     <Compile Include="Helpers\NegativeNumberConverter.cs" />
     <Compile Include="Helpers\NonEmptyDateValidator.cs" />
+    <Compile Include="Helpers\PreviousSiblingConverter.cs" />
     <Compile Include="Helpers\TextBinding.cs" />
     <Compile Include="Helpers\UpgradeBehavior.cs" />
     <Compile Include="LocalizedStrings.cs" />
