@@ -183,15 +183,52 @@ namespace Shane.Church.WhatIEat.WP
             }
         }
 
-        private void mealTypePicker_PopupOpening(object sender, System.ComponentModel.CancelEventArgs e)
+        RadPickerBox openPicker = null;
+        private void newMealTypePicker_PopupOpening(object sender, System.ComponentModel.CancelEventArgs e)
         {
             var picker = sender as RadPickerBox;
             if (picker != null)
             {
+                if (openPicker != null)
+                {
+                    openPicker.IsPopupOpen = false;
+                }
+                openPicker = picker;
                 var transform = picker.TransformToVisual(this);
                 var point = transform.Transform(new Point(0, 0));
              
                 picker.VerticalPopupOffset = picker.Margin.Top - picker.ActualHeight;
+            }
+        }
+
+        private void editMealTypePicker_PopupOpening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            var picker = sender as RadPickerBox;
+            if (picker != null)
+            {
+                if (openPicker != null)
+                {
+                    openPicker.IsPopupOpen = false;
+                }
+                openPicker = picker;
+                var transform = picker.TransformToVisual(this);
+                var point = transform.Transform(new Point(0, 0));
+
+                picker.VerticalPopupOffset = picker.ActualHeight - 12;
+            }
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var listBox = sender as ListBox;
+            if (listBox != null && openPicker != null)
+            {
+                if (openPicker.DataContext is EntryViewModel)
+                {
+                    ((EntryViewModel)openPicker.DataContext).SaveCommand.Execute(null);
+                } 
+                openPicker.IsPopupOpen = false;
+                openPicker = null;
             }
         }
     }

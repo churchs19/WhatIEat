@@ -115,6 +115,9 @@
     <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\NonEmptyDateValidator.cs">
       <Link>Helpers\NonEmptyDateValidator.cs</Link>
     </Compile>
+    <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\PreviousSiblingConverter.cs">
+      <Link>Helpers\PreviousSiblingConverter.cs</Link>
+    </Compile>
     <Compile Include="..\Shane.Church.WhatIEat.WP\Helpers\TextBinding.cs">
       <Link>Helpers\TextBinding.cs</Link>
     </Compile>

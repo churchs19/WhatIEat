@@ -16,8 +16,7 @@
     Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="False" 
-    Loaded="PhoneApplicationPage_Loaded" 
-    d:DataContext="{d:DesignData /SampleData/DateEditViewModelSampleData.xaml}">
+    Loaded="PhoneApplicationPage_Loaded">
 
     <phone:PhoneApplicationPage.Resources>
         <helpers:NegativeNumberConverter x:Key="NegativeConverter"/>
@@ -40,6 +39,15 @@
             <Setter Property="Foreground" Value="{StaticResource AppBaseColorBrush}"/>
         </Style>
 
+        <DataTemplate x:Key="mealTypePickerBoxContent">
+            <Grid Margin="-7,-6">
+                <Rectangle
+                           Fill="{Binding Converter={StaticResource mealTypeBrush}}"
+                           Stroke="{Binding Converter={StaticResource mealTypeBrush}}" Margin="0"
+                />
+            </Grid>
+        </DataTemplate>
+
         <DataTemplate x:Key="ColorPickerItemTemplate">
             <StackPanel Orientation="Horizontal" Margin="10,10,15,10">
                 <Rectangle Height="30"
@@ -56,13 +64,14 @@
         <DataTemplate x:Key="DefaultEntryDataTemplate">
             <Grid Background="{StaticResource TransparentBrush}">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="42"/>
                     <ColumnDefinition Width="*"/> 
                 </Grid.ColumnDefinitions>
-                <Rectangle Grid.Column="0" HorizontalAlignment="Center" 
-                           Width="20"
-                           Margin="10"
-                           Fill="{Binding MealType, Converter={StaticResource mealTypeBrush}}"/>
+                <Rectangle Grid.Column="0" 
+                           HorizontalAlignment="Stretch" 
+                           VerticalAlignment="Stretch"
+                           Fill="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
+                           Margin="12,12"/>
                 <TextBlock x:Name="EditTextBlock" 
                            Grid.Column="1"
                            HorizontalAlignment="Left"
@@ -81,17 +90,56 @@
         <DataTemplate x:Key="SelectedEntryDataTemplate">
             <Grid>
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Rectangle Grid.Column="0" 
+                <telerikPrimitives:RadPickerBox x:Name="editMealTypePicker"
+                                            Grid.Column="0"
+                                            Content="{Binding MealType}"                                            
+                                            VerticalContentAlignment="Stretch" 
+                                            HorizontalContentAlignment="Stretch" 
+                                            IsPopupOpen="False" 
+                                            IsFullScreen="False" 
+                                            Foreground="{StaticResource AppBaseColorBrush}" 
+                                            PopupSizeMode="AutoSize" 
+                                            PopupVerticalContentAlignment="Top" 
+                                            PopupHorizontalContentAlignment="Left" 
+                                            PopupPlacementTarget="{Binding RelativeSource={RelativeSource Self}}" 
+                                            HorizontalPopupOffset="12" 
+                                            PopupOpening="editMealTypePicker_PopupOpening" 
+                                            PopupPlacement="TopLeft">
+                    <telerikPrimitives:RadPickerBox.ContentTemplate>
+                        <DataTemplate>
+                            <Grid Margin="-7,-6">
+                                <Rectangle Fill="{Binding Converter={StaticResource mealTypeBrush}}"
+                                           Stroke="{Binding Converter={StaticResource mealTypeBrush}}" 
+                                           Margin="0"/>
+                            </Grid>
+                        </DataTemplate>
+                    </telerikPrimitives:RadPickerBox.ContentTemplate>
+                    <telerikPrimitives:RadPickerBox.PopupCloseAnimation>
+                        <ContextMenu:ContextMenuOpenAnimation/>
+                    </telerikPrimitives:RadPickerBox.PopupCloseAnimation>
+                    <telerikPrimitives:RadPickerBox.PopupOpenAnimation>
+                        <ContextMenu:ContextMenuOpenAnimation/>
+                    </telerikPrimitives:RadPickerBox.PopupOpenAnimation>
+                    <ListBox ItemsSource="{Binding MealTypes}"
+                             ItemTemplate="{StaticResource ColorPickerItemTemplate}" 
+                             SelectedItem="{Binding MealType, Mode=TwoWay}" 
+                             Background="{StaticResource AppBaseColor4Brush}" 
+                             Foreground="{StaticResource AppBaseColorBrush}" 
+                             SelectionChanged="ListBox_SelectionChanged">
+                    </ListBox>
+                </telerikPrimitives:RadPickerBox>
+                <Rectangle Grid.Column="1" 
                            Grid.ColumnSpan="2" 
                            Fill="{StaticResource PhoneTextBoxBrush}" 
                            Margin="10" 
                            StrokeThickness="3" 
                            Stroke="{StaticResource PhoneTextBoxBrush}"/>
                 <telerikPrimitives:RadTextBox x:Name="editTextBox" 
-                                              Grid.Column="0"
+                                              Grid.Column="1"
                                               TextWrapping="Wrap"
                                               Text="{Binding Entry, Mode=TwoWay}"
                                               VerticalAlignment="Top" 
@@ -117,7 +165,7 @@
                     </telerikPrimitives:RadTextBox.HeaderStyle>
                 </telerikPrimitives:RadTextBox>
                 <telerikPrimitives:RadImageButton Content="" 
-                                                  Grid.Column="1" 
+                                                  Grid.Column="2" 
                                                   RestStateImageSource="Images/Remove.png"
                                                   Command="{Binding RemoveCommand}" 
                                                   VerticalAlignment="Top" 
@@ -130,20 +178,12 @@
                                                   MinHeight="36" 
                                                   MinWidth="36" 
                                                   Padding="0,10,10,10"/>
-                <Border BorderBrush="{StaticResource AppBaseColor4Brush}" BorderThickness="2" Grid.ColumnSpan="2" Grid.Column="0"/>
+                <Border BorderBrush="{StaticResource AppBaseColor4Brush}" BorderThickness="2" Grid.ColumnSpan="3" Grid.Column="0"/>
             </Grid>
         </DataTemplate>
         <helpers:EntryTemplateSelector x:Key="SelectedItemSelector"
             DefaultTemplate="{StaticResource DefaultEntryDataTemplate}"
             SelectedTemplate="{StaticResource SelectedEntryDataTemplate}"/>
-        <DataTemplate x:Key="mealTypePickerBoxContent">
-            <Grid Margin="-7,-6">
-                <Rectangle
-                           Fill="{Binding Converter={StaticResource mealTypeBrush}}"
-                           Stroke="{Binding Converter={StaticResource mealTypeBrush}}" Margin="0"
-                />
-            </Grid>
-        </DataTemplate>
     </phone:PhoneApplicationPage.Resources>
 
     <phone:PhoneApplicationPage.FontFamily>
@@ -201,32 +241,6 @@
             <TextBlock Grid.Row="1" 
                        Grid.ColumnSpan="2"
                        Text="{Binding LocalizedResources.NewEntryLabel, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" />
-            <!--<telerikInput:RadListPicker x:Name="ColorListPicker"
-                                        Grid.Row="2"
-                                        Grid.Column="0"
-                                        Width="20" 
-                                        Style="{StaticResource RadListColorPickerStyle}" 
-                                        VerticalAlignment="Stretch" 
-                                        ItemsSource="{Binding MealTypes}" 
-                                        NoSelectionContent=""
-                                        Background="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
-                                        Foreground="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
-                                        SelectedValue="{Binding MealType, Mode=TwoWay}" 
-                                        SelectedValuePath="MealType" 
-                                        ItemTemplate="{StaticResource ColorPickerItemTemplate}" 
-                                        InlineModeThreshold="1"/>-->
-            <!--<telerikPrimitives:RadPickerBox x:Name="ColorListPicker"
-                                        Grid.Row="2"
-                                        Grid.Column="0"
-                                        Width="20" 
-                                        Background="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
-                                        Foreground="{Binding MealType, Converter={StaticResource mealTypeBrush}}" 
-                                        VerticalContentAlignment="Top" 
-                                        Content="A" 
-                                        BorderBrush="{StaticResource AppBaseColorBrush}" 
-                                        BorderThickness="2" Margin="12,12,0,0">
-        
-            </telerikPrimitives:RadPickerBox> -->
             <telerikPrimitives:RadPickerBox x:Name="newMealTypePicker"
                                             Grid.Row="2"
                                             Grid.Column="0"
@@ -242,7 +256,8 @@
                                             PopupHorizontalContentAlignment="Left" 
                                             PopupPlacementTarget="{Binding RelativeSource={RelativeSource Self}}" 
                                             HorizontalPopupOffset="12" 
-                                            PopupOpening="mealTypePicker_PopupOpening" PopupPlacement="BottomLeft">
+                                            PopupOpening="newMealTypePicker_PopupOpening" 
+                                            PopupPlacement="BottomLeft">
                 <telerikPrimitives:RadPickerBox.PopupCloseAnimation>
                     <ContextMenu:ContextMenuOpenAnimation/>
                 </telerikPrimitives:RadPickerBox.PopupCloseAnimation>
@@ -252,7 +267,8 @@
                 <ListBox ItemsSource="{Binding MealTypes}"
                          ItemTemplate="{StaticResource ColorPickerItemTemplate}" 
                          SelectedItem="{Binding MealType, Mode=TwoWay}" 
-                         Background="{StaticResource AppBaseColor4Brush}" Foreground="{StaticResource AppBaseColorBrush}">
+                         Background="{StaticResource AppBaseColor4Brush}" 
+                         Foreground="{StaticResource AppBaseColorBrush}" SelectionChanged="ListBox_SelectionChanged">
                 </ListBox>
             </telerikPrimitives:RadPickerBox>
             <telerikPrimitives:RadTextBox x:Name="newEntry" 

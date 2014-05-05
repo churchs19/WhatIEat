@@ -1,4 +1,5 @@
 ﻿using Shane.Church.WhatIEat.Core.Data;
+using Shane.Church.WhatIEat.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,19 @@ namespace Shane.Church.WhatIEat.WP.Helpers
 	{
 		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
 		{
-			if (value != null && value is MealType)
+			if (value != null)
 			{
-				switch ((MealType)value)
+                MealType type = MealType.Undefined;
+                if (value is MealTypeViewModel)
+                {
+                    type = ((MealTypeViewModel)value).MealType;
+                }
+                else if (value is MealType)
+                {
+                    type = (MealType)value;
+                }
+
+				switch (type)
 				{
 					case MealType.Breakfast:
 						return new SolidColorBrush(Color.FromArgb(255, 143, 111, 173));

@@ -7,10 +7,10 @@ namespace Shane.Church.WhatIEat.Core.Data
 {
 	public enum MealType
 	{
-		Undefined,
 		Breakfast,
 		Lunch,
 		Dinner,
-		Snack
+		Snack,
+		Undefined
 	}
 }
