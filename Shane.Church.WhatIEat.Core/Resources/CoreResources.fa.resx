@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>در</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>صبحانه</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>ناهار</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>شام</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>خوراک مختصر</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>هیچ یک</value>
+  </data>
 </root>

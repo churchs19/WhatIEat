@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>पर</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>नाश्ता</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>लंच</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>डिनर</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>नाश्ता</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>कोई नहीं</value>
+  </data>
 </root>

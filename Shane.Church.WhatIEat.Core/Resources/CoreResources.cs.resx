@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>Na</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>snídaně</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>oběd</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>večeře</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>snack</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>žádný</value>
+  </data>
 </root>

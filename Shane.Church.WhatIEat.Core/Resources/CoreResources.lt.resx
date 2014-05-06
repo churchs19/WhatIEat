@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>Dėl</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>pusryčiai</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>pietūs</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>vakarienė</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>užkandis</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>nė vienas</value>
+  </data>
 </root>

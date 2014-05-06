@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>に</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>朝食</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>昼食</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>夕食</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>スナック</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>なし</value>
+  </data>
 </root>

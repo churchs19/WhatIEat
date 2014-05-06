@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>Pada</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>sarapan</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>makan tengah hari</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Majlis Makan Malam</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>snek</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Tiada</value>
+  </data>
 </root>

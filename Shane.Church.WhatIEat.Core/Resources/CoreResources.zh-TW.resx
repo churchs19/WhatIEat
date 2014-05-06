@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>關於</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>早餐</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>午餐</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>晚餐</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>小吃</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>无</value>
+  </data>
 </root>

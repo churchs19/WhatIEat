@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>에</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>아침 식사</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>점심 식사</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>저녁 식사</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>간식</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>없음</value>
+  </data>
 </root>

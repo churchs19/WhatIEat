@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>Kaupungin</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>aamiainen</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>lounas</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>päivällinen</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>välipala</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>ei mitään</value>
+  </data>
 </root>

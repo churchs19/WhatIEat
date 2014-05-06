@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>บน</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>อาหารเช้า</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>อาหารกลางวัน</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>อาหารค่ำ</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>อาหารว่าง</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>ไม่</value>
+  </data>
 </root>

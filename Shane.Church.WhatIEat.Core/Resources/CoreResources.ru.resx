@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>На</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>завтрак</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>обед</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>ужин</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>закуска</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Ни один</value>
+  </data>
 </root>

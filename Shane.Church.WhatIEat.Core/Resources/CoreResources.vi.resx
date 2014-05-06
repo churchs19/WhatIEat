@@ -129,4 +129,19 @@
   <data name="OnText" xml:space="preserve">
     <value>Ngày</value>
   </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>bữa ăn sáng</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>bưa trưa</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>bữa ăn tối</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Snack</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>không ai</value>
+  </data>
 </root>
