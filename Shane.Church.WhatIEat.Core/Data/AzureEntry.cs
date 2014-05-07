@@ -25,7 +25,7 @@ namespace Shane.Church.WhatIEat.Core.Data
 			CreateDateTime = source.CreateDateTime;
 			EditDateTime = source.EditDateTime;
 			IsDeleted = source.IsDeleted.HasValue ? source.IsDeleted.Value : false;
-			MealType = source.MealType;
+			MealType = source.MealType.HasValue ? source.MealType.Value : MealType.Undefined;
 		}
 
 		[DataMember(Name = "id")]
