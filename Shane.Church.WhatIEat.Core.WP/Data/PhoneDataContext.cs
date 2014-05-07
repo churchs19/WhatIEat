@@ -7,7 +7,7 @@ public class PhoneDataContext : DataContext
 	// Specify the connection string as a static, used in main page and app.xaml.
 	public static string DBConnectionString = "Data Source=isostore:/WhatIEat.sdf";
 	public static string DBFileName = "WhatIEat.sdf";
-	public static int DBSchemaVersion = 3;
+	public static int DBSchemaVersion = 4;
 
 	// Pass the connection string to the base class.
 	public PhoneDataContext()

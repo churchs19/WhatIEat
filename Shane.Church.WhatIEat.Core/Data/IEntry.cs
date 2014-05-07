@@ -14,7 +14,7 @@ namespace Shane.Church.WhatIEat.Core.Data
 		DateTimeOffset CreateDateTime { get; set; }
 		DateTimeOffset EditDateTime { get; set; }
 		bool? IsDeleted { get; set; }
-		MealType MealType { get; set; }
+		MealType? MealType { get; set; }
 
 		string ToCsvString();
 	}

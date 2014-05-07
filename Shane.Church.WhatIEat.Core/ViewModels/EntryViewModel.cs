@@ -124,7 +124,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
             EntryDate = entry.EntryDate;
             Entry = entry.EntryText;
             EntryGuid = entry.EntryGuid;
-            MealType = new MealTypeViewModel(entry.MealType);
+            MealType = new MealTypeViewModel(entry.MealType.Value);
         }
 
         public void RemoveEntry()
