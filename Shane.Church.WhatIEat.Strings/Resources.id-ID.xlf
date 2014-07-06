@@ -48,7 +48,7 @@
         </trans-unit>
         <trans-unit id="Resx/AboutOtherAppsLabel" translate="yes" xml:space="preserve">
           <source>other apps by Shane Church</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">aplikasi lain oleh Shane gereja</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">aplikasi lain oleh Shane Church</target>
         </trans-unit>
         <trans-unit id="Resx/AboutReviewLabel" translate="yes" xml:space="preserve">
           <source>rate this app</source>

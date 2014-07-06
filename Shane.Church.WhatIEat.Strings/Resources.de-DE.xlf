@@ -48,7 +48,7 @@
         </trans-unit>
         <trans-unit id="Resx/AboutOtherAppsLabel" translate="yes" xml:space="preserve">
           <source>other apps by Shane Church</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">andere Anwendungen von Shane Kirche</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">andere Anwendungen von Shane Church</target>
         </trans-unit>
         <trans-unit id="Resx/AboutReviewLabel" translate="yes" xml:space="preserve">
           <source>rate this app</source>
@@ -56,7 +56,7 @@
         </trans-unit>
         <trans-unit id="Resx/AppCopyright" translate="yes" xml:space="preserve">
           <source>Copyright © Shane Church 2013-2014</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane Kirche 2013-2014</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane Church 2013-2014</target>
         </trans-unit>
         <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
           <source>a simple food journal for windows phone</source>

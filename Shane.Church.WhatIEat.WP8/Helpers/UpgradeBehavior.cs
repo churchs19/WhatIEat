@@ -44,28 +44,6 @@ namespace Shane.Church.WhatIEat.WP.Helpers
 		{
 			if (await IsUpgradeAvailable())
 			{
-#if !WP8
-				Deployment.Current.Dispatcher.BeginInvoke(() =>
-				{
-					RadMessageBox.Show(buttonsContent: new List<object> { Resources.Yes, Resources.No },
-						title: Resources.UpgradeTitle,
-						message: Resources.UpgradeText,
-						closedHandler: (args) =>
-						{
-							if (args.Result == DialogResult.OK)
-							{
-								var marketplaceTask = new MarketplaceDetailTask();
-								try
-								{
-									marketplaceTask.Show();
-								}
-								catch (InvalidOperationException)
-								{
-								}
-							}
-						});
-				});
-#else
 				await Deployment.Current.Dispatcher.InvokeAsync(async () =>
 					{
 						var args = await RadMessageBox.ShowAsync(buttonsContent: new List<object> { Resources.Yes, Resources.No },
@@ -83,7 +61,6 @@ namespace Shane.Church.WhatIEat.WP.Helpers
 							}
 						}
 					});
-#endif
 			}
 		}
 
