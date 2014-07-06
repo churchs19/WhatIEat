@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Tasks;
+using Shane.Church.WhatIEat.Strings;
 
 namespace Shane.Church.WhatIEat.Core.WP.Commands
 {
@@ -29,7 +30,7 @@ namespace Shane.Church.WhatIEat.Core.WP.Commands
 		{
 			EmailComposeTask emailTask = new EmailComposeTask();
 			emailTask.To = "shane@s-church.net";
-			emailTask.Subject = Resources.WPCoreResources.TechnicalSupportEmailSubject;
+			emailTask.Subject = Resources.TechnicalSupportEmailSubject;
 			emailTask.Show();
 		}
 	}

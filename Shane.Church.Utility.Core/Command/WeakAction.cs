@@ -1,6 +1,6 @@
 ﻿// ****************************************************************************
 // <copyright file="WeakAction.cs" company="GalaSoft Laurent Bugnion">
-// Copyright © GalaSoft Laurent Bugnion 2009-2013
+// Copyright © GalaSoft Laurent Bugnion 2009-2014
 // </copyright>
 // ****************************************************************************
 // <author>Laurent Bugnion</author>
@@ -15,6 +15,7 @@
 // ****************************************************************************
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace GalaSoft.MvvmLight.Helpers
@@ -24,8 +25,8 @@ namespace GalaSoft.MvvmLight.Helpers
     /// to be created to the Action's owner. The owner can be garbage collected at any time.
     /// </summary>
     ////[ClassInfo(typeof(WeakAction),
-    ////    VersionString = "4.0.15",
-    ////    DateString = "201206191330",
+    ////    VersionString = "4.2.16",
+    ////    DateString = "201309262235",
     ////    Description = "A class allowing to store and invoke actions without keeping a hard reference to the action's target.",
     ////    UrlContacts = "http://www.galasoft.ch/contact_en.html",
     ////    Email = "laurent@galasoft.ch")]
@@ -52,9 +53,8 @@ namespace GalaSoft.MvvmLight.Helpers
             {
                 if (_staticAction != null)
                 {
-                    return _staticAction.Method.Name;
+                    return _staticAction.GetMethodInfo().Name;
                 }
-
                 return Method.Name;
             }
         }
@@ -106,7 +106,7 @@ namespace GalaSoft.MvvmLight.Helpers
         /// </summary>
         /// <param name="action">The action that will be associated to this instance.</param>
         public WeakAction(Action action)
-            : this(action.Target, action)
+            : this(action == null ? null : action.Target, action)
         {
         }
 
@@ -115,9 +115,14 @@ namespace GalaSoft.MvvmLight.Helpers
         /// </summary>
         /// <param name="target">The action's owner.</param>
         /// <param name="action">The action that will be associated to this instance.</param>
+        [SuppressMessage(
+            "Microsoft.Design",
+            "CA1062:Validate arguments of public methods",
+            MessageId = "1",
+            Justification = "Method should fail with an exception if action is null.")]
         public WeakAction(object target, Action action)
         {
-            if (action.Method.IsStatic)
+            if (action.GetMethodInfo().IsStatic)
             {
                 _staticAction = action;
 
@@ -131,7 +136,7 @@ namespace GalaSoft.MvvmLight.Helpers
                 return;
             }
 
-            Method = action.Method;
+            Method = action.GetMethodInfo();
             ActionReference = new WeakReference(action.Target);
 
             Reference = new WeakReference(target);
@@ -183,7 +188,7 @@ namespace GalaSoft.MvvmLight.Helpers
         }
 
         /// <summary>
-        /// 
+        /// The target of the weak reference.
         /// </summary>
         protected object ActionTarget
         {
@@ -218,7 +223,7 @@ namespace GalaSoft.MvvmLight.Helpers
                     && ActionReference != null
                     && actionTarget != null)
                 {
-                    Method.Invoke(ActionTarget, null);
+                    Method.Invoke(actionTarget, null);
                     return;
                 }
             }

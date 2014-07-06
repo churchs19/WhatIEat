@@ -1,6 +1,6 @@
 ﻿// ****************************************************************************
 // <copyright file="WeakActionGeneric.cs" company="GalaSoft Laurent Bugnion">
-// Copyright © GalaSoft Laurent Bugnion 2009-2013
+// Copyright © GalaSoft Laurent Bugnion 2009-2014
 // </copyright>
 // ****************************************************************************
 // <author>Laurent Bugnion</author>
@@ -14,6 +14,8 @@
 // ****************************************************************************
 
 using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 
 namespace GalaSoft.MvvmLight.Helpers
 {
@@ -36,7 +38,7 @@ namespace GalaSoft.MvvmLight.Helpers
             {
                 if (_staticAction != null)
                 {
-                    return _staticAction.Method.Name;
+                    return _staticAction.GetMethodInfo().Name;
                 }
 
                 return Method.Name;
@@ -76,7 +78,7 @@ namespace GalaSoft.MvvmLight.Helpers
         /// </summary>
         /// <param name="action">The action that will be associated to this instance.</param>
         public WeakAction(Action<T> action)
-            : this(action.Target, action)
+            : this(action == null ? null : action.Target, action)
         {
         }
 
@@ -85,9 +87,14 @@ namespace GalaSoft.MvvmLight.Helpers
         /// </summary>
         /// <param name="target">The action's owner.</param>
         /// <param name="action">The action that will be associated to this instance.</param>
+        [SuppressMessage(
+            "Microsoft.Design",
+            "CA1062:Validate arguments of public methods",
+            MessageId = "1",
+            Justification = "Method should fail with an exception if action is null.")]
         public WeakAction(object target, Action<T> action)
         {
-            if (action.Method.IsStatic)
+            if (action.GetMethodInfo().IsStatic)
             {
                 _staticAction = action;
 
@@ -101,7 +108,7 @@ namespace GalaSoft.MvvmLight.Helpers
                 return;
             }
 
-            Method = action.Method;
+            Method = action.GetMethodInfo();
             ActionReference = new WeakReference(action.Target);
 
             Reference = new WeakReference(target);
@@ -129,19 +136,21 @@ namespace GalaSoft.MvvmLight.Helpers
                 return;
             }
 
+            var actionTarget = ActionTarget;
+
             if (IsAlive)
             {
                 if (Method != null
-                    && ActionReference != null)
+                    && ActionReference != null
+                    && actionTarget != null)
                 {
                     Method.Invoke(
-                        ActionTarget,
+                        actionTarget,
                         new object[]
                         {
                             parameter
                         });
                 }
-
             }
         }
 
@@ -155,7 +164,7 @@ namespace GalaSoft.MvvmLight.Helpers
         /// being casted to T.</param>
         public void ExecuteWithObject(object parameter)
         {
-            var parameterCasted = (T) parameter;
+            var parameterCasted = (T)parameter;
             Execute(parameterCasted);
         }
 

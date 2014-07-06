@@ -38,6 +38,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			_summaryGroups = new ObservableCollection<DateTime>();
 			_summaryGroups.CollectionChanged += _summaryGroups_CollectionChanged;
 
+#pragma warning disable 1998
 			SyncCommand = new AsyncRelayCommand(async (o) =>
 			{
 				SyncRunning = true;
@@ -54,6 +55,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				throw ex;
 			});
 		}
+#pragma warning restore 1998
 
 		void _summaryGroups_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
 		{

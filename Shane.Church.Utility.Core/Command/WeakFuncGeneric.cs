@@ -1,6 +1,6 @@
 ﻿// ****************************************************************************
 // <copyright file="WeakFuncGeneric.cs" company="GalaSoft Laurent Bugnion">
-// Copyright © GalaSoft Laurent Bugnion 2012-2013
+// Copyright © GalaSoft Laurent Bugnion 2012-2014
 // </copyright>
 // ****************************************************************************
 // <author>Laurent Bugnion</author>
@@ -14,6 +14,8 @@
 // ****************************************************************************
 
 using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 
 namespace GalaSoft.MvvmLight.Helpers
 {
@@ -37,7 +39,7 @@ namespace GalaSoft.MvvmLight.Helpers
             {
                 if (_staticFunc != null)
                 {
-                    return _staticFunc.Method.Name;
+                    return _staticFunc.GetMethodInfo().Name;
                 }
 
                 return Method.Name;
@@ -75,20 +77,25 @@ namespace GalaSoft.MvvmLight.Helpers
         /// <summary>
         /// Initializes a new instance of the WeakFunc class.
         /// </summary>
-        /// <param name="func">The func that will be associated to this instance.</param>
+        /// <param name="func">The Func that will be associated to this instance.</param>
         public WeakFunc(Func<T, TResult> func)
-            : this(func.Target, func)
+            : this(func == null ? null : func.Target, func)
         {
         }
 
         /// <summary>
         /// Initializes a new instance of the WeakFunc class.
         /// </summary>
-        /// <param name="target">The func's owner.</param>
-        /// <param name="func">The func that will be associated to this instance.</param>
+        /// <param name="target">The Func's owner.</param>
+        /// <param name="func">The Func that will be associated to this instance.</param>
+        [SuppressMessage(
+            "Microsoft.Design",
+            "CA1062:Validate arguments of public methods",
+            MessageId = "1",
+            Justification = "Method should fail with an exception if func is null.")]
         public WeakFunc(object target, Func<T, TResult> func)
         {
-            if (func.Method.IsStatic)
+            if (func.GetMethodInfo().IsStatic)
             {
                 _staticFunc = func;
 
@@ -102,26 +109,28 @@ namespace GalaSoft.MvvmLight.Helpers
                 return;
             }
 
-            Method = func.Method;
+            Method = func.GetMethodInfo();
             FuncReference = new WeakReference(func.Target);
 
             Reference = new WeakReference(target);
         }
 
         /// <summary>
-        /// Executes the func. This only happens if the func's owner
-        /// is still alive. The func's parameter is set to default(T).
+        /// Executes the Func. This only happens if the Func's owner
+        /// is still alive. The Func's parameter is set to default(T).
         /// </summary>
+        /// <returns>The result of the Func stored as reference.</returns>
         public new TResult Execute()
         {
             return Execute(default(T));
         }
 
         /// <summary>
-        /// Executes the func. This only happens if the func's owner
+        /// Executes the Func. This only happens if the Func's owner
         /// is still alive.
         /// </summary>
         /// <param name="parameter">A parameter to be passed to the action.</param>
+        /// <returns>The result of the Func stored as reference.</returns>
         public TResult Execute(T parameter)
         {
             if (_staticFunc != null)
@@ -129,13 +138,16 @@ namespace GalaSoft.MvvmLight.Helpers
                 return _staticFunc(parameter);
             }
 
+            var funcTarget = FuncTarget;
+
             if (IsAlive)
             {
                 if (Method != null
-                    && FuncReference != null)
+                    && FuncReference != null
+                    && funcTarget != null)
                 {
-                    return (TResult) Method.Invoke(
-                        FuncTarget,
+                    return (TResult)Method.Invoke(
+                        funcTarget,
                         new object[]
                         {
                             parameter
@@ -147,12 +159,12 @@ namespace GalaSoft.MvvmLight.Helpers
         }
 
         /// <summary>
-        /// Executes the func with a parameter of type object. This parameter
+        /// Executes the Func with a parameter of type object. This parameter
         /// will be casted to T. This method implements <see cref="IExecuteWithObject.ExecuteWithObject" />
         /// and can be useful if you store multiple WeakFunc{T} instances but don't know in advance
         /// what type T represents.
         /// </summary>
-        /// <param name="parameter">The parameter that will be passed to the func after
+        /// <param name="parameter">The parameter that will be passed to the Func after
         /// being casted to T.</param>
         /// <returns>The result of the execution as object, to be casted to T.</returns>
         public object ExecuteWithObject(object parameter)

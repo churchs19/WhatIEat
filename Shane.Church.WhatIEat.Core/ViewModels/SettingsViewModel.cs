@@ -1,6 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using Shane.Church.Utility.Core.Command;
-using Shane.Church.WhatIEat.Core.Resources;
+using Shane.Church.WhatIEat.Strings;
 using Shane.Church.WhatIEat.Core.Services;
 using System;
 using System.Windows.Input;
@@ -21,6 +21,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				throw new ArgumentNullException("sync");
 			_syncService = sync;
 
+#pragma warning disable 1998
 			ConnectCommand = new AsyncRelayCommand(async (o) =>
 			{
 				if (!_syncService.IsConnected)
@@ -61,6 +62,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				SyncRunning = false;
 				throw ex;
 			});
+#pragma warning restore 1998
 		}
 
 		public bool SyncEnabled
@@ -86,9 +88,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			get
 			{
 				if (!_syncService.IsConnected)
-					return CoreResources.ConnectLabel;
+					return Resources.ConnectLabel;
 				else
-					return CoreResources.ConnectedLabel;
+					return Resources.ConnectedLabel;
 			}
 		}
 
@@ -127,9 +129,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			get
 			{
 				if (SyncEnabled)
-					return CoreResources.OnText;
+					return Resources.OnText;
 				else
-					return CoreResources.OffText;
+					return Resources.OffText;
 			}
 		}
 	}

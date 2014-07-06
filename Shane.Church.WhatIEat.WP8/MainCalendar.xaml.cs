@@ -4,7 +4,7 @@ using Ninject;
 using Shane.Church.WhatIEat.Core.Services;
 using Shane.Church.WhatIEat.Core.ViewModels;
 using Shane.Church.WhatIEat.Core.WP.Commands;
-using Shane.Church.WhatIEat.WP.Resources;
+using Shane.Church.WhatIEat.Strings;
 using Shane.Church.WhatIEat.WP.ViewModels;
 using System;
 using System.Linq;
@@ -147,30 +147,30 @@ namespace Shane.Church.WhatIEat.WP
 			ApplicationBar.ForegroundColor = (Color)Application.Current.Resources["AppBaseColor"];
 
 			ApplicationBarIconButton appBarButtonReview = new ApplicationBarIconButton(new Uri("/Images/Rating.png", UriKind.Relative));
-			appBarButtonReview.Text = AppResources.ReviewLabel;
+			appBarButtonReview.Text = Shane.Church.WhatIEat.Strings.Resources.ReviewLabel;
 			appBarButtonReview.Click += appBarReview_Click;
 			ApplicationBar.Buttons.Add(appBarButtonReview);
 
 			ApplicationBarMenuItem appBarMenuItemAbout = new ApplicationBarMenuItem();
-			appBarMenuItemAbout.Text = AppResources.AboutLabel;
+			appBarMenuItemAbout.Text = Shane.Church.WhatIEat.Strings.Resources.AboutLabel;
 			appBarMenuItemAbout.Click += appBarAbout_Click;
 			ApplicationBar.MenuItems.Add(appBarMenuItemAbout);
 
 			ApplicationBarIconButton appBarButtonSettings = new ApplicationBarIconButton(new Uri("/Images/Settings.png", UriKind.Relative));
-			appBarButtonSettings.Text = AppResources.SettingsLabel;
+			appBarButtonSettings.Text = Shane.Church.WhatIEat.Strings.Resources.SettingsLabel;
 			appBarButtonSettings.Click += appBarButtonSettings_Click;
 			ApplicationBar.Buttons.Add(appBarButtonSettings);
 
 			if (_settingsService.LoadSetting<bool>("SyncEnabled"))
 			{
 				ApplicationBarIconButton appBarButtonSync = new ApplicationBarIconButton(new Uri("/Images/Synchronize.png", UriKind.Relative));
-				appBarButtonSync.Text = AppResources.SyncLabel;
+				appBarButtonSync.Text = Shane.Church.WhatIEat.Strings.Resources.SyncLabel;
 				appBarButtonSync.Click += appBarButtonSync_Click;
 				ApplicationBar.Buttons.Add(appBarButtonSync);
 			}
 
 			ApplicationBarIconButton appBarButtonExport = new ApplicationBarIconButton(new Uri("/Images/Excel-Export.png", UriKind.Relative));
-			appBarButtonExport.Text = AppResources.CsvExportLabel;
+			appBarButtonExport.Text = Shane.Church.WhatIEat.Strings.Resources.CsvExportLabel;
 			appBarButtonExport.Click += appBarButtonExport_Click;
 			ApplicationBar.Buttons.Add(appBarButtonExport);
 		}
@@ -216,9 +216,9 @@ namespace Shane.Church.WhatIEat.WP
 			if (pi != null)
 			{
 				string header = pi.Header.ToString();
-				if (header == AppResources.CalendarLabel)
+				if (header == Shane.Church.WhatIEat.Strings.Resources.CalendarLabel)
 					_log.LogMessage("Viewed Calendar");
-				else if (header == AppResources.SummaryLabel)
+				else if (header == Shane.Church.WhatIEat.Strings.Resources.SummaryLabel)
 					_log.LogMessage("Viewed Summary");
 			}
 		}

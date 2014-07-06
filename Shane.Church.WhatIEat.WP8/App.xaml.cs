@@ -11,7 +11,7 @@ using Shane.Church.WhatIEat.Core.WP.Data;
 using Shane.Church.WhatIEat.Core.WP.Services;
 using Shane.Church.WhatIEat.Core.WP.ViewModels;
 using Shane.Church.WhatIEat.Core.WP8.Services;
-using Shane.Church.WhatIEat.WP.Resources;
+using Shane.Church.WhatIEat.Strings;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -112,8 +112,8 @@ namespace Shane.Church.WhatIEat.WP
 
 			//Defines the default email where the diagnostics info will be send.
 			diagnostics.EmailTo = "shane@s-church.net";
-			diagnostics.MessageBoxInfo.Title = AppResources.Diagnostics_MessageBox_Title;
-			diagnostics.MessageBoxInfo.Content = AppResources.Diagnostics_MessageBox_Content;
+			diagnostics.MessageBoxInfo.Title = Shane.Church.WhatIEat.Strings.Resources.Diagnostics_MessageBox_Title;
+			diagnostics.MessageBoxInfo.Content = Shane.Church.WhatIEat.Strings.Resources.Diagnostics_MessageBox_Content;
 			diagnostics.IncludeScreenshot = true;
 			diagnostics.ExceptionOccurred += diagnostics_ExceptionOccurred;
 
@@ -134,14 +134,14 @@ namespace Shane.Church.WhatIEat.WP
 		{
 			if (e.MessageBoxEventArgs.Result == DialogResult.Cancel)
 			{
-				var eArgs = await RadMessageBox.ShowAsync(buttonsContent: new List<object>() { AppResources.GiveFeedbackButton, AppResources.NoThanksButton },
-					title: AppResources.FeedbackTitle,
-					message: AppResources.FeedbackContent);
+				var eArgs = await RadMessageBox.ShowAsync(buttonsContent: new List<object>() { Shane.Church.WhatIEat.Strings.Resources.GiveFeedbackButton, Shane.Church.WhatIEat.Strings.Resources.NoThanksButton },
+					title: Shane.Church.WhatIEat.Strings.Resources.FeedbackTitle,
+					message: Shane.Church.WhatIEat.Strings.Resources.FeedbackContent);
 				if (eArgs.ButtonIndex == 0)
 				{
 					EmailComposeTask emailTask = new EmailComposeTask();
 					emailTask.To = "shane@s-church.net";
-					emailTask.Subject = emailTask.Subject = Core.WP.Resources.WPCoreResources.TechnicalSupportEmailSubject;
+					emailTask.Subject = emailTask.Subject = Shane.Church.WhatIEat.Strings.Resources.TechnicalSupportEmailSubject;
 					emailTask.Show();
 				}
 			}
@@ -168,11 +168,11 @@ namespace Shane.Church.WhatIEat.WP
 		// and ResourceFlowDirection should be initialized in each .resx file to match these values with that 
 		// file's culture. For example: 
 		// 
-		// AppResources.es-ES.resx 
+		// Shane.Church.WhatIEat.Strings.Resources.es-ES.resx 
 		//    ResourceLanguage's value should be "es-ES" 
 		//    ResourceFlowDirection's value should be "LeftToRight" 
 		// 
-		// AppResources.ar-SA.resx 
+		// Shane.Church.WhatIEat.Strings.Resources.ar-SA.resx 
 		//     ResourceLanguage's value should be "ar-SA" 
 		//     ResourceFlowDirection's value should be "RightToLeft" 
 		// 
@@ -201,7 +201,7 @@ namespace Shane.Church.WhatIEat.WP
 				// 
 				// If a compiler error occurs, ResourceLanguage is missing from 
 				// the resource file. 
-				RootFrame.Language = XmlLanguage.GetLanguage(AppResources.ResourceLanguage);
+				RootFrame.Language = XmlLanguage.GetLanguage(Shane.Church.WhatIEat.Strings.Resources.ResourceLanguage);
 
 				// Set the FlowDirection of all elements under the root frame based 
 				// on the ResourceFlowDirection resource string for each 
@@ -209,11 +209,11 @@ namespace Shane.Church.WhatIEat.WP
 				// 
 				// If a compiler error occurs, ResourceFlowDirection is missing from 
 				// the resource file. 
-				FlowDirection flow = (FlowDirection)Enum.Parse(typeof(FlowDirection), AppResources.ResourceFlowDirection, false);
+				FlowDirection flow = (FlowDirection)Enum.Parse(typeof(FlowDirection), Shane.Church.WhatIEat.Strings.Resources.ResourceFlowDirection, false);
 				RootFrame.FlowDirection = flow;
 
 				//Initialiaze Telerik Localization Manager
-				Telerik.Windows.Controls.InputLocalizationManager.Instance.ResourceManager = Shane.Church.WhatIEat.WP.Resources.AppResources.ResourceManager;
+				Telerik.Windows.Controls.InputLocalizationManager.Instance.ResourceManager = Shane.Church.WhatIEat.Strings.Resources.ResourceManager;
 			}
 			catch
 			{

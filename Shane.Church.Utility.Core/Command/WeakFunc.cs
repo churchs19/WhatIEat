@@ -1,6 +1,6 @@
 ﻿// ****************************************************************************
 // <copyright file="WeakFunc.cs" company="GalaSoft Laurent Bugnion">
-// Copyright © GalaSoft Laurent Bugnion 2012-2013
+// Copyright © GalaSoft Laurent Bugnion 2012-2014
 // </copyright>
 // ****************************************************************************
 // <author>Laurent Bugnion</author>
@@ -14,6 +14,7 @@
 // ****************************************************************************
 
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace GalaSoft.MvvmLight.Helpers
@@ -22,6 +23,8 @@ namespace GalaSoft.MvvmLight.Helpers
     /// Stores a Func&lt;T&gt; without causing a hard reference
     /// to be created to the Func's owner. The owner can be garbage collected at any time.
     /// </summary>
+    /// <typeparam name="TResult">The type of the result of the Func that will be stored
+    /// by this weak reference.</typeparam>
     ////[ClassInfo(typeof(WeakAction)]
     public class WeakFunc<TResult>
     {
@@ -57,7 +60,7 @@ namespace GalaSoft.MvvmLight.Helpers
             {
                 if (_staticFunc != null)
                 {
-                    return _staticFunc.Method.Name;
+                    return _staticFunc.GetMethodInfo().Name;
                 }
 
                 return Method.Name;
@@ -98,20 +101,25 @@ namespace GalaSoft.MvvmLight.Helpers
         /// <summary>
         /// Initializes a new instance of the WeakFunc class.
         /// </summary>
-        /// <param name="func">The func that will be associated to this instance.</param>
+        /// <param name="func">The Func that will be associated to this instance.</param>
         public WeakFunc(Func<TResult> func)
-            : this(func.Target, func)
+            : this(func == null ? null : func.Target, func)
         {
         }
 
         /// <summary>
         /// Initializes a new instance of the WeakFunc class.
         /// </summary>
-        /// <param name="target">The func's owner.</param>
-        /// <param name="func">The func that will be associated to this instance.</param>
+        /// <param name="target">The Func's owner.</param>
+        /// <param name="func">The Func that will be associated to this instance.</param>
+        [SuppressMessage(
+            "Microsoft.Design",
+            "CA1062:Validate arguments of public methods",
+            MessageId = "1",
+            Justification = "Method should fail with an exception if func is null.")]
         public WeakFunc(object target, Func<TResult> func)
         {
-            if (func.Method.IsStatic)
+            if (func.GetMethodInfo().IsStatic)
             {
                 _staticFunc = func;
 
@@ -125,7 +133,7 @@ namespace GalaSoft.MvvmLight.Helpers
                 return;
             }
 
-            Method = func.Method;
+            Method = func.GetMethodInfo();
             FuncReference = new WeakReference(func.Target);
 
             Reference = new WeakReference(target);
@@ -196,9 +204,10 @@ namespace GalaSoft.MvvmLight.Helpers
         }
 
         /// <summary>
-        /// Executes the action. This only happens if the func's owner
+        /// Executes the action. This only happens if the Func's owner
         /// is still alive.
         /// </summary>
+        /// <returns>The result of the Func stored as reference.</returns>
         public TResult Execute()
         {
             if (_staticFunc != null)
@@ -206,14 +215,16 @@ namespace GalaSoft.MvvmLight.Helpers
                 return _staticFunc();
             }
 
+            var funcTarget = FuncTarget;
+
             if (IsAlive)
             {
                 if (Method != null
-                    && FuncReference != null)
+                    && FuncReference != null
+                    && funcTarget != null)
                 {
-                    return (TResult)Method.Invoke(FuncTarget, null);
+                    return (TResult)Method.Invoke(funcTarget, null);
                 }
-
             }
 
             return default(TResult);

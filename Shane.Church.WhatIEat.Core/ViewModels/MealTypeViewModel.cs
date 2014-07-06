@@ -1,5 +1,5 @@
 ﻿using Shane.Church.WhatIEat.Core.Data;
-using Shane.Church.WhatIEat.Core.Resources;
+using Shane.Church.WhatIEat.Strings;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -65,19 +65,19 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				switch (_type)
 				{
 					case Data.MealType.Breakfast:
-						result = CoreResources.MealTypeBreakfast;
+						result = Resources.MealTypeBreakfast;
 						break;
 					case Data.MealType.Lunch:
-						result = CoreResources.MealTypeLunch;
+						result = Resources.MealTypeLunch;
 						break;
 					case Data.MealType.Dinner:
-						result = CoreResources.MealTypeDinner;
+						result = Resources.MealTypeDinner;
 						break;
 					case Data.MealType.Snack:
-						result = CoreResources.MealTypeSnack;
+						result = Resources.MealTypeSnack;
 						break;
 					default:
-						result = CoreResources.MealTypeUndefined;
+						result = Resources.MealTypeUndefined;
 						break;
 				}
 

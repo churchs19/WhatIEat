@@ -3,3 +3,4 @@ obj
 *.user
 *.suo
 /Shane.Church.WhatIEat.WP/SubmissionInfo
+/packages

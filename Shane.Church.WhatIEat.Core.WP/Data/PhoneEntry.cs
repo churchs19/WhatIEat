@@ -73,8 +73,10 @@ namespace Shane.Church.WhatIEat.Core.WP.Data
             }
         }
 
+#pragma warning disable 0169
         [Column(IsVersion = true)]
         private Binary _version;
+#pragma warning restore 0169
 
         private bool? _isDeleted;
         [Column(CanBeNull = true)]
