@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="vi-VN" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Shane.Church.WhatIEat.Strings" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.0.1200.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/ConnectedLabel" translate="yes" xml:space="preserve">
+          <source>Connected</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kết nối</target>
+        </trans-unit>
+        <trans-unit id="Resx/ConnectLabel" translate="yes" xml:space="preserve">
+          <source>Connect</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kết nối</target>
+        </trans-unit>
+        <trans-unit id="Resx/OffText" translate="yes" xml:space="preserve">
+          <source>Off</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tắt</target>
+        </trans-unit>
+        <trans-unit id="Resx/OnText" translate="yes" xml:space="preserve">
+          <source>On</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ngày</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeBreakfast" translate="yes" xml:space="preserve">
+          <source>Breakfast</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Bữa sáng</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeLunch" translate="yes" xml:space="preserve">
+          <source>Lunch</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ăn trưa</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeDinner" translate="yes" xml:space="preserve">
+          <source>Dinner</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Bữa ăn tối</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeSnack" translate="yes" xml:space="preserve">
+          <source>Snack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Snack</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeUndefined" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Không có</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutLabel" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">về</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutOtherAppsLabel" translate="yes" xml:space="preserve">
+          <source>other apps by Shane Church</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Các ứng dụng khác bởi Shane Church</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate this app</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">đánh giá các ứng dụng này</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppCopyright" translate="yes" xml:space="preserve">
+          <source>Copyright © Shane Church 2013-2014</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Bản quyền © Shane Church 2013-2014</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
+          <source>a simple food journal for windows phone</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">một tạp chí đơn giản thực phẩm cho windows điện thoại</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconDescription" translate="yes" xml:space="preserve">
+          <source>Eat designed by Danny Chapman from The Noun Project</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ăn được thiết kế bởi Danny Chapman từ The danh từ dự án</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconLabel" translate="yes" xml:space="preserve">
+          <source>application icon</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">biểu tượng ứng dụng</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppTitle" translate="yes" xml:space="preserve">
+          <source>WHAT I EAT</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">NHỮNG GÌ TÔI ĂN</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarLabel" translate="yes" xml:space="preserve">
+          <source>calendar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">lịch</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cancel" translate="yes" xml:space="preserve">
+          <source>cancel</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">hủy bỏ</target>
+        </trans-unit>
+        <trans-unit id="Resx/CsvExportLabel" translate="yes" xml:space="preserve">
+          <source>Export CSV</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Xuất chuyển CSV</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Content" translate="yes" xml:space="preserve">
+          <source>The application has encountered a problem. I am sorry for the inconvenience.
+
+I would appreciate your assistance by sending the prepared error report. This will help with resolving the problem faster.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Các ứng dụng đã gặp phải một vấn đề. Tôi xin lỗi vì sự bất tiện này.
+
+Tôi sẽ đánh giá cao sự hỗ trợ của bạn bằng cách gửi báo cáo chuẩn bị lỗi. Điều này sẽ giúp với giải quyết vấn đề nhanh hơn.</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Title" translate="yes" xml:space="preserve">
+          <source>Application Error</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lỗi ứng dụng</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptyEntryListLabel" translate="yes" xml:space="preserve">
+          <source>Nothing on this date. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Không có gì vào ngày này. Thêm một cái gì đó!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptySummaryListLabel" translate="yes" xml:space="preserve">
+          <source>No entries found. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Không có mục nào được tìm thấy. Thêm một cái gì đó!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnableSyncLabel" translate="yes" xml:space="preserve">
+          <source>enable synchronization</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sử đồng bộ hóa</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportButtonLabel" translate="yes" xml:space="preserve">
+          <source>Export to OneDrive</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Xuất khẩu để OneDrive</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportLabel" translate="yes" xml:space="preserve">
+          <source>excel export</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Excel xuất khẩu</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportText" translate="yes" xml:space="preserve">
+          <source>This will export all of your journal entries as a Excel-compatible CSV file to your OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Điều này sẽ xuất khẩu tất cả các mục tạp chí của bạn dưới dạng tệp CSV tương thích với Excel để OneDrive của bạn.</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackContent" translate="yes" xml:space="preserve">
+          <source>How can I improve this application so that you would be willing to rate it 5 stars in the marketplace?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Làm thế nào tôi có thể cải thiện ứng dụng này vì vậy bạn sẽ sẵn sàng để đánh giá nó 5 sao trên thị trường?</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackTitle" translate="yes" xml:space="preserve">
+          <source>Can I make it better?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tôi có thể làm cho nó tốt hơn?</target>
+        </trans-unit>
+        <trans-unit id="Resx/GiveFeedbackButton" translate="yes" xml:space="preserve">
+          <source>give feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">cung cấp cho thông tin phản hồi</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewEntryLabel" translate="yes" xml:space="preserve">
+          <source>new entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">mục mới</target>
+        </trans-unit>
+        <trans-unit id="Resx/No" translate="yes" xml:space="preserve">
+          <source>no</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Không</target>
+        </trans-unit>
+        <trans-unit id="Resx/NoThanksButton" translate="yes" xml:space="preserve">
+          <source>no thanks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Không, cảm ơn</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ok" translate="yes" xml:space="preserve">
+          <source>ok</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ok</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">vi-VN</target>
+        </trans-unit>
+        <trans-unit id="Resx/ReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate me</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">giá tôi</target>
+        </trans-unit>
+        <trans-unit id="Resx/SettingsLabel" translate="yes" xml:space="preserve">
+          <source>settings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">cài đặt</target>
+        </trans-unit>
+        <trans-unit id="Resx/SummaryLabel" translate="yes" xml:space="preserve">
+          <source>summary</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">tóm tắt</target>
+        </trans-unit>
+        <trans-unit id="Resx/SynchronizingLabel" translate="yes" xml:space="preserve">
+          <source>synchronizing...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">đồng bộ hóa...</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLabel" translate="yes" xml:space="preserve">
+          <source>sync</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">đồng bộ</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailLabel" translate="yes" xml:space="preserve">
+          <source>technical support/feedback email</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">hỗ trợ kỹ thuật/phản hồi email</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeText" translate="yes" xml:space="preserve">
+          <source>An upgrade is available! Do you want to install the upgrade now?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Một bản nâng cấp có sẵn! Bạn có muốn cài đặt nâng cấp bây giờ?</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeTitle" translate="yes" xml:space="preserve">
+          <source>Upgrade Available!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nâng cấp có sẵn!</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedMessage" translate="yes" xml:space="preserve">
+          <source>Unfortunately your data could not be exported to OneDrive at this time. Please try again later.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Không may là dữ liệu của bạn không có thể được xuất khẩu sang OneDrive tại thời điểm này. Xin vui lòng thử lại sau.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedTitle" translate="yes" xml:space="preserve">
+          <source>Upload Failed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tải lên không thành công</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadingLabel" translate="yes" xml:space="preserve">
+          <source>uploading...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">tải lên...</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessMessage" translate="yes" xml:space="preserve">
+          <source>Your data has been successfully uploaded to OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dữ liệu của bạn đã được tải lên thành công OneDrive.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessTitle" translate="yes" xml:space="preserve">
+          <source>Upload Successful!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tải lên thành công!</target>
+        </trans-unit>
+        <trans-unit id="Resx/Yes" translate="yes" xml:space="preserve">
+          <source>yes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Có</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailSubject" translate="yes" xml:space="preserve">
+          <source>What I Eat Feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Những gì tôi ăn thông tin phản hồi</target>
+        </trans-unit>
+        <trans-unit id="Resx/ShowEntryTimeStampLabel" translate="yes" xml:space="preserve">
+          <source>show entry timestamp?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hiển thị dấu thời gian nhập cảnh?</target>
+        </trans-unit>
+        <trans-unit id="Resx/RemoveAdsLabel" translate="yes" xml:space="preserve">
+          <source>remove ads</source>
+          <target state="new">remove ads</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncUnknownError" translate="yes" xml:space="preserve">
+          <source>Unable to sync at this time. Please try again later.</source>
+          <target state="new">Unable to sync at this time. Please try again later.</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
+          <source>You must be logged in to sync.</source>
+          <target state="new">You must be logged in to sync.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

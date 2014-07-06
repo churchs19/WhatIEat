@@ -15,8 +15,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 		protected ISettingsService _settings;
 		protected SyncService _syncService;
 		protected ILoggingService _log;
+        protected IIAPService _iapService;
 
-		public MainViewModel(IRepository<IEntry> repository, ISettingsService settings, SyncService sync, ILoggingService log)
+		public MainViewModel(IRepository<IEntry> repository, ISettingsService settings, SyncService sync, ILoggingService log, IIAPService iapService)
 		{
 			if (repository == null)
 				throw new ArgumentNullException("repository");
@@ -30,6 +31,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			if (log == null)
 				throw new ArgumentNullException("log");
 			_log = log;
+            if (iapService == null)
+                throw new ArgumentNullException("iapService");
+            _iapService = iapService;
 
 			_dateEntries = new ObservableCollection<CalendarItemViewModel>();
 			_dateEntries.CollectionChanged += _dateEntries_CollectionChanged;
@@ -54,6 +58,20 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				SyncRunning = false;
 				throw ex;
 			});
+
+            RemoveAdsCommand = new AsyncRelayCommand(async (o) =>
+            {
+                var productIds = await _iapService.GetProductIds();
+                await _iapService.PurchaseProduct(productIds[0]);
+            }, null,
+            async () =>
+            {
+                RaisePropertyChanged(() => AreAdsVisible);
+            },
+            (ex) =>
+            {
+
+            });
 		}
 #pragma warning restore 1998
 
@@ -121,6 +139,16 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			}
 		}
 
+        public bool AreAdsVisible
+        {
+            get
+            {
+                return _iapService.AreAdsVisible();
+            }
+        }
+
+        public ICommand RemoveAdsCommand { get; set; }
+ 
 		public void Initialize()
 		{
 			_summaryEntries.Clear();

@@ -379,6 +379,15 @@ namespace Shane.Church.WhatIEat.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to remove ads.
+        /// </summary>
+        public static string RemoveAdsLabel {
+            get {
+                return ResourceManager.GetString("RemoveAdsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {
@@ -415,6 +424,15 @@ namespace Shane.Church.WhatIEat.Strings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to show entry timestamp?.
+        /// </summary>
+        public static string ShowEntryTimeStampLabel {
+            get {
+                return ResourceManager.GetString("ShowEntryTimeStampLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to summary.
         /// </summary>
         public static string SummaryLabel {
@@ -438,6 +456,24 @@ namespace Shane.Church.WhatIEat.Strings {
         public static string SyncLabel {
             get {
                 return ResourceManager.GetString("SyncLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must be logged in to sync..
+        /// </summary>
+        public static string SyncLoginError {
+            get {
+                return ResourceManager.GetString("SyncLoginError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to sync at this time. Please try again later..
+        /// </summary>
+        public static string SyncUnknownError {
+            get {
+                return ResourceManager.GetString("SyncUnknownError", resourceCulture);
             }
         }
         

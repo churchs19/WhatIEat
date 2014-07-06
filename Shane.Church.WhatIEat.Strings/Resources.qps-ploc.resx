@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>qps-ploc</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<data name="ConnectedLabel" xml:space="preserve"><value>[27B36][!!_Ċòηήéćтèđ_!!]</value></data><data name="ConnectLabel" xml:space="preserve"><value>[6442C][!!_Ĉôиηęĉť_!!]</value></data><data name="OffText" xml:space="preserve"><value>[49135][!!_Óƒƒ_!!]</value></data><data name="OnText" xml:space="preserve"><value>[213DF][!!_Óή_!!]</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>[107A6][!!_βŕèãķƒâšτ_!!]</value></data><data name="MealTypeLunch" xml:space="preserve"><value>[C528C][!!_Ŀûηčн_!!]</value></data><data name="MealTypeDinner" xml:space="preserve"><value>[96996][!!_Đîηйęŗ_!!]</value></data><data name="MealTypeSnack" xml:space="preserve"><value>[DA24D][!!_Ŝηàċќ_!!]</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>[6CE6C][!!_Ńóηê_!!]</value></data><data name="AboutLabel" xml:space="preserve"><value>[71075][!!_ãьôùţ_!!]</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>[F0550][!!_òťħêř áррŝ вý Šĥàиê Čнùѓĉђ_!!]</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>[A178F][!!_ѓãτê τћíş âρρ_!!]</value></data><data name="AppCopyright" xml:space="preserve"><value>[BCD0A][!!_Čòρўŕìģђт © Šђáηè Ċћûřċн 2013-2014_!!]</value></data><data name="AppDescription" xml:space="preserve"><value>[5C2A5][!!_ã ŝįмрĺê ƒõôð јõûřиàľ ƒôŕ ŵíиðôẃś рђôηê_!!]</value></data><data name="AppIconDescription" xml:space="preserve"><value>[FD054][!!_Êãτ đèŝìģήèď Бў Đâййÿ Ċнáþмâη ƒŗõm Тђé Ñõµи Ρѓõĵêčť_!!]</value></data><data name="AppIconLabel" xml:space="preserve"><value>[DC8A2][!!_âþþļìĉâτįõй ìĉòи_!!]</value></data><data name="AppTitle" xml:space="preserve"><value>[BD285][!!_ŴΉÀΤ Î ÈÀТ_!!]</value></data><data name="CalendarLabel" xml:space="preserve"><value>[8E1CF][!!_ĉãĺêиďãѓ_!!]</value></data><data name="Cancel" xml:space="preserve"><value>[BBA99][!!_ċãηĉêĺ_!!]</value></data><data name="CsvExportLabel" xml:space="preserve"><value>[F8D11][!!_Ê×þòřт ĆŞV_!!]</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>[71269][!!_Ťĥê áþрłîčáтìõή ĥâś èηĉóµηтèŕéð â ρѓôьļéм. Í âм šóŕřў ƒòŗ ţћé îиĉóйνèйíéηĉè.
+
+Î ẁóùĺď àρрѓêĉįãţê Уôûř ãśśîśţáиćè Бў ŝęήďíηġ тħę рŕéρãřęď ęѓѓôŕ řèþòѓţ. Ťђíš ŵįłĺ ћéłр ŵįťħ ŗêšóľνįηġ ťĥę ρřõБĺêm ƒãşτéř._!!]</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>[BB751][!!_Áррłîĉàτíóή Èřŕõŗ_!!]</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>[32CCA][!!_Ňôţĥįиģ ôη ţђîś ďàťé. Àďđ ŝóмéťнîиğ!_!!]</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>[895E8][!!_Ńõ êηţŕįèş ƒôµήð. Âðð şòмèťħįйğ!_!!]</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>[8D6ED][!!_êήâвłè šўйćђѓôиîźâţįõή_!!]</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>[F4830][!!_È×ρóŕτ τò ÕήêĐѓíνê_!!]</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>[4B12F][!!_êхĉêł èхрòřţ_!!]</value></data><data name="ExcelExportText" xml:space="preserve"><value>[2AAB9][!!_Тħîŝ ŵîĺĺ ęхрõѓт âĺľ óƒ Уõûѓ јóµŕиáľ éήţŕíêş ãŝ ã Éхćêľ-čòмρãţîьłé ĆŞV ƒįłè ťò ýôûŗ ÔйéĎѓìνê._!!]</value></data><data name="FeedbackContent" xml:space="preserve"><value>[3E054][!!_Ήôẅ ċàй Ì íмрřòνê тнíş ãрρłìćâτîóй şô ţћàτ ýóû ŵóµļď Бè ẅįĺĺįйĝ тô ŕàтè įт 5 şτâřš íй τħê máѓќèţρļâćę?_!!]</value></data><data name="FeedbackTitle" xml:space="preserve"><value>[46D10][!!_Ĉâй Ì mãќè íţ Бêττéř?_!!]</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>[EC9A6][!!_ģìνê ƒêęďБáċк_!!]</value></data><data name="NewEntryLabel" xml:space="preserve"><value>[E9670][!!_ήéŵ éиτѓў_!!]</value></data><data name="No" xml:space="preserve"><value>[23BDD][!!_иô_!!]</value></data><data name="NoThanksButton" xml:space="preserve"><value>[83CF9][!!_иõ ţђâήќš_!!]</value></data><data name="Ok" xml:space="preserve"><value>[EC160][!!_õќ_!!]</value></data><data name="ReviewLabel" xml:space="preserve"><value>[582FB][!!_ŗàťê mê_!!]</value></data><data name="SettingsLabel" xml:space="preserve"><value>[BE263][!!_ŝêтťįηģś_!!]</value></data><data name="SummaryLabel" xml:space="preserve"><value>[6A63D][!!_ŝûмmàŕÿ_!!]</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>[FEEC8][!!_şýйċђřòйįžîиġ..._!!]</value></data><data name="SyncLabel" xml:space="preserve"><value>[98FDE][!!_şÿηč_!!]</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>[E1D00][!!_ťèčђήįćâļ šûрþôřт/ƒêèďвâćк ęмàįł_!!]</value></data><data name="UpgradeText" xml:space="preserve"><value>[D1D72][!!_Âи ùрğѓàđé įš áνáìļàъłê! Đõ ÿõû ŵãήт ťó íиşτáłł τђê µþğřãďé ήôẅ?_!!]</value></data><data name="UpgradeTitle" xml:space="preserve"><value>[9DEF3][!!_Üρĝѓâðé Âνáíĺãъľé!_!!]</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>[6E63A][!!_ÜήƒõŗтûйâτèľУ ýõúѓ đãτá ċòûľď йóţ ъé é×þôřťéđ ťô ÔйéĎŗìνé áť ţћîş ţîmé. Рļęãŝè ťŕў áĝáíи ļàţèѓ._!!]</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>[1CE6C][!!_Ûþļòâď ₣ãíĺèð_!!]</value></data><data name="UploadingLabel" xml:space="preserve"><value>[D8D19][!!_ûρłóáďîηğ..._!!]</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>[4E736][!!_Ỳôûŗ ðáťâ нàş вêêи śûćĉêŝŝƒûĺĺý ùþłóáđèð тó ÓйèĎŕįνé._!!]</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>[9165B][!!_Ûрłôàď Śµċčéŝşƒúł!_!!]</value></data><data name="Yes" xml:space="preserve"><value>[42CB5][!!_ŷèş_!!]</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>[09D38][!!_Ẁĥãт Į Èáť ₣ęéđБàĉк_!!]</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>[1141E][!!_ŝђôẁ éиťŕý тîмęśτámþ?_!!]</value></data></root>

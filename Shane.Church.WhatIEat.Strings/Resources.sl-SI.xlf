@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="sl-SI" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Shane.Church.WhatIEat.Strings" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.0.1200.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/ConnectedLabel" translate="yes" xml:space="preserve">
+          <source>Connected</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Povezani</target>
+        </trans-unit>
+        <trans-unit id="Resx/ConnectLabel" translate="yes" xml:space="preserve">
+          <source>Connect</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Povezovanje</target>
+        </trans-unit>
+        <trans-unit id="Resx/OffText" translate="yes" xml:space="preserve">
+          <source>Off</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Off</target>
+        </trans-unit>
+        <trans-unit id="Resx/OnText" translate="yes" xml:space="preserve">
+          <source>On</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Na</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeBreakfast" translate="yes" xml:space="preserve">
+          <source>Breakfast</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Zajtrk</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeLunch" translate="yes" xml:space="preserve">
+          <source>Lunch</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kosilo</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeDinner" translate="yes" xml:space="preserve">
+          <source>Dinner</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Večerja</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeSnack" translate="yes" xml:space="preserve">
+          <source>Snack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Prigrizek</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeUndefined" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nobena</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutLabel" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">o</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutOtherAppsLabel" translate="yes" xml:space="preserve">
+          <source>other apps by Shane Church</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">druge aplikacije, ki jih Shane cerkev</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate this app</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ocenite to app</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppCopyright" translate="yes" xml:space="preserve">
+          <source>Copyright © Shane Church 2013-2014</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane cerkev 2013-2014</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
+          <source>a simple food journal for windows phone</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">preprosto hrano temeljnice za windows phone</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconDescription" translate="yes" xml:space="preserve">
+          <source>Eat designed by Danny Chapman from The Noun Project</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Jesti izdelani z Danny Chapman iz samostalnika Project</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconLabel" translate="yes" xml:space="preserve">
+          <source>application icon</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Uporaba ikona</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppTitle" translate="yes" xml:space="preserve">
+          <source>WHAT I EAT</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">KAJ SEM JEDEL</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarLabel" translate="yes" xml:space="preserve">
+          <source>calendar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">koledar</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cancel" translate="yes" xml:space="preserve">
+          <source>cancel</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Prekliči</target>
+        </trans-unit>
+        <trans-unit id="Resx/CsvExportLabel" translate="yes" xml:space="preserve">
+          <source>Export CSV</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Izvoz v CSV</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Content" translate="yes" xml:space="preserve">
+          <source>The application has encountered a problem. I am sorry for the inconvenience.
+
+I would appreciate your assistance by sending the prepared error report. This will help with resolving the problem faster.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Program je naletel na težavo. Žal mi je za morebitne nevšečnosti.
+
+Jaz hoteti uvaževati vaš pomoč pošlje poročilo o napaki pripravljeni. To bo pomagalo pri reševanju problema hitreje.</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Title" translate="yes" xml:space="preserve">
+          <source>Application Error</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Uporaba zmota</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptyEntryListLabel" translate="yes" xml:space="preserve">
+          <source>Nothing on this date. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nič na ta datum. Dodamo nekaj!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptySummaryListLabel" translate="yes" xml:space="preserve">
+          <source>No entries found. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vnosov ni mogoče najti. Dodamo nekaj!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnableSyncLabel" translate="yes" xml:space="preserve">
+          <source>enable synchronization</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">omogočiti sinhronizacijo</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportButtonLabel" translate="yes" xml:space="preserve">
+          <source>Export to OneDrive</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Izvoz v OneDrive</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportLabel" translate="yes" xml:space="preserve">
+          <source>excel export</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Excel izvoz</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportText" translate="yes" xml:space="preserve">
+          <source>This will export all of your journal entries as a Excel-compatible CSV file to your OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">S tem boste izvozili vse vnose v dnevnik kot datoteke CSV odlikovati se-združljiv za vaš OneDrive.</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackContent" translate="yes" xml:space="preserve">
+          <source>How can I improve this application so that you would be willing to rate it 5 stars in the marketplace?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kako lahko izboljšam ta program, tako da bi bil pripravljen obrok to 5 zvezdic na trgu?</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackTitle" translate="yes" xml:space="preserve">
+          <source>Can I make it better?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Lahko bi bilo boljše?</target>
+        </trans-unit>
+        <trans-unit id="Resx/GiveFeedbackButton" translate="yes" xml:space="preserve">
+          <source>give feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">povratne informacije</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewEntryLabel" translate="yes" xml:space="preserve">
+          <source>new entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">nova postavka</target>
+        </trans-unit>
+        <trans-unit id="Resx/No" translate="yes" xml:space="preserve">
+          <source>no</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ne</target>
+        </trans-unit>
+        <trans-unit id="Resx/NoThanksButton" translate="yes" xml:space="preserve">
+          <source>no thanks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ne, hvala</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ok" translate="yes" xml:space="preserve">
+          <source>ok</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">v redu</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">sl-SI</target>
+        </trans-unit>
+        <trans-unit id="Resx/ReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate me</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ocenite me</target>
+        </trans-unit>
+        <trans-unit id="Resx/SettingsLabel" translate="yes" xml:space="preserve">
+          <source>settings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">nastavitve</target>
+        </trans-unit>
+        <trans-unit id="Resx/SummaryLabel" translate="yes" xml:space="preserve">
+          <source>summary</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Povzetek</target>
+        </trans-unit>
+        <trans-unit id="Resx/SynchronizingLabel" translate="yes" xml:space="preserve">
+          <source>synchronizing...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">sinhronizacijo...</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLabel" translate="yes" xml:space="preserve">
+          <source>sync</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sinhronizacija</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailLabel" translate="yes" xml:space="preserve">
+          <source>technical support/feedback email</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">email tehnične podpore in povratnih informacij</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeText" translate="yes" xml:space="preserve">
+          <source>An upgrade is available! Do you want to install the upgrade now?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nadgradnja je na voljo! Ali želite zdaj namestiti nadgradnjo?</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeTitle" translate="yes" xml:space="preserve">
+          <source>Upgrade Available!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nadgradnja na voljo!</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedMessage" translate="yes" xml:space="preserve">
+          <source>Unfortunately your data could not be exported to OneDrive at this time. Please try again later.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Na žalost podatkov ni mogoče izvoziti v OneDrive v tem trenutku. Prosimo, poskusite znova pozneje.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedTitle" translate="yes" xml:space="preserve">
+          <source>Upload Failed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Prenos ni uspel</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadingLabel" translate="yes" xml:space="preserve">
+          <source>uploading...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">nalaganje...</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessMessage" translate="yes" xml:space="preserve">
+          <source>Your data has been successfully uploaded to OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Podatkov je bila uspešno prenesena na OneDrive.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessTitle" translate="yes" xml:space="preserve">
+          <source>Upload Successful!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Upload uspešen!</target>
+        </trans-unit>
+        <trans-unit id="Resx/Yes" translate="yes" xml:space="preserve">
+          <source>yes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">da</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailSubject" translate="yes" xml:space="preserve">
+          <source>What I Eat Feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kaj sem jedel povratne informacije</target>
+        </trans-unit>
+        <trans-unit id="Resx/ShowEntryTimeStampLabel" translate="yes" xml:space="preserve">
+          <source>show entry timestamp?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Prikaži vstop timestamp?</target>
+        </trans-unit>
+        <trans-unit id="Resx/RemoveAdsLabel" translate="yes" xml:space="preserve">
+          <source>remove ads</source>
+          <target state="new">remove ads</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncUnknownError" translate="yes" xml:space="preserve">
+          <source>Unable to sync at this time. Please try again later.</source>
+          <target state="new">Unable to sync at this time. Please try again later.</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
+          <source>You must be logged in to sync.</source>
+          <target state="new">You must be logged in to sync.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

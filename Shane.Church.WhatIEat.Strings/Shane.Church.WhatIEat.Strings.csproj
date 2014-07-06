@@ -15,6 +15,7 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SupportedCultures>ar-SA;bg-BG;ca-ES;cs-CZ;da-DK;de-DE;el-GR;en-GB;en-US;es-ES;es-MX;et-EE;fa-IR;fi-FI;fr-FR;he-IL;hi-IN;hu-HU;id-ID;it-IT;ja-JP;ko-KR;lt-LT;lv-LV;ms-MY;nb-NO;nl-NL;pl-PL;pt-BR;pt-PT;qps-ploc;ro-RO;ru-RU;sk-SK;sl-SI;sv-SE;th-TH;tr-TR;uk-UA;vi-VN;zh-CN;zh-TW</SupportedCultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,23 +34,825 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Label="MultilingualAppToolkit">
+    <MultilingualAppToolkitVersion>3.0</MultilingualAppToolkitVersion>
+  </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <EmbeddedResource Include="Resources.ar-SA.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ar-SA.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ar-SA.xlf</DependentUpon>
+      <culture>ar-SA</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.bg-BG.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.bg-BG.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.bg-BG.xlf</DependentUpon>
+      <culture>bg-BG</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ca-ES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ca-ES.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ca-ES.xlf</DependentUpon>
+      <culture>ca-ES</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.cs-CZ.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.cs-CZ.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.cs-CZ.xlf</DependentUpon>
+      <culture>cs-CZ</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.da-DK.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.da-DK.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.da-DK.xlf</DependentUpon>
+      <culture>da-DK</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.de-DE.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.de-DE.xlf</DependentUpon>
+      <culture>de-DE</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.el-GR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.el-GR.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.el-GR.xlf</DependentUpon>
+      <culture>el-GR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.en-GB.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.en-GB.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.en-GB.xlf</DependentUpon>
+      <culture>en-GB</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.en-US.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.en-US.xlf</DependentUpon>
+      <culture>en-US</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.es-ES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.es-ES.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.es-ES.xlf</DependentUpon>
+      <culture>es-ES</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.es-MX.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.es-MX.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.es-MX.xlf</DependentUpon>
+      <culture>es-MX</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.et-EE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.et-EE.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.et-EE.xlf</DependentUpon>
+      <culture>et-EE</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.fa-IR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fa-IR.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fa-IR.xlf</DependentUpon>
+      <culture>fa-IR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.fi-FI.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fi-FI.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fi-FI.xlf</DependentUpon>
+      <culture>fi-FI</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.fr-FR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fr-FR.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fr-FR.xlf</DependentUpon>
+      <culture>fr-FR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.he-IL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.he-IL.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.he-IL.xlf</DependentUpon>
+      <culture>he-IL</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.hi-IN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.hi-IN.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.hi-IN.xlf</DependentUpon>
+      <culture>hi-IN</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.hu-HU.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.hu-HU.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.hu-HU.xlf</DependentUpon>
+      <culture>hu-HU</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.id-ID.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.id-ID.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.id-ID.xlf</DependentUpon>
+      <culture>id-ID</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.it-IT.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.it-IT.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.it-IT.xlf</DependentUpon>
+      <culture>it-IT</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ja-JP.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ja-JP.xlf</DependentUpon>
+      <culture>ja-JP</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ko-KR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ko-KR.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ko-KR.xlf</DependentUpon>
+      <culture>ko-KR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.lt-LT.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.lt-LT.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.lt-LT.xlf</DependentUpon>
+      <culture>lt-LT</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.lv-LV.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.lv-LV.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.lv-LV.xlf</DependentUpon>
+      <culture>lv-LV</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ms-MY.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ms-MY.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ms-MY.xlf</DependentUpon>
+      <culture>ms-MY</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.nb-NO.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.nb-NO.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.nb-NO.xlf</DependentUpon>
+      <culture>nb-NO</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.nl-NL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.nl-NL.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.nl-NL.xlf</DependentUpon>
+      <culture>nl-NL</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.pl-PL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.pl-PL.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.pl-PL.xlf</DependentUpon>
+      <culture>pl-PL</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.pt-BR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.pt-BR.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.pt-BR.xlf</DependentUpon>
+      <culture>pt-BR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.pt-PT.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.pt-PT.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.pt-PT.xlf</DependentUpon>
+      <culture>pt-PT</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.qps-ploc.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.qps-ploc.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.qps-ploc.xlf</DependentUpon>
+      <culture>qps-ploc</culture>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ro-RO.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ro-RO.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ro-RO.xlf</DependentUpon>
+      <culture>ro-RO</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ru-RU.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ru-RU.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ru-RU.xlf</DependentUpon>
+      <culture>ru-RU</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.sk-SK.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.sk-SK.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.sk-SK.xlf</DependentUpon>
+      <culture>sk-SK</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.sl-SI.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.sl-SI.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.sl-SI.xlf</DependentUpon>
+      <culture>sl-SI</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.sv-SE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.sv-SE.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.sv-SE.xlf</DependentUpon>
+      <culture>sv-SE</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.th-TH.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.th-TH.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.th-TH.xlf</DependentUpon>
+      <culture>th-TH</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.tr-TR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.tr-TR.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.tr-TR.xlf</DependentUpon>
+      <culture>tr-TR</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.uk-UA.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.uk-UA.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.uk-UA.xlf</DependentUpon>
+      <culture>uk-UA</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.vi-VN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.vi-VN.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.vi-VN.xlf</DependentUpon>
+      <culture>vi-VN</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-CN.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.zh-CN.xlf</DependentUpon>
+      <culture>zh-CN</culture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.zh-TW.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-TW.Designer.cs</LastGenOutput>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.zh-TW.xlf</DependentUpon>
+      <culture>zh-TW</culture>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="Resources.ar-SA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ar-SA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.bg-BG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.bg-BG.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.ca-ES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ca-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.cs-CZ.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.cs-CZ.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.da-DK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.da-DK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.de-DE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.de-DE.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.el-GR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.el-GR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.en-GB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.en-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.es-ES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.es-MX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.es-MX.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.et-EE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.et-EE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.fa-IR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fa-IR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.fi-FI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fi-FI.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.fr-FR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.he-IL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.he-IL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.hi-IN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.hi-IN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.hu-HU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.hu-HU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.id-ID.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.id-ID.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.it-IT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.it-IT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.ja-JP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ja-JP.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.ko-KR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ko-KR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.lt-LT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.lt-LT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.lv-LV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.lv-LV.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.ms-MY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.nb-NO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.nb-NO.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.nl-NL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.nl-NL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.pl-PL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.pt-BR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.pt-PT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.pt-PT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.qps-ploc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.qps-ploc.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.ro-RO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ro-RO.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.ru-RU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.sk-SK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.sk-SK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.sl-SI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.sl-SI.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.sv-SE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.sv-SE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.th-TH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.th-TH.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.tr-TR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.tr-TR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.uk-UA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.uk-UA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.vi-VN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.vi-VN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.zh-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.zh-TW.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.zh-TW.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.qps-ploc.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.qps-ploc.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.ar-SA.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.ar-SA.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.bg-BG.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.bg-BG.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.ca-ES.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.ca-ES.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.zh-CN.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.zh-CN.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.zh-TW.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.zh-TW.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.cs-CZ.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.cs-CZ.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.da-DK.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.da-DK.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.nl-NL.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.nl-NL.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.en-GB.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.en-GB.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.en-US.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.en-US.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.et-EE.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.et-EE.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.fi-FI.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.fi-FI.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.fr-FR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.fr-FR.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.de-DE.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.de-DE.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.el-GR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.el-GR.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.he-IL.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.he-IL.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.hi-IN.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.hi-IN.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.hu-HU.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.hu-HU.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.id-ID.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.id-ID.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.it-IT.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.it-IT.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.ja-JP.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.ja-JP.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.ko-KR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.ko-KR.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.lv-LV.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.lv-LV.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.lt-LT.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.lt-LT.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.ms-MY.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.ms-MY.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.nb-NO.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.nb-NO.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.fa-IR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.fa-IR.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.pl-PL.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.pl-PL.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.pt-BR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.pt-BR.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.pt-PT.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.pt-PT.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.ro-RO.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.ro-RO.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.ru-RU.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.ru-RU.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.sk-SK.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.sk-SK.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.sl-SI.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.sl-SI.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.es-MX.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.es-MX.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.es-ES.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.es-ES.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.sv-SE.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.sv-SE.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.th-TH.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.th-TH.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.tr-TR.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.tr-TR.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.uk-UA.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.uk-UA.resx</LastGenOutput>
+    </XliffResource>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="Resources.vi-VN.xlf">
+      <Generator>XliffResxGenerator</Generator>
+      <LastGenOutput>Resources.vi-VN.resx</LastGenOutput>
+    </XliffResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -31,32 +31,26 @@ namespace Shane.Church.WhatIEat.WP
 			};
 			_model.ExportCompleted += (isSuccess) =>
 			{
-#if !WP8
-				Deployment.Current.Dispatcher.BeginInvoke(() =>
-#else
 				Deployment.Current.Dispatcher.BeginInvoke(async () =>
-#endif
 				{
 					this.busyIndicator.IsRunning = false;
 					if (isSuccess)
 					{
-#if !WP8
-						RadMessageBox.Show(new object[] { AppResources.Ok }, AppResources.UploadSuccessTitle, AppResources.UploadSuccessMessage);
-#else
                         await RadMessageBox.ShowAsync(new object[] { Shane.Church.WhatIEat.Strings.Resources.Ok }, Shane.Church.WhatIEat.Strings.Resources.UploadSuccessTitle, Shane.Church.WhatIEat.Strings.Resources.UploadSuccessMessage);
-#endif
 					}
 					else
 					{
-#if !WP8
-						RadMessageBox.Show(new object[] { AppResources.Ok }, AppResources.UploadFailedTitle, AppResources.UploadFailedMessage);
-#else
                         await RadMessageBox.ShowAsync(new object[] { Shane.Church.WhatIEat.Strings.Resources.Ok }, Shane.Church.WhatIEat.Strings.Resources.UploadFailedTitle, Shane.Church.WhatIEat.Strings.Resources.UploadFailedMessage);
-#endif
 					}
 				});
 			};
 			this.DataContext = _model;
+
+            if (!_model.AreAdsVisible && AdControl != null)
+            {
+                AdPanel.Children.Remove(AdControl);
+                AdControl = null;
+            }
 
 			base.OnNavigatedTo(e);
 		}
@@ -69,8 +63,8 @@ namespace Shane.Church.WhatIEat.WP
 			AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
 
 #if PERSONAL
-			AdPanel.Children.Remove(AdControl);
-			AdControl = null;
+            //AdPanel.Children.Remove(AdControl);
+            //AdControl = null;
 #endif
 		}
 

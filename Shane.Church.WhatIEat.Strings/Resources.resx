@@ -275,4 +275,16 @@ I would appreciate your assistance by sending the prepared error report. This wi
   <data name="TechnicalSupportEmailSubject" xml:space="preserve">
     <value>What I Eat Feedback</value>
   </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>show entry timestamp?</value>
+  </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>remove ads</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>You must be logged in to sync.</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Unable to sync at this time. Please try again later.</value>
+  </data>
 </root>

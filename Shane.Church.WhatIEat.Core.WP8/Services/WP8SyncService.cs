@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using Shane.Church.WhatIEat.Core.Data;
 using Shane.Church.WhatIEat.Core.Services;
 using Shane.Church.WhatIEat.Core.WP;
+using Shane.Church.WhatIEat.Strings;
 using System;
 using System.Threading.Tasks;
 using System.Windows;
@@ -84,7 +85,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 							_session = null;
 							Deployment.Current.Dispatcher.BeginInvoke(() =>
 							{
-								MessageBox.Show(Properties.Resources.SyncLoginError);
+								MessageBox.Show(Resources.SyncLoginError);
 							});
 						}
 					}
@@ -109,7 +110,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 				_log.LogException(ex, "Sync Exception");
 				Deployment.Current.Dispatcher.BeginInvoke(() =>
 				{
-					MessageBox.Show(Properties.Resources.SyncUnknownError);
+					MessageBox.Show(Resources.SyncUnknownError);
 				});
 			}
 			return null;

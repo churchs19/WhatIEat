@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>fr-FR</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<data name="ConnectedLabel" xml:space="preserve"><value>Connecté</value></data><data name="ConnectLabel" xml:space="preserve"><value>Se connecter</value></data><data name="OffText" xml:space="preserve"><value>Hors tension</value></data><data name="OnText" xml:space="preserve"><value>Sur</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>Petit déjeuner</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Déjeuner</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Dîner</value></data><data name="MealTypeSnack" xml:space="preserve"><value>En-cas</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Aucun</value></data><data name="AboutLabel" xml:space="preserve"><value>à propos</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>autres applications par Shane église</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>Cette application de taux</value></data><data name="AppCopyright" xml:space="preserve"><value>Copyright © église Shane 2013-2014.</value></data><data name="AppDescription" xml:space="preserve"><value>un journal des aliments simples pour windows phone</value></data><data name="AppIconDescription" xml:space="preserve"><value>Manger conçus par Danny Chapman à partir du projet de nom</value></data><data name="AppIconLabel" xml:space="preserve"><value>icône de l'application</value></data><data name="AppTitle" xml:space="preserve"><value>CE QUE JE MANGER</value></data><data name="CalendarLabel" xml:space="preserve"><value>calendrier</value></data><data name="Cancel" xml:space="preserve"><value>Annuler</value></data><data name="CsvExportLabel" xml:space="preserve"><value>Exporter CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>L'application a rencontré un problème. Je suis désolé des désagréments.
+
+Je vous saurais votre assistance en envoyant le rapport d'erreurs préparées. Ceci aidera à résoudre le problème plus rapidement.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Erreur d'application</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Rien à cette date. Ajouter quelque chose !</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Aucune entrée trouvée. Ajouter quelque chose !</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>Activer la synchronisation</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>Exporter vers OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>exportation d'Excel</value></data><data name="ExcelExportText" xml:space="preserve"><value>Cette opération va exporter toutes les écritures de journal sous la forme d'un fichier CSV compatible avec Excel pour votre OneDrive.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Comment puis-je améliorer cette application afin que vous êtes prêt à évaluer les 5 étoiles sur le marché ?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>Puis-je j'en fais mieux ?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>envoyer des commentaires</value></data><data name="NewEntryLabel" xml:space="preserve"><value>nouvelle entrée</value></data><data name="No" xml:space="preserve"><value>ne</value></data><data name="NoThanksButton" xml:space="preserve"><value>non Merci</value></data><data name="Ok" xml:space="preserve"><value>OK</value></data><data name="ReviewLabel" xml:space="preserve"><value>taux me</value></data><data name="SettingsLabel" xml:space="preserve"><value>paramètres</value></data><data name="SummaryLabel" xml:space="preserve"><value>Résumé</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>synchronisation en cours...</value></data><data name="SyncLabel" xml:space="preserve"><value>synchronisation</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>e-mail du support technique/feedback</value></data><data name="UpgradeText" xml:space="preserve"><value>Une mise à niveau est disponible ! Vous souhaitez installer la mise à niveau maintenant ?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>Mise à niveau disponible !</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Malheureusement vos données ne peuvent pas être exportées vers OneDrive en ce moment. Veuillez réessayer ultérieurement.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Échec du téléchargement</value></data><data name="UploadingLabel" xml:space="preserve"><value>téléchargement en cours...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Vos données a été téléchargées avec succès à la OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Téléchargement réussi !</value></data><data name="Yes" xml:space="preserve"><value>Oui</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>Ce que je manger commentaires</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>afficher l'horodatage d'entrée ?</value></data></root>

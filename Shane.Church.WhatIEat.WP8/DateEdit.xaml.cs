@@ -30,8 +30,8 @@ namespace Shane.Church.WhatIEat.WP
             AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
 
 #if PERSONAL
-            AdPanel.Children.Remove(AdControl);
-            AdControl = null;
+            //AdPanel.Children.Remove(AdControl);
+            //AdControl = null;
 #endif
         }
 
@@ -86,6 +86,12 @@ namespace Shane.Church.WhatIEat.WP
                     newEntry.ChangeValidationState(ValidationState.Invalid, "Required");
             };
             DataContext = model;
+
+            if (!model.AreAdsVisible && AdControl != null)
+            {
+                AdPanel.Children.Remove(AdControl);
+                AdControl = null;
+            }
         }
 
         private void newEntry_TextChanged(object sender, TextChangedEventArgs e)

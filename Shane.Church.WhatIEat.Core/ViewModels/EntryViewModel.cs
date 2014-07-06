@@ -15,22 +15,26 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
     public class EntryViewModel : ObservableObject
     {
         private IRepository<IEntry> _repository;
+        private ISettingsService _settings;
 
         public event ActionCompleteEventHandler SaveActionCompleted;
         public event ActionCompleteEventHandler RemoveActionCompleted;
 
         public EntryViewModel()
-            : this(KernelService.Kernel.Get<IRepository<IEntry>>())
+            : this(KernelService.Kernel.Get<IRepository<IEntry>>(), KernelService.Kernel.Get<ISettingsService>())
         {
 
         }
 
         [Inject]
-        public EntryViewModel(IRepository<IEntry> repository)
+        public EntryViewModel(IRepository<IEntry> repository, ISettingsService settings)
         {
             if (repository == null)
                 throw new ArgumentNullException("repository");
             _repository = repository;
+            if (settings == null)
+                throw new ArgumentNullException("settings");
+            _settings = settings;
 
             _removeCommand = new RelayCommand(RemoveEntry);
             _saveCommand = new RelayCommand(SaveEntry);
@@ -73,6 +77,24 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
             set
             {
                 Set(() => Entry, ref _entry, value);
+            }
+        }
+
+        private DateTimeOffset _entryTimeStamp;
+        public DateTimeOffset EntryTimeStamp
+        {
+            get { return _entryTimeStamp; }
+            set
+            {
+                Set(() => EntryTimeStamp, ref _entryTimeStamp, value);
+            }
+        }
+
+        public bool ShowEntryTimeStamp
+        {
+            get
+            {
+                return _settings.LoadSetting<bool>("ShowEntryTimeStamp");
             }
         }
 
@@ -124,6 +146,7 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
             EntryDate = entry.EntryDate;
             Entry = entry.EntryText;
             EntryGuid = entry.EntryGuid;
+            EntryTimeStamp = entry.EditDateTime;
             MealType = new MealTypeViewModel(entry.MealType.Value);
         }
 

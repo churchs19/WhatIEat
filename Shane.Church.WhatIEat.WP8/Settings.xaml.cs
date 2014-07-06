@@ -5,47 +5,61 @@ using Shane.Church.WhatIEat.Core.ViewModels;
 
 namespace Shane.Church.WhatIEat.WP
 {
-	public partial class Settings : PhoneApplicationPage
-	{
-		public Settings()
-		{
-			InitializeComponent();
+    public partial class Settings : PhoneApplicationPage
+    {
+        public Settings()
+        {
+            InitializeComponent();
 
-			InitializeAdControl();
+            InitializeAdControl();
 
-			this.DataContext = KernelService.Kernel.Get<SettingsViewModel>();
-		}
+            this.DataContext = KernelService.Kernel.Get<SettingsViewModel>();
+        }
 
-		#region Ad Control
-		private void InitializeAdControl()
-		{
-			AdControl.AdReceived += new Inneractive.Ad.InneractiveAd.IaAdReceived(AdControl_AdReceived);
-			AdControl.AdFailed += new Inneractive.Ad.InneractiveAd.IaAdFailed(AdControl_AdFailed);
-			AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            var model = this.DataContext as SettingsViewModel;
+            if(model != null)
+            {
+                if (!model.AreAdsVisible && AdControl != null)
+                {
+                    AdPanel.Children.Remove(AdControl);
+                    AdControl = null;
+                }
+            }
+            base.OnNavigatedTo(e);
+        }
+
+        #region Ad Control
+        private void InitializeAdControl()
+        {
+            AdControl.AdReceived += new Inneractive.Ad.InneractiveAd.IaAdReceived(AdControl_AdReceived);
+            AdControl.AdFailed += new Inneractive.Ad.InneractiveAd.IaAdFailed(AdControl_AdFailed);
+            AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
 
 #if PERSONAL
-			AdPanel.Children.Remove(AdControl);
-			AdControl = null;
+            //AdPanel.Children.Remove(AdControl);
+            //AdControl = null;
 #endif
-		}
+        }
 
-		void AdControl_DefaultAdReceived(object sender)
-		{
-			FlurryWP8SDK.Api.LogEvent("Unpaid Ad Received");
-			AdControl.Visibility = System.Windows.Visibility.Visible;
-		}
+        void AdControl_DefaultAdReceived(object sender)
+        {
+            FlurryWP8SDK.Api.LogEvent("Unpaid Ad Received");
+            AdControl.Visibility = System.Windows.Visibility.Visible;
+        }
 
-		private void AdControl_AdReceived(object sender)
-		{
-			FlurryWP8SDK.Api.LogEvent("Paid Ad Received");
-			AdControl.Visibility = System.Windows.Visibility.Visible;
-		}
+        private void AdControl_AdReceived(object sender)
+        {
+            FlurryWP8SDK.Api.LogEvent("Paid Ad Received");
+            AdControl.Visibility = System.Windows.Visibility.Visible;
+        }
 
-		private void AdControl_AdFailed(object sender)
-		{
-			FlurryWP8SDK.Api.LogEvent("No Ad Received");
-			AdControl.Visibility = System.Windows.Visibility.Collapsed;
-		}
-		#endregion
-	}
+        private void AdControl_AdFailed(object sender)
+        {
+            FlurryWP8SDK.Api.LogEvent("No Ad Received");
+            AdControl.Visibility = System.Windows.Visibility.Collapsed;
+        }
+        #endregion
+    }
 }

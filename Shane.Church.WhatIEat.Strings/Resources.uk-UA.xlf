@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="uk-UA" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Shane.Church.WhatIEat.Strings" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.0.1200.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/ConnectedLabel" translate="yes" xml:space="preserve">
+          <source>Connected</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Підключено</target>
+        </trans-unit>
+        <trans-unit id="Resx/ConnectLabel" translate="yes" xml:space="preserve">
+          <source>Connect</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Підключення</target>
+        </trans-unit>
+        <trans-unit id="Resx/OffText" translate="yes" xml:space="preserve">
+          <source>Off</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Off</target>
+        </trans-unit>
+        <trans-unit id="Resx/OnText" translate="yes" xml:space="preserve">
+          <source>On</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">На</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeBreakfast" translate="yes" xml:space="preserve">
+          <source>Breakfast</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Сніданок</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeLunch" translate="yes" xml:space="preserve">
+          <source>Lunch</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Обід</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeDinner" translate="yes" xml:space="preserve">
+          <source>Dinner</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Вечеря</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeSnack" translate="yes" xml:space="preserve">
+          <source>Snack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Закуски</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeUndefined" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Жоден</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutLabel" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">про</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutOtherAppsLabel" translate="yes" xml:space="preserve">
+          <source>other apps by Shane Church</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Шейн церкви з іншими програмами</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate this app</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">оцінити це ОК</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppCopyright" translate="yes" xml:space="preserve">
+          <source>Copyright © Shane Church 2013-2014</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Авторське право © Шейн церкви підзахисним</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
+          <source>a simple food journal for windows phone</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">просту їжу журнал для windows телефон</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconDescription" translate="yes" xml:space="preserve">
+          <source>Eat designed by Danny Chapman from The Noun Project</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Їжте розроблений австрійським Danny Чепмен з іменник проекту</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconLabel" translate="yes" xml:space="preserve">
+          <source>application icon</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">застосування значок</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppTitle" translate="yes" xml:space="preserve">
+          <source>WHAT I EAT</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ТЕ, ЩО Я ЇМ</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarLabel" translate="yes" xml:space="preserve">
+          <source>calendar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Календар</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cancel" translate="yes" xml:space="preserve">
+          <source>cancel</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">"Скасувати"</target>
+        </trans-unit>
+        <trans-unit id="Resx/CsvExportLabel" translate="yes" xml:space="preserve">
+          <source>Export CSV</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Експорт CSV</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Content" translate="yes" xml:space="preserve">
+          <source>The application has encountered a problem. I am sorry for the inconvenience.
+
+I would appreciate your assistance by sending the prepared error report. This will help with resolving the problem faster.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Застосування сталася помилка. Я прошу вибачення за незручності.
+
+Я ціную вашу допомогу, відправивши звіт підготовлений помилки. Це допоможе з розв'язання проблеми швидше.</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Title" translate="yes" xml:space="preserve">
+          <source>Application Error</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Помилка застосунку</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptyEntryListLabel" translate="yes" xml:space="preserve">
+          <source>Nothing on this date. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ніщо на цю дату. Додати щось!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptySummaryListLabel" translate="yes" xml:space="preserve">
+          <source>No entries found. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Елементів не знайдено. Додати щось!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnableSyncLabel" translate="yes" xml:space="preserve">
+          <source>enable synchronization</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Увімкнути синхронізацію</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportButtonLabel" translate="yes" xml:space="preserve">
+          <source>Export to OneDrive</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Експорт до OneDrive</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportLabel" translate="yes" xml:space="preserve">
+          <source>excel export</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">аркуші макросів Excel експорту</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportText" translate="yes" xml:space="preserve">
+          <source>This will export all of your journal entries as a Excel-compatible CSV file to your OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Це буде експортувати всі записи в щоденнику як Excel сумісних CSV-файлу для вашого OneDrive.</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackContent" translate="yes" xml:space="preserve">
+          <source>How can I improve this application so that you would be willing to rate it 5 stars in the marketplace?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Як я можу поліпшити це додаток, так що ви були б готові поставити його 5 зірок на ринку?</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackTitle" translate="yes" xml:space="preserve">
+          <source>Can I make it better?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Я можу зробити його кращим?</target>
+        </trans-unit>
+        <trans-unit id="Resx/GiveFeedbackButton" translate="yes" xml:space="preserve">
+          <source>give feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Надання відгуку</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewEntryLabel" translate="yes" xml:space="preserve">
+          <source>new entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Створити запис</target>
+        </trans-unit>
+        <trans-unit id="Resx/No" translate="yes" xml:space="preserve">
+          <source>no</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ні</target>
+        </trans-unit>
+        <trans-unit id="Resx/NoThanksButton" translate="yes" xml:space="preserve">
+          <source>no thanks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ні, дякую</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ok" translate="yes" xml:space="preserve">
+          <source>ok</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Гаразд</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">uk-UA</target>
+        </trans-unit>
+        <trans-unit id="Resx/ReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate me</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Оцініть мене</target>
+        </trans-unit>
+        <trans-unit id="Resx/SettingsLabel" translate="yes" xml:space="preserve">
+          <source>settings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">параметри</target>
+        </trans-unit>
+        <trans-unit id="Resx/SummaryLabel" translate="yes" xml:space="preserve">
+          <source>summary</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">резюме</target>
+        </trans-unit>
+        <trans-unit id="Resx/SynchronizingLabel" translate="yes" xml:space="preserve">
+          <source>synchronizing...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Синхронізація...</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLabel" translate="yes" xml:space="preserve">
+          <source>sync</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Синхронізація</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailLabel" translate="yes" xml:space="preserve">
+          <source>technical support/feedback email</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">електронної пошти технічної підтримки/зворотний зв'язок</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeText" translate="yes" xml:space="preserve">
+          <source>An upgrade is available! Do you want to install the upgrade now?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Оновлення доступна! Ви хочете, щоб встановити оновлення зараз?</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeTitle" translate="yes" xml:space="preserve">
+          <source>Upgrade Available!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Оновлення доступні!</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedMessage" translate="yes" xml:space="preserve">
+          <source>Unfortunately your data could not be exported to OneDrive at this time. Please try again later.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">На жаль ваші дані не вдалося експортувати до OneDrive в цей час. Будь ласка, спробуйте ще раз пізніше.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedTitle" translate="yes" xml:space="preserve">
+          <source>Upload Failed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">: Завантаження контакту невдале</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadingLabel" translate="yes" xml:space="preserve">
+          <source>uploading...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">завантаження...</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessMessage" translate="yes" xml:space="preserve">
+          <source>Your data has been successfully uploaded to OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ваші дані успішно завантажено на OneDrive.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessTitle" translate="yes" xml:space="preserve">
+          <source>Upload Successful!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Завантажити успішних!</target>
+        </trans-unit>
+        <trans-unit id="Resx/Yes" translate="yes" xml:space="preserve">
+          <source>yes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Так</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailSubject" translate="yes" xml:space="preserve">
+          <source>What I Eat Feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Те, що я їм зворотний зв'язок</target>
+        </trans-unit>
+        <trans-unit id="Resx/ShowEntryTimeStampLabel" translate="yes" xml:space="preserve">
+          <source>show entry timestamp?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Відображати позначки часу запис?</target>
+        </trans-unit>
+        <trans-unit id="Resx/RemoveAdsLabel" translate="yes" xml:space="preserve">
+          <source>remove ads</source>
+          <target state="new">remove ads</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncUnknownError" translate="yes" xml:space="preserve">
+          <source>Unable to sync at this time. Please try again later.</source>
+          <target state="new">Unable to sync at this time. Please try again later.</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
+          <source>You must be logged in to sync.</source>
+          <target state="new">You must be logged in to sync.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

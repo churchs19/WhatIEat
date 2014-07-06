@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="de-DE" original="Resources.resx" tool-id="MultilingualAppToolkit" product-name="Shane.Church.WhatIEat.Strings" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.0.1200.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/ConnectedLabel" translate="yes" xml:space="preserve">
+          <source>Connected</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Verbunden</target>
+        </trans-unit>
+        <trans-unit id="Resx/ConnectLabel" translate="yes" xml:space="preserve">
+          <source>Connect</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Verbinden</target>
+        </trans-unit>
+        <trans-unit id="Resx/OffText" translate="yes" xml:space="preserve">
+          <source>Off</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ausschalten</target>
+        </trans-unit>
+        <trans-unit id="Resx/OnText" translate="yes" xml:space="preserve">
+          <source>On</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Auf</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeBreakfast" translate="yes" xml:space="preserve">
+          <source>Breakfast</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Frühstück</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeLunch" translate="yes" xml:space="preserve">
+          <source>Lunch</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Mittagspause</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeDinner" translate="yes" xml:space="preserve">
+          <source>Dinner</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Abendessen</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeSnack" translate="yes" xml:space="preserve">
+          <source>Snack</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Snack</target>
+        </trans-unit>
+        <trans-unit id="Resx/MealTypeUndefined" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Keine</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutLabel" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">über</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutOtherAppsLabel" translate="yes" xml:space="preserve">
+          <source>other apps by Shane Church</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">andere Anwendungen von Shane Kirche</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate this app</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Diese Anwendung bewerten</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppCopyright" translate="yes" xml:space="preserve">
+          <source>Copyright © Shane Church 2013-2014</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane Kirche 2013-2014</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
+          <source>a simple food journal for windows phone</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">eine einfache Lebensmittel Erfassung für Windows phone</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconDescription" translate="yes" xml:space="preserve">
+          <source>Eat designed by Danny Chapman from The Noun Project</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Essen von Danny Chapman aus der Nomen-Projekt</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppIconLabel" translate="yes" xml:space="preserve">
+          <source>application icon</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Anwendungssymbol</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppTitle" translate="yes" xml:space="preserve">
+          <source>WHAT I EAT</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">WAS ICH ESSEN</target>
+        </trans-unit>
+        <trans-unit id="Resx/CalendarLabel" translate="yes" xml:space="preserve">
+          <source>calendar</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kalender</target>
+        </trans-unit>
+        <trans-unit id="Resx/Cancel" translate="yes" xml:space="preserve">
+          <source>cancel</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Abbrechen</target>
+        </trans-unit>
+        <trans-unit id="Resx/CsvExportLabel" translate="yes" xml:space="preserve">
+          <source>Export CSV</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">CSV-Datei exportieren</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Content" translate="yes" xml:space="preserve">
+          <source>The application has encountered a problem. I am sorry for the inconvenience.
+
+I would appreciate your assistance by sending the prepared error report. This will help with resolving the problem faster.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Die Anwendung ist ein Problem aufgetreten. Wir bedauern die Unannehmlichkeiten zu entschuldigen.
+
+Ich schätzen Ihre Hilfe durch Senden des Fehlerberichts bereit. Dies wird mit schneller zur Lösung des Problems helfen.</target>
+        </trans-unit>
+        <trans-unit id="Resx/Diagnostics_MessageBox_Title" translate="yes" xml:space="preserve">
+          <source>Application Error</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Anwendungsfehler</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptyEntryListLabel" translate="yes" xml:space="preserve">
+          <source>Nothing on this date. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nichts zu diesem Datum. Etwas hinzufügen!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EmptySummaryListLabel" translate="yes" xml:space="preserve">
+          <source>No entries found. Add something!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Keine Einträge gefunden. Etwas hinzufügen!</target>
+        </trans-unit>
+        <trans-unit id="Resx/EnableSyncLabel" translate="yes" xml:space="preserve">
+          <source>enable synchronization</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Synchronisierung aktivieren</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportButtonLabel" translate="yes" xml:space="preserve">
+          <source>Export to OneDrive</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">In OneDrive exportieren</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportLabel" translate="yes" xml:space="preserve">
+          <source>excel export</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Excel-export</target>
+        </trans-unit>
+        <trans-unit id="Resx/ExcelExportText" translate="yes" xml:space="preserve">
+          <source>This will export all of your journal entries as a Excel-compatible CSV file to your OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Diese exportiert alle Ihre Journaleinträge als Excel kompatibel CSV-Datei auf Ihrer OneDrive.</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackContent" translate="yes" xml:space="preserve">
+          <source>How can I improve this application so that you would be willing to rate it 5 stars in the marketplace?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Wie kann ich diese Anwendung verbessern, sodass Sie bereit wären, die es auf dem Markt 5 Sternen bewerten?</target>
+        </trans-unit>
+        <trans-unit id="Resx/FeedbackTitle" translate="yes" xml:space="preserve">
+          <source>Can I make it better?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Kann ich es besser machen?</target>
+        </trans-unit>
+        <trans-unit id="Resx/GiveFeedbackButton" translate="yes" xml:space="preserve">
+          <source>give feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Geben Sie feedback</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewEntryLabel" translate="yes" xml:space="preserve">
+          <source>new entry</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Neuer Eintrag</target>
+        </trans-unit>
+        <trans-unit id="Resx/No" translate="yes" xml:space="preserve">
+          <source>no</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nein</target>
+        </trans-unit>
+        <trans-unit id="Resx/NoThanksButton" translate="yes" xml:space="preserve">
+          <source>no thanks</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Nein, Danke</target>
+        </trans-unit>
+        <trans-unit id="Resx/Ok" translate="yes" xml:space="preserve">
+          <source>ok</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">OK</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">de-DE</target>
+        </trans-unit>
+        <trans-unit id="Resx/ReviewLabel" translate="yes" xml:space="preserve">
+          <source>rate me</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">bewerte</target>
+        </trans-unit>
+        <trans-unit id="Resx/SettingsLabel" translate="yes" xml:space="preserve">
+          <source>settings</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Einstellungen</target>
+        </trans-unit>
+        <trans-unit id="Resx/SummaryLabel" translate="yes" xml:space="preserve">
+          <source>summary</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Zusammenfassung</target>
+        </trans-unit>
+        <trans-unit id="Resx/SynchronizingLabel" translate="yes" xml:space="preserve">
+          <source>synchronizing...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">wird synchronisiert...</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLabel" translate="yes" xml:space="preserve">
+          <source>sync</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Sync</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailLabel" translate="yes" xml:space="preserve">
+          <source>technical support/feedback email</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">e-Mail technischer Support-feedback</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeText" translate="yes" xml:space="preserve">
+          <source>An upgrade is available! Do you want to install the upgrade now?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Es ist ein Upgrade verfügbar! Möchten Sie die Aktualisierung jetzt installieren?</target>
+        </trans-unit>
+        <trans-unit id="Resx/UpgradeTitle" translate="yes" xml:space="preserve">
+          <source>Upgrade Available!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Neuere Version verfügbar!</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedMessage" translate="yes" xml:space="preserve">
+          <source>Unfortunately your data could not be exported to OneDrive at this time. Please try again later.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Leider konnte Ihre Daten werden nicht OneDrive zu diesem Zeitpunkt exportiert. Bitte versuchen Sie es später erneut.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadFailedTitle" translate="yes" xml:space="preserve">
+          <source>Upload Failed</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fehler beim Hochladen</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadingLabel" translate="yes" xml:space="preserve">
+          <source>uploading...</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">wird hochgeladen...</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessMessage" translate="yes" xml:space="preserve">
+          <source>Your data has been successfully uploaded to OneDrive.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Die Daten wurde zum OneDrive erfolgreich hochgeladen.</target>
+        </trans-unit>
+        <trans-unit id="Resx/UploadSuccessTitle" translate="yes" xml:space="preserve">
+          <source>Upload Successful!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Upload erfolgreich!</target>
+        </trans-unit>
+        <trans-unit id="Resx/Yes" translate="yes" xml:space="preserve">
+          <source>yes</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ja</target>
+        </trans-unit>
+        <trans-unit id="Resx/TechnicalSupportEmailSubject" translate="yes" xml:space="preserve">
+          <source>What I Eat Feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Was kann ich Feedback Essen</target>
+        </trans-unit>
+        <trans-unit id="Resx/ShowEntryTimeStampLabel" translate="yes" xml:space="preserve">
+          <source>show entry timestamp?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Anzeigen Zeitstempel des Eintrags?</target>
+        </trans-unit>
+        <trans-unit id="Resx/RemoveAdsLabel" translate="yes" xml:space="preserve">
+          <source>remove ads</source>
+          <target state="new">remove ads</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncUnknownError" translate="yes" xml:space="preserve">
+          <source>Unable to sync at this time. Please try again later.</source>
+          <target state="new">Unable to sync at this time. Please try again later.</target>
+        </trans-unit>
+        <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
+          <source>You must be logged in to sync.</source>
+          <target state="new">You must be logged in to sync.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

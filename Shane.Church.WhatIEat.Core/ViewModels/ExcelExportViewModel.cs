@@ -13,8 +13,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 		protected IRepository<IEntry> _repository;
 		protected ISkyDriveService _skyDriveService;
 		protected ILoggingService _log;
+        protected IIAPService _iapService;
 
-		public ExcelExportViewModel(IRepository<IEntry> repository, ISkyDriveService skyDrive, ILoggingService log)
+		public ExcelExportViewModel(IRepository<IEntry> repository, ISkyDriveService skyDrive, ILoggingService log, IIAPService iap)
 		{
 			if (repository == null)
 				throw new ArgumentNullException("repository");
@@ -25,6 +26,9 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 			if (log == null)
 				throw new ArgumentNullException("log");
 			_log = log;
+            if (iap == null)
+                throw new ArgumentNullException("iap");
+            _iapService = iap;
 
 			ExportCommand = new RelayCommand(CsvExport);
 		}
@@ -38,6 +42,14 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
 				Set(() => IsUploading, ref _isUploading, value);
 			}
 		}
+
+        public bool AreAdsVisible
+        {
+            get
+            {
+                return _iapService.AreAdsVisible();
+            }
+        }
 
 		public delegate void ExportBeginningHandler();
 		public event ExportBeginningHandler ExportBeginning;

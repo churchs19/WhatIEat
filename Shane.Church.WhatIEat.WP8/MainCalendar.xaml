@@ -7,6 +7,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
     xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
     xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
 	xmlns:telerikData="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Data"
@@ -22,6 +23,10 @@
 	d:DesignWidth="480"
     shell:SystemTray.IsVisible="False">
 
+    <phone:PhoneApplicationPage.Resources>
+        <telerik:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </phone:PhoneApplicationPage.Resources>
+    
     <i:Interaction.Behaviors>
         <helpers:UpgradeBehavior x:Name="upgradeBehavior"/>
     </i:Interaction.Behaviors>
@@ -169,7 +174,7 @@
                                   OptionalAdHeight="80"
                                   OptionalAdWidth="480"
                                   AdAlignment="BOTTOM_CENTER"
-                                  Name="AdControl" />
+                                  Name="AdControl"/>
         </StackPanel>
 
 		<telerikPrimitives:RadBusyIndicator 

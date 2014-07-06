@@ -73,7 +73,26 @@
 						<TextBlock Text="{Binding ConnectLabel}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 					</StackPanel>
 				</Button>
-			</StackPanel>
+                <telerikPrimitives:RadToggleSwitch 
+					Margin="0,20,0,0"
+					HorizontalAlignment="Left" 
+					VerticalAlignment="Top" 
+					Foreground="{StaticResource AppBaseColor4Brush}"
+					BorderBrush="{StaticResource AppBaseColor4Brush}"
+					Header="{Binding LocalizedResources.ShowEntryTimeStampLabel, Source={StaticResource LocalizedStrings}}"
+					IsChecked="{Binding ShowEntryTimeStamp, Mode=TwoWay}"
+					ButtonStyle="{StaticResource AppToggleSwitchButtonStyle}" 
+					Content="{Binding ShowEntryTimeStampOnOffText}">
+                    <telerikPrimitives:RadToggleSwitch.HeaderStyle>
+                        <Style TargetType="ContentControl">
+                            <Setter Property="Foreground" Value="{StaticResource AppAccentColorBrush}"/>
+                            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}" />
+                            <Setter Property="Margin" Value="0,0,0,10"/>
+                            <Setter Property="HorizontalAlignment" Value="Left" />
+                        </Style>
+                    </telerikPrimitives:RadToggleSwitch.HeaderStyle>
+                </telerikPrimitives:RadToggleSwitch>
+            </StackPanel>
 
             <StackPanel x:Name="AdPanel" Grid.Row="1" Margin="0">
                 <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
@@ -84,7 +103,9 @@
                                   OptionalAdHeight="80"
                                   OptionalAdWidth="480"
                                   AdAlignment="BOTTOM_CENTER"
-                                  Name="AdControl" />
+                                  Name="AdControl"
+                                  IsEnabled="{Binding AreAdsVisible}"
+                                  Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
             </StackPanel>
 		</Grid>
 

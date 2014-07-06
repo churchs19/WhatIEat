@@ -14,6 +14,10 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
+    
+    <phone:PhoneApplicationPage.Resources>
+        <telerik:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </phone:PhoneApplicationPage.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
@@ -66,7 +70,9 @@
                                   OptionalAdHeight="80"
                                   OptionalAdWidth="480"
                                   AdAlignment="BOTTOM_CENTER"
-                                  Name="AdControl" />
+                                  Name="AdControl"
+                                  IsEnabled="{Binding AreAdsVisible}"
+                                  Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
         </StackPanel>
     </Grid>
 </phone:PhoneApplicationPage>

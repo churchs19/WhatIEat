@@ -17,21 +17,25 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
     public class DateEditViewModel : GalaSoft.MvvmLight.ObservableObject
     {
         private IRepository<IEntry> _repository;
+        private IIAPService _iapService;
 
         public event ActionCompleteEventHandler AddActionCompleted;
 
         public DateEditViewModel()
-            : this(KernelService.Kernel.Get<IRepository<IEntry>>())
+            : this(KernelService.Kernel.Get<IRepository<IEntry>>(), KernelService.Kernel.Get<IIAPService>())
         {
 
         }
 
         [Inject]
-        public DateEditViewModel(IRepository<IEntry> repository)
+        public DateEditViewModel(IRepository<IEntry> repository, IIAPService iapService)
         {
             if (repository == null)
                 throw new ArgumentNullException("repository");
             _repository = repository;
+            if (iapService == null)
+                throw new ArgumentNullException("iapService");
+            _iapService = iapService;
             _entries = new ObservableCollection<EntryViewModel>();
             _entries.CollectionChanged += _entries_CollectionChanged;
             _addEntryCommand = new RelayCommand(AddEntry);
@@ -83,6 +87,14 @@ namespace Shane.Church.WhatIEat.Core.ViewModels
             set
             {
                 Set(() => MealType, ref _mealType, value);
+            }
+        }
+
+        public bool AreAdsVisible
+        {
+            get
+            {
+                return _iapService.AreAdsVisible();
             }
         }
 

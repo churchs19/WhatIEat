@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>th-TH</value>
+  </data>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<data name="ConnectedLabel" xml:space="preserve"><value>การเชื่อมต่อ</value></data><data name="ConnectLabel" xml:space="preserve"><value>เชื่อมต่อ</value></data><data name="OffText" xml:space="preserve"><value>ปิด</value></data><data name="OnText" xml:space="preserve"><value>บน</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>อาหารเช้า</value></data><data name="MealTypeLunch" xml:space="preserve"><value>อาหารกลางวัน</value></data><data name="MealTypeDinner" xml:space="preserve"><value>อาหารเย็น</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Snack</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>ไม่มี</value></data><data name="AboutLabel" xml:space="preserve"><value>เกี่ยวกับการ</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>โปรแกรมประยุกต์อื่น โดย Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>อัตราที่โปรแกรมประยุกต์นี้</value></data><data name="AppCopyright" xml:space="preserve"><value>ลิขสิทธิ์ © 2013 Shane Church-2014</value></data><data name="AppDescription" xml:space="preserve"><value>สมุดรายวันสำหรับ windows โทรศัพท์อาหารอย่างง่าย</value></data><data name="AppIconDescription" xml:space="preserve"><value>ออกแบบ โดย Danny Chapman จากโครงการคำนามตัวรับประทานอาหาร</value></data><data name="AppIconLabel" xml:space="preserve"><value>ไอคอนแอพลิเคชัน</value></data><data name="AppTitle" xml:space="preserve"><value>สิ่งที่ฉันรับประทานอาหาร</value></data><data name="CalendarLabel" xml:space="preserve"><value>ปฏิทิน</value></data><data name="Cancel" xml:space="preserve"><value>ยกเลิก</value></data><data name="CsvExportLabel" xml:space="preserve"><value>ส่งออก CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>แอพลิเคชันได้ประสบปัญหา ผม/ดิฉันขออภัยในความไม่สะดวก
+
+ฉันยินดีรับความช่วยเหลือของคุณได้ โดยการส่งรายงานข้อผิดพลาดที่เตรียมไว้ ซึ่งจะช่วยให้ มีการแก้ไขปัญหาได้รวดเร็วขึ้น</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>ข้อผิดพลาดของแอพลิเคชัน</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>ไม่มีสิ่งใดในวันนี้ เพิ่มสิ่งนี้</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>ไม่พบรายการ เพิ่มสิ่งนี้</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>เปิดใช้งานการซิงโครไนส์</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>ส่งออกไปยัง OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>ส่งออก excel</value></data><data name="ExcelExportText" xml:space="preserve"><value>ซึ่งจะส่งออกทั้งหมดของรายการสมุดรายวันของคุณเป็นแฟ้ม CSV Excel เข้ากันได้กับ OneDrive ของคุณ</value></data><data name="FeedbackContent" xml:space="preserve"><value>ฉันจะปรับปรุงโปรแกรมประยุกต์นี้เพื่อที่คุณจะต้องการจัดอันดับดาว 5 ในตลาดหรือไม่</value></data><data name="FeedbackTitle" xml:space="preserve"><value>ฉันสามารถทำให้ได้ดีกว่าหรือไม่</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>ส่งคำติชม</value></data><data name="NewEntryLabel" xml:space="preserve"><value>รายการใหม่</value></data><data name="No" xml:space="preserve"><value>ไม่มี</value></data><data name="NoThanksButton" xml:space="preserve"><value>ไม่เป็นไรขอบคุณ</value></data><data name="Ok" xml:space="preserve"><value>ตกลง</value></data><data name="ReviewLabel" xml:space="preserve"><value>ฉันจัดอันดับ</value></data><data name="SettingsLabel" xml:space="preserve"><value>การตั้งค่า</value></data><data name="SummaryLabel" xml:space="preserve"><value>สรุป</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>ทำให้ตรงกัน...</value></data><data name="SyncLabel" xml:space="preserve"><value>ซิงค์</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>อีเมลที่สนับสนุนทางเทคนิค/คำติชม</value></data><data name="UpgradeText" xml:space="preserve"><value>การปรับรุ่นจะพร้อมใช้งาน คุณต้องการติดตั้งการปรับรุ่นเดี๋ยวนี้หรือไม่</value></data><data name="UpgradeTitle" xml:space="preserve"><value>พร้อมให้ปรับรุ่น</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>แต่ข้อมูลของคุณไม่ถูกส่งออกไป OneDrive ในขณะนี้ กรุณาลองอีกครั้ง</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>การอัปโหลดล้มเหลว</value></data><data name="UploadingLabel" xml:space="preserve"><value>กำลังอัปโหลด...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>ข้อมูลของคุณได้ถูกอัปโหลดไป OneDrive เสร็จเรียบร้อยแล้ว</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>การอัปโหลดเสร็จเรียบร้อยแล้ว</value></data><data name="Yes" xml:space="preserve"><value>ใช่</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>สิ่งที่ฉันกินผลป้อนกลับ</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>แสดงการประทับเวลาของรายการหรือไม่</value></data></root>
