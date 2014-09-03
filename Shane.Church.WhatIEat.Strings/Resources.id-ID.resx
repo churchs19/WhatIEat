@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>id-ID</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>Terhubung</value></data><data name="ConnectLabel" xml:space="preserve"><value>Menghubungkan</value></data><data name="OffText" xml:space="preserve"><value>Off</value></data><data name="OnText" xml:space="preserve"><value>Pada</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>Sarapan</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Makan Siang</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Makan malam</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Makanan Ringan</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Tidak ada</value></data><data name="AboutLabel" xml:space="preserve"><value>tentang</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>aplikasi lain oleh Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>tingkat app ini</value></data><data name="AppCopyright" xml:space="preserve"><value>Hak cipta © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>jurnal makanan sederhana untuk windows telepon</value></data><data name="AppIconDescription" xml:space="preserve"><value>Makan dirancang oleh Danny Chapman dari kata benda proyek</value></data><data name="AppIconLabel" xml:space="preserve"><value>aplikasi ikon</value></data><data name="AppTitle" xml:space="preserve"><value>APA YANG SAYA MAKAN</value></data><data name="CalendarLabel" xml:space="preserve"><value>Kalender</value></data><data name="Cancel" xml:space="preserve"><value>Batal</value></data><data name="CsvExportLabel" xml:space="preserve"><value>Ekspor CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>Aplikasi mengalami masalah. Saya minta maaf atas ketidaknyamanan.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>Terhubung</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>Menghubungkan</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>Pada</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>Sarapan</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>Makan Siang</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Makan malam</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Makanan Ringan</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Tidak ada</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>tentang</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>aplikasi lain oleh Shane Church</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>tingkat app ini</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>Hak cipta © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>jurnal makanan sederhana untuk windows telepon</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>Makan dirancang oleh Danny Chapman dari kata benda proyek</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>aplikasi ikon</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>APA YANG SAYA MAKAN</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Batal</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Ekspor CSV</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Aplikasi mengalami masalah. Saya minta maaf atas ketidaknyamanan.
 
-Aku akan menghargai bantuan Anda dengan mengirimkan laporan kesalahan disiapkan. Ini akan membantu dengan menyelesaikan masalah lebih cepat.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Kesalahan aplikasi</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Tidak ada tanggal ini. Menambahkan sesuatu!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Tidak ada entri yang ditemukan. Menambahkan sesuatu!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>mengaktifkan sinkronisasi</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>Ekspor ke OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>Excel ekspor</value></data><data name="ExcelExportText" xml:space="preserve"><value>Ini akan mengekspor semua entri jurnal Anda sebagai file CSV kompatibel Excel untuk OneDrive Anda.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Bagaimana dapat meningkatkan aplikasi ini sehingga Anda akan bersedia untuk menilai itu 5 bintang di pasar?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>Dapatkah saya membuat lebih baik?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>memberikan umpan balik</value></data><data name="NewEntryLabel" xml:space="preserve"><value>entri baru</value></data><data name="No" xml:space="preserve"><value>Tidak</value></data><data name="NoThanksButton" xml:space="preserve"><value>Tidak terima kasih</value></data><data name="Ok" xml:space="preserve"><value>Oke</value></data><data name="ReviewLabel" xml:space="preserve"><value>tingkat saya</value></data><data name="SettingsLabel" xml:space="preserve"><value>pengaturan</value></data><data name="SummaryLabel" xml:space="preserve"><value>Ringkasan</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>sinkronisasi...</value></data><data name="SyncLabel" xml:space="preserve"><value>sinkronisasi</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>email teknis dukungan/umpan balik</value></data><data name="UpgradeText" xml:space="preserve"><value>Upgrade ini tersedia! Apakah Anda ingin menginstal upgrade sekarang?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>Upgrade tersedia!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Sayangnya data Anda bisa tidak diekspor ke OneDrive saat ini. Harap coba lagi nanti.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Upload gagal</value></data><data name="UploadingLabel" xml:space="preserve"><value>meng-upload...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Data Anda telah berhasil diupload ke OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Upload sukses!</value></data><data name="Yes" xml:space="preserve"><value>Ya</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>Apa yang saya makan umpan balik</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>Tampilkan entri timestamp?</value></data></root>
+Aku akan menghargai bantuan Anda dengan mengirimkan laporan kesalahan disiapkan. Ini akan membantu dengan menyelesaikan masalah lebih cepat.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Kesalahan aplikasi</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>Tidak ada tanggal ini. Menambahkan sesuatu!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Tidak ada entri yang ditemukan. Menambahkan sesuatu!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>mengaktifkan sinkronisasi</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Ekspor ke OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel ekspor</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Ini akan mengekspor semua entri jurnal Anda sebagai file CSV kompatibel Excel untuk OneDrive Anda.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Bagaimana dapat meningkatkan aplikasi ini sehingga Anda akan bersedia untuk menilai itu 5 bintang di pasar?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Dapatkah saya membuat lebih baik?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>memberikan umpan balik</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>entri baru</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Tidak</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>Tidak terima kasih</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Oke</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>tingkat saya</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>pengaturan</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Ringkasan</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sinkronisasi...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sinkronisasi</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>email teknis dukungan/umpan balik</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Upgrade ini tersedia! Apakah Anda ingin menginstal upgrade sekarang?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade tersedia!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Sayangnya data Anda bisa tidak diekspor ke OneDrive saat ini. Harap coba lagi nanti.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Upload gagal</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>meng-upload...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Data Anda telah berhasil diupload ke OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Upload sukses!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>Apa yang saya makan umpan balik</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>Tampilkan entri timestamp?</value>
+  </data>
+</root>

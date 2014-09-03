@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>zh-CN</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>连接</value></data><data name="ConnectLabel" xml:space="preserve"><value>连接</value></data><data name="OffText" xml:space="preserve"><value>关闭</value></data><data name="OnText" xml:space="preserve"><value>在</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>早餐</value></data><data name="MealTypeLunch" xml:space="preserve"><value>午餐</value></data><data name="MealTypeDinner" xml:space="preserve"><value>晚餐</value></data><data name="MealTypeSnack" xml:space="preserve"><value>零食</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>无</value></data><data name="AboutLabel" xml:space="preserve"><value>有关</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>Shane Church 由其他应用程序</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>评级此应用程序</value></data><data name="AppCopyright" xml:space="preserve"><value>版权所有 © Shane Church 2013-2014 年</value></data><data name="AppDescription" xml:space="preserve"><value>对于 windows 电话简单食物日记</value></data><data name="AppIconDescription" xml:space="preserve"><value>吃由 Danny Chapman 从名词项目设计</value></data><data name="AppIconLabel" xml:space="preserve"><value>应用程序图标</value></data><data name="AppTitle" xml:space="preserve"><value>我吃的什么</value></data><data name="CalendarLabel" xml:space="preserve"><value>日历</value></data><data name="Cancel" xml:space="preserve"><value>取消按钮</value></data><data name="CsvExportLabel" xml:space="preserve"><value>CSV 导出</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>该应用程序时遇到问题。我深表歉意。
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>在</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>早餐</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>午餐</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>晚餐</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>零食</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>有关</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>Shane Church 由其他应用程序</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>评级此应用程序</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>版权所有 © Shane Church 2013-2014 年</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>对于 windows 电话简单食物日记</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>吃由 Danny Chapman 从名词项目设计</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>应用程序图标</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>我吃的什么</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>日历</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消按钮</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>CSV 导出</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>该应用程序时遇到问题。我深表歉意。
 
-我感谢您的帮助通过发送准备好的错误报告。这将有助于更快地解决问题。</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>应用程序错误</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>在此日期执行任何操作。添加内容 ！</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>找不到项。添加内容 ！</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>启用同步</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>将导出到 OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>excel 导出</value></data><data name="ExcelExportText" xml:space="preserve"><value>这会将您的日记条目的所有导出为 Excel 兼容 CSV 文件到您的 OneDrive。</value></data><data name="FeedbackContent" xml:space="preserve"><value>如何改进此应用程序，以便您愿意进行评价它在市场上的 5 颗星？</value></data><data name="FeedbackTitle" xml:space="preserve"><value>我变得更好吗？</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>提供反馈</value></data><data name="NewEntryLabel" xml:space="preserve"><value>新建条目</value></data><data name="No" xml:space="preserve"><value>否</value></data><data name="NoThanksButton" xml:space="preserve"><value>不，谢谢</value></data><data name="Ok" xml:space="preserve"><value>确定</value></data><data name="ReviewLabel" xml:space="preserve"><value>评价我</value></data><data name="SettingsLabel" xml:space="preserve"><value>设置</value></data><data name="SummaryLabel" xml:space="preserve"><value>摘要</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>正在同步处理...</value></data><data name="SyncLabel" xml:space="preserve"><value>同步</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>技术支持/反馈电子邮件</value></data><data name="UpgradeText" xml:space="preserve"><value>有可用的升级 ！是否要立即安装升级吗？</value></data><data name="UpgradeTitle" xml:space="preserve"><value>升级可用 ！</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>遗憾的是您的数据无法导出到 OneDrive 这一次。请稍后再试。</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>上传失败</value></data><data name="UploadingLabel" xml:space="preserve"><value>上传...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>您的数据已成功上载到 OneDrive。</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>已成功上传 ！</value></data><data name="Yes" xml:space="preserve"><value>是</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>什么我吃的反馈</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>显示条目的时间戳。</value></data></root>
+我感谢您的帮助通过发送准备好的错误报告。这将有助于更快地解决问题。</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>应用程序错误</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>在此日期执行任何操作。添加内容 ！</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>找不到项。添加内容 ！</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>启用同步</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>将导出到 OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>excel 导出</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>这会将您的日记条目的所有导出为 Excel 兼容 CSV 文件到您的 OneDrive。</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>如何改进此应用程序，以便您愿意进行评价它在市场上的 5 颗星？</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>我变得更好吗？</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>提供反馈</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>新建条目</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>不，谢谢</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>评价我</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>正在同步处理...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>同步</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>技术支持/反馈电子邮件</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>有可用的升级 ！是否要立即安装升级吗？</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>升级可用 ！</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>遗憾的是您的数据无法导出到 OneDrive 这一次。请稍后再试。</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>上传失败</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>上传...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>您的数据已成功上载到 OneDrive。</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>已成功上传 ！</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>什么我吃的反馈</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>显示条目的时间戳。</value>
+  </data>
+</root>

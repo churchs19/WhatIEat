@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>ro-RO</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>Conectat</value></data><data name="ConnectLabel" xml:space="preserve"><value>Conectaţi</value></data><data name="OffText" xml:space="preserve"><value>Off</value></data><data name="OnText" xml:space="preserve"><value>Pe</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>Mic dejun</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Masa de prânz</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Cină</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Gustare</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Nici unul</value></data><data name="AboutLabel" xml:space="preserve"><value>despre</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>alte aplicaţii de Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>rata de acest app</value></data><data name="AppCopyright" xml:space="preserve"><value>Copyright © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>un jurnal de hrană simplă pentru windows phone</value></data><data name="AppIconDescription" xml:space="preserve"><value>Mânca proiectate de Danny Chapman la proiectul substantiv</value></data><data name="AppIconLabel" xml:space="preserve"><value>pictograma aplicaţiei</value></data><data name="AppTitle" xml:space="preserve"><value>CEEA CE AM MĂNÂNCĂ</value></data><data name="CalendarLabel" xml:space="preserve"><value>Calendar</value></data><data name="Cancel" xml:space="preserve"><value>Revocare</value></data><data name="CsvExportLabel" xml:space="preserve"><value>Export CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>Aplicare a întâmpinat o problemă. Îmi pare rău pentru neplăcerile create.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>Conectat</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>Conectaţi</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>Pe</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>Mic dejun</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>Masa de prânz</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Cină</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Gustare</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Nici unul</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>despre</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>alte aplicaţii de Shane Church</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>rata de acest app</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>Copyright © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>un jurnal de hrană simplă pentru windows phone</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>Mânca proiectate de Danny Chapman la proiectul substantiv</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>pictograma aplicaţiei</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>CEEA CE AM MĂNÂNCĂ</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Revocare</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Export CSV</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Aplicare a întâmpinat o problemă. Îmi pare rău pentru neplăcerile create.
 
-Aş aprecia ajutorul dvs prin trimiterea raportului pregătit eroare. Acest lucru va ajuta cu rezolvarea problemei mai repede.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Eroare de aplicaţie</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Nimic pe această dată. Adauga ceva!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Nicio intrare găsită. Adauga ceva!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>permite sincronizarea</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>Export la OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>Excel export</value></data><data name="ExcelExportText" xml:space="preserve"><value>Acest lucru va exporta toate intrările jurnal ca fișier CSV compatibil cu Excel pentru a vă OneDrive.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Cum poate îmbunătăţi această aplicaţie, astfel încât ai fi dispus să o rata de 5 stele în piaţă?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>Puteţi face mai bine?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>să ofere feedback.</value></data><data name="NewEntryLabel" xml:space="preserve"><value>Noua intrare</value></data><data name="No" xml:space="preserve"><value>nu</value></data><data name="NoThanksButton" xml:space="preserve"><value>nu, mulţumesc</value></data><data name="Ok" xml:space="preserve"><value>ok</value></data><data name="ReviewLabel" xml:space="preserve"><value>rata de mine</value></data><data name="SettingsLabel" xml:space="preserve"><value>Setări</value></data><data name="SummaryLabel" xml:space="preserve"><value>Rezumat</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>sincronizarea...</value></data><data name="SyncLabel" xml:space="preserve"><value>sincronizare</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>suport tehnic/feedback-ul e-mail</value></data><data name="UpgradeText" xml:space="preserve"><value>Un upgrade este disponibil! Doriţi să instalaţi actualizarea acum?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>Upgrade disponibil!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Din păcate, datele nu pot fi exportate la OneDrive în acest moment. Vă rugăm să încercaţi din nou mai târziu.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Încărcare eşuată</value></data><data name="UploadingLabel" xml:space="preserve"><value>încărcarea...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Datele dumneavoastră a fost încărcat cu succes OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Încărcaţi-de succes!</value></data><data name="Yes" xml:space="preserve"><value>da</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>Ce mănânc Feedback</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>Arată intrarea timestamp?</value></data></root>
+Aş aprecia ajutorul dvs prin trimiterea raportului pregătit eroare. Acest lucru va ajuta cu rezolvarea problemei mai repede.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Eroare de aplicaţie</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>Nimic pe această dată. Adauga ceva!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Nicio intrare găsită. Adauga ceva!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>permite sincronizarea</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Export la OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel export</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Acest lucru va exporta toate intrările jurnal ca fișier CSV compatibil cu Excel pentru a vă OneDrive.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Cum poate îmbunătăţi această aplicaţie, astfel încât ai fi dispus să o rata de 5 stele în piaţă?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Puteţi face mai bine?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>să ofere feedback.</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>Noua intrare</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nu</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>nu, mulţumesc</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>rata de mine</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>Setări</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Rezumat</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sincronizarea...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sincronizare</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>suport tehnic/feedback-ul e-mail</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Un upgrade este disponibil! Doriţi să instalaţi actualizarea acum?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade disponibil!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Din păcate, datele nu pot fi exportate la OneDrive în acest moment. Vă rugăm să încercaţi din nou mai târziu.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Încărcare eşuată</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>încărcarea...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Datele dumneavoastră a fost încărcat cu succes OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Încărcaţi-de succes!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>da</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>Ce mănânc Feedback</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>Arată intrarea timestamp?</value>
+  </data>
+</root>

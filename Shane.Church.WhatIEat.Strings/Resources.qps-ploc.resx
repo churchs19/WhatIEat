@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>qps-ploc</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>[27B36][!!_Ċòηήéćтèđ_!!]</value></data><data name="ConnectLabel" xml:space="preserve"><value>[6442C][!!_Ĉôиηęĉť_!!]</value></data><data name="OffText" xml:space="preserve"><value>[49135][!!_Óƒƒ_!!]</value></data><data name="OnText" xml:space="preserve"><value>[213DF][!!_Óή_!!]</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>[107A6][!!_βŕèãķƒâšτ_!!]</value></data><data name="MealTypeLunch" xml:space="preserve"><value>[C528C][!!_Ŀûηčн_!!]</value></data><data name="MealTypeDinner" xml:space="preserve"><value>[96996][!!_Đîηйęŗ_!!]</value></data><data name="MealTypeSnack" xml:space="preserve"><value>[DA24D][!!_Ŝηàċќ_!!]</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>[6CE6C][!!_Ńóηê_!!]</value></data><data name="AboutLabel" xml:space="preserve"><value>[71075][!!_ãьôùţ_!!]</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>[F0550][!!_òťħêř áррŝ вý Šĥàиê Čнùѓĉђ_!!]</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>[A178F][!!_ѓãτê τћíş âρρ_!!]</value></data><data name="AppCopyright" xml:space="preserve"><value>[BCD0A][!!_Čòρўŕìģђт © Šђáηè Ċћûřċн 2013-2014_!!]</value></data><data name="AppDescription" xml:space="preserve"><value>[5C2A5][!!_ã ŝįмрĺê ƒõôð јõûřиàľ ƒôŕ ŵíиðôẃś рђôηê_!!]</value></data><data name="AppIconDescription" xml:space="preserve"><value>[FD054][!!_Êãτ đèŝìģήèď Бў Đâййÿ Ċнáþмâη ƒŗõm Тђé Ñõµи Ρѓõĵêčť_!!]</value></data><data name="AppIconLabel" xml:space="preserve"><value>[DC8A2][!!_âþþļìĉâτįõй ìĉòи_!!]</value></data><data name="AppTitle" xml:space="preserve"><value>[BD285][!!_ŴΉÀΤ Î ÈÀТ_!!]</value></data><data name="CalendarLabel" xml:space="preserve"><value>[8E1CF][!!_ĉãĺêиďãѓ_!!]</value></data><data name="Cancel" xml:space="preserve"><value>[BBA99][!!_ċãηĉêĺ_!!]</value></data><data name="CsvExportLabel" xml:space="preserve"><value>[F8D11][!!_Ê×þòřт ĆŞV_!!]</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>[71269][!!_Ťĥê áþрłîčáтìõή ĥâś èηĉóµηтèŕéð â ρѓôьļéм. Í âм šóŕřў ƒòŗ ţћé îиĉóйνèйíéηĉè.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>[27B36][!!_Ċòηήéćтèđ_!!]</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>[6442C][!!_Ĉôиηęĉť_!!]</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>[49135][!!_Óƒƒ_!!]</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>[213DF][!!_Óή_!!]</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>[107A6][!!_βŕèãķƒâšτ_!!]</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>[C528C][!!_Ŀûηčн_!!]</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>[96996][!!_Đîηйęŗ_!!]</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>[DA24D][!!_Ŝηàċќ_!!]</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>[6CE6C][!!_Ńóηê_!!]</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>[71075][!!_ãьôùţ_!!]</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>[F0550][!!_òťħêř áррŝ вý Šĥàиê Čнùѓĉђ_!!]</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>[A178F][!!_ѓãτê τћíş âρρ_!!]</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>[BCD0A][!!_Čòρўŕìģђт © Šђáηè Ċћûřċн 2013-2014_!!]</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>[5C2A5][!!_ã ŝįмрĺê ƒõôð јõûřиàľ ƒôŕ ŵíиðôẃś рђôηê_!!]</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>[FD054][!!_Êãτ đèŝìģήèď Бў Đâййÿ Ċнáþмâη ƒŗõm Тђé Ñõµи Ρѓõĵêčť_!!]</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>[DC8A2][!!_âþþļìĉâτįõй ìĉòи_!!]</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>[BD285][!!_ŴΉÀΤ Î ÈÀТ_!!]</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>[8E1CF][!!_ĉãĺêиďãѓ_!!]</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>[BBA99][!!_ċãηĉêĺ_!!]</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>[F8D11][!!_Ê×þòřт ĆŞV_!!]</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>[71269][!!_Ťĥê áþрłîčáтìõή ĥâś èηĉóµηтèŕéð â ρѓôьļéм. Í âм šóŕřў ƒòŗ ţћé îиĉóйνèйíéηĉè.
 
-Î ẁóùĺď àρрѓêĉįãţê Уôûř ãśśîśţáиćè Бў ŝęήďíηġ тħę рŕéρãřęď ęѓѓôŕ řèþòѓţ. Ťђíš ŵįłĺ ћéłр ŵįťħ ŗêšóľνįηġ ťĥę ρřõБĺêm ƒãşτéř._!!]</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>[BB751][!!_Áррłîĉàτíóή Èřŕõŗ_!!]</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>[32CCA][!!_Ňôţĥįиģ ôη ţђîś ďàťé. Àďđ ŝóмéťнîиğ!_!!]</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>[895E8][!!_Ńõ êηţŕįèş ƒôµήð. Âðð şòмèťħįйğ!_!!]</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>[8D6ED][!!_êήâвłè šўйćђѓôиîźâţįõή_!!]</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>[F4830][!!_È×ρóŕτ τò ÕήêĐѓíνê_!!]</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>[4B12F][!!_êхĉêł èхрòřţ_!!]</value></data><data name="ExcelExportText" xml:space="preserve"><value>[2AAB9][!!_Тħîŝ ŵîĺĺ ęхрõѓт âĺľ óƒ Уõûѓ јóµŕиáľ éήţŕíêş ãŝ ã Éхćêľ-čòмρãţîьłé ĆŞV ƒįłè ťò ýôûŗ ÔйéĎѓìνê._!!]</value></data><data name="FeedbackContent" xml:space="preserve"><value>[3E054][!!_Ήôẅ ċàй Ì íмрřòνê тнíş ãрρłìćâτîóй şô ţћàτ ýóû ŵóµļď Бè ẅįĺĺįйĝ тô ŕàтè įт 5 şτâřš íй τħê máѓќèţρļâćę?_!!]</value></data><data name="FeedbackTitle" xml:space="preserve"><value>[46D10][!!_Ĉâй Ì mãќè íţ Бêττéř?_!!]</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>[EC9A6][!!_ģìνê ƒêęďБáċк_!!]</value></data><data name="NewEntryLabel" xml:space="preserve"><value>[E9670][!!_ήéŵ éиτѓў_!!]</value></data><data name="No" xml:space="preserve"><value>[23BDD][!!_иô_!!]</value></data><data name="NoThanksButton" xml:space="preserve"><value>[83CF9][!!_иõ ţђâήќš_!!]</value></data><data name="Ok" xml:space="preserve"><value>[EC160][!!_õќ_!!]</value></data><data name="ReviewLabel" xml:space="preserve"><value>[582FB][!!_ŗàťê mê_!!]</value></data><data name="SettingsLabel" xml:space="preserve"><value>[BE263][!!_ŝêтťįηģś_!!]</value></data><data name="SummaryLabel" xml:space="preserve"><value>[6A63D][!!_ŝûмmàŕÿ_!!]</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>[FEEC8][!!_şýйċђřòйįžîиġ..._!!]</value></data><data name="SyncLabel" xml:space="preserve"><value>[98FDE][!!_şÿηč_!!]</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>[E1D00][!!_ťèčђήįćâļ šûрþôřт/ƒêèďвâćк ęмàįł_!!]</value></data><data name="UpgradeText" xml:space="preserve"><value>[D1D72][!!_Âи ùрğѓàđé įš áνáìļàъłê! Đõ ÿõû ŵãήт ťó íиşτáłł τђê µþğřãďé ήôẅ?_!!]</value></data><data name="UpgradeTitle" xml:space="preserve"><value>[9DEF3][!!_Üρĝѓâðé Âνáíĺãъľé!_!!]</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>[6E63A][!!_ÜήƒõŗтûйâτèľУ ýõúѓ đãτá ċòûľď йóţ ъé é×þôřťéđ ťô ÔйéĎŗìνé áť ţћîş ţîmé. Рļęãŝè ťŕў áĝáíи ļàţèѓ._!!]</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>[1CE6C][!!_Ûþļòâď ₣ãíĺèð_!!]</value></data><data name="UploadingLabel" xml:space="preserve"><value>[D8D19][!!_ûρłóáďîηğ..._!!]</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>[4E736][!!_Ỳôûŗ ðáťâ нàş вêêи śûćĉêŝŝƒûĺĺý ùþłóáđèð тó ÓйèĎŕįνé._!!]</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>[9165B][!!_Ûрłôàď Śµċčéŝşƒúł!_!!]</value></data><data name="Yes" xml:space="preserve"><value>[42CB5][!!_ŷèş_!!]</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>[09D38][!!_Ẁĥãт Į Èáť ₣ęéđБàĉк_!!]</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>[1141E][!!_ŝђôẁ éиťŕý тîмęśτámþ?_!!]</value></data></root>
+Î ẁóùĺď àρрѓêĉįãţê Уôûř ãśśîśţáиćè Бў ŝęήďíηġ тħę рŕéρãřęď ęѓѓôŕ řèþòѓţ. Ťђíš ŵįłĺ ћéłр ŵįťħ ŗêšóľνįηġ ťĥę ρřõБĺêm ƒãşτéř._!!]</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>[BB751][!!_Áррłîĉàτíóή Èřŕõŗ_!!]</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>[32CCA][!!_Ňôţĥįиģ ôη ţђîś ďàťé. Àďđ ŝóмéťнîиğ!_!!]</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>[895E8][!!_Ńõ êηţŕįèş ƒôµήð. Âðð şòмèťħįйğ!_!!]</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>[8D6ED][!!_êήâвłè šўйćђѓôиîźâţįõή_!!]</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>[F4830][!!_È×ρóŕτ τò ÕήêĐѓíνê_!!]</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>[4B12F][!!_êхĉêł èхрòřţ_!!]</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>[2AAB9][!!_Тħîŝ ŵîĺĺ ęхрõѓт âĺľ óƒ Уõûѓ јóµŕиáľ éήţŕíêş ãŝ ã Éхćêľ-čòмρãţîьłé ĆŞV ƒįłè ťò ýôûŗ ÔйéĎѓìνê._!!]</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>[3E054][!!_Ήôẅ ċàй Ì íмрřòνê тнíş ãрρłìćâτîóй şô ţћàτ ýóû ŵóµļď Бè ẅįĺĺįйĝ тô ŕàтè įт 5 şτâřš íй τħê máѓќèţρļâćę?_!!]</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>[46D10][!!_Ĉâй Ì mãќè íţ Бêττéř?_!!]</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>[EC9A6][!!_ģìνê ƒêęďБáċк_!!]</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>[E9670][!!_ήéŵ éиτѓў_!!]</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>[23BDD][!!_иô_!!]</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>[83CF9][!!_иõ ţђâήќš_!!]</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>[EC160][!!_õќ_!!]</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>[582FB][!!_ŗàťê mê_!!]</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>[BE263][!!_ŝêтťįηģś_!!]</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>[6A63D][!!_ŝûмmàŕÿ_!!]</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>[FEEC8][!!_şýйċђřòйįžîиġ..._!!]</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>[98FDE][!!_şÿηč_!!]</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>[E1D00][!!_ťèčђήįćâļ šûрþôřт/ƒêèďвâćк ęмàįł_!!]</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>[D1D72][!!_Âи ùрğѓàđé įš áνáìļàъłê! Đõ ÿõû ŵãήт ťó íиşτáłł τђê µþğřãďé ήôẅ?_!!]</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>[9DEF3][!!_Üρĝѓâðé Âνáíĺãъľé!_!!]</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>[6E63A][!!_ÜήƒõŗтûйâτèľУ ýõúѓ đãτá ċòûľď йóţ ъé é×þôřťéđ ťô ÔйéĎŗìνé áť ţћîş ţîmé. Рļęãŝè ťŕў áĝáíи ļàţèѓ._!!]</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>[1CE6C][!!_Ûþļòâď ₣ãíĺèð_!!]</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>[D8D19][!!_ûρłóáďîηğ..._!!]</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>[4E736][!!_Ỳôûŗ ðáťâ нàş вêêи śûćĉêŝŝƒûĺĺý ùþłóáđèð тó ÓйèĎŕįνé._!!]</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>[9165B][!!_Ûрłôàď Śµċčéŝşƒúł!_!!]</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>[42CB5][!!_ŷèş_!!]</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>[09D38][!!_Ẁĥãт Į Èáť ₣ęéđБàĉк_!!]</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>[1141E][!!_ŝђôẁ éиťŕý тîмęśτámþ?_!!]</value>
+  </data>
+</root>

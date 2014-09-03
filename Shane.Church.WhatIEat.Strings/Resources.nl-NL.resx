@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>nl-NL</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>Verbonden</value></data><data name="ConnectLabel" xml:space="preserve"><value>Verbinding maken</value></data><data name="OffText" xml:space="preserve"><value>Uitschakelen</value></data><data name="OnText" xml:space="preserve"><value>Op</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>Ontbijt</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Lunch</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Diner</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Snacks</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Geen</value></data><data name="AboutLabel" xml:space="preserve"><value>over</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>andere apps door Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>Beoordeel dit app</value></data><data name="AppCopyright" xml:space="preserve"><value>Copyright © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>een eenvoudige voedsel dagboek voor windows phone</value></data><data name="AppIconDescription" xml:space="preserve"><value>Ontworpen door Danny Chapman van het zelfstandig naamwoord Project eten</value></data><data name="AppIconLabel" xml:space="preserve"><value>toepassingspictogram</value></data><data name="AppTitle" xml:space="preserve"><value>WAT IK EET</value></data><data name="CalendarLabel" xml:space="preserve"><value>agenda</value></data><data name="Cancel" xml:space="preserve"><value>annuleren</value></data><data name="CsvExportLabel" xml:space="preserve"><value>CSV export</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>De toepassing is een fout opgetreden. Ik excuses voor het ongemak.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>Verbonden</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>Verbinding maken</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Uitschakelen</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>Op</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>Ontbijt</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>Lunch</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Diner</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Snacks</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>over</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>andere apps door Shane Church</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>Beoordeel dit app</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>Copyright © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>een eenvoudige voedsel dagboek voor windows phone</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>Ontworpen door Danny Chapman van het zelfstandig naamwoord Project eten</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>toepassingspictogram</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>WAT IK EET</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>agenda</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>annuleren</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>CSV export</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>De toepassing is een fout opgetreden. Ik excuses voor het ongemak.
 
-Ik zou uw hulp op prijs stellen door de voorbereide foutenrapport te verzenden. Dit helpt bij het oplossen van het probleem sneller.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Toepassingsfout</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Niets op deze datum. Iets toevoegen!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Geen items gevonden. Iets toevoegen!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>synchronisatie inschakelen</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>Exporteren naar OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>exporteren in Excel</value></data><data name="ExcelExportText" xml:space="preserve"><value>Hiermee exporteert alle van uw dagboekposten als een Excel-compatibel CSV-bestand op uw OneDrive.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Hoe kan ik deze toepassing verbeteren zodat u bereid te waarderen 5 sterren op de markt zou zijn?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>Ik maak het beter?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>feedback geven</value></data><data name="NewEntryLabel" xml:space="preserve"><value>nieuwe post</value></data><data name="No" xml:space="preserve"><value>Nee</value></data><data name="NoThanksButton" xml:space="preserve"><value>Nee, dank</value></data><data name="Ok" xml:space="preserve"><value>OK</value></data><data name="ReviewLabel" xml:space="preserve"><value>Beoordeel me</value></data><data name="SettingsLabel" xml:space="preserve"><value>instellingen</value></data><data name="SummaryLabel" xml:space="preserve"><value>Samenvatting</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>synchroniseren...</value></data><data name="SyncLabel" xml:space="preserve"><value>Sync</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>technische ondersteuning/feedback e-mailadres</value></data><data name="UpgradeText" xml:space="preserve"><value>Een upgrade is beschikbaar! Wilt u de upgrade nu installeren?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>Upgrade beschikbaar!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Helaas komt kan uw gegevens niet worden geëxporteerd naar de OneDrive op dit moment. Probeer het later opnieuw.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Upload mislukt</value></data><data name="UploadingLabel" xml:space="preserve"><value>uploaden...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Uw gegevens is geüpload naar OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Het uploaden is geslaagd!</value></data><data name="Yes" xml:space="preserve"><value>Ja</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>Wat ik EET Feedback</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>post tijdstempel weergeven?</value></data></root>
+Ik zou uw hulp op prijs stellen door de voorbereide foutenrapport te verzenden. Dit helpt bij het oplossen van het probleem sneller.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Toepassingsfout</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>Niets op deze datum. Iets toevoegen!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Geen items gevonden. Iets toevoegen!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>synchronisatie inschakelen</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exporteren naar OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>exporteren in Excel</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Hiermee exporteert alle van uw dagboekposten als een Excel-compatibel CSV-bestand op uw OneDrive.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Hoe kan ik deze toepassing verbeteren zodat u bereid te waarderen 5 sterren op de markt zou zijn?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Ik maak het beter?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>feedback geven</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>nieuwe post</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nee</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>Nee, dank</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>Beoordeel me</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>instellingen</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Samenvatting</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>synchroniseren...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Sync</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>technische ondersteuning/feedback e-mailadres</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Een upgrade is beschikbaar! Wilt u de upgrade nu installeren?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Upgrade beschikbaar!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Helaas komt kan uw gegevens niet worden geëxporteerd naar de OneDrive op dit moment. Probeer het later opnieuw.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Upload mislukt</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>uploaden...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Uw gegevens is geüpload naar OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Het uploaden is geslaagd!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>Wat ik EET Feedback</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>post tijdstempel weergeven?</value>
+  </data>
+</root>

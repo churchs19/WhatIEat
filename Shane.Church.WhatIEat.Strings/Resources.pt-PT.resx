@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>pt-PT</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>Ligado</value></data><data name="ConnectLabel" xml:space="preserve"><value>Ligar</value></data><data name="OffText" xml:space="preserve"><value>Desactivar</value></data><data name="OnText" xml:space="preserve"><value>No</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>Pequeno-almoço</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Almoço</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Jantar</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Petiscos</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Nenhum</value></data><data name="AboutLabel" xml:space="preserve"><value>Acerca de</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>outras aplicações por Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>Classificar esta apl.</value></data><data name="AppCopyright" xml:space="preserve"><value>Copyright © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>um diário de alimentos simples para o windows phone</value></data><data name="AppIconDescription" xml:space="preserve"><value>Comer concebidos pelo Danny Chapman do projecto nominais</value></data><data name="AppIconLabel" xml:space="preserve"><value>ícone da aplicação</value></data><data name="AppTitle" xml:space="preserve"><value>O QUE POSSO COMER</value></data><data name="CalendarLabel" xml:space="preserve"><value>Calendário</value></data><data name="Cancel" xml:space="preserve"><value>Cancelar</value></data><data name="CsvExportLabel" xml:space="preserve"><value>Exportar CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>A aplicação encontrou um problema. Lamentamos qualquer incómodo.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>Ligado</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>Ligar</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Desactivar</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>Pequeno-almoço</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>Almoço</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Jantar</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Petiscos</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>outras aplicações por Shane Church</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>Classificar esta apl.</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>Copyright © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>um diário de alimentos simples para o windows phone</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>Comer concebidos pelo Danny Chapman do projecto nominais</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>ícone da aplicação</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>O QUE POSSO COMER</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Calendário</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Exportar CSV</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>A aplicação encontrou um problema. Lamentamos qualquer incómodo.
 
-Agradecia a sua assistência através do envio de relatório de erros preparada. Isto irá ajudar na resolução mais rapidamente o problema.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Erro de aplicação</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Nada nesta data. Adicione algo!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Não foram encontradas entradas. Adicione algo!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>activar a sincronização</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>Exportar para OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>exportação do Excel</value></data><data name="ExcelExportText" xml:space="preserve"><value>Isto irá exportar todas as entradas de diário como um ficheiro CSV compatível com o Excel para o OneDrive.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Como posso melhorar esta aplicação para que estaria disposto classificar-se 5 estrelas nos serviços electrónicos do?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>É possível fazê-lo melhor?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>enviar comentários</value></data><data name="NewEntryLabel" xml:space="preserve"><value>nova entrada</value></data><data name="No" xml:space="preserve"><value>não</value></data><data name="NoThanksButton" xml:space="preserve"><value>Obrigado</value></data><data name="Ok" xml:space="preserve"><value>OK</value></data><data name="ReviewLabel" xml:space="preserve"><value>Classificar do me</value></data><data name="SettingsLabel" xml:space="preserve"><value>definições</value></data><data name="SummaryLabel" xml:space="preserve"><value>Resumo</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>sincronizar...</value></data><data name="SyncLabel" xml:space="preserve"><value>sincronização</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>mensagem de correio electrónico/comentários do suporte técnico</value></data><data name="UpgradeText" xml:space="preserve"><value>Está disponível uma actualização! Confirma que deseja instalar a actualização agora?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>Actualização disponível!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Infelizmente os dados não foi possível exportar para OneDrive neste momento. Tente novamente mais tarde.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Falha no carregamento</value></data><data name="UploadingLabel" xml:space="preserve"><value>carregar...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Foi carregados com êxito os dados para OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Carregar com êxito!</value></data><data name="Yes" xml:space="preserve"><value>Sim</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>O que posso comer comentários</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>Mostrar hora de entrada?</value></data></root>
+Agradecia a sua assistência através do envio de relatório de erros preparada. Isto irá ajudar na resolução mais rapidamente o problema.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Erro de aplicação</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>Nada nesta data. Adicione algo!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Não foram encontradas entradas. Adicione algo!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>activar a sincronização</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Exportar para OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>exportação do Excel</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Isto irá exportar todas as entradas de diário como um ficheiro CSV compatível com o Excel para o OneDrive.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Como posso melhorar esta aplicação para que estaria disposto classificar-se 5 estrelas nos serviços electrónicos do?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>É possível fazê-lo melhor?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>enviar comentários</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>nova entrada</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>não</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>Obrigado</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>Classificar do me</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>definições</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Resumo</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sincronizar...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sincronização</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>mensagem de correio electrónico/comentários do suporte técnico</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Está disponível uma actualização! Confirma que deseja instalar a actualização agora?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Actualização disponível!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Infelizmente os dados não foi possível exportar para OneDrive neste momento. Tente novamente mais tarde.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Falha no carregamento</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>carregar...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Foi carregados com êxito os dados para OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Carregar com êxito!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>O que posso comer comentários</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>Mostrar hora de entrada?</value>
+  </data>
+</root>

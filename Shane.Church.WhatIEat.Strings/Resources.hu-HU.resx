@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>hu-HU</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>Csatlakozó</value></data><data name="ConnectLabel" xml:space="preserve"><value>Csatlakozás</value></data><data name="OffText" xml:space="preserve"><value>Kikapcsolása</value></data><data name="OnText" xml:space="preserve"><value>A</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>A reggeli</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Ebéd</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Vacsora</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Rögbi</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Nincs</value></data><data name="AboutLabel" xml:space="preserve"><value>kapcsolatban</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>más alkalmazások által Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>Ez az alkalmazás gyakorisága</value></data><data name="AppCopyright" xml:space="preserve"><value>Copyright © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>a windows phone rendszerhez egyszerű élelmiszer napló</value></data><data name="AppIconDescription" xml:space="preserve"><value>Danny Chapman a Fogalomként projektből által tervezett eszik</value></data><data name="AppIconLabel" xml:space="preserve"><value>alkalmazás ikonja</value></data><data name="AppTitle" xml:space="preserve"><value>I. ESZIK</value></data><data name="CalendarLabel" xml:space="preserve"><value>Naptár</value></data><data name="Cancel" xml:space="preserve"><value>Mégse</value></data><data name="CsvExportLabel" xml:space="preserve"><value>CSV exportálás</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>Az alkalmazás hibát észlelt. Elnézést kérünk a kellemetlenségért.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>Csatlakozó</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>Csatlakozás</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Kikapcsolása</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>A reggeli</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>Ebéd</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Vacsora</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Rögbi</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Nincs</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>kapcsolatban</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>más alkalmazások által Shane Church</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>Ez az alkalmazás gyakorisága</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>Copyright © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>a windows phone rendszerhez egyszerű élelmiszer napló</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>Danny Chapman a Fogalomként projektből által tervezett eszik</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>alkalmazás ikonja</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>I. ESZIK</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Naptár</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Mégse</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>CSV exportálás</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Az alkalmazás hibát észlelt. Elnézést kérünk a kellemetlenségért.
 
-Kérem, a támogatás által elkészített jelentés küldése. Ez segít a probléma gyorsabb megoldása.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Alkalmazáshiba</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Ezen a napon semmi. Adjunk hozzá valamit!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Nem található bejegyzés. Adjunk hozzá valamit!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>szinkronizálás engedélyezése</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>OneDrive exportálása</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>Exportálás az Excel</value></data><data name="ExcelExportText" xml:space="preserve"><value>Ezzel a művelettel exportálhatja a naplóbejegyzések az összes Excel-kompatíbilis CSV-fájlként a OneDrive.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Hogyan javíthatom ezt az alkalmazást, hogy a piacon 5 csillag minősítéséhez hajlandó lenne?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>Készíthető-e még azt jobban?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>Visszajelzés</value></data><data name="NewEntryLabel" xml:space="preserve"><value>Új bejegyzés</value></data><data name="No" xml:space="preserve"><value>nem</value></data><data name="NoThanksButton" xml:space="preserve"><value>Köszönöm, nem</value></data><data name="Ok" xml:space="preserve"><value>OK</value></data><data name="ReviewLabel" xml:space="preserve"><value>me minősítése</value></data><data name="SettingsLabel" xml:space="preserve"><value>beállítások</value></data><data name="SummaryLabel" xml:space="preserve"><value>Összegzés</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>szinkronizálása...</value></data><data name="SyncLabel" xml:space="preserve"><value>szinkronizálás</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>technikai támogatás-visszajelzés e-mailben</value></data><data name="UpgradeText" xml:space="preserve"><value>Frissítés érhető el! Szeretné most telepíteni a frissítést?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>A frissítés elérhető!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Sajnos az adatokat nem exportálható OneDrive most. Próbálja meg újra később.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Nem sikerült a feltöltés</value></data><data name="UploadingLabel" xml:space="preserve"><value>feltöltése...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Az adatok sikeresen feltöltötte OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Sikeres feltöltés!</value></data><data name="Yes" xml:space="preserve"><value>Igen</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>Mi I eszik visszajelzés</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>bejegyzés időbélyegző megjelenítése?</value></data></root>
+Kérem, a támogatás által elkészített jelentés küldése. Ez segít a probléma gyorsabb megoldása.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Alkalmazáshiba</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>Ezen a napon semmi. Adjunk hozzá valamit!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Nem található bejegyzés. Adjunk hozzá valamit!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>szinkronizálás engedélyezése</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>OneDrive exportálása</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Exportálás az Excel</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Ezzel a művelettel exportálhatja a naplóbejegyzések az összes Excel-kompatíbilis CSV-fájlként a OneDrive.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Hogyan javíthatom ezt az alkalmazást, hogy a piacon 5 csillag minősítéséhez hajlandó lenne?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Készíthető-e még azt jobban?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>Visszajelzés</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>Új bejegyzés</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nem</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>Köszönöm, nem</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>me minősítése</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>beállítások</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Összegzés</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>szinkronizálása...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>szinkronizálás</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>technikai támogatás-visszajelzés e-mailben</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Frissítés érhető el! Szeretné most telepíteni a frissítést?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>A frissítés elérhető!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Sajnos az adatokat nem exportálható OneDrive most. Próbálja meg újra később.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Nem sikerült a feltöltés</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>feltöltése...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Az adatok sikeresen feltöltötte OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Sikeres feltöltés!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Igen</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>Mi I eszik visszajelzés</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>bejegyzés időbélyegző megjelenítése?</value>
+  </data>
+</root>

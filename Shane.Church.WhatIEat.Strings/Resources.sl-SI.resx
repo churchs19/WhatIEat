@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>sl-SI</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>Povezani</value></data><data name="ConnectLabel" xml:space="preserve"><value>Povezovanje</value></data><data name="OffText" xml:space="preserve"><value>Off</value></data><data name="OnText" xml:space="preserve"><value>Na</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>Zajtrk</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Kosilo</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Večerja</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Prigrizek</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Nobena</value></data><data name="AboutLabel" xml:space="preserve"><value>o</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>druge aplikacije, ki jih Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>Ocenite to app</value></data><data name="AppCopyright" xml:space="preserve"><value>Copyright © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>preprosto hrano temeljnice za windows phone</value></data><data name="AppIconDescription" xml:space="preserve"><value>Jesti izdelani z Danny Chapman iz samostalnika Project</value></data><data name="AppIconLabel" xml:space="preserve"><value>Uporaba ikona</value></data><data name="AppTitle" xml:space="preserve"><value>KAJ SEM JEDEL</value></data><data name="CalendarLabel" xml:space="preserve"><value>koledar</value></data><data name="Cancel" xml:space="preserve"><value>Prekliči</value></data><data name="CsvExportLabel" xml:space="preserve"><value>Izvoz v CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>Program je naletel na težavo. Žal mi je za morebitne nevšečnosti.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>Povezani</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>Povezovanje</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>Na</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>Zajtrk</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>Kosilo</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Večerja</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Prigrizek</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Nobena</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>o</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>druge aplikacije, ki jih Shane Church</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>Ocenite to app</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>Copyright © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>preprosto hrano temeljnice za windows phone</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>Jesti izdelani z Danny Chapman iz samostalnika Project</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>Uporaba ikona</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>KAJ SEM JEDEL</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>koledar</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Prekliči</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Izvoz v CSV</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Program je naletel na težavo. Žal mi je za morebitne nevšečnosti.
 
-Jaz hoteti uvaževati vaš pomoč pošlje poročilo o napaki pripravljeni. To bo pomagalo pri reševanju problema hitreje.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Uporaba zmota</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Nič na ta datum. Dodamo nekaj!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Vnosov ni mogoče najti. Dodamo nekaj!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>omogočiti sinhronizacijo</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>Izvoz v OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>Excel izvoz</value></data><data name="ExcelExportText" xml:space="preserve"><value>S tem boste izvozili vse vnose v dnevnik kot datoteke CSV odlikovati se-združljiv za vaš OneDrive.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Kako lahko izboljšam ta program, tako da bi bil pripravljen obrok to 5 zvezdic na trgu?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>Lahko bi bilo boljše?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>povratne informacije</value></data><data name="NewEntryLabel" xml:space="preserve"><value>nova postavka</value></data><data name="No" xml:space="preserve"><value>ne</value></data><data name="NoThanksButton" xml:space="preserve"><value>ne, hvala</value></data><data name="Ok" xml:space="preserve"><value>v redu</value></data><data name="ReviewLabel" xml:space="preserve"><value>Ocenite me</value></data><data name="SettingsLabel" xml:space="preserve"><value>nastavitve</value></data><data name="SummaryLabel" xml:space="preserve"><value>Povzetek</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>sinhronizacijo...</value></data><data name="SyncLabel" xml:space="preserve"><value>Sinhronizacija</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>email tehnične podpore in povratnih informacij</value></data><data name="UpgradeText" xml:space="preserve"><value>Nadgradnja je na voljo! Ali želite zdaj namestiti nadgradnjo?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>Nadgradnja na voljo!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Na žalost podatkov ni mogoče izvoziti v OneDrive v tem trenutku. Prosimo, poskusite znova pozneje.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Prenos ni uspel</value></data><data name="UploadingLabel" xml:space="preserve"><value>nalaganje...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Podatkov je bila uspešno prenesena na OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Upload uspešen!</value></data><data name="Yes" xml:space="preserve"><value>da</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>Kaj sem jedel povratne informacije</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>Prikaži vstop timestamp?</value></data></root>
+Jaz hoteti uvaževati vaš pomoč pošlje poročilo o napaki pripravljeni. To bo pomagalo pri reševanju problema hitreje.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Uporaba zmota</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>Nič na ta datum. Dodamo nekaj!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Vnosov ni mogoče najti. Dodamo nekaj!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>omogočiti sinhronizacijo</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Izvoz v OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>Excel izvoz</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>S tem boste izvozili vse vnose v dnevnik kot datoteke CSV odlikovati se-združljiv za vaš OneDrive.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Kako lahko izboljšam ta program, tako da bi bil pripravljen obrok to 5 zvezdic na trgu?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Lahko bi bilo boljše?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>povratne informacije</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>nova postavka</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ne</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>ne, hvala</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>v redu</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>Ocenite me</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>nastavitve</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>Povzetek</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sinhronizacijo...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>Sinhronizacija</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>email tehnične podpore in povratnih informacij</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Nadgradnja je na voljo! Ali želite zdaj namestiti nadgradnjo?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Nadgradnja na voljo!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Na žalost podatkov ni mogoče izvoziti v OneDrive v tem trenutku. Prosimo, poskusite znova pozneje.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Prenos ni uspel</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>nalaganje...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Podatkov je bila uspešno prenesena na OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Upload uspešen!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>da</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>Kaj sem jedel povratne informacije</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>Prikaži vstop timestamp?</value>
+  </data>
+</root>

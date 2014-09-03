@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>RightToLeft</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>he-IL</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>מחובר</value></data><data name="ConnectLabel" xml:space="preserve"><value>להתחבר</value></data><data name="OffText" xml:space="preserve"><value>ביטול</value></data><data name="OnText" xml:space="preserve"><value>על</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>ארוחת בוקר</value></data><data name="MealTypeLunch" xml:space="preserve"><value>ארוחת צהריים</value></data><data name="MealTypeDinner" xml:space="preserve"><value>ארוחת ערב</value></data><data name="MealTypeSnack" xml:space="preserve"><value>וחטיף</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>ללא</value></data><data name="AboutLabel" xml:space="preserve"><value>אודות</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>יישומים אחרים על-ידי Shane Church</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>שיעור זה app</value></data><data name="AppCopyright" xml:space="preserve"><value>זכויות יוצרים © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>יומן מזון פשוט עבור windows טלפון</value></data><data name="AppIconDescription" xml:space="preserve"><value>אכול שעוצבו על-ידי שטרית Danny מפרוייקט שם עצם ה</value></data><data name="AppIconLabel" xml:space="preserve"><value>סמל יישום</value></data><data name="AppTitle" xml:space="preserve"><value>אני אכול</value></data><data name="CalendarLabel" xml:space="preserve"><value>לוח שנה</value></data><data name="Cancel" xml:space="preserve"><value>ביטול</value></data><data name="CsvExportLabel" xml:space="preserve"><value>ייצוא CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>היישום נתקל בבעיה. אני מצטער על אי הנוחות.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>מחובר</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>להתחבר</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>ביטול</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>על</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>ארוחת בוקר</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>ארוחת צהריים</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>ארוחת ערב</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>וחטיף</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>ללא</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>אודות</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>יישומים אחרים על-ידי Shane Church</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>שיעור זה app</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>זכויות יוצרים © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>יומן מזון פשוט עבור windows טלפון</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>אכול שעוצבו על-ידי שטרית Danny מפרוייקט שם עצם ה</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>סמל יישום</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>אני אכול</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>לוח שנה</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>ביטול</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>ייצוא CSV</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>היישום נתקל בבעיה. אני מצטער על אי הנוחות.
 
-אני מעריכים סיוע שלך על-ידי שליחת הדוח מוכן שגיאה. פעולה זו תסייע בפתרון הבעיה מהר יותר.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>שגיאת יישום</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>דבר בתאריך זה. להוסיף דבר מה!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>לא נמצאו ערכים. להוסיף דבר מה!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>הפעלת סינכרון</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>ייצוא ל- OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>ייצוא ב- excel</value></data><data name="ExcelExportText" xml:space="preserve"><value>זה לייצא את כל ערכי היומן שלך כקובץ CSV תואמת Excel כדי OneDrive שלך.</value></data><data name="FeedbackContent" xml:space="preserve"><value>כיצד ניתן לשפר יישום זה כך יהיה מוכן לדרג אותה 5 כוכבים ב- marketplace?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>באפשרותך להפוך אותה טובה יותר?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>תן משוב</value></data><data name="NewEntryLabel" xml:space="preserve"><value>ערך חדש</value></data><data name="No" xml:space="preserve"><value>לא</value></data><data name="NoThanksButton" xml:space="preserve"><value>לא תודה</value></data><data name="Ok" xml:space="preserve"><value>אישור</value></data><data name="ReviewLabel" xml:space="preserve"><value>דרג לי</value></data><data name="SettingsLabel" xml:space="preserve"><value>הגדרות</value></data><data name="SummaryLabel" xml:space="preserve"><value>סיכום</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>סינכרון...</value></data><data name="SyncLabel" xml:space="preserve"><value>סינכרון</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>דואר אלקטרוני של תמיכה טכנית/משוב</value></data><data name="UpgradeText" xml:space="preserve"><value>שדרוג זמין! האם ברצונך להתקין כעת את השדרוג?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>שדרוג זמין!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>למרבה הצער הנתונים שלך לא היתה אפשרות לייצא ל- OneDrive בשלב זה. נא נסה שוב מאוחר יותר.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>ההעלאה נכשלה</value></data><data name="UploadingLabel" xml:space="preserve"><value>טוען...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>הנתונים שלך הועלה בהצלחה ל- OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>טען בהצלחה!</value></data><data name="Yes" xml:space="preserve"><value>כן</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>מה אני אכול משוב</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>הצג ערך חותמת זמן?</value></data></root>
+אני מעריכים סיוע שלך על-ידי שליחת הדוח מוכן שגיאה. פעולה זו תסייע בפתרון הבעיה מהר יותר.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>שגיאת יישום</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>דבר בתאריך זה. להוסיף דבר מה!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>לא נמצאו ערכים. להוסיף דבר מה!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>הפעלת סינכרון</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>ייצוא ל- OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>ייצוא ב- excel</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>זה לייצא את כל ערכי היומן שלך כקובץ CSV תואמת Excel כדי OneDrive שלך.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>כיצד ניתן לשפר יישום זה כך יהיה מוכן לדרג אותה 5 כוכבים ב- marketplace?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>באפשרותך להפוך אותה טובה יותר?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>תן משוב</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>ערך חדש</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>לא</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>לא תודה</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>אישור</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>דרג לי</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>הגדרות</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>סיכום</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>סינכרון...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>סינכרון</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>דואר אלקטרוני של תמיכה טכנית/משוב</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>שדרוג זמין! האם ברצונך להתקין כעת את השדרוג?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>שדרוג זמין!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>למרבה הצער הנתונים שלך לא היתה אפשרות לייצא ל- OneDrive בשלב זה. נא נסה שוב מאוחר יותר.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>ההעלאה נכשלה</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>טוען...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>הנתונים שלך הועלה בהצלחה ל- OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>טען בהצלחה!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>מה אני אכול משוב</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>הצג ערך חותמת זמן?</value>
+  </data>
+</root>

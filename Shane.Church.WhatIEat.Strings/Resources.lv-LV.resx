@@ -117,62 +117,165 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>lv-LV</value>
   </data>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-<data name="ConnectedLabel" xml:space="preserve"><value>Savienojums</value></data><data name="ConnectLabel" xml:space="preserve"><value>Izveidot savienojumu</value></data><data name="OffText" xml:space="preserve"><value>Izslēgts</value></data><data name="OnText" xml:space="preserve"><value>Par</value></data><data name="MealTypeBreakfast" xml:space="preserve"><value>Brokastis</value></data><data name="MealTypeLunch" xml:space="preserve"><value>Pusdienas</value></data><data name="MealTypeDinner" xml:space="preserve"><value>Vakariņas</value></data><data name="MealTypeSnack" xml:space="preserve"><value>Uzkodas</value></data><data name="MealTypeUndefined" xml:space="preserve"><value>Neviens</value></data><data name="AboutLabel" xml:space="preserve"><value>par</value></data><data name="AboutOtherAppsLabel" xml:space="preserve"><value>citas progr ar Church, Shane</value></data><data name="AboutReviewLabel" xml:space="preserve"><value>novērtēt šo app</value></data><data name="AppCopyright" xml:space="preserve"><value>Copyright © Shane Church 2013-2014</value></data><data name="AppDescription" xml:space="preserve"><value>windows tālrunis vienkāršu ēdienu žurnālu</value></data><data name="AppIconDescription" xml:space="preserve"><value>Ēst, Danny Chapman lietvārds projektā izstrādāta</value></data><data name="AppIconLabel" xml:space="preserve"><value>lietojumprogrammas ikonu</value></data><data name="AppTitle" xml:space="preserve"><value>TAS, KO ES ĒST</value></data><data name="CalendarLabel" xml:space="preserve"><value>Kalendārs</value></data><data name="Cancel" xml:space="preserve"><value>atcelt</value></data><data name="CsvExportLabel" xml:space="preserve"><value>Eksportēt CSV</value></data><data name="Diagnostics_MessageBox_Content" xml:space="preserve"><value>Pieteikums ir radusies problēma. Es atvainojos par neērtībām.
+  <data name="ConnectedLabel" xml:space="preserve">
+    <value>Savienojums</value>
+  </data>
+  <data name="ConnectLabel" xml:space="preserve">
+    <value>Izveidot savienojumu</value>
+  </data>
+  <data name="OffText" xml:space="preserve">
+    <value>Izslēgts</value>
+  </data>
+  <data name="OnText" xml:space="preserve">
+    <value>Par</value>
+  </data>
+  <data name="MealTypeBreakfast" xml:space="preserve">
+    <value>Brokastis</value>
+  </data>
+  <data name="MealTypeLunch" xml:space="preserve">
+    <value>Pusdienas</value>
+  </data>
+  <data name="MealTypeDinner" xml:space="preserve">
+    <value>Vakariņas</value>
+  </data>
+  <data name="MealTypeSnack" xml:space="preserve">
+    <value>Uzkodas</value>
+  </data>
+  <data name="MealTypeUndefined" xml:space="preserve">
+    <value>Neviens</value>
+  </data>
+  <data name="AboutLabel" xml:space="preserve">
+    <value>par</value>
+  </data>
+  <data name="AboutOtherAppsLabel" xml:space="preserve">
+    <value>citas progr ar Church, Shane</value>
+  </data>
+  <data name="AboutReviewLabel" xml:space="preserve">
+    <value>novērtēt šo app</value>
+  </data>
+  <data name="AppCopyright" xml:space="preserve">
+    <value>Copyright © Shane Church 2013-2014</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>windows tālrunis vienkāršu ēdienu žurnālu</value>
+  </data>
+  <data name="AppIconDescription" xml:space="preserve">
+    <value>Ēst, Danny Chapman lietvārds projektā izstrādāta</value>
+  </data>
+  <data name="AppIconLabel" xml:space="preserve">
+    <value>lietojumprogrammas ikonu</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>TAS, KO ES ĒST</value>
+  </data>
+  <data name="CalendarLabel" xml:space="preserve">
+    <value>Kalendārs</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>atcelt</value>
+  </data>
+  <data name="CsvExportLabel" xml:space="preserve">
+    <value>Eksportēt CSV</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
+    <value>Pieteikums ir radusies problēma. Es atvainojos par neērtībām.
 
-Vai novērtējam jūsu palīdzību, nosūtot sagatavotu kļūdu ziņojumu. Tas palīdzēs ātrāk atrisināt šo problēmu.</value></data><data name="Diagnostics_MessageBox_Title" xml:space="preserve"><value>Lietojumprogrammas kļūda</value></data><data name="EmptyEntryListLabel" xml:space="preserve"><value>Nekas šajā datumā. Pievienot kaut ko!</value></data><data name="EmptySummaryListLabel" xml:space="preserve"><value>Ievadnes nav atrastas. Pievienot kaut ko!</value></data><data name="EnableSyncLabel" xml:space="preserve"><value>Aktivizēt sinhronizāciju</value></data><data name="ExcelExportButtonLabel" xml:space="preserve"><value>Eksporta OneDrive</value></data><data name="ExcelExportLabel" xml:space="preserve"><value>programma Excel eksportēšanas</value></data><data name="ExcelExportText" xml:space="preserve"><value>Tas tiks eksportēti visi žurnāla ieraksti kā saderīgs Excel CSV failu, jūsu OneDrive.</value></data><data name="FeedbackContent" xml:space="preserve"><value>Kā es varu uzlabot šo programmu tā, lai jūs būtu gatavs to novērtēt 5 zvaigžņu tirgū?</value></data><data name="FeedbackTitle" xml:space="preserve"><value>Vai es varu veikt labāk?</value></data><data name="GiveFeedbackButton" xml:space="preserve"><value>sniegt atsauksmes</value></data><data name="NewEntryLabel" xml:space="preserve"><value>jauns ieraksts</value></data><data name="No" xml:space="preserve"><value>nē</value></data><data name="NoThanksButton" xml:space="preserve"><value>nē, paldies</value></data><data name="Ok" xml:space="preserve"><value>labi</value></data><data name="ReviewLabel" xml:space="preserve"><value>mani novērtēja</value></data><data name="SettingsLabel" xml:space="preserve"><value>iestatījumus</value></data><data name="SummaryLabel" xml:space="preserve"><value>kopsavilkums</value></data><data name="SynchronizingLabel" xml:space="preserve"><value>sinhronizē...</value></data><data name="SyncLabel" xml:space="preserve"><value>sinhronizācijas</value></data><data name="TechnicalSupportEmailLabel" xml:space="preserve"><value>tehniskais atbalsts/atsauksmes e-pasta</value></data><data name="UpgradeText" xml:space="preserve"><value>Jauninājums ir pieejama! Vai vēlaties instalēt jauninājumu tagad?</value></data><data name="UpgradeTitle" xml:space="preserve"><value>Jauninājums pieejams!</value></data><data name="UploadFailedMessage" xml:space="preserve"><value>Diemžēl jūsu datus nevarēja eksportēt OneDrive šajā laikā. Lūdzu, vēlāk mēģiniet vēlreiz.</value></data><data name="UploadFailedTitle" xml:space="preserve"><value>Augšupielāde neizdevās</value></data><data name="UploadingLabel" xml:space="preserve"><value>augšupielāde...</value></data><data name="UploadSuccessMessage" xml:space="preserve"><value>Jūsu dati ir veiksmīgi augšupielādēta OneDrive.</value></data><data name="UploadSuccessTitle" xml:space="preserve"><value>Augšupielāde veiksmīga!</value></data><data name="Yes" xml:space="preserve"><value>jā</value></data><data name="TechnicalSupportEmailSubject" xml:space="preserve"><value>Ko es varu ēst atsauksmes</value></data><data name="ShowEntryTimeStampLabel" xml:space="preserve"><value>Rādīt laikspiedolu ieraksts?</value></data></root>
+Vai novērtējam jūsu palīdzību, nosūtot sagatavotu kļūdu ziņojumu. Tas palīdzēs ātrāk atrisināt šo problēmu.</value>
+  </data>
+  <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
+    <value>Lietojumprogrammas kļūda</value>
+  </data>
+  <data name="EmptyEntryListLabel" xml:space="preserve">
+    <value>Nekas šajā datumā. Pievienot kaut ko!</value>
+  </data>
+  <data name="EmptySummaryListLabel" xml:space="preserve">
+    <value>Ievadnes nav atrastas. Pievienot kaut ko!</value>
+  </data>
+  <data name="EnableSyncLabel" xml:space="preserve">
+    <value>Aktivizēt sinhronizāciju</value>
+  </data>
+  <data name="ExcelExportButtonLabel" xml:space="preserve">
+    <value>Eksporta OneDrive</value>
+  </data>
+  <data name="ExcelExportLabel" xml:space="preserve">
+    <value>programma Excel eksportēšanas</value>
+  </data>
+  <data name="ExcelExportText" xml:space="preserve">
+    <value>Tas tiks eksportēti visi žurnāla ieraksti kā saderīgs Excel CSV failu, jūsu OneDrive.</value>
+  </data>
+  <data name="FeedbackContent" xml:space="preserve">
+    <value>Kā es varu uzlabot šo programmu tā, lai jūs būtu gatavs to novērtēt 5 zvaigžņu tirgū?</value>
+  </data>
+  <data name="FeedbackTitle" xml:space="preserve">
+    <value>Vai es varu veikt labāk?</value>
+  </data>
+  <data name="GiveFeedbackButton" xml:space="preserve">
+    <value>sniegt atsauksmes</value>
+  </data>
+  <data name="NewEntryLabel" xml:space="preserve">
+    <value>jauns ieraksts</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>nē</value>
+  </data>
+  <data name="NoThanksButton" xml:space="preserve">
+    <value>nē, paldies</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>labi</value>
+  </data>
+  <data name="ReviewLabel" xml:space="preserve">
+    <value>mani novērtēja</value>
+  </data>
+  <data name="SettingsLabel" xml:space="preserve">
+    <value>iestatījumus</value>
+  </data>
+  <data name="SummaryLabel" xml:space="preserve">
+    <value>kopsavilkums</value>
+  </data>
+  <data name="SynchronizingLabel" xml:space="preserve">
+    <value>sinhronizē...</value>
+  </data>
+  <data name="SyncLabel" xml:space="preserve">
+    <value>sinhronizācijas</value>
+  </data>
+  <data name="TechnicalSupportEmailLabel" xml:space="preserve">
+    <value>tehniskais atbalsts/atsauksmes e-pasta</value>
+  </data>
+  <data name="UpgradeText" xml:space="preserve">
+    <value>Jauninājums ir pieejama! Vai vēlaties instalēt jauninājumu tagad?</value>
+  </data>
+  <data name="UpgradeTitle" xml:space="preserve">
+    <value>Jauninājums pieejams!</value>
+  </data>
+  <data name="UploadFailedMessage" xml:space="preserve">
+    <value>Diemžēl jūsu datus nevarēja eksportēt OneDrive šajā laikā. Lūdzu, vēlāk mēģiniet vēlreiz.</value>
+  </data>
+  <data name="UploadFailedTitle" xml:space="preserve">
+    <value>Augšupielāde neizdevās</value>
+  </data>
+  <data name="UploadingLabel" xml:space="preserve">
+    <value>augšupielāde...</value>
+  </data>
+  <data name="UploadSuccessMessage" xml:space="preserve">
+    <value>Jūsu dati ir veiksmīgi augšupielādēta OneDrive.</value>
+  </data>
+  <data name="UploadSuccessTitle" xml:space="preserve">
+    <value>Augšupielāde veiksmīga!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>jā</value>
+  </data>
+  <data name="TechnicalSupportEmailSubject" xml:space="preserve">
+    <value>Ko es varu ēst atsauksmes</value>
+  </data>
+  <data name="ShowEntryTimeStampLabel" xml:space="preserve">
+    <value>Rādīt laikspiedolu ieraksts?</value>
+  </data>
+</root>
