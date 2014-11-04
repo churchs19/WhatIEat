@@ -7,9 +7,12 @@ namespace Shane.Church.WhatIEat.Core.WP.Services
 	public class PhoneSettingsService : ISettingsService
 	{
 		IsolatedStorageSettings _settings;
+		ILoggingService _log;
 
-		public PhoneSettingsService()
+		public PhoneSettingsService(ILoggingService log)
 		{
+			if (log == null) { throw new ArgumentNullException("log"); }
+			_log = log;
 			_settings = IsolatedStorageSettings.ApplicationSettings;
 		}
 
@@ -65,7 +68,7 @@ namespace Shane.Church.WhatIEat.Core.WP.Services
 			}
 			catch (Exception ex)
 			{
-				FlurryWP8SDK.Api.LogError("LoadSetting Exception", ex);
+				_log.LogException(ex, "LoadSetting Exception");
 				return default(T);
 			}
 		}

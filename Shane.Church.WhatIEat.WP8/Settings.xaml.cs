@@ -7,6 +7,8 @@ namespace Shane.Church.WhatIEat.WP
 {
     public partial class Settings : PhoneApplicationPage
     {
+        ILoggingService _log;
+
         public Settings()
         {
             InitializeComponent();
@@ -14,6 +16,8 @@ namespace Shane.Church.WhatIEat.WP
             InitializeAdControl();
 
             this.DataContext = KernelService.Kernel.Get<SettingsViewModel>();
+
+            _log = KernelService.Kernel.Get<ILoggingService>();
         }
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -45,19 +49,19 @@ namespace Shane.Church.WhatIEat.WP
 
         void AdControl_DefaultAdReceived(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("Unpaid Ad Received");
+            _log.LogMessage("Unpaid Ad Received");
             AdControl.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void AdControl_AdReceived(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("Paid Ad Received");
+            _log.LogMessage("Paid Ad Received");
             AdControl.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void AdControl_AdFailed(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("No Ad Received");
+            _log.LogMessage("No Ad Received");
             AdControl.Visibility = System.Windows.Visibility.Collapsed;
         }
         #endregion

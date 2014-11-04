@@ -15,11 +15,15 @@ namespace Shane.Church.WhatIEat.WP
 {
     public partial class DateEdit : PhoneApplicationPage
     {
+        ILoggingService _log;
+
         public DateEdit()
         {
             InitializeComponent();
 
             InitializeAdControl();
+
+            _log = KernelService.Kernel.Get<ILoggingService>();
         }
 
         #region Ad Control
@@ -37,28 +41,22 @@ namespace Shane.Church.WhatIEat.WP
 
         void AdControl_DefaultAdReceived(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("Unpaid Ad Received");
+            _log.LogMessage("Unpaid Ad Received");
             AdControl.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void AdControl_AdReceived(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("Paid Ad Received");
+            _log.LogMessage("Paid Ad Received");
             AdControl.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void AdControl_AdFailed(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("No Ad Received");
+            _log.LogMessage("No Ad Received");
             AdControl.Visibility = System.Windows.Visibility.Collapsed;
         }
         #endregion
-
-        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
-        {
-            FlurryWP8SDK.Api.LogPageView();
-            base.OnNavigatedTo(e);
-        }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
@@ -175,7 +173,7 @@ namespace Shane.Church.WhatIEat.WP
 
         private void entryModel_SaveActionCompleted(object sender, EventArgs e)
         {
-            FlurryWP8SDK.Api.LogEvent("Entry_Saved");
+            _log.LogMessage("Entry_Saved");
             if (sender is EntryViewModel)
             {
                 Dispatcher.BeginInvoke(() =>

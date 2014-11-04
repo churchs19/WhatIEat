@@ -105,7 +105,7 @@ namespace Shane.Church.WhatIEat.WP
 
         void AdControl_DefaultAdReceived(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("Unpaid Ad Received");
+            _log.LogMessage("Unpaid Ad Received");
             if (AdControl != null)
             {
                 AdControl.Visibility = System.Windows.Visibility.Visible;
@@ -114,7 +114,7 @@ namespace Shane.Church.WhatIEat.WP
 
         private void AdControl_AdReceived(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("Paid Ad Received");
+            _log.LogMessage("Paid Ad Received");
             if (AdControl != null)
             {
                 AdControl.Visibility = System.Windows.Visibility.Visible;
@@ -123,7 +123,7 @@ namespace Shane.Church.WhatIEat.WP
 
         private void AdControl_AdFailed(object sender)
         {
-            FlurryWP8SDK.Api.LogEvent("No Ad Received");
+            _log.LogMessage("No Ad Received");
             if (AdControl != null)
             {
                 AdControl.Visibility = System.Windows.Visibility.Collapsed;

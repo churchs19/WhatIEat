@@ -61,7 +61,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 			catch (Exception ex)
 			{
 				//TODO: Log Exception
-				FlurryWP8SDK.Api.LogError("SkyDrive Upload Error", ex);
+				_log.LogException(ex, "SkyDrive Upload Error");
 			}
 			return uploadSuccess;
 		}

@@ -1,4 +1,5 @@
-﻿using Shane.Church.WhatIEat.Core.Services;
+﻿using Shane.Church.WhatIEat.Core.Data;
+using Shane.Church.WhatIEat.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,17 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
     {
         private string[] _productCodes = new string[] {"RemoveAds"};
         private ListingInformation _listings;
+        private ILoggingService _log;
+
+        public WP8IAPService(ILoggingService log)
+        {
+            if (log == null) { throw new ArgumentNullException("log"); }
+            _log = log;
+        }
 
         public async Task<string[]> GetProductIds()
         {
-            if (_listings == null)
-            {
-                _listings = await CurrentApp.LoadListingInformationAsync();
-            }
+            await GetListings();
             return await Task.FromResult(_productCodes);
         }
         
@@ -27,9 +32,28 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
             try
             {
                 // Kick off purchase; don't ask for a receipt when it returns
-                await CurrentApp.RequestProductPurchaseAsync(productId, false);
+                var purchaseResult = await CurrentApp.RequestProductPurchaseAsync(productId, true);
 
-                FlurryWP8SDK.Api.LogEvent(productId + " Purchased");
+                await GetListings();
+
+                var productInfo = _listings.ProductListings[productId];
+                double price = 0;
+                if (!double.TryParse(productInfo.FormattedPrice, System.Globalization.NumberStyles.Currency, System.Globalization.CultureInfo.CurrentUICulture, out price))
+                {
+                    price = 0;
+                }
+                var purchaseInfo = new ProductPurchaseInfo()
+                {
+                    ProductId = productId,
+                    ProductName = productInfo.Name,
+                    CommerceEngine = "Windows Phone Store",
+                    CurrentMarket = _listings.CurrentMarket,
+                    Price = price,
+                    Currency = System.Globalization.CultureInfo.CurrentUICulture.NumberFormat.CurrencySymbol
+                };
+
+                _log.LogMessage(productId + " Purchased");
+                _log.LogPurchaseComplete(purchaseInfo);
 
                 // Now that purchase is done, give the user the goods they paid for
                 // (DoFulfillment is defined later)
@@ -38,7 +62,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
             catch (Exception ex)
             {
                 // When the user does not complete the purchase (e.g. cancels or navigates back from the Purchase Page), an exception with an HRESULT of E_FAIL is expected.
-                FlurryWP8SDK.Api.LogError(productId + " Purchase Aborted", ex);
+                _log.LogException(ex, productId + " Purchase Aborted");
             }
         }
 
@@ -57,6 +81,15 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 #else
             return false;
 #endif
+        }
+
+        private async Task<ListingInformation> GetListings()
+        {
+            if (_listings == null)
+            {
+                _listings = await CurrentApp.LoadListingInformationAsync();
+            }
+            return _listings;
         }
     }
 }

@@ -11,16 +11,18 @@ namespace Shane.Church.WhatIEat.WP
 {
 	public partial class ExcelExport : PhoneApplicationPage
 	{
-		protected ExcelExportViewModel _model;
+        protected ExcelExportViewModel _model;
+        private ILoggingService _log;
 
 		public ExcelExport()
 		{
 			InitializeComponent();
+
+            _log = KernelService.Kernel.Get<ILoggingService>();
 		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
 		{
-			FlurryWP8SDK.Api.LogPageView();
 			_model = KernelService.Kernel.Get<ExcelExportViewModel>();
 			_model.ExportBeginning += () =>
 			{
@@ -70,19 +72,19 @@ namespace Shane.Church.WhatIEat.WP
 
 		void AdControl_DefaultAdReceived(object sender)
 		{
-			FlurryWP8SDK.Api.LogEvent("Unpaid Ad Received");
+			_log.LogMessage("Unpaid Ad Received");
 			AdControl.Visibility = System.Windows.Visibility.Visible;
 		}
 
 		private void AdControl_AdReceived(object sender)
 		{
-			FlurryWP8SDK.Api.LogEvent("Paid Ad Received");
+			_log.LogMessage("Paid Ad Received");
 			AdControl.Visibility = System.Windows.Visibility.Visible;
 		}
 
 		private void AdControl_AdFailed(object sender)
 		{
-			FlurryWP8SDK.Api.LogEvent("No Ad Received");
+			_log.LogMessage("No Ad Received");
 			AdControl.Visibility = System.Windows.Visibility.Collapsed;
 		}
 		#endregion
