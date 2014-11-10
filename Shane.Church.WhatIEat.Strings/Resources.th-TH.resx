@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>แสดงการประทับเวลาของรายการหรือไม่</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>เอาป้ายโฆษณา</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>ไม่สามารถซิงค์ได้ในเวลานี้ กรุณาลองอีกครั้ง</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>นโยบายความเป็นส่วนตัว</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>คุณต้องเข้าสู่ระบบในการซิงค์</value>
+  </data>
 </root>

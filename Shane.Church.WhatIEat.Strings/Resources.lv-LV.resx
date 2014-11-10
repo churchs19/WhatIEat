@@ -278,4 +278,16 @@ Vai novērtējam jūsu palīdzību, nosūtot sagatavotu kļūdu ziņojumu. Tas p
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Rādīt laikspiedolu ieraksts?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>noņemt reklāmas</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Nevar sinhronizēt šajā laikā. Lūdzu, vēlāk mēģiniet vēlreiz.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>privātuma politika</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Jums ir jābūt pieteicies Lai sync.</value>
+  </data>
 </root>

@@ -22,6 +22,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
+using System.Xml;
 using Telerik.Windows.Controls;
 
 namespace Shane.Church.WhatIEat.WP
@@ -309,14 +310,57 @@ namespace Shane.Church.WhatIEat.WP
         // Code to execute on Unhandled Exceptions
         private void Application_UnhandledException(object sender, ApplicationUnhandledExceptionEventArgs e)
         {
-            MarkedUp.AnalyticClient.Fatal("Unhandled Exception", e.ExceptionObject);
+            if (e != null)
+            {
+                Exception exception = e.ExceptionObject;
+                if ((exception is XmlException || exception is NullReferenceException) && exception.ToString().ToUpper().Contains("INNERACTIVE"))
+                {
+                    Debug.WriteLine("Handled Inneractive exception {0}", exception);
+                    e.Handled = true;
+                    return;
+                }
+                else if (exception is NullReferenceException && exception.ToString().ToUpper().Contains("SOMA"))
+                {
+                    Debug.WriteLine("Handled Smaato null reference exception {0}", exception);
+                    e.Handled = true;
+                    return;
+                }
+                else if ((exception is System.IO.IOException || exception is NullReferenceException) && exception.ToString().ToUpper().Contains("GOOGLE"))
+                {
+                    Debug.WriteLine("Handled Google exception {0}", exception);
+                    e.Handled = true;
+                    return;
+                }
+                else if (exception is ObjectDisposedException && exception.ToString().ToUpper().Contains("MOBFOX"))
+                {
+                    Debug.WriteLine("Handled Mobfox exception {0}", exception);
+                    e.Handled = true;
+                    return;
+                }
+                else if ((exception is NullReferenceException) && exception.ToString().ToUpper().Contains("MICROSOFT.ADVERTISING"))
+                {
+                    Debug.WriteLine("Handled Microsoft.Advertising exception {0}", exception);
+                    e.Handled = true;
+                    return;
+                }
+                else if (exception.StackTrace.Contains("Inneractive.Ad"))
+                {
+                    e.Handled = true;
+                    return;
+                }
+                if (exception.Message.Equals("User has not granted the application consent to access data in Windows Live."))
+                {
+                    e.Handled = true;
+                    return;
+                }
+
+            }
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 // An unhandled exception has occurred; break into the debugger
                 System.Diagnostics.Debugger.Break();
-            }
-            if (e.ExceptionObject.StackTrace.Contains("Inneractive.Ad")) e.Handled = true;
-            if (e.ExceptionObject.Message.Equals("User has not granted the application consent to access data in Windows Live.")) e.Handled = true;
+            } 
+            MarkedUp.AnalyticClient.Fatal("Unhandled Exception", e.ExceptionObject);
         }
 
         #region Phone application initialization

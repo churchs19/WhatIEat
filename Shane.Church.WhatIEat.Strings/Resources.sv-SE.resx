@@ -278,4 +278,16 @@ Jag vore tacksam din hjälp genom att skicka felrapporten förberedda. Detta få
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Visar tidsstämpeln för transaktionen?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>ta bort annonser</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Det går inte att synkronisera nu. Försök igen senare.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Sekretesspolicy för</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Du måste vara inloggad för att synkronisera.</value>
+  </data>
 </root>

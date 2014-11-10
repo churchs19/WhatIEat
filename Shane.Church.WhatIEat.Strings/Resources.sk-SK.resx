@@ -278,4 +278,16 @@ Ocenil by som vašu pomoc zaslaním pripravené chybové hlásenie. To vám pom�
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Zobraziť položku timestamp?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>odstránenie reklamy</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Nepodarilo sa synchronizovať v tejto dobe. Skúste znova neskôr.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Ochrana osobných údajov</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Musíte byť prihlásený na synchronizáciu.</value>
+  </data>
 </root>

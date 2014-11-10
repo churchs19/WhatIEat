@@ -278,4 +278,16 @@ Agradecia a sua assistência através do envio de relatório de erros preparada.
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Mostrar hora de entrada?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>remover anúncios</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Não é possível sincronizar neste momento. Tente novamente mais tarde.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>política de privacidade</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Tem de ter sessão iniciada sincronização.</value>
+  </data>
 </root>

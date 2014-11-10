@@ -278,4 +278,16 @@ Aş aprecia ajutorul dvs prin trimiterea raportului pregătit eroare. Acest lucr
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Arată intrarea timestamp?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>ștergeţi reclamele</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Imposibil de sincronizare în acest moment. Vă rugăm să încercaţi din nou mai târziu.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Politica de confidenţialitate</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Trebuie sa fii logat pentru a sincroniza.</value>
+  </data>
 </root>

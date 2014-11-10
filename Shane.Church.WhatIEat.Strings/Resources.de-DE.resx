@@ -278,4 +278,16 @@ Ich schätzen Ihre Hilfe durch Senden des Fehlerberichts bereit. Dies wird mit s
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Anzeigen Zeitstempel des Eintrags?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Entfernen Sie anzeigen</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Kann nicht zu diesem Zeitpunkt synchronisiert werden. Bitte versuchen Sie es später erneut.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Datenschutzrichtlinien</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Sie müssen für die Synchronisierung angemeldet sein.</value>
+  </data>
 </root>

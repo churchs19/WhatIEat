@@ -278,4 +278,16 @@ Jeg setter pris på din hjelp ved å sende feilrapporten forberedt. Dette vil hj
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Vis tidsstempel i posten?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>fjerne annonser</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Kan ikke synkronisere denne gangen. Prøv på nytt senere.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>retningslinjer for personvern</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Du må være logget på synkronisering.</value>
+  </data>
 </root>

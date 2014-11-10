@@ -278,4 +278,16 @@ Ocenil bych vaši pomoc odesláním zprávy o chybách připravené. To vám pom
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Zobrazit položky časového razítka?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>odebrání služby Active Directory</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Nelze synchronizovat nyní. Opakujte akci později.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>zásady ochrany osobních údajů</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Musíte být přihlášeni k synchronizaci.</value>
+  </data>
 </root>

@@ -11,6 +11,7 @@
     xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
     xmlns:ContextMenu="clr-namespace:Telerik.Windows.Controls.ContextMenu;assembly=Telerik.Windows.Controls.Primitives"
     xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
+    xmlns:WindowsPhone8="clr-namespace:Microsoft.AdMediator.WindowsPhone8;assembly=Microsoft.AdMediator.WindowsPhone8"
     x:Class="Shane.Church.WhatIEat.WP.DateEdit"
     SupportedOrientations="Portrait" 
     Orientation="Portrait"
@@ -318,7 +319,7 @@
                     BorderThickness="0,1,0,0" 
                     Grid.Row="1" Grid.ColumnSpan="2"/>
             <StackPanel x:Name="AdPanel" Grid.Row="3" Grid.ColumnSpan="2" MaxHeight="110" Margin="0">
-                <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
+                <!--<ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
                     AppID="ShaneChurch_WhatIEat_WP"
                     AdType="IaAdType_Banner"
                     ReloadTime="30"
@@ -328,7 +329,12 @@
                     AdAlignment="BOTTOM_CENTER"
                     Name="AdControl"
                     IsEnabled="{Binding AreAdsVisible}"
-                    Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>-->
+                <WindowsPhone8:AdMediatorControl 
+                    x:Name="AdMediator_92B08B"
+                    Height="80" 
+                    Id="AdMediator-Id-655F1AF7-0942-4F56-89EB-31FDF2B1794F" 
+                    Width="480"/>
             </StackPanel>
         </Grid>
     </Grid>

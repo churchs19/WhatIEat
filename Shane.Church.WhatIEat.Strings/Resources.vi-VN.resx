@@ -278,4 +278,16 @@ Tôi sẽ đánh giá cao sự hỗ trợ của bạn bằng cách gửi báo c�
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Hiển thị dấu thời gian nhập cảnh?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>loại bỏ quảng cáo</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Không thể đồng bộ lúc này. Xin vui lòng thử lại sau.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>chính sách bảo mật</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Bạn phải đăng nhập để đồng bộ.</value>
+  </data>
 </root>

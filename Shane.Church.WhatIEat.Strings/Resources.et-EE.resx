@@ -278,4 +278,16 @@ Ma hindan teie abi poolt ettevalmistatud tõrketeatist. See aitab à problemaati
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Näita kanne ajatempel?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Eemalda kuulutused</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Ei saa hetkel sünkroonida. Palun proovige hiljem uuesti.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Privaatsus</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Sa pead olema sisselogitud, et sünkroniseerimine.</value>
+  </data>
 </root>

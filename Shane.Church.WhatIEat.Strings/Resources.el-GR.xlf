@@ -224,15 +224,19 @@ I would appreciate your assistance by sending the prepared error report. This wi
         </trans-unit>
         <trans-unit id="Resx/RemoveAdsLabel" translate="yes" xml:space="preserve">
           <source>remove ads</source>
-          <target state="new">remove ads</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Κατάργηση διαφημίσεις</target>
         </trans-unit>
         <trans-unit id="Resx/SyncUnknownError" translate="yes" xml:space="preserve">
           <source>Unable to sync at this time. Please try again later.</source>
-          <target state="new">Unable to sync at this time. Please try again later.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Δεν είναι δυνατός ο συγχρονισμός αυτήν τη στιγμή. Προσπαθήστε ξανά αργότερα.</target>
+        </trans-unit>
+        <trans-unit id="Resx/PrivacyPolicyLabel" translate="yes" xml:space="preserve">
+          <source>privacy policy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">πολιτική απορρήτου</target>
         </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
-          <target state="new">You must be logged in to sync.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Πρέπει να συνδεθείτε συγχρονισμό.</target>
         </trans-unit>
       </group>
     </body>

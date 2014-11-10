@@ -278,4 +278,16 @@ Kérem, a támogatás által elkészített jelentés küldése. Ez segít a prob
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>bejegyzés időbélyegző megjelenítése?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>reklámok eltávolítása</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Nem lehet most szinkronizálni. Próbálja meg újra később.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>adatvédelmi nyilatkozat</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Szinkronizálandó kell bejelentkeznie.</value>
+  </data>
 </root>

@@ -278,4 +278,16 @@ Jeg ville sætte pris på din hjælp ved at sende fejlrapporten forberedt. Dette
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Vis post tidsstemplet?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Fjern annoncer</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Der kunne ikke synkroniseres i øjeblikket. Prøv igen senere.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>beskyttelse af personlige oplysninger</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Du skal være logget på synkronisering.</value>
+  </data>
 </root>

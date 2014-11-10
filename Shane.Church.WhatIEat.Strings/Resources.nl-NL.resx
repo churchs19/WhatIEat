@@ -278,4 +278,16 @@ Ik zou uw hulp op prijs stellen door de voorbereide foutenrapport te verzenden. 
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>post tijdstempel weergeven?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>advertenties verwijderen</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Kan niet op dit moment worden gesynchroniseerd. Probeer het later opnieuw.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>privacybeleid</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>U moet zijn aangemeld om te synchroniseren.</value>
+  </data>
 </root>

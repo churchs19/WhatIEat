@@ -278,4 +278,16 @@ Iš paruošto klaidos ataskaitą siunčianti būtume labai dėkingi savo pagalb�
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Rodyti atvykimo laiko Žymos?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>pašalinti skelbimai</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Negalima sinchronizuoti šiuo metu. Bandykite v─ùliau.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>privatumo politika</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Jūs turi būti prisijungęs, jei nori sinchronizavimo.</value>
+  </data>
 </root>

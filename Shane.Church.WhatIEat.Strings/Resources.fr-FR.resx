@@ -278,4 +278,16 @@ Je vous saurais votre assistance en envoyant le rapport d'erreurs préparées. C
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>afficher l'horodatage d'entrée ?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>supprimer les annonces</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Impossible de synchroniser en ce moment. Veuillez réessayer ultérieurement.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>politique de confidentialité</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Vous devez être connecté à la synchronisation.</value>
+  </data>
 </root>

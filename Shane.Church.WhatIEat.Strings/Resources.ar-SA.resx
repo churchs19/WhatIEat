@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>إظهار إدخال الطابع الزمني؟</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>إزالة الإعلانات</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>تعذر مزامنة في الوقت الحالي. الرجاء المحاولة مرة أخرى لاحقاً.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>نهج الخصوصية</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>يجب تسجيل الدخول للمزامنة.</value>
+  </data>
 </root>

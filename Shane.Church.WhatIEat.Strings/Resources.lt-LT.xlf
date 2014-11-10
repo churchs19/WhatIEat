@@ -224,15 +224,19 @@ Iš paruošto klaidos ataskaitą siunčianti būtume labai dėkingi savo pagalb�
         </trans-unit>
         <trans-unit id="Resx/RemoveAdsLabel" translate="yes" xml:space="preserve">
           <source>remove ads</source>
-          <target state="new">remove ads</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">pašalinti skelbimai</target>
         </trans-unit>
         <trans-unit id="Resx/SyncUnknownError" translate="yes" xml:space="preserve">
           <source>Unable to sync at this time. Please try again later.</source>
-          <target state="new">Unable to sync at this time. Please try again later.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Negalima sinchronizuoti šiuo metu. Bandykite v─ùliau.</target>
+        </trans-unit>
+        <trans-unit id="Resx/PrivacyPolicyLabel" translate="yes" xml:space="preserve">
+          <source>privacy policy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">privatumo politika</target>
         </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
-          <target state="new">You must be logged in to sync.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Jūs turi būti prisijungęs, jei nori sinchronizavimo.</target>
         </trans-unit>
       </group>
     </body>

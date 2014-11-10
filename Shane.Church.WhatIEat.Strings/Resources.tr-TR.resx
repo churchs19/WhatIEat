@@ -278,4 +278,16 @@ Ben sizin yardımınız tarafından hazırlanan hata raporu göndermek için ön
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Giriş zaman damgası gösterilsin mi?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>ADs kaldırma</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Şu an eşitleme yapılamıyor. Lütfen daha sonra yeniden deneyin.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Gizlilik İlkesi</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Eşitleme için oturum açmanız gerekir.</value>
+  </data>
 </root>

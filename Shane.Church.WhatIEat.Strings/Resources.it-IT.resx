@@ -278,4 +278,16 @@ Gradirei l'assistenza inviando la segnalazione errori preparata. Ciò consentir�
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Mostra il timestamp della voce?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>rimuovere gli annunci</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Impossibile eseguire la sincronizzazione in questo momento. Riprovare più tardi.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Informativa sulla privacy</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>È necessario accedere per eseguire la sincronizzazione.</value>
+  </data>
 </root>

@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>[1141E][!!_ŝђôẁ éиťŕý тîмęśτámþ?_!!]</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>[384D2][!!_ŕèмõνê áðş_!!]</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>[4BBB7][!!_Üήàвļè ţò ŝŷήč âт тћìş тįmè. Þļęàşę ţŕУ áĝàîи ĺàтęŕ._!!]</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>[4107B][!!_ρѓįνãċў ρòľìĉÿ_!!]</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>[3FA25][!!_Ўôû мúšţ ьê łõģģéđ ìй τó šÿйċ._!!]</value>
+  </data>
 </root>

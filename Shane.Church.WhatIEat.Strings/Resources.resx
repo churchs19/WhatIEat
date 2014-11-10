@@ -287,4 +287,7 @@ I would appreciate your assistance by sending the prepared error report. This wi
   <data name="SyncUnknownError" xml:space="preserve">
     <value>Unable to sync at this time. Please try again later.</value>
   </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>privacy policy</value>
+  </data>
 </root>

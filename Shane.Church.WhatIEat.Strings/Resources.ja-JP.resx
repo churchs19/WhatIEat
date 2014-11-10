@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>エントリのタイムスタンプを表示しますか。</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>広告を削除します。</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>この時点で同期させることができません。後でもう一度やり直してください。</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>プライバシー ポリシー</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>同期に記録される必要があります。</value>
+  </data>
 </root>

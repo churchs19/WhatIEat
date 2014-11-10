@@ -224,15 +224,19 @@ Aş aprecia ajutorul dvs prin trimiterea raportului pregătit eroare. Acest lucr
         </trans-unit>
         <trans-unit id="Resx/RemoveAdsLabel" translate="yes" xml:space="preserve">
           <source>remove ads</source>
-          <target state="new">remove ads</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ștergeţi reclamele</target>
         </trans-unit>
         <trans-unit id="Resx/SyncUnknownError" translate="yes" xml:space="preserve">
           <source>Unable to sync at this time. Please try again later.</source>
-          <target state="new">Unable to sync at this time. Please try again later.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Imposibil de sincronizare în acest moment. Vă rugăm să încercaţi din nou mai târziu.</target>
+        </trans-unit>
+        <trans-unit id="Resx/PrivacyPolicyLabel" translate="yes" xml:space="preserve">
+          <source>privacy policy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Politica de confidenţialitate</target>
         </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
-          <target state="new">You must be logged in to sync.</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Trebuie sa fii logat pentru a sincroniza.</target>
         </trans-unit>
       </group>
     </body>

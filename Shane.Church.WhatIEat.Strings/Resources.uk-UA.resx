@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Відображати позначки часу запис?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>видаляти оголошення</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Не вдалося синхронізувати в цей час. Будь ласка, спробуйте ще раз пізніше.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Політика конфіденційності</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Ви повинні авторизуватися для синхронізації.</value>
+  </data>
 </root>

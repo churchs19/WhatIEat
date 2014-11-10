@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>प्रविष्टि टाइमस्टैम्प दिखाएँ?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>विज्ञापन निकालें</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>इस समय को सिंक्रनाइज़ करने में असमर्थ। कृपया बाद में पुन: प्रयास करें।</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>गोपनीयता नीति</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>आप करने के लिए सिंक्रनाइज़ेशन लॉग होना चाहिए।</value>
+  </data>
 </root>

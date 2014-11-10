@@ -93,42 +93,46 @@ namespace Shane.Church.WhatIEat.WP
         #region Ad Control
         private void InitializeAdControl()
         {
-            AdControl.AdReceived += new Inneractive.Ad.InneractiveAd.IaAdReceived(AdControl_AdReceived);
-            AdControl.AdFailed += new Inneractive.Ad.InneractiveAd.IaAdFailed(AdControl_AdFailed);
-            AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
-
-#if PERSONAL
-            //AdPanel.Children.Remove(AdControl);
-            //AdControl = null;
+#if !PERSONAL
+            AdMediator_C5545A.AdSdkEvent += AdMediator_AdSdkEvent;
+            AdMediator_C5545A.AdMediatorError += AdMediator_AdMediatorError;
+            AdMediator_C5545A.AdMediatorFilled += AdMediator_AdMediatorFilled;
+            AdMediator_C5545A.AdSdkError += AdMediator_AdSdkError;
+#else
+			AdPanel.Children.Remove(AdMediator_C5545A);
+			AdMediator_C5545A = null;
 #endif
         }
 
-        void AdControl_DefaultAdReceived(object sender)
+        void AdMediator_AdSdkError(object sender, Microsoft.AdMediator.Core.Events.AdFailedEventArgs e)
         {
-            _log.LogMessage("Unpaid Ad Received");
-            if (AdControl != null)
+            _log.LogMessage(String.Format("Ad SDK Error by {0} ErrorCode: {1} ErrorDescription: {2} Error: {3}", e.Name, e.ErrorCode, e.ErrorDescription, e.Error));
+        }
+
+        void AdMediator_AdMediatorFilled(object sender, Microsoft.AdMediator.Core.Events.AdSdkEventArgs e)
+        {
+            _log.LogMessage(String.Format("Ad Filled:" + e.Name));
+            if (AdMediator_C5545A != null)
             {
-                AdControl.Visibility = System.Windows.Visibility.Visible;
+                AdMediator_C5545A.Visibility = System.Windows.Visibility.Visible;
             }
         }
 
-        private void AdControl_AdReceived(object sender)
+        void AdMediator_AdMediatorError(object sender, Microsoft.AdMediator.Core.Events.AdMediatorFailedEventArgs e)
         {
-            _log.LogMessage("Paid Ad Received");
-            if (AdControl != null)
+            _log.LogMessage(String.Format("AdMediatorError:" + e.Error + " " + e.ErrorCode));
+            if (e.ErrorCode == Microsoft.AdMediator.Core.Events.AdMediatorErrorCode.NoAdAvailable && AdMediator_C5545A != null)
             {
-                AdControl.Visibility = System.Windows.Visibility.Visible;
+                // AdMediator will not show an ad for this mediation cycle
+                AdMediator_C5545A.Visibility = System.Windows.Visibility.Collapsed;
             }
         }
 
-        private void AdControl_AdFailed(object sender)
+        private void AdMediator_AdSdkEvent(object sender, Microsoft.AdMediator.Core.Events.AdSdkEventArgs e)
         {
-            _log.LogMessage("No Ad Received");
-            if (AdControl != null)
-            {
-                AdControl.Visibility = System.Windows.Visibility.Collapsed;
-            }
+            _log.LogMessage(String.Format("AdSdk event {0} by {1}", e.EventName, e.Name));
         }
+
         #endregion
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
@@ -145,10 +149,10 @@ namespace Shane.Church.WhatIEat.WP
             this.summaryJumpList.ItemsSource = _model.SummaryEntries;
             InitializeApplicationBar();
 
-            if(!_model.AreAdsVisible && AdControl != null)
+            if (!_model.AreAdsVisible && AdMediator_C5545A != null)
             {
-                AdPanel.Children.Remove(AdControl);
-                AdControl = null;
+                AdPanel.Children.Remove(AdMediator_C5545A);
+                AdMediator_C5545A = null;
             }
 
             base.OnNavigatedTo(e);

@@ -278,4 +278,16 @@ Będę wdzięczny za pomoc przez wysłanie raportu o błędzie przygotowany. Pom
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Pokaż sygnatury czasowej wpis?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Usuń reklamy</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Nie można teraz zsynchronizować. Spróbuj ponownie później.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>zasady zachowania poufności informacji</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Musisz być zalogowany do synchronizacji.</value>
+  </data>
 </root>

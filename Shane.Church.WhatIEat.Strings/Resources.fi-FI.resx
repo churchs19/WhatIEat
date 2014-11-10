@@ -278,4 +278,16 @@ Otan teihin yhteyttä apua lähettämällä valmistetut virheraportin. Tämä au
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Näytä tapahtuman aikaleiman?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Poista mainokset</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Synkronointi ei ole tällä hetkellä. Yritä myöhemmin uudelleen.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>tietosuojakäytäntö</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Sinun on kirjauduttava synkronointiin.</value>
+  </data>
 </root>

@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Покажи влизане клеймо?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>премахване на реклами</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Не може да се синхронизира по това време. Моля, опитайте отново по-късно.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>правила за поверителност</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Трябва да сте влезли за да синхронизиране.</value>
+  </data>
 </root>

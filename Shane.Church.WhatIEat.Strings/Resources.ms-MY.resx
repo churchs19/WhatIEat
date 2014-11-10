@@ -278,4 +278,16 @@ Saya menghargai bantuan anda dengan menghantar laporan ralat yang disediakan. In
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>menunjukkan Cap masa Masuk?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Keluarkan iklan</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Tidak dapat menyegerakkan buat masa ini. Sila cuba lagi kemudian.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>dasar privasi</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Anda mesti log masuk untuk disegerakkan.</value>
+  </data>
 </root>

@@ -278,4 +278,16 @@ Gostaria de solicitar que sua ajuda enviando o relatório de erros preparado. Is
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Mostrar o carimbo de hora de entrada?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Remover anúncios</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Não é possível sincronizar no momento. Tente novamente mais tarde.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>política de privacidade</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Você deve estar conectado para sincronização.</value>
+  </data>
 </root>

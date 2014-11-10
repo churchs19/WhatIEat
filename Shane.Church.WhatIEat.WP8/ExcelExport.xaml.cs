@@ -3,6 +3,7 @@ using Ninject;
 using Shane.Church.WhatIEat.Core.Services;
 using Shane.Church.WhatIEat.Core.ViewModels;
 using Shane.Church.WhatIEat.Strings;
+using System;
 using System.Windows;
 using System.Windows.Navigation;
 using Telerik.Windows.Controls;
@@ -11,14 +12,14 @@ namespace Shane.Church.WhatIEat.WP
 {
 	public partial class ExcelExport : PhoneApplicationPage
 	{
-        protected ExcelExportViewModel _model;
-        private ILoggingService _log;
+		protected ExcelExportViewModel _model;
+		private ILoggingService _log;
 
 		public ExcelExport()
 		{
 			InitializeComponent();
 
-            _log = KernelService.Kernel.Get<ILoggingService>();
+			_log = KernelService.Kernel.Get<ILoggingService>();
 		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -38,21 +39,21 @@ namespace Shane.Church.WhatIEat.WP
 					this.busyIndicator.IsRunning = false;
 					if (isSuccess)
 					{
-                        await RadMessageBox.ShowAsync(new object[] { Shane.Church.WhatIEat.Strings.Resources.Ok }, Shane.Church.WhatIEat.Strings.Resources.UploadSuccessTitle, Shane.Church.WhatIEat.Strings.Resources.UploadSuccessMessage);
+						await RadMessageBox.ShowAsync(new object[] { Shane.Church.WhatIEat.Strings.Resources.Ok }, Shane.Church.WhatIEat.Strings.Resources.UploadSuccessTitle, Shane.Church.WhatIEat.Strings.Resources.UploadSuccessMessage);
 					}
 					else
 					{
-                        await RadMessageBox.ShowAsync(new object[] { Shane.Church.WhatIEat.Strings.Resources.Ok }, Shane.Church.WhatIEat.Strings.Resources.UploadFailedTitle, Shane.Church.WhatIEat.Strings.Resources.UploadFailedMessage);
+						await RadMessageBox.ShowAsync(new object[] { Shane.Church.WhatIEat.Strings.Resources.Ok }, Shane.Church.WhatIEat.Strings.Resources.UploadFailedTitle, Shane.Church.WhatIEat.Strings.Resources.UploadFailedMessage);
 					}
 				});
 			};
 			this.DataContext = _model;
 
-            if (!_model.AreAdsVisible && AdControl != null)
-            {
-                AdPanel.Children.Remove(AdControl);
-                AdControl = null;
-            }
+            if (!_model.AreAdsVisible && AdMediator_3BB1FC != null)
+			{
+                AdPanel.Children.Remove(AdMediator_3BB1FC);
+                AdMediator_3BB1FC = null;
+			}
 
 			base.OnNavigatedTo(e);
 		}
@@ -60,33 +61,46 @@ namespace Shane.Church.WhatIEat.WP
 		#region Ad Control
 		private void InitializeAdControl()
 		{
-			AdControl.AdReceived += new Inneractive.Ad.InneractiveAd.IaAdReceived(AdControl_AdReceived);
-			AdControl.AdFailed += new Inneractive.Ad.InneractiveAd.IaAdFailed(AdControl_AdFailed);
-			AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
-
-#if PERSONAL
-            //AdPanel.Children.Remove(AdControl);
-            //AdControl = null;
+#if !PERSONAL
+            AdMediator_3BB1FC.AdSdkEvent += AdMediator_AdSdkEvent;
+            AdMediator_3BB1FC.AdMediatorError += AdMediator_AdMediatorError;
+            AdMediator_3BB1FC.AdMediatorFilled += AdMediator_AdMediatorFilled;
+            AdMediator_3BB1FC.AdSdkError += AdMediator_AdSdkError;
+#else
+			AdPanel.Children.Remove(AdMediator_3BB1FC);
+			AdMediator_3BB1FC = null;
 #endif
+        }
+
+		void AdMediator_AdSdkError(object sender, Microsoft.AdMediator.Core.Events.AdFailedEventArgs e)
+		{
+			_log.LogMessage(String.Format("Ad SDK Error by {0} ErrorCode: {1} ErrorDescription: {2} Error: {3}", e.Name, e.ErrorCode, e.ErrorDescription, e.Error));
 		}
 
-		void AdControl_DefaultAdReceived(object sender)
+		void AdMediator_AdMediatorFilled(object sender, Microsoft.AdMediator.Core.Events.AdSdkEventArgs e)
 		{
-			_log.LogMessage("Unpaid Ad Received");
-			AdControl.Visibility = System.Windows.Visibility.Visible;
+			_log.LogMessage(String.Format("Ad Filled:" + e.Name));
+            if (AdMediator_3BB1FC != null)
+			{
+                AdMediator_3BB1FC.Visibility = System.Windows.Visibility.Visible;
+			}
 		}
 
-		private void AdControl_AdReceived(object sender)
+		void AdMediator_AdMediatorError(object sender, Microsoft.AdMediator.Core.Events.AdMediatorFailedEventArgs e)
 		{
-			_log.LogMessage("Paid Ad Received");
-			AdControl.Visibility = System.Windows.Visibility.Visible;
+			_log.LogMessage(String.Format("AdMediatorError:" + e.Error + " " + e.ErrorCode));
+            if (e.ErrorCode == Microsoft.AdMediator.Core.Events.AdMediatorErrorCode.NoAdAvailable && AdMediator_3BB1FC != null)
+			{
+				// AdMediator will not show an ad for this mediation cycle
+                AdMediator_3BB1FC.Visibility = System.Windows.Visibility.Collapsed;
+			}
 		}
 
-		private void AdControl_AdFailed(object sender)
+		private void AdMediator_AdSdkEvent(object sender, Microsoft.AdMediator.Core.Events.AdSdkEventArgs e)
 		{
-			_log.LogMessage("No Ad Received");
-			AdControl.Visibility = System.Windows.Visibility.Collapsed;
+			_log.LogMessage(String.Format("AdSdk event {0} by {1}", e.EventName, e.Name));
 		}
+
 		#endregion
 
 	}

@@ -8,13 +8,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
     xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
+    xmlns:WindowsPhone8="clr-namespace:Microsoft.AdMediator.WindowsPhone8;assembly=Microsoft.AdMediator.WindowsPhone8"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
-    
+
     <phone:PhoneApplicationPage.Resources>
         <telerik:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
     </phone:PhoneApplicationPage.Resources>
@@ -58,11 +59,11 @@
 			Grid.Column="0" 
 			Grid.RowSpan="2" 
 			Foreground="{StaticResource AppBaseColor4Brush}"
-			Content="{Binding LocalizedResources.UploadingLabel, Source={StaticResource LocalizedStrings}}"
-			Background="{StaticResource AppOverlayColorBrush}" AnimationStyle="AnimationStyle8"/>
+			Background="{StaticResource AppOverlayColorBrush}" AnimationStyle="AnimationStyle8">
+        </telerikPrimitives:RadBusyIndicator>
 
         <StackPanel x:Name="AdPanel" Grid.Row="2" MaxHeight="110" Margin="0">
-            <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
+            <!--<ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
                                   AppID="ShaneChurch_WhatIEat_WP"
                                   AdType="IaAdType_Banner"
                                   ReloadTime="30"
@@ -72,7 +73,11 @@
                                   AdAlignment="BOTTOM_CENTER"
                                   Name="AdControl"
                                   IsEnabled="{Binding AreAdsVisible}"
-                                  Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                                  Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>-->
+            <WindowsPhone8:AdMediatorControl x:Name="AdMediator_3BB1FC" 
+                                             Height="80" 
+                                             Id="AdMediator-Id-F1E6D1B5-1C12-4602-B194-903C5C8D7C14" 
+                                             Width="480"/>
         </StackPanel>
     </Grid>
 </phone:PhoneApplicationPage>

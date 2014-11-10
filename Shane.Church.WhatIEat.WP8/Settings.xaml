@@ -11,42 +11,43 @@
     xmlns:viewModels="clr-namespace:Shane.Church.WhatIEat.WP.ViewModels"
     xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
     xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Core"
+    xmlns:WindowsPhone8="clr-namespace:Microsoft.AdMediator.WindowsPhone8;assembly=Microsoft.AdMediator.WindowsPhone8"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="False">
 
-	<phone:PhoneApplicationPage.Resources>
-		<telerik:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
-	</phone:PhoneApplicationPage.Resources>
-	<phone:PhoneApplicationPage.FontFamily>
-		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
-	</phone:PhoneApplicationPage.FontFamily>
-	<phone:PhoneApplicationPage.FontSize>
-		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
-	</phone:PhoneApplicationPage.FontSize>
-	<phone:PhoneApplicationPage.Foreground>
-		<StaticResource ResourceKey="PhoneForegroundBrush"/>
-	</phone:PhoneApplicationPage.Foreground>
+    <phone:PhoneApplicationPage.Resources>
+        <telerik:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </phone:PhoneApplicationPage.Resources>
+    <phone:PhoneApplicationPage.FontFamily>
+        <StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+    </phone:PhoneApplicationPage.FontFamily>
+    <phone:PhoneApplicationPage.FontSize>
+        <StaticResource ResourceKey="PhoneFontSizeNormal"/>
+    </phone:PhoneApplicationPage.FontSize>
+    <phone:PhoneApplicationPage.Foreground>
+        <StaticResource ResourceKey="PhoneForegroundBrush"/>
+    </phone:PhoneApplicationPage.Foreground>
 
-	<Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="*"/>
-		</Grid.RowDefinitions>
+    <Grid x:Name="LayoutRoot" Background="{StaticResource MainBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-		<StackPanel Grid.Row="0" Margin="12,17,0,28">
-			<TextBlock Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource AppAccentColorBrush}"/>
-			<TextBlock Text="{Binding LocalizedResources.SettingsLabel, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource AppBaseColor4Brush}"/>
-		</StackPanel>
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding LocalizedResources.AppTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}" Foreground="{StaticResource AppAccentColorBrush}"/>
+            <TextBlock Text="{Binding LocalizedResources.SettingsLabel, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource AppBaseColor4Brush}"/>
+        </StackPanel>
 
-		<Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="Auto"/>
-			</Grid.RowDefinitions>
+        <Grid x:Name="ContentPanel" Grid.Row="2" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-			<StackPanel Grid.Row="0" Margin="12,0,12,0">
-				<telerikPrimitives:RadToggleSwitch 
+            <StackPanel Grid.Row="0" Margin="12,0,12,0">
+                <telerikPrimitives:RadToggleSwitch 
 					Margin="0"
 					HorizontalAlignment="Left" 
 					VerticalAlignment="Top" 
@@ -56,23 +57,23 @@
 					IsChecked="{Binding SyncEnabled, Mode=TwoWay}"
 					ButtonStyle="{StaticResource AppToggleSwitchButtonStyle}" 
 					Content="{Binding OnOffText}">
-					<telerikPrimitives:RadToggleSwitch.HeaderStyle>
-						<Style TargetType="ContentControl">
-							<Setter Property="Foreground" Value="{StaticResource AppAccentColorBrush}"/>
-							<Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}" />
-							<Setter Property="Margin" Value="0,0,0,10"/>
-							<Setter Property="HorizontalAlignment" Value="Left" />
-						</Style>
-					</telerikPrimitives:RadToggleSwitch.HeaderStyle>
-				</telerikPrimitives:RadToggleSwitch>
-				<Button x:Name="MsftAccountConnectButton"
+                    <telerikPrimitives:RadToggleSwitch.HeaderStyle>
+                        <Style TargetType="ContentControl">
+                            <Setter Property="Foreground" Value="{StaticResource AppAccentColorBrush}"/>
+                            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}" />
+                            <Setter Property="Margin" Value="0,0,0,10"/>
+                            <Setter Property="HorizontalAlignment" Value="Left" />
+                        </Style>
+                    </telerikPrimitives:RadToggleSwitch.HeaderStyle>
+                </telerikPrimitives:RadToggleSwitch>
+                <Button x:Name="MsftAccountConnectButton"
 						Visibility="{Binding SyncEnabled, Converter={StaticResource BoolToVisibilityConverter}}"
 						Command="{Binding ConnectCommand}" BorderBrush="{StaticResource AppBaseColor4Brush}" Background="{StaticResource AppBaseColor2Brush}" Foreground="{StaticResource AppBaseColor4Brush}" Margin="0,25,0,0">
-					<StackPanel Orientation="Horizontal">
-						<Image Source="/Images/Microsoft-Windows.png" Stretch="None" />
-						<TextBlock Text="{Binding ConnectLabel}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-					</StackPanel>
-				</Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/Microsoft-Windows.png" Stretch="None" />
+                        <TextBlock Text="{Binding ConnectLabel}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                </Button>
                 <telerikPrimitives:RadToggleSwitch 
 					Margin="0,20,0,0"
 					HorizontalAlignment="Left" 
@@ -95,7 +96,7 @@
             </StackPanel>
 
             <StackPanel x:Name="AdPanel" Grid.Row="1" Margin="0">
-                <ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
+                <!--<ad:InneractiveAd xmlns:ad="clr-namespace:Inneractive.Nokia.Ad;assembly=Inneractive.Ad"
                                   AppID="ShaneChurch_WhatIEat_WP"
                                   AdType="IaAdType_Banner"
                                   ReloadTime="30"
@@ -105,18 +106,19 @@
                                   AdAlignment="BOTTOM_CENTER"
                                   Name="AdControl"
                                   IsEnabled="{Binding AreAdsVisible}"
-                                  Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                                  Visibility="{Binding AreAdsVisible, Converter={StaticResource BoolToVisibilityConverter}}"/>-->
+                <WindowsPhone8:AdMediatorControl x:Name="AdMediator_02B3FF" Height="80" Id="AdMediator-Id-AA4B15C1-8FBC-4F40-9D0B-654B65E424B0" Width="480"/>
             </StackPanel>
-		</Grid>
+        </Grid>
 
-		<telerikPrimitives:RadBusyIndicator 
+        <telerikPrimitives:RadBusyIndicator 
 			Grid.Row="0" 
 			Grid.Column="0" 
 			Grid.RowSpan="2" 
 			Foreground="{StaticResource AppBaseColor4Brush}"
-			Content="{Binding LocalizedResources.SynchronizingLabel, Source={StaticResource LocalizedStrings}}"
 			IsRunning="{Binding SyncRunning}" 
-			Background="{StaticResource AppOverlayColorBrush}" AnimationStyle="AnimationStyle8"/>
-	</Grid>
+			Background="{StaticResource AppOverlayColorBrush}" AnimationStyle="AnimationStyle8">
+        </telerikPrimitives:RadBusyIndicator>
+    </Grid>
 
 </phone:PhoneApplicationPage>

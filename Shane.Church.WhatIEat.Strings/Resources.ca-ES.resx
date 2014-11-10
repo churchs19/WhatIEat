@@ -278,4 +278,16 @@ Li agrairia la seva assistència enviant l'informe preparat error. Això ajudar�
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Mostra la data i hora d'entrada?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Tregui anuncis</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>No es pot sincronitzar en aquest moment. Si us plau provar una altra vegada més tard.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>política de privacitat</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Vostè ha d'estar loguejat a sync.</value>
+  </data>
 </root>

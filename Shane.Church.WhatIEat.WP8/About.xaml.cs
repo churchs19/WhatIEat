@@ -15,11 +15,20 @@ namespace Shane.Church.WhatIEat.WP
 {
 	public partial class About : PhoneApplicationPage
 	{
+		IWebNavigationService _webNav;
+
 		public About()
 		{
 			InitializeComponent();
 
+			_webNav = KernelService.Kernel.Get<IWebNavigationService>();
+
 			this.DataContext = KernelService.Kernel.Get<AboutViewModel>();
+		}
+
+		private void PrivacyButton_Click(object sender, RoutedEventArgs e)
+		{
+			_webNav.NavigateTo(new Uri("http://bit.ly/whatieatprivacy"));
 		}
 	}
 }

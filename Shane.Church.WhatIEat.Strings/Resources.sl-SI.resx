@@ -278,4 +278,16 @@ Jaz hoteti uvaževati vaš pomoč pošlje poročilo o napaki pripravljeni. To bo
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Prikaži vstop timestamp?</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>premestitev ads</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Ni mogoče sinhronizirati obtorej. Prosimo, poskusite znova pozneje.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>Pravilnik o zasebnosti</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Morate biti prijavljeni sinhronizacijo.</value>
+  </data>
 </root>

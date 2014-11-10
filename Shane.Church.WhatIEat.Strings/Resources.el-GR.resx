@@ -278,4 +278,16 @@
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
     <value>Εμφάνιση καταχώρηση χρονικής σήμανσης;</value>
   </data>
+  <data name="RemoveAdsLabel" xml:space="preserve">
+    <value>Κατάργηση διαφημίσεις</value>
+  </data>
+  <data name="SyncUnknownError" xml:space="preserve">
+    <value>Δεν είναι δυνατός ο συγχρονισμός αυτήν τη στιγμή. Προσπαθήστε ξανά αργότερα.</value>
+  </data>
+  <data name="PrivacyPolicyLabel" xml:space="preserve">
+    <value>πολιτική απορρήτου</value>
+  </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>Πρέπει να συνδεθείτε συγχρονισμό.</value>
+  </data>
 </root>

@@ -108,7 +108,13 @@
 					Foreground="{StaticResource AppBaseColor4Brush}"
 					HorizontalAlignment="Left"
 					Command="{Binding GoToSChurchNetCommand}"/>
-			</StackPanel>
+                <HyperlinkButton x:Name="PrivacyButton"
+                                 Content="{Binding LocalizedResources.PrivacyPolicyLabel, Source={StaticResource LocalizedStrings}}"
+                                 Margin="-10,5,0,0" 
+                                 FontSize="{StaticResource PhoneFontSizeNormal}" 
+                                 Foreground="{StaticResource AppBaseColor4Brush}"
+                                 HorizontalAlignment="Left" Click="PrivacyButton_Click" />
+            </StackPanel>
 		</Grid>
 	</Grid>
 

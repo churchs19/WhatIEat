@@ -13,224 +13,237 @@ using Telerik.Windows.Controls.PhoneTextBox;
 
 namespace Shane.Church.WhatIEat.WP
 {
-    public partial class DateEdit : PhoneApplicationPage
-    {
-        ILoggingService _log;
+	public partial class DateEdit : PhoneApplicationPage
+	{
+		ILoggingService _log;
 
-        public DateEdit()
-        {
-            InitializeComponent();
+		public DateEdit()
+		{
+			InitializeComponent();
 
-            InitializeAdControl();
+			InitializeAdControl();
 
-            _log = KernelService.Kernel.Get<ILoggingService>();
-        }
+			_log = KernelService.Kernel.Get<ILoggingService>();
+		}
 
-        #region Ad Control
-        private void InitializeAdControl()
-        {
-            AdControl.AdReceived += new Inneractive.Ad.InneractiveAd.IaAdReceived(AdControl_AdReceived);
-            AdControl.AdFailed += new Inneractive.Ad.InneractiveAd.IaAdFailed(AdControl_AdFailed);
-            AdControl.DefaultAdReceived += new Inneractive.Ad.InneractiveAd.IaDefaultAdReceived(AdControl_DefaultAdReceived);
-
-#if PERSONAL
-            //AdPanel.Children.Remove(AdControl);
-            //AdControl = null;
+		#region Ad Control
+		private void InitializeAdControl()
+		{
+#if !PERSONAL
+            AdMediator_92B08B.AdSdkEvent += AdMediator_AdSdkEvent;
+            AdMediator_92B08B.AdMediatorError += AdMediator_AdMediatorError;
+            AdMediator_92B08B.AdMediatorFilled += AdMediator_AdMediatorFilled;
+            AdMediator_92B08B.AdSdkError += AdMediator_AdSdkError;
+#else
+			AdPanel.Children.Remove(AdMediator_92B08B);
+			AdMediator_92B08B = null;
 #endif
         }
 
-        void AdControl_DefaultAdReceived(object sender)
-        {
-            _log.LogMessage("Unpaid Ad Received");
-            AdControl.Visibility = System.Windows.Visibility.Visible;
-        }
+		void AdMediator_AdSdkError(object sender, Microsoft.AdMediator.Core.Events.AdFailedEventArgs e)
+		{
+			_log.LogMessage(String.Format("Ad SDK Error by {0} ErrorCode: {1} ErrorDescription: {2} Error: {3}", e.Name, e.ErrorCode, e.ErrorDescription, e.Error));
+		}
 
-        private void AdControl_AdReceived(object sender)
-        {
-            _log.LogMessage("Paid Ad Received");
-            AdControl.Visibility = System.Windows.Visibility.Visible;
-        }
+		void AdMediator_AdMediatorFilled(object sender, Microsoft.AdMediator.Core.Events.AdSdkEventArgs e)
+		{
+			_log.LogMessage(String.Format("Ad Filled:" + e.Name));
+            if (AdMediator_92B08B != null)
+			{
+                AdMediator_92B08B.Visibility = System.Windows.Visibility.Visible;
+			}
+		}
 
-        private void AdControl_AdFailed(object sender)
-        {
-            _log.LogMessage("No Ad Received");
-            AdControl.Visibility = System.Windows.Visibility.Collapsed;
-        }
-        #endregion
+		void AdMediator_AdMediatorError(object sender, Microsoft.AdMediator.Core.Events.AdMediatorFailedEventArgs e)
+		{
+			_log.LogMessage(String.Format("AdMediatorError:" + e.Error + " " + e.ErrorCode));
+            if (e.ErrorCode == Microsoft.AdMediator.Core.Events.AdMediatorErrorCode.NoAdAvailable && AdMediator_92B08B != null)
+			{
+				// AdMediator will not show an ad for this mediation cycle
+                AdMediator_92B08B.Visibility = System.Windows.Visibility.Collapsed;
+			}
+		}
 
-        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
-        {
-            var selectedDate = DateTime.SpecifyKind(DateTime.Today, DateTimeKind.Utc);
-            try
-            {
-                selectedDate = (DateTime)PhoneApplicationService.Current.State["SelectedDate"];
-            }
-            catch { }
+		private void AdMediator_AdSdkEvent(object sender, Microsoft.AdMediator.Core.Events.AdSdkEventArgs e)
+		{
+			_log.LogMessage(String.Format("AdSdk event {0} by {1}", e.EventName, e.Name));
+		}
 
-            var model = KernelService.Kernel.Get<DateEditViewModel>();
-            model.LoadData(selectedDate);
-            model.AddActionCompleted += (s, args) =>
-            {
-                var isSuccess = true;
-                if (args is ValidationResultEventArgs)
-                    isSuccess = ((ValidationResultEventArgs)args).IsValid;
+		#endregion
 
-                if (isSuccess)
-                {
-                    this.newEntry.Text = "";
-                    //					this.Focus();
-                }
-                else
-                    newEntry.ChangeValidationState(ValidationState.Invalid, "Required");
-            };
-            DataContext = model;
+		private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+		{
+			var selectedDate = DateTime.SpecifyKind(DateTime.Today, DateTimeKind.Utc);
+			try
+			{
+				selectedDate = (DateTime)PhoneApplicationService.Current.State["SelectedDate"];
+			}
+			catch { }
 
-            if (!model.AreAdsVisible && AdControl != null)
-            {
-                AdPanel.Children.Remove(AdControl);
-                AdControl = null;
-            }
-        }
+			var model = KernelService.Kernel.Get<DateEditViewModel>();
+			model.LoadData(selectedDate);
+			model.AddActionCompleted += (s, args) =>
+			{
+				var isSuccess = true;
+				if (args is ValidationResultEventArgs)
+					isSuccess = ((ValidationResultEventArgs)args).IsValid;
 
-        private void newEntry_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            newEntry.ChangeValidationState(ValidationState.NotValidated, "");
-        }
+				if (isSuccess)
+				{
+					this.newEntry.Text = "";
+					//					this.Focus();
+				}
+				else
+					newEntry.ChangeValidationState(ValidationState.Invalid, "Required");
+			};
+			DataContext = model;
 
-        private void Entries_SelectionChanging(object sender, Telerik.Windows.Controls.SelectionChangingEventArgs e)
-        {
-            var selector = this.Resources["SelectedItemSelector"] as EntryTemplateSelector;
-            if (selector != null)
-            {
-                if (e.RemovedItems.Count > 0)
-                {
-                    object oldItem = e.RemovedItems[0];
-                    RadDataBoundListBoxItem visualContainer = this.Entries.GetContainerForItem(oldItem) as RadDataBoundListBoxItem;
-                    if (visualContainer != null)
-                    {
-                        EntryTemplateSelectorWrapper wrapper = new EntryTemplateSelectorWrapper() { IsSelected = false, Model = oldItem };
-                        visualContainer.ContentTemplate = selector.SelectTemplate(wrapper, visualContainer);
-                        visualContainer.ApplyTemplate();
-                        visualContainer.UpdateLayout();
-                    }
-                }
-                if (e.AddedItems.Count > 0)
-                {
-                    object oldItem = e.AddedItems[0];
-                    RadDataBoundListBoxItem visualContainer = this.Entries.GetContainerForItem(oldItem) as RadDataBoundListBoxItem;
-                    if (visualContainer != null)
-                    {
-                        EntryTemplateSelectorWrapper wrapper = new EntryTemplateSelectorWrapper() { IsSelected = true, Model = oldItem };
-                        visualContainer.ContentTemplate = selector.SelectTemplate(wrapper, visualContainer);
-                        visualContainer.ApplyTemplate();
-                        visualContainer.UpdateLayout();
-                    }
-                }
-            }
-        }
+            if (!model.AreAdsVisible && AdMediator_92B08B != null)
+			{
+                AdPanel.Children.Remove(AdMediator_92B08B);
+                AdMediator_92B08B = null;
+			}
+		}
 
-        private void editTextBox_Loaded(object sender, System.Windows.RoutedEventArgs e)
-        {
-            if (sender is RadTextBox)
-            {
-                Dispatcher.BeginInvoke(() =>
-                {
-                    var tb = ((RadTextBox)sender);
-                    tb.Focus();
-                    tb.SelectionStart = tb.Text.Length;
-                });
-            }
-        }
+		private void newEntry_TextChanged(object sender, TextChangedEventArgs e)
+		{
+			newEntry.ChangeValidationState(ValidationState.NotValidated, "");
+		}
 
-        private void Entries_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {
-            if (Entries.SelectedItem != null)
-            {
-                var item = Entries.GetContainerForItem(Entries.SelectedItem);
-                if (item != null)
-                {
-                    var position = e.GetPosition(item);
-                    if (!(position.X >= 0 && position.X <= item.ActualWidth && position.Y >= 0 && position.Y <= item.ActualHeight))
-                    {
-                        Entries.SelectedItem = null;
-                    }
-                }
-            }
-        }
+		private void Entries_SelectionChanging(object sender, Telerik.Windows.Controls.SelectionChangingEventArgs e)
+		{
+			var selector = this.Resources["SelectedItemSelector"] as EntryTemplateSelector;
+			if (selector != null)
+			{
+				if (e.RemovedItems.Count > 0)
+				{
+					object oldItem = e.RemovedItems[0];
+					RadDataBoundListBoxItem visualContainer = this.Entries.GetContainerForItem(oldItem) as RadDataBoundListBoxItem;
+					if (visualContainer != null)
+					{
+						EntryTemplateSelectorWrapper wrapper = new EntryTemplateSelectorWrapper() { IsSelected = false, Model = oldItem };
+						visualContainer.ContentTemplate = selector.SelectTemplate(wrapper, visualContainer);
+						visualContainer.ApplyTemplate();
+						visualContainer.UpdateLayout();
+					}
+				}
+				if (e.AddedItems.Count > 0)
+				{
+					object oldItem = e.AddedItems[0];
+					RadDataBoundListBoxItem visualContainer = this.Entries.GetContainerForItem(oldItem) as RadDataBoundListBoxItem;
+					if (visualContainer != null)
+					{
+						EntryTemplateSelectorWrapper wrapper = new EntryTemplateSelectorWrapper() { IsSelected = true, Model = oldItem };
+						visualContainer.ContentTemplate = selector.SelectTemplate(wrapper, visualContainer);
+						visualContainer.ApplyTemplate();
+						visualContainer.UpdateLayout();
+					}
+				}
+			}
+		}
 
-        private void editTextBox_ActionButtonTap(object sender, EventArgs e)
-        {
-            var tb = sender as RadTextBox;
-            if (tb != null)
-            {
-                var viewModel = tb.DataContext as EntryViewModel;
-                if (viewModel != null)
-                {
-                    viewModel.SaveActionCompleted += entryModel_SaveActionCompleted;
-                }
-            }
-        }
+		private void editTextBox_Loaded(object sender, System.Windows.RoutedEventArgs e)
+		{
+			if (sender is RadTextBox)
+			{
+				Dispatcher.BeginInvoke(() =>
+				{
+					var tb = ((RadTextBox)sender);
+					tb.Focus();
+					tb.SelectionStart = tb.Text.Length;
+				});
+			}
+		}
 
-        private void entryModel_SaveActionCompleted(object sender, EventArgs e)
-        {
-            _log.LogMessage("Entry_Saved");
-            if (sender is EntryViewModel)
-            {
-                Dispatcher.BeginInvoke(() =>
-                {
-                    ((EntryViewModel)sender).SaveActionCompleted -= entryModel_SaveActionCompleted;
-                    Entries.SelectedItem = null;
-                });
-            }
-        }
+		private void Entries_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+		{
+			if (Entries.SelectedItem != null)
+			{
+				var item = Entries.GetContainerForItem(Entries.SelectedItem);
+				if (item != null)
+				{
+					var position = e.GetPosition(item);
+					if (!(position.X >= 0 && position.X <= item.ActualWidth && position.Y >= 0 && position.Y <= item.ActualHeight))
+					{
+						Entries.SelectedItem = null;
+					}
+				}
+			}
+		}
 
-        RadPickerBox openPicker = null;
-        private void newMealTypePicker_PopupOpening(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            var picker = sender as RadPickerBox;
-            if (picker != null)
-            {
-                if (openPicker != null)
-                {
-                    openPicker.IsPopupOpen = false;
-                }
-                openPicker = picker;
-                var transform = picker.TransformToVisual(this);
-                var point = transform.Transform(new Point(0, 0));
-             
-                picker.VerticalPopupOffset = picker.Margin.Top - picker.ActualHeight;
-            }
-        }
+		private void editTextBox_ActionButtonTap(object sender, EventArgs e)
+		{
+			var tb = sender as RadTextBox;
+			if (tb != null)
+			{
+				var viewModel = tb.DataContext as EntryViewModel;
+				if (viewModel != null)
+				{
+					viewModel.SaveActionCompleted += entryModel_SaveActionCompleted;
+				}
+			}
+		}
 
-        private void editMealTypePicker_PopupOpening(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            var picker = sender as RadPickerBox;
-            if (picker != null)
-            {
-                if (openPicker != null)
-                {
-                    openPicker.IsPopupOpen = false;
-                }
-                openPicker = picker;
-                var transform = picker.TransformToVisual(this);
-                var point = transform.Transform(new Point(0, 0));
+		private void entryModel_SaveActionCompleted(object sender, EventArgs e)
+		{
+			_log.LogMessage("Entry_Saved");
+			if (sender is EntryViewModel)
+			{
+				Dispatcher.BeginInvoke(() =>
+				{
+					((EntryViewModel)sender).SaveActionCompleted -= entryModel_SaveActionCompleted;
+					Entries.SelectedItem = null;
+				});
+			}
+		}
 
-                picker.VerticalPopupOffset = picker.ActualHeight - 12;
-            }
-        }
+		RadPickerBox openPicker = null;
+		private void newMealTypePicker_PopupOpening(object sender, System.ComponentModel.CancelEventArgs e)
+		{
+			var picker = sender as RadPickerBox;
+			if (picker != null)
+			{
+				if (openPicker != null)
+				{
+					openPicker.IsPopupOpen = false;
+				}
+				openPicker = picker;
+				var transform = picker.TransformToVisual(this);
+				var point = transform.Transform(new Point(0, 0));
+			 
+				picker.VerticalPopupOffset = picker.Margin.Top - picker.ActualHeight;
+			}
+		}
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var listBox = sender as ListBox;
-            if (listBox != null && openPicker != null)
-            {
-                if (openPicker.DataContext is EntryViewModel)
-                {
-                    ((EntryViewModel)openPicker.DataContext).SaveCommand.Execute(null);
-                } 
-                openPicker.IsPopupOpen = false;
-                openPicker = null;
-            }
-        }
-    }
+		private void editMealTypePicker_PopupOpening(object sender, System.ComponentModel.CancelEventArgs e)
+		{
+			var picker = sender as RadPickerBox;
+			if (picker != null)
+			{
+				if (openPicker != null)
+				{
+					openPicker.IsPopupOpen = false;
+				}
+				openPicker = picker;
+				var transform = picker.TransformToVisual(this);
+				var point = transform.Transform(new Point(0, 0));
+
+				picker.VerticalPopupOffset = picker.ActualHeight - 12;
+			}
+		}
+
+		private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			var listBox = sender as ListBox;
+			if (listBox != null && openPicker != null)
+			{
+				if (openPicker.DataContext is EntryViewModel)
+				{
+					((EntryViewModel)openPicker.DataContext).SaveCommand.Execute(null);
+				} 
+				openPicker.IsPopupOpen = false;
+				openPicker = null;
+			}
+		}
+	}
 }
