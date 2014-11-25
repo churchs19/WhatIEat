@@ -23,6 +23,8 @@ namespace Shane.Church.WhatIEat.WP
 
 		protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
 		{
+			_log.LogPageView("Settings");
+
 			var model = this.DataContext as SettingsViewModel;
 			if(model != null)
 			{
