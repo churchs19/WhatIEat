@@ -150,10 +150,10 @@
     </Reference>
     <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Telerik.Storage.Extensions">
-      <HintPath>..\..\..\Program Files (x86)\Telerik\UI for Windows Phone 8 Q3 2014\Binaries\WindowsPhone\x86\Telerik.Storage.Extensions.dll</HintPath>
+      <HintPath>..\..\..\Program Files (x86)\Telerik\UI for Windows Phone 8 Q3 2014\Binaries\WindowsPhone\ARM\Telerik.Storage.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Storage_WP">
-      <HintPath>..\..\..\Program Files (x86)\Telerik\UI for Windows Phone 8 Q3 2014\Binaries\WindowsPhone\x86\Telerik.Storage_WP.winmd</HintPath>
+      <HintPath>..\..\..\Program Files (x86)\Telerik\UI for Windows Phone 8 Q3 2014\Binaries\WindowsPhone\ARM\Telerik.Storage_WP.winmd</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
