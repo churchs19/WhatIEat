@@ -1,0 +1,71 @@
+Date Time : 11/10/2014 12:25:32 PM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 11/10/2014 12:27:50 PM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 11/19/2014 1:30:53 PM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 12/15/2014 9:12:46 AM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 12/15/2014 9:20:08 AM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 12/15/2014 9:20:10 AM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 12/15/2014 9:21:02 AM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 12/15/2014 9:21:04 AM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
+
+Date Time : 12/15/2014 9:49:24 AM
+
+Error Details : Unable to cast object of type 'Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode' to type 'Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject'.
+
+Stack details :    at Company.SyncfusionVisualStudioMenu.SyncfusionVisualStudioMenu.GetProjectTypeGuids(Project proj)
+
+*****************************************************************
