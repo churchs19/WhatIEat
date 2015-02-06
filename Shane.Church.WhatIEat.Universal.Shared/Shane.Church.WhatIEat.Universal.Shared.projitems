@@ -15,8 +15,25 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\OtherAppCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\RateThisAppCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\SendAnEmailCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\WP8Entry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\WP8EntryRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LiveConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UniversalIAPService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UniversalLoggingService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UniversalSettingsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UniversalSkyDriveService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UniversalSyncService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UniversalWebNavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UniversalAboutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Assets\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Utility\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Fonts\LiveSymbol.ttf" />
   </ItemGroup>
 </Project>

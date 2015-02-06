@@ -127,16 +127,16 @@
     <value>Conectado</value>
   </data>
   <data name="ConnectLabel" xml:space="preserve">
-    <value>Conectar-se</value>
+    <value>Conectar</value>
   </data>
   <data name="OffText" xml:space="preserve">
-    <value>Desativar</value>
+    <value>Desligar</value>
   </data>
   <data name="OnText" xml:space="preserve">
-    <value>Em</value>
+    <value>Ligar</value>
   </data>
   <data name="MealTypeBreakfast" xml:space="preserve">
-    <value>Café da manhã</value>
+    <value>Pequeno-almoço</value>
   </data>
   <data name="MealTypeLunch" xml:space="preserve">
     <value>Almoço</value>
@@ -145,7 +145,7 @@
     <value>Jantar</value>
   </data>
   <data name="MealTypeSnack" xml:space="preserve">
-    <value>Lanche</value>
+    <value>Petiscos</value>
   </data>
   <data name="MealTypeUndefined" xml:space="preserve">
     <value>Nenhum</value>
@@ -154,140 +154,141 @@
     <value>sobre</value>
   </data>
   <data name="AboutOtherAppsLabel" xml:space="preserve">
-    <value>outros aplicativos por Shane Church</value>
+    <value>outras aplicações de Shane Church</value>
   </data>
   <data name="AboutReviewLabel" xml:space="preserve">
-    <value>Avalie este aplicativo</value>
+    <value>Avaliar a aplicativo</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
     <value>Copyright © Shane Church 2013-2014</value>
+    <comment></comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>um diário de alimentos simples para o windows phone</value>
+    <value>um agenda alimentar simples para o windows phone</value>
   </data>
   <data name="AppIconDescription" xml:space="preserve">
-    <value>Comer projetado por Danny Chapman o substantivo projeto</value>
+    <value>O ícone Eat foi concebido por Danny Chapman em The Noun Project</value>
   </data>
   <data name="AppIconLabel" xml:space="preserve">
-    <value>ícone do aplicativo</value>
+    <value>ícone da aplicativo</value>
   </data>
   <data name="AppTitle" xml:space="preserve">
-    <value>O QUE POSSO COMER</value>
+    <value>AGENDA ALIMENTAR</value>
   </data>
   <data name="CalendarLabel" xml:space="preserve">
-    <value>calendário</value>
+    <value>Calendário</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
   <data name="CsvExportLabel" xml:space="preserve">
-    <value>Exportação de CSV</value>
+    <value>Exportar CSV</value>
   </data>
   <data name="Diagnostics_MessageBox_Content" xml:space="preserve">
-    <value>O aplicativo encontrou um problema. Desculpe pela inconveniência.
+    <value>A aplicativo encontrou um problema. Lamento qualquer incómodo.
 
-Gostaria de solicitar que sua ajuda enviando o relatório de erros preparado. Isso ajudará na resolução do problema mais rapidamente.</value>
+Agradeço o seu apoio através do envio de um relatório de erros. Isto irá ajudar a resolução do problema mais rapidamente.</value>
   </data>
   <data name="Diagnostics_MessageBox_Title" xml:space="preserve">
-    <value>Erro de aplicativo</value>
+    <value>Erro na aplicativo</value>
   </data>
   <data name="EmptyEntryListLabel" xml:space="preserve">
-    <value>Nada nessa data. Adicione algo!</value>
+    <value>Não há nada nesta data. Adicione alguma coisa!</value>
   </data>
   <data name="EmptySummaryListLabel" xml:space="preserve">
-    <value>Nenhuma entrada encontrada. Adicione algo!</value>
+    <value>Não foram encontrados dados. Adicione alguma coisa!</value>
   </data>
   <data name="EnableSyncLabel" xml:space="preserve">
-    <value>Habilitar a sincronização</value>
+    <value>activar a sincronização</value>
   </data>
   <data name="ExcelExportButtonLabel" xml:space="preserve">
-    <value>Exportar para OneDrive</value>
+    <value>Exportar para o OneDrive</value>
   </data>
   <data name="ExcelExportLabel" xml:space="preserve">
-    <value>exportação do Excel</value>
+    <value>exportar Excel</value>
   </data>
   <data name="ExcelExportText" xml:space="preserve">
-    <value>Isso irá exportar todas as entradas de diário como um arquivo CSV compatível com o Excel para o OneDrive.</value>
+    <value>Todos os dados da agenda serão exportados para o OneDrive num ficheiro CSV compatível com o Excel.</value>
   </data>
   <data name="FeedbackContent" xml:space="preserve">
-    <value>Como melhorar a esse aplicativo para que você estaria disposto a avaliá-lo 5 estrelas no mercado?</value>
+    <value>Como posso melhorar esta aplicativo para que você possa dar 5 estrelas na sua avaliação na Loja?</value>
   </data>
   <data name="FeedbackTitle" xml:space="preserve">
-    <value>Eu pode fazer melhor?</value>
+    <value>Posso fazer melhor?</value>
   </data>
   <data name="GiveFeedbackButton" xml:space="preserve">
-    <value>Envie seus comentários</value>
+    <value>enviar opinião</value>
   </data>
   <data name="NewEntryLabel" xml:space="preserve">
-    <value>nova entrada</value>
+    <value>novo dado</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>não</value>
   </data>
   <data name="NoThanksButton" xml:space="preserve">
-    <value>Não, Obrigado</value>
+    <value>não, obrigado</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="ReviewLabel" xml:space="preserve">
-    <value>taxa me</value>
+    <value>avalie a aplicativo</value>
   </data>
   <data name="SettingsLabel" xml:space="preserve">
-    <value>configurações</value>
+    <value>definições</value>
   </data>
   <data name="SummaryLabel" xml:space="preserve">
-    <value>Resumo</value>
+    <value>resumo</value>
   </data>
   <data name="SynchronizingLabel" xml:space="preserve">
-    <value>sincronizando...</value>
+    <value>a sincronizar...</value>
   </data>
   <data name="SyncLabel" xml:space="preserve">
-    <value>sincronização</value>
+    <value>sincronizar</value>
   </data>
   <data name="TechnicalSupportEmailLabel" xml:space="preserve">
-    <value>email do suporte técnico/comentários</value>
+    <value>email para apoio técnico/opiniões</value>
   </data>
   <data name="UpgradeText" xml:space="preserve">
-    <value>Uma atualização está disponível! Você deseja instalar a atualização agora?</value>
+    <value>Está disponível uma actualização! Quer instalar a actualização agora?</value>
   </data>
   <data name="UpgradeTitle" xml:space="preserve">
-    <value>Atualização disponível!</value>
+    <value>Actualização disponível!</value>
   </data>
   <data name="UploadFailedMessage" xml:space="preserve">
-    <value>Infelizmente os dados não podem ser exportados para OneDrive neste momento. Tente novamente mais tarde.</value>
+    <value>Infelizmente não foi possível exportar os dados exportar para o OneDrive. Tente mais tarde.</value>
   </data>
   <data name="UploadFailedTitle" xml:space="preserve">
-    <value>Falha no carregamento</value>
+    <value>O carregamento falhou</value>
   </data>
   <data name="UploadingLabel" xml:space="preserve">
-    <value>Carregando...</value>
+    <value>a carregar...</value>
   </data>
   <data name="UploadSuccessMessage" xml:space="preserve">
-    <value>Os dados foi carregados com êxito para OneDrive.</value>
+    <value>Os seus dados foram carregados com êxito para o OneDrive.</value>
   </data>
   <data name="UploadSuccessTitle" xml:space="preserve">
-    <value>Carregar com êxito!</value>
+    <value>Carregamento bem sucedido!</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sim</value>
   </data>
   <data name="TechnicalSupportEmailSubject" xml:space="preserve">
-    <value>O que eu comer comentários</value>
+    <value>Opinião sobre a Agenda Alimentar</value>
   </data>
   <data name="ShowEntryTimeStampLabel" xml:space="preserve">
-    <value>Mostrar o carimbo de hora de entrada?</value>
+    <value>Mostrar hora de entrada?</value>
   </data>
   <data name="RemoveAdsLabel" xml:space="preserve">
-    <value>Remover anúncios</value>
+    <value>remover anúncios</value>
   </data>
   <data name="SyncUnknownError" xml:space="preserve">
-    <value>Não é possível sincronizar no momento. Tente novamente mais tarde.</value>
+    <value>É impossível sincronizar agora. Tente mais tarde.</value>
   </data>
   <data name="PrivacyPolicyLabel" xml:space="preserve">
     <value>política de privacidade</value>
   </data>
   <data name="SyncLoginError" xml:space="preserve">
-    <value>Você deve estar conectado para sincronização.</value>
+    <value>Tem de ter sessão iniciada para sincronizar.</value>
   </data>
 </root>

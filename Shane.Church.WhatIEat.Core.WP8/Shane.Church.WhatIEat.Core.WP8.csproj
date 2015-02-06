@@ -152,8 +152,9 @@
     <Reference Include="Telerik.Storage.Extensions">
       <HintPath>..\..\..\Program Files (x86)\Telerik\UI for Windows Phone 8 Q3 2014\Binaries\WindowsPhone\ARM\Telerik.Storage.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Storage_WP">
-      <HintPath>..\..\..\Program Files (x86)\Telerik\UI for Windows Phone 8 Q3 2014\Binaries\WindowsPhone\ARM\Telerik.Storage_WP.winmd</HintPath>
+    <Reference Include="Telerik.Storage_WP, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Telerik\UI for Windows Phone 8 Q3 2014\Binaries\WindowsPhone\x86\Telerik.Storage_WP.winmd</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

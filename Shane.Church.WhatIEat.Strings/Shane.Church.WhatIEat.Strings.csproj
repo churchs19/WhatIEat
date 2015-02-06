@@ -15,7 +15,7 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <SupportedCultures>ar-SA;bg-BG;ca-ES;cs-CZ;da-DK;de-DE;el-GR;en-GB;en-US;es-ES;es-MX;et-EE;fa-IR;fi-FI;fr-FR;he-IL;hi-IN;hu-HU;id-ID;it-IT;ja-JP;ko-KR;lt-LT;lv-LV;ms-MY;nb-NO;nl-NL;pl-PL;pt-BR;pt-PT;qps-ploc;ro-RO;ru-RU;sk-SK;sl-SI;sv-SE;th-TH;tr-TR;uk-UA;vi-VN;zh-CN;zh-TW</SupportedCultures>
+    <SupportedCultures>ar-SA;bg-BG;ca-ES;cs-CZ;da-DK;de-DE;el-GR;en-GB;es-ES;es-MX;et-EE;fa-IR;fi-FI;fr-FR;he-IL;hi-IN;hu-HU;id-ID;it-IT;ja-JP;ko-KR;lt-LT;lv-LV;ms-MY;nb-NO;nl-NL;pl-PL;pt-BR;pt-PT;qps-ploc;ro-RO;ru-RU;sk-SK;sl-SI;sv-SE;th-TH;tr-TR;uk-UA;vi-VN;zh-CN;zh-TW</SupportedCultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -102,14 +102,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.en-GB.xlf</DependentUpon>
       <culture>en-GB</culture>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources.en-US.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.en-US.Designer.cs</LastGenOutput>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.en-US.xlf</DependentUpon>
-      <culture>en-US</culture>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources.es-ES.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -428,11 +420,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.en-GB.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources.en-US.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.en-US.resx</DependentUpon>
-    </Compile>
     <Compile Include="Resources.es-ES.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -657,12 +644,6 @@
     <XliffResource Include="Resources.en-GB.xlf">
       <Generator>XliffResxGenerator</Generator>
       <LastGenOutput>Resources.en-GB.resx</LastGenOutput>
-    </XliffResource>
-  </ItemGroup>
-  <ItemGroup>
-    <XliffResource Include="Resources.en-US.xlf">
-      <Generator>XliffResxGenerator</Generator>
-      <LastGenOutput>Resources.en-US.resx</LastGenOutput>
     </XliffResource>
   </ItemGroup>
   <ItemGroup>

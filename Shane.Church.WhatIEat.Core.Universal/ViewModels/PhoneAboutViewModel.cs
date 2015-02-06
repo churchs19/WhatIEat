@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Shane.Church.WhatIEat.Core.Universal.ViewModels
 {
-	public class PhoneAboutViewModel : AboutViewModel
+	public class UniversalAboutViewModel : AboutViewModel
 	{
 		public override void Initialize()
 		{
