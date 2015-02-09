@@ -290,4 +290,7 @@ Je vous saurais votre assistance en envoyant le rapport d'erreurs préparées. C
   <data name="SyncLoginError" xml:space="preserve">
     <value>Vous devez être connecté à la synchronisation.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Nous remercions spécialement Paulo Caldiera pour la traduction portugais excellent !</value>
+  </data>
 </root>

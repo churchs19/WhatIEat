@@ -234,6 +234,10 @@ I would appreciate your assistance by sending the prepared error report. This wi
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[4107B][!!_ρѓįνãċў ρòľìĉÿ_!!]</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[87F7F][!!_À šþęċįãļ ţћâйкŝ ţõ Þãúłó Ĉâĺďįéѓâ ƒòř тђę èхćęłłèήţ Рòŕтûġęşê τѓãηşļàтįóή!_!!!!!!!!!!!!!!!!!!!!!!]</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">[3FA25][!!_Ўôû мúšţ ьê łõģģéđ ìй τó šÿйċ._!!]</target>

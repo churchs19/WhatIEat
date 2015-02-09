@@ -290,4 +290,7 @@ I would appreciate your assistance by sending the prepared error report. This wi
   <data name="PrivacyPolicyLabel" xml:space="preserve">
     <value>privacy policy</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>A special thanks to Paulo Caldiera for the excellent Portugese translation!</value>
+  </data>
 </root>

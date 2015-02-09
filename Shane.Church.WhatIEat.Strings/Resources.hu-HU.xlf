@@ -234,6 +234,10 @@ Kérem, a támogatás által elkészített jelentés küldése. Ez segít a prob
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">adatvédelmi nyilatkozat</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Különleges Paulo Caldiera köszönhetően a kitűnő portugál fordítás!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Szinkronizálandó kell bejelentkeznie.</target>

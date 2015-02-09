@@ -290,4 +290,7 @@ Iš paruošto klaidos ataskaitą siunčianti būtume labai dėkingi savo pagalb�
   <data name="SyncLoginError" xml:space="preserve">
     <value>Jūs turi būti prisijungęs, jei nori sinchronizavimo.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Ypatingą padėką Paulo Caldiera puikus Portugalų Vertimas!</value>
+  </data>
 </root>

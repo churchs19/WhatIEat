@@ -290,4 +290,7 @@
   <data name="SyncLoginError" xml:space="preserve">
     <value>आप करने के लिए सिंक्रनाइज़ेशन लॉग होना चाहिए।</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>उत्तम Portugese अनुवाद के लिए एक विशेष Paulo Caldiera धन्यवाद!</value>
+  </data>
 </root>

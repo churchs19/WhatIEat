@@ -234,6 +234,10 @@ Ocenil by som vašu pomoc zaslaním pripravené chybové hlásenie. To vám pom�
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Ochrana osobných údajov</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="new">A special thanks to Paulo Caldiera for the excellent Portugese translation!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Musíte byť prihlásený na synchronizáciu.</target>

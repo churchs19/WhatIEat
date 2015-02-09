@@ -234,6 +234,10 @@ I would appreciate your assistance by sending the prepared error report. This wi
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">πολιτική απορρήτου</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Μια ειδική χάρη στην Paulo Caldiera για την εξαιρετική μετάφραση πορτογαλικό!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Πρέπει να συνδεθείτε συγχρονισμό.</target>

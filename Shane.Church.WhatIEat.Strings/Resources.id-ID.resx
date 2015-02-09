@@ -290,4 +290,7 @@ Aku akan menghargai bantuan Anda dengan mengirimkan laporan kesalahan disiapkan.
   <data name="SyncLoginError" xml:space="preserve">
     <value>Anda harus login untuk sync.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Khusus berkat Paulo Caldiera untuk terjemahan Portugis sangat baik!</value>
+  </data>
 </root>

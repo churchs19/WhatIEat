@@ -234,6 +234,10 @@ Li agrairia la seva assistència enviant l'informe preparat error. Això ajudar�
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">política de privacitat</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Un agraïment especial a Paulo Caldiera per la excel·lent traducció portuguès!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Vostè ha d'estar loguejat a sync.</target>

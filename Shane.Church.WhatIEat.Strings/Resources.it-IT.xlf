@@ -234,6 +234,10 @@ Gradirei l'assistenza inviando la segnalazione errori preparata. Ciò consentir�
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Informativa sulla privacy</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Un ringraziamento particolare a Paulo Caldiera per la traduzione portoghese eccellente!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">È necessario accedere per eseguire la sincronizzazione.</target>

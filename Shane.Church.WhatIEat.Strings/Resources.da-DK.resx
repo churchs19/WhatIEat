@@ -290,4 +290,7 @@ Jeg ville sætte pris på din hjælp ved at sende fejlrapporten forberedt. Dette
   <data name="SyncLoginError" xml:space="preserve">
     <value>Du skal være logget på synkronisering.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>En særlig takket være Paulo Caldiera til den fremragende portugisisk oversættelse!</value>
+  </data>
 </root>

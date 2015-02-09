@@ -234,6 +234,10 @@ Jag vore tacksam din hjälp genom att skicka felrapporten förberedda. Detta få
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Sekretesspolicy för</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="new">A special thanks to Paulo Caldiera for the excellent Portugese translation!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Du måste vara inloggad för att synkronisera.</target>

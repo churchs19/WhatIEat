@@ -234,6 +234,10 @@ Saya menghargai bantuan anda dengan menghantar laporan ralat yang disediakan. In
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">dasar privasi</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Terima kasih Paulo Caldiera khas untuk penterjemahan Portugese cemerlang!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Anda mesti log masuk untuk disegerakkan.</target>

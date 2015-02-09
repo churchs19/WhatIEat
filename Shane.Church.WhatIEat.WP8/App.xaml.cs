@@ -26,11 +26,17 @@ using System.Windows.Markup;
 using System.Windows.Navigation;
 using System.Xml;
 using Telerik.Windows.Controls;
+using Microsoft.ApplicationInsights;
 
 namespace Shane.Church.WhatIEat.WP
 {
     public partial class App : Application
     {
+		/// <summary>
+		/// Allows tracking page views, exceptions and other telemetry through the Microsoft Application Insights service.
+		/// </summary>
+		public TelemetryClient TelemetryClient;
+
         // Locale to force CurrentCulture to in InitializeLanguage(). 
         // Use "qps-PLOC" to deploy pseudolocalized strings. 
         // Use "" to let user Phone Language selection determine locale. 
@@ -67,7 +73,10 @@ namespace Shane.Church.WhatIEat.WP
             // Language display initialization 
             InitializeLanguage();
 
+			TelemetryClient = new TelemetryClient();
+
             KernelService.Kernel = new StandardKernel();
+			KernelService.Kernel.Bind<TelemetryClient>().ToConstant<TelemetryClient>(TelemetryClient);
             KernelService.Kernel.Bind<INavigationService>().To<PhoneNavigationService>().InSingletonScope();
             KernelService.Kernel.Bind<ISettingsService>().To<PhoneSettingsService>().InSingletonScope();
             KernelService.Kernel.Bind<IWebNavigationService>().To<PhoneWebNavigationService>().InSingletonScope();
@@ -267,7 +276,6 @@ namespace Shane.Church.WhatIEat.WP
             //Before using any of the ApplicationBuildingBlocks, this class should be initialized with the version of the application.
             var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
             ApplicationUsageHelper.Init(versionAttrib.Version.ToString());
-			ClientAnalyticsSession.Default.Start("324a7fdc-f60f-41df-9d32-63d5cc63b2a8");
 
             if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
             {
@@ -283,7 +291,6 @@ namespace Shane.Church.WhatIEat.WP
         private async void Application_Activated(object sender, ActivatedEventArgs e)
         {
             var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
-			ClientAnalyticsSession.Default.Start("324a7fdc-f60f-41df-9d32-63d5cc63b2a8");
 
             if (!e.IsApplicationInstancePreserved)
             {
@@ -320,9 +327,9 @@ namespace Shane.Church.WhatIEat.WP
         // Code to execute if a navigation fails
         private void RootFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
         {
-			var properties = new Dictionary<string, object>() { { "exception", e.Exception } }; 
-            ClientAnalyticsChannel.Default.LogEvent("Navigation Failed - " + e.Uri.ToString(), properties);
-            if (System.Diagnostics.Debugger.IsAttached)
+			var _log = KernelService.Kernel.Get<ILoggingService>();
+			_log.LogException(e.Exception, "Navigation Failed - " + e.Uri.ToString());
+			if (System.Diagnostics.Debugger.IsAttached)
             {
                 // A navigation has failed; break into the debugger
                 System.Diagnostics.Debugger.Break();
@@ -377,14 +384,14 @@ namespace Shane.Church.WhatIEat.WP
                 }
 
             }
-            if (System.Diagnostics.Debugger.IsAttached)
+			var _log = KernelService.Kernel.Get<ILoggingService>();
+			_log.LogException(e.ExceptionObject);
+			if (System.Diagnostics.Debugger.IsAttached)
             {
                 // An unhandled exception has occurred; break into the debugger
                 System.Diagnostics.Debugger.Break();
             }
-			var properties = new Dictionary<string, object>() { { "exception", e.ExceptionObject } };
-			ClientAnalyticsChannel.Default.LogEvent("Unhandled Exception - " + e.ExceptionObject.Message, properties);
-        }
+		}
 
         #region Phone application initialization
 

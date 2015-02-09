@@ -290,4 +290,7 @@
   <data name="SyncLoginError" xml:space="preserve">
     <value>עליך להיות מחובר כדי לסנכרן.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>מיוחד הודות Caldiera פאולו לתרגום Portugese מעולה!</value>
+  </data>
 </root>

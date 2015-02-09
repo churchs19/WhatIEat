@@ -234,6 +234,10 @@ Będę wdzięczny za pomoc przez wysłanie raportu o błędzie przygotowany. Pom
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">zasady zachowania poufności informacji</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Specjalne podziękowania dla Paulo Caldiera doskonałe tłumaczenie portugalskie!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Musisz być zalogowany do synchronizacji.</target>

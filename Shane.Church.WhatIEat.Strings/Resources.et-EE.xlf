@@ -234,6 +234,10 @@ Ma hindan teie abi poolt ettevalmistatud tõrketeatist. See aitab à problemaati
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Privaatsus</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Eriline tänu Paulo Caldiera suurepärast Portugali tõlge!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Sa pead olema sisselogitud, et sünkroniseerimine.</target>

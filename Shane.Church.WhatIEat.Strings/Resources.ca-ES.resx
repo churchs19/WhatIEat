@@ -290,4 +290,7 @@ Li agrairia la seva assistència enviant l'informe preparat error. Això ajudar�
   <data name="SyncLoginError" xml:space="preserve">
     <value>Vostè ha d'estar loguejat a sync.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Un agraïment especial a Paulo Caldiera per la excel·lent traducció portuguès!</value>
+  </data>
 </root>

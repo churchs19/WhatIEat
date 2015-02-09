@@ -234,6 +234,10 @@ Ich schätzen Ihre Hilfe durch Senden des Fehlerberichts bereit. Dies wird mit s
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Datenschutzrichtlinien</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Ein besonderer Dank Paulo Caldiera für die hervorragende Portugiesische Übersetzung!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Sie müssen für die Synchronisierung angemeldet sein.</target>

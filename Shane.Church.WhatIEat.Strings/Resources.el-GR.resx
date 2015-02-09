@@ -290,4 +290,7 @@
   <data name="SyncLoginError" xml:space="preserve">
     <value>Πρέπει να συνδεθείτε συγχρονισμό.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Μια ειδική χάρη στην Paulo Caldiera για την εξαιρετική μετάφραση πορτογαλικό!</value>
+  </data>
 </root>

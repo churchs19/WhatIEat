@@ -290,4 +290,7 @@
   <data name="SyncLoginError" xml:space="preserve">
     <value>동기화에 로그인 해야 합니다.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>뛰어난 포르투갈어 번역 업체 Caldiera 덕분에 특별 한!</value>
+  </data>
 </root>

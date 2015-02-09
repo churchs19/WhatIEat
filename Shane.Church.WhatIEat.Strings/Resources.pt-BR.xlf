@@ -58,7 +58,7 @@
           <source>Copyright © Shane Church 2013-2014</source>
           <target state="signed-off" state-qualifier="mt-suggestion">Copyright © Shane Church 2013-2014</target>
           <note from="MultilingualEditor" annotates="source" priority="4">Not translable</note>
-        </trans-unit>
+          </trans-unit>
         <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
           <source>a simple food journal for windows phone</source>
           <target state="translated">um agenda alimentar simples para o windows phone</target>
@@ -234,6 +234,10 @@ Agradeço o seu apoio através do envio de um relatório de erros. Isto irá aju
         <trans-unit id="Resx/PrivacyPolicyLabel" translate="yes" xml:space="preserve">
           <source>privacy policy</source>
           <target state="signed-off" state-qualifier="mt-suggestion">política de privacidade</target>
+        </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Um agradecimento especial para Paulo Caldiera para a tradução português excelente!</target>
         </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>

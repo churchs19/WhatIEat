@@ -290,4 +290,7 @@ Ma hindan teie abi poolt ettevalmistatud tõrketeatist. See aitab à problemaati
   <data name="SyncLoginError" xml:space="preserve">
     <value>Sa pead olema sisselogitud, et sünkroniseerimine.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Eriline tänu Paulo Caldiera suurepärast Portugali tõlge!</value>
+  </data>
 </root>

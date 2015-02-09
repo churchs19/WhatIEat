@@ -290,4 +290,7 @@
   <data name="SyncLoginError" xml:space="preserve">
     <value>شما باید ورود برای همگام سازی.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>با تشکر ویژه ای Caldiera پائولو برای ترجمه پرتغالی عالی!</value>
+  </data>
 </root>

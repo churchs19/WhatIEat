@@ -290,4 +290,7 @@ Saya menghargai bantuan anda dengan menghantar laporan ralat yang disediakan. In
   <data name="SyncLoginError" xml:space="preserve">
     <value>Anda mesti log masuk untuk disegerakkan.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Terima kasih Paulo Caldiera khas untuk penterjemahan Portugese cemerlang!</value>
+  </data>
 </root>

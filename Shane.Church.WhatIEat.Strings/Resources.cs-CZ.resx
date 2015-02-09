@@ -290,4 +290,7 @@ Ocenil bych vaši pomoc odesláním zprávy o chybách připravené. To vám pom
   <data name="SyncLoginError" xml:space="preserve">
     <value>Musíte být přihlášeni k synchronizaci.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Speciální díky Paulu Caldiera vynikající překlad Portugalské!</value>
+  </data>
 </root>

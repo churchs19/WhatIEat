@@ -290,4 +290,7 @@ Ik zou uw hulp op prijs stellen door de voorbereide foutenrapport te verzenden. 
   <data name="SyncLoginError" xml:space="preserve">
     <value>U moet zijn aangemeld om te synchroniseren.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Een speciale dankzij Paulo Caldiera voor de uitstekende Portugese vertaling!</value>
+  </data>
 </root>

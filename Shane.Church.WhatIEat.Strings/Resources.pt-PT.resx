@@ -291,4 +291,7 @@ Agradeço o seu apoio através do envio de um relatório de erros. Isto irá aju
   <data name="SyncLoginError" xml:space="preserve">
     <value>Tem de ter sessão iniciada para sincronizar.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Um especial graças Paulo Caldiera para a tradução portuguesas excelente!</value>
+  </data>
 </root>

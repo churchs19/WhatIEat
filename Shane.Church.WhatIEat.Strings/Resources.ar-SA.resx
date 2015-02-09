@@ -290,4 +290,7 @@
   <data name="SyncLoginError" xml:space="preserve">
     <value>يجب تسجيل الدخول للمزامنة.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>خاصة بفضل باولو كالديرا للترجمة البرتغالية ممتازة!</value>
+  </data>
 </root>

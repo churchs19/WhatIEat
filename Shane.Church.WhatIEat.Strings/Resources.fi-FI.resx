@@ -290,4 +290,7 @@ Otan teihin yhteyttä apua lähettämällä valmistetut virheraportin. Tämä au
   <data name="SyncLoginError" xml:space="preserve">
     <value>Sinun on kirjauduttava synkronointiin.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Paulo Caldiera ansiosta erityisen on erinomainen portugalinkielinen käännös!</value>
+  </data>
 </root>

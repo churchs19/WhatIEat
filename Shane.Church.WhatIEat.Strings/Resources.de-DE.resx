@@ -290,4 +290,7 @@ Ich schätzen Ihre Hilfe durch Senden des Fehlerberichts bereit. Dies wird mit s
   <data name="SyncLoginError" xml:space="preserve">
     <value>Sie müssen für die Synchronisierung angemeldet sein.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Ein besonderer Dank Paulo Caldiera für die hervorragende Portugiesische Übersetzung!</value>
+  </data>
 </root>

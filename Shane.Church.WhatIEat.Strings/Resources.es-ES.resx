@@ -290,4 +290,7 @@ Apreciaría su ayuda mediante el envío del informe de error preparado. Esto le 
   <data name="SyncLoginError" xml:space="preserve">
     <value>Debe haber iniciado sincronización.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Un agradecimiento especial a Paulo Caldiera para la traducción de portugués excelente!</value>
+  </data>
 </root>

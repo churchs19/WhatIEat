@@ -234,6 +234,10 @@ Jeg ville sætte pris på din hjælp ved at sende fejlrapporten forberedt. Dette
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">beskyttelse af personlige oplysninger</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">En særlig takket være Paulo Caldiera til den fremragende portugisisk oversættelse!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Du skal være logget på synkronisering.</target>

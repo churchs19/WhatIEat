@@ -290,4 +290,7 @@
   <data name="SyncLoginError" xml:space="preserve">
     <value>同期に記録される必要があります。</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>特殊パウロ Caldiera のおかげで、優れたポルトガル語翻訳!</value>
+  </data>
 </root>

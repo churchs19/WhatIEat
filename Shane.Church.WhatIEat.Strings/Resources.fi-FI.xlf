@@ -234,6 +234,10 @@ Otan teihin yhteyttä apua lähettämällä valmistetut virheraportin. Tämä au
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">tietosuojakäytäntö</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Paulo Caldiera ansiosta erityisen on erinomainen portugalinkielinen käännös!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Sinun on kirjauduttava synkronointiin.</target>

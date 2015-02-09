@@ -290,4 +290,7 @@ Vai novērtējam jūsu palīdzību, nosūtot sagatavotu kļūdu ziņojumu. Tas p
   <data name="SyncLoginError" xml:space="preserve">
     <value>Jums ir jābūt pieteicies Lai sync.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Īpašu pateicību Paulo Caldiera lielisks portugāļu tulkošanas!</value>
+  </data>
 </root>

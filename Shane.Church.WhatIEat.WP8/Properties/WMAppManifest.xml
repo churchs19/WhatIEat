@@ -44,7 +44,7 @@
     <Language code="zh-CN" />
     <Language code="zh-TW" />
   </Languages>
-  <App xmlns="" ProductID="{225b965d-d41f-440b-9e56-f03a550052e8}" Title="What I Eat" RuntimeType="Silverlight" Version="2.8.0.0" Genre="apps.normal" Author="Shane Church" Description="A simple food journal for Windows Phone" Publisher="Shane Church" PublisherID="{4526ac90-c781-4afd-8e92-30c4887c2ad4}">
+  <App xmlns="" ProductID="{225b965d-d41f-440b-9e56-f03a550052e8}" Title="What I Eat" RuntimeType="Silverlight" Version="2.9.0.0" Genre="apps.normal" Author="Shane Church" Description="A simple food journal for Windows Phone" Publisher="Shane Church" PublisherID="{4526ac90-c781-4afd-8e92-30c4887c2ad4}">
     <IconPath IsRelative="true" IsResource="false">MediumApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

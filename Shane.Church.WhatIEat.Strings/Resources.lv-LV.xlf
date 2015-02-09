@@ -234,6 +234,10 @@ Vai novērtējam jūsu palīdzību, nosūtot sagatavotu kļūdu ziņojumu. Tas p
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">privātuma politika</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Īpašu pateicību Paulo Caldiera lielisks portugāļu tulkošanas!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Jums ir jābūt pieteicies Lai sync.</target>

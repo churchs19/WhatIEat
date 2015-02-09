@@ -234,6 +234,10 @@ I would appreciate your assistance by sending the prepared error report. This wi
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">개인 정보 보호 정책</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">뛰어난 포르투갈어 번역 업체 Caldiera 덕분에 특별 한!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">동기화에 로그인 해야 합니다.</target>

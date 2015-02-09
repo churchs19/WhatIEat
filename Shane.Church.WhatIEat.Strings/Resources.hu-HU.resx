@@ -290,4 +290,7 @@ Kérem, a támogatás által elkészített jelentés küldése. Ez segít a prob
   <data name="SyncLoginError" xml:space="preserve">
     <value>Szinkronizálandó kell bejelentkeznie.</value>
   </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Különleges Paulo Caldiera köszönhetően a kitűnő portugál fordítás!</value>
+  </data>
 </root>

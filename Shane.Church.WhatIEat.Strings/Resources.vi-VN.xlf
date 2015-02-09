@@ -234,6 +234,10 @@ Tôi sẽ đánh giá cao sự hỗ trợ của bạn bằng cách gửi báo c�
           <source>privacy policy</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">chính sách bảo mật</target>
         </trans-unit>
+        <trans-unit id="Resx/PortugeseTranslationCredit" translate="yes" xml:space="preserve">
+          <source>A special thanks to Paulo Caldiera for the excellent Portugese translation!</source>
+          <target state="new">A special thanks to Paulo Caldiera for the excellent Portugese translation!</target>
+        </trans-unit>
         <trans-unit id="Resx/SyncLoginError" translate="yes" xml:space="preserve">
           <source>You must be logged in to sync.</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Bạn phải đăng nhập để đồng bộ.</target>
