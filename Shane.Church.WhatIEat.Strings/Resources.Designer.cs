@@ -89,7 +89,7 @@ namespace Shane.Church.WhatIEat.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright © Shane Church 2013-2014.
+        ///   Looks up a localized string similar to Copyright © Shane Church 2015.
         /// </summary>
         public static string AppCopyright {
             get {

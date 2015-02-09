@@ -40,8 +40,6 @@
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <EmbeddedResource Include="Resources.ar-SA.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.ar-SA.Designer.cs</LastGenOutput>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.ar-SA.xlf</DependentUpon>
@@ -374,11 +372,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LocalizedStrings.cs" />
-    <Compile Include="Resources.ar-SA.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.ar-SA.resx</DependentUpon>
-    </Compile>
     <Compile Include="Resources.bg-BG.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

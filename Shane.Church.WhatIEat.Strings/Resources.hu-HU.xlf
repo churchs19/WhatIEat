@@ -55,8 +55,8 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Ez az alkalmazás gyakorisága</target>
         </trans-unit>
         <trans-unit id="Resx/AppCopyright" translate="yes" xml:space="preserve">
-          <source>Copyright © Shane Church 2013-2014</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane Church 2013-2014</target>
+          <source>Copyright © Shane Church 2015</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane Church 2015</target>
         </trans-unit>
         <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
           <source>a simple food journal for windows phone</source>
