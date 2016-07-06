@@ -160,7 +160,7 @@
     <value>tasa de esta aplicación</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church de 2013-2014</value>
+    <value>Copyright © Shane Church de 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>un diario de comida sencilla para windows phone</value>
@@ -289,5 +289,8 @@ Apreciaría su ayuda mediante el envío del informe de error preparado. Esto le 
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Debe haber iniciado sincronización.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Un agradecimiento especial a Paulo Caldiera para la traducción de portugués excelente!</value>
   </data>
 </root>

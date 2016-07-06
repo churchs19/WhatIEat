@@ -16,19 +16,28 @@ namespace Shane.Church.WhatIEat.WP
 	public partial class About : PhoneApplicationPage
 	{
 		IWebNavigationService _webNav;
+		ILoggingService _log;
 
 		public About()
 		{
 			InitializeComponent();
 
 			_webNav = KernelService.Kernel.Get<IWebNavigationService>();
+			_log = KernelService.Kernel.Get<ILoggingService>();
 
 			this.DataContext = KernelService.Kernel.Get<AboutViewModel>();
 		}
 
 		private void PrivacyButton_Click(object sender, RoutedEventArgs e)
 		{
-			_webNav.NavigateTo(new Uri("http://bit.ly/whatieatprivacy"));
+			_webNav.NavigateTo(new Uri("http://s-church.net/software/whatieatprivacy/"));
+		}
+
+		protected override void OnNavigatedTo(NavigationEventArgs e)
+		{
+			_log.LogPageView("About");
+
+			base.OnNavigatedTo(e);
 		}
 	}
 }

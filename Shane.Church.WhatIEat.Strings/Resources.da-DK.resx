@@ -160,7 +160,7 @@
     <value>Bedøm denne app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>en simpel fødevarer kladde til windows phone</value>
@@ -289,5 +289,8 @@ Jeg ville sætte pris på din hjælp ved at sende fejlrapporten forberedt. Dette
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Du skal være logget på synkronisering.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>En særlig takket være Paulo Caldiera til den fremragende portugisisk oversættelse!</value>
   </data>
 </root>

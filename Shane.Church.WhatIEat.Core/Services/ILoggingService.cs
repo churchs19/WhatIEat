@@ -8,5 +8,6 @@ namespace Shane.Church.WhatIEat.Core.Services
 		void LogMessage(string message);
 		void LogException(Exception ex, string message = null);
 		void LogPurchaseComplete(ProductPurchaseInfo purchaseInfo);
+		void LogPageView(string page);
 	}
 }

@@ -160,7 +160,7 @@
     <value>hinda seda app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>lihtsa toidu päevikut windows telefon</value>
@@ -289,5 +289,8 @@ Ma hindan teie abi poolt ettevalmistatud tõrketeatist. See aitab à problemaati
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Sa pead olema sisselogitud, et sünkroniseerimine.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Eriline tänu Paulo Caldiera suurepärast Portugali tõlge!</value>
   </data>
 </root>

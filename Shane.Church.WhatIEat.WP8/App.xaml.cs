@@ -1,4 +1,5 @@
-﻿using Microsoft.Phone.Controls;
+﻿using Microsoft.ApplicationInsights.Telemetry.WindowsStore;
+using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Microsoft.Phone.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
@@ -10,6 +11,7 @@ using Shane.Church.WhatIEat.Core.WP;
 using Shane.Church.WhatIEat.Core.WP.Data;
 using Shane.Church.WhatIEat.Core.WP.Services;
 using Shane.Church.WhatIEat.Core.WP.ViewModels;
+using Shane.Church.WhatIEat.Core.WP8.Data;
 using Shane.Church.WhatIEat.Core.WP8.Services;
 using Shane.Church.WhatIEat.Strings;
 using System;
@@ -24,11 +26,17 @@ using System.Windows.Markup;
 using System.Windows.Navigation;
 using System.Xml;
 using Telerik.Windows.Controls;
+using Microsoft.ApplicationInsights;
 
 namespace Shane.Church.WhatIEat.WP
 {
     public partial class App : Application
     {
+		/// <summary>
+		/// Allows tracking page views, exceptions and other telemetry through the Microsoft Application Insights service.
+		/// </summary>
+		public TelemetryClient TelemetryClient;
+
         // Locale to force CurrentCulture to in InitializeLanguage(). 
         // Use "qps-PLOC" to deploy pseudolocalized strings. 
         // Use "" to let user Phone Language selection determine locale. 
@@ -65,12 +73,15 @@ namespace Shane.Church.WhatIEat.WP
             // Language display initialization 
             InitializeLanguage();
 
+			TelemetryClient = new TelemetryClient();
+
             KernelService.Kernel = new StandardKernel();
+			KernelService.Kernel.Bind<TelemetryClient>().ToConstant<TelemetryClient>(TelemetryClient);
             KernelService.Kernel.Bind<INavigationService>().To<PhoneNavigationService>().InSingletonScope();
             KernelService.Kernel.Bind<ISettingsService>().To<PhoneSettingsService>().InSingletonScope();
             KernelService.Kernel.Bind<IWebNavigationService>().To<PhoneWebNavigationService>().InSingletonScope();
             KernelService.Kernel.Bind<IEntry>().To<PhoneEntry>();
-            KernelService.Kernel.Bind<IRepository<IEntry>>().To<PhoneEntryRepository>().InSingletonScope();
+            KernelService.Kernel.Bind<IRepository<IEntry>>().To<WP8EntryRepository>().InSingletonScope();
             KernelService.Kernel.Bind<AboutViewModel>().To<PhoneAboutViewModel>();
             KernelService.Kernel.Bind<MainViewModel>().ToSelf().InSingletonScope();
             KernelService.Kernel.Bind<IMobileServiceClient>().ToMethod<MobileServiceClient>(it =>
@@ -88,6 +99,31 @@ namespace Shane.Church.WhatIEat.WP
             KernelService.Kernel.Bind<ILoggingService>().To<PhoneLoggingService>().InSingletonScope();
             KernelService.Kernel.Bind<ISkyDriveService>().To<WP8SkyDriveService>();
             KernelService.Kernel.Bind<IIAPService>().To<WP8IAPService>();
+
+
+			if (!WP8EntryRepository.DbExists() && PhoneEntryRepository.DbExists())
+			{
+				var log = KernelService.Kernel.Get<ILoggingService>();
+				try
+				{
+					log.LogMessage("Beginning Telerik Data Migration");
+					using (WP8EntryRepository newRepo = new WP8EntryRepository())
+					{
+						using (PhoneEntryRepository oldRepo = new PhoneEntryRepository())
+						{
+							foreach (var entry in oldRepo.GetAllEntries(true))
+							{
+								newRepo.AddOrUpdateEntry(entry);
+							}
+						}
+					}
+					log.LogMessage("Telerik Data Migration Complete");
+				}
+				catch(Exception ex)
+				{
+					log.LogException(ex, "Telerik Data Migration FAILED");
+				}
+			}
 
             // Show graphics profiling information while debugging.
             if (System.Diagnostics.Debugger.IsAttached)
@@ -240,12 +276,6 @@ namespace Shane.Church.WhatIEat.WP
             //Before using any of the ApplicationBuildingBlocks, this class should be initialized with the version of the application.
             var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
             ApplicationUsageHelper.Init(versionAttrib.Version.ToString());
-#if DEBUG
-            MarkedUp.AnalyticClient.Initialize("e49bd502-6947-44b6-9332-222a6500ca9d");
-#else
-            MarkedUp.AnalyticClient.Initialize("7d77525a-31f0-4b80-9aff-08d497a096b8");
-#endif
-            MarkedUp.AnalyticClient.RegisterRootNavigationFrame(this.RootFrame);
 
             if (KernelService.Kernel.Get<ISettingsService>().LoadSetting<bool>("SyncEnabled"))
             {
@@ -261,12 +291,6 @@ namespace Shane.Church.WhatIEat.WP
         private async void Application_Activated(object sender, ActivatedEventArgs e)
         {
             var versionAttrib = new AssemblyName(Assembly.GetExecutingAssembly().FullName);
-#if DEBUG
-            MarkedUp.AnalyticClient.Initialize("e49bd502-6947-44b6-9332-222a6500ca9d");
-#else
-            MarkedUp.AnalyticClient.Initialize("7d77525a-31f0-4b80-9aff-08d497a096b8");
-#endif
-            MarkedUp.AnalyticClient.RegisterRootNavigationFrame(this.RootFrame);
 
             if (!e.IsApplicationInstancePreserved)
             {
@@ -288,19 +312,24 @@ namespace Shane.Church.WhatIEat.WP
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
             // Ensure that required application state is persisted here.
+			var repo = KernelService.Kernel.Get<IRepository<IEntry>>() as WP8EntryRepository;
+			KernelService.Kernel.Release(repo);			
         }
 
         // Code to execute when the application is closing (eg, user hit Back)
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
-        }
+			var repo = KernelService.Kernel.Get<IRepository<IEntry>>() as WP8EntryRepository;
+			KernelService.Kernel.Release(repo);
+		}
 
         // Code to execute if a navigation fails
         private void RootFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
         {
-            MarkedUp.AnalyticClient.Fatal("Navigation Failed - " + e.Uri.ToString(), e.Exception);
-            if (System.Diagnostics.Debugger.IsAttached)
+			var _log = KernelService.Kernel.Get<ILoggingService>();
+			_log.LogException(e.Exception, "Navigation Failed - " + e.Uri.ToString());
+			if (System.Diagnostics.Debugger.IsAttached)
             {
                 // A navigation has failed; break into the debugger
                 System.Diagnostics.Debugger.Break();
@@ -355,13 +384,14 @@ namespace Shane.Church.WhatIEat.WP
                 }
 
             }
-            if (System.Diagnostics.Debugger.IsAttached)
+			var _log = KernelService.Kernel.Get<ILoggingService>();
+			_log.LogException(e.ExceptionObject);
+			if (System.Diagnostics.Debugger.IsAttached)
             {
                 // An unhandled exception has occurred; break into the debugger
                 System.Diagnostics.Debugger.Break();
-            } 
-            MarkedUp.AnalyticClient.Fatal("Unhandled Exception", e.ExceptionObject);
-        }
+            }
+		}
 
         #region Phone application initialization
 

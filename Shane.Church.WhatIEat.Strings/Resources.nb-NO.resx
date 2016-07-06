@@ -160,7 +160,7 @@
     <value>Vurder denne app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>en enkel mat journal for windows phone</value>
@@ -289,5 +289,8 @@ Jeg setter pris på din hjelp ved å sende feilrapporten forberedt. Dette vil hj
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Du må være logget på synkronisering.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>En spesiell Takk til Paulo Caldiera for fremragende Portugese oversettelsen!</value>
   </data>
 </root>

@@ -160,7 +160,8 @@
     <value>đánh giá các ứng dụng này</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Bản quyền © Shane Church 2013-2014</value>
+    <value>Bản quyền © Shane Church 2015-2016</value>
+    <comment></comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>một tạp chí đơn giản thực phẩm cho windows điện thoại</value>

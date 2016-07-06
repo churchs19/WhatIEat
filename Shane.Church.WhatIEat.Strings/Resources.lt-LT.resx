@@ -160,7 +160,7 @@
     <value>Įvertinkite šią programą</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>paprasta maisto žurnalą windows telefonas</value>
@@ -289,5 +289,8 @@ Iš paruošto klaidos ataskaitą siunčianti būtume labai dėkingi savo pagalb�
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Jūs turi būti prisijungęs, jei nori sinchronizavimo.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Ypatingą padėką Paulo Caldiera puikus Portugalų Vertimas!</value>
   </data>
 </root>

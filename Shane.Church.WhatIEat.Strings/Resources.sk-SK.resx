@@ -160,7 +160,8 @@
     <value>Hodnotiť tento app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
+    <comment></comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>jednoduché jedlo denník pre windows phone</value>

@@ -160,7 +160,7 @@
     <value>novērtēt šo app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows tālrunis vienkāršu ēdienu žurnālu</value>
@@ -289,5 +289,8 @@ Vai novērtējam jūsu palīdzību, nosūtot sagatavotu kļūdu ziņojumu. Tas p
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Jums ir jābūt pieteicies Lai sync.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Īpašu pateicību Paulo Caldiera lielisks portugāļu tulkošanas!</value>
   </data>
 </root>

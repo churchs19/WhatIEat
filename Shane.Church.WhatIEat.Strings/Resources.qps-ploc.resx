@@ -160,7 +160,7 @@
     <value>[A178F][!!_ѓãτê τћíş âρρ_!!]</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>[BCD0A][!!_Čòρўŕìģђт © Šђáηè Ċћûřċн 2013-2014_!!]</value>
+    <value>[BCD0A][!!_Čòρўŕìģђт © Šђáηè Ċћûřċн 2015-2016_!!]</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>[5C2A5][!!_ã ŝįмрĺê ƒõôð јõûřиàľ ƒôŕ ŵíиðôẃś рђôηê_!!]</value>
@@ -289,5 +289,8 @@
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>[3FA25][!!_Ўôû мúšţ ьê łõģģéđ ìй τó šÿйċ._!!]</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>[87F7F][!!_À šþęċįãļ ţћâйкŝ ţõ Þãúłó Ĉâĺďįéѓâ ƒòř тђę èхćęłłèήţ Рòŕтûġęşê τѓãηşļàтįóή!_!!!!!!!!!!!!!!!!!!!!!!]</value>
   </data>
 </root>

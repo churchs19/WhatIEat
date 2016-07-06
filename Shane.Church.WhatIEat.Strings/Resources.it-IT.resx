@@ -160,7 +160,7 @@
     <value>velocità di questa applicazione</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014.</value>
+    <value>Copyright © Shane Church 2015-2016.</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>un giornale di registrazione degli alimenti semplici per windows phone</value>
@@ -289,5 +289,8 @@ Gradirei l'assistenza inviando la segnalazione errori preparata. Ciò consentir�
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>È necessario accedere per eseguire la sincronizzazione.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Un ringraziamento particolare a Paulo Caldiera per la traduzione portoghese eccellente!</value>
   </data>
 </root>

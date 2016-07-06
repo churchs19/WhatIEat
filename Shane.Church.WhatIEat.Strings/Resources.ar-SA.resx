@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ResourceFlowDirection" xml:space="preserve">
-    <value>RightToLeft</value>
-  </data>
-  <data name="ResourceLanguage" xml:space="preserve">
-    <value>ar-SA</value>
-  </data>
   <data name="ConnectedLabel" xml:space="preserve">
     <value>متصل</value>
   </data>
@@ -160,7 +154,7 @@
     <value>تقييم هذا التطبيق</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>حقوق النشر © الكنيسة شين 2013-2014</value>
+    <value>حقوق النشر © الكنيسة شين 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>دفتر يومية الطعام بسيطة الخاصة ب windows phone</value>
@@ -230,6 +224,12 @@
   <data name="Ok" xml:space="preserve">
     <value>موافق</value>
   </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>RightToLeft</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>ar-SA</value>
+  </data>
   <data name="ReviewLabel" xml:space="preserve">
     <value>معدل لي</value>
   </data>
@@ -281,13 +281,16 @@
   <data name="RemoveAdsLabel" xml:space="preserve">
     <value>إزالة الإعلانات</value>
   </data>
+  <data name="SyncLoginError" xml:space="preserve">
+    <value>يجب تسجيل الدخول للمزامنة.</value>
+  </data>
   <data name="SyncUnknownError" xml:space="preserve">
     <value>تعذر مزامنة في الوقت الحالي. الرجاء المحاولة مرة أخرى لاحقاً.</value>
   </data>
   <data name="PrivacyPolicyLabel" xml:space="preserve">
     <value>نهج الخصوصية</value>
   </data>
-  <data name="SyncLoginError" xml:space="preserve">
-    <value>يجب تسجيل الدخول للمزامنة.</value>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>خاصة بفضل باولو كالديرا للترجمة البرتغالية ممتازة!</value>
   </data>
 </root>

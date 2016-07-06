@@ -26,6 +26,13 @@ namespace Shane.Church.WhatIEat.WP
 			_log = KernelService.Kernel.Get<ILoggingService>();
 		}
 
+		protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+		{
+			_log.LogPageView("DateEdit");
+
+			base.OnNavigatedTo(e);
+		}
+
 		#region Ad Control
 		private void InitializeAdControl()
 		{

@@ -160,7 +160,7 @@
     <value>שיעור זה app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>זכויות יוצרים © Shane Church 2013-2014</value>
+    <value>זכויות יוצרים © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>יומן מזון פשוט עבור windows טלפון</value>
@@ -289,5 +289,8 @@
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>עליך להיות מחובר כדי לסנכרן.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>מיוחד הודות Caldiera פאולו לתרגום Portugese מעולה!</value>
   </data>
 </root>

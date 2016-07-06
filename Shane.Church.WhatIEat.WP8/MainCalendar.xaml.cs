@@ -137,6 +137,8 @@ namespace Shane.Church.WhatIEat.WP
 
         protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
         {
+			_log.LogPageView("MainCalendar");
+
             if (e.NavigationMode == NavigationMode.New)
             {
                 NavigationService.RemoveBackEntry();

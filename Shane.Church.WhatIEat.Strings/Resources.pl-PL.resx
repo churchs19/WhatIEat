@@ -160,7 +160,7 @@
     <value>Oceń tej aplikacji</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Arkusz proste żywności dla systemu windows phone</value>
@@ -289,5 +289,8 @@ Będę wdzięczny za pomoc przez wysłanie raportu o błędzie przygotowany. Pom
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Musisz być zalogowany do synchronizacji.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Specjalne podziękowania dla Paulo Caldiera doskonałe tłumaczenie portugalskie!</value>
   </data>
 </root>

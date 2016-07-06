@@ -24,6 +24,8 @@ namespace Shane.Church.WhatIEat.WP
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
 		{
+			_log.LogPageView("ExcelExport");
+
 			_model = KernelService.Kernel.Get<ExcelExportViewModel>();
 			_model.ExportBeginning += () =>
 			{

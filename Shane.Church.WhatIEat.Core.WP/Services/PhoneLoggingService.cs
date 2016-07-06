@@ -1,39 +1,54 @@
-﻿using Shane.Church.WhatIEat.Core.Data;
+﻿using Microsoft.ApplicationInsights;
+using Microsoft.ApplicationInsights.DataContracts;
+using Shane.Church.WhatIEat.Core.Data;
 using Shane.Church.WhatIEat.Core.Services;
 using System;
+using System.Collections.Generic;
 
 namespace Shane.Church.WhatIEat.Core.WP.Services
 {
     public class PhoneLoggingService : ILoggingService
     {
-        public void LogMessage(string message)
-        {
-            MarkedUp.AnalyticClient.Info(message);
-        }
+		private TelemetryClient _client;
 
-        public void LogException(Exception ex, string message = null)
-        {
-            if (message == null)
-            {
-                MarkedUp.AnalyticClient.Error(ex.Message, ex);
-            }
-            else
-            {
-                MarkedUp.AnalyticClient.Error(message, ex);
-            }
-        }
+		public PhoneLoggingService(TelemetryClient client)
+		{
+			if (client == null) throw new ArgumentNullException("client");
+			_client = client;
+		}
 
-        public void LogPurchaseComplete(ProductPurchaseInfo purchaseInfo)
-        {
-            var iap = new MarkedUp.InAppPurchase() {
-                ProductId = purchaseInfo.ProductId,
-                ProductName = purchaseInfo.ProductName,
-                CommerceEngine = purchaseInfo.CommerceEngine,
-                CurrentMarket = purchaseInfo.CurrentMarket,
-                Currency = purchaseInfo.Currency,
-                Price = purchaseInfo.Price
-            };
-            MarkedUp.AnalyticClient.InAppPurchaseComplete(iap);
-        }
-    }
+		public void LogMessage(string message)
+		{
+			_client.TrackEvent(message);
+		}
+
+		public void LogException(Exception ex, string message = null)
+		{
+			ExceptionTelemetry exData = new ExceptionTelemetry(ex);
+			if (message != null)
+			{
+				exData.Properties.Add("message", message);
+			}
+			_client.TrackException(exData);
+		}
+
+		public void LogPurchaseComplete(ProductPurchaseInfo purchaseInfo)
+		{
+			var evtData = new EventTelemetry("In App Purchase Complete");
+			evtData.Properties.Add("ProductId", purchaseInfo.ProductId);
+			evtData.Properties.Add("ProductName", purchaseInfo.ProductName);
+			evtData.Properties.Add("CommerceEngine", purchaseInfo.CommerceEngine);
+			evtData.Properties.Add("CurrentMarket", purchaseInfo.CurrentMarket);
+			evtData.Properties.Add("Currency", purchaseInfo.Currency);
+			evtData.Properties.Add("Price", purchaseInfo.Price.ToString("N2"));
+
+			_client.TrackEvent(evtData);
+		}
+
+
+		public void LogPageView(string page)
+		{
+			_client.TrackPageView(page);
+		}
+	}
 }

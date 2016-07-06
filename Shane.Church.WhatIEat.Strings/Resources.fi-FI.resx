@@ -160,7 +160,7 @@
     <value>Arvioi tämä app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2013-2014</value>
+    <value>Copyright © Shane Church 2015-2016</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows phone yksinkertainen ruoka kirjauskansio</value>
@@ -289,5 +289,8 @@ Otan teihin yhteyttä apua lähettämällä valmistetut virheraportin. Tämä au
   </data>
   <data name="SyncLoginError" xml:space="preserve">
     <value>Sinun on kirjauduttava synkronointiin.</value>
+  </data>
+  <data name="PortugeseTranslationCredit" xml:space="preserve">
+    <value>Paulo Caldiera ansiosta erityisen on erinomainen portugalinkielinen käännös!</value>
   </data>
 </root>
