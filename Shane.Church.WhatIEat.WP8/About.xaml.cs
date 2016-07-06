@@ -30,7 +30,7 @@ namespace Shane.Church.WhatIEat.WP
 
 		private void PrivacyButton_Click(object sender, RoutedEventArgs e)
 		{
-			_webNav.NavigateTo(new Uri("http://bit.ly/whatieatprivacy"));
+			_webNav.NavigateTo(new Uri("http://s-church.net/software/whatieatprivacy/"));
 		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)

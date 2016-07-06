@@ -16,7 +16,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Data
 
 		private Context _context; 
 		
-		private static object _lock = new object();
+//		private static object _lock = new object();
 
 		public WP8EntryRepository()
 		{
@@ -36,36 +36,30 @@ namespace Shane.Church.WhatIEat.Core.WP8.Data
 
 		public IQueryable<IEntry> GetAllEntries(bool includeDeleted = false)
 		{
-			lock (_lock)
-			{
 				if (includeDeleted)
-					return _context.GetAll<WP8Entry>().Select(it => (IEntry)it).ToList().AsQueryable();
+					return _context.Get<WP8Entry>("select * from WP8Entry").Select(it => (IEntry)it).ToList().AsQueryable();
 				else
 				{
-					var entries = _context.GetAll<WP8Entry>().Where(it => !it.IsDeleted).ToList();
+                var entries = _context.Get<WP8Entry>("select * from WP8Entry where IsDeleted = 0").ToList();
+
 					return entries.Select(it => it.AsIEntry()).ToList().AsQueryable();
 				}
-			}
 		}
 
 		public IQueryable<IEntry> GetFilteredEntries(System.Linq.Expressions.Expression<Func<IEntry, bool>> filter, bool includeDeleted = false)
 		{
-			lock (_lock)
-			{
 
 				var filterDelegate = filter.Compile();
-				var allResultsDb = includeDeleted ? _context.GetAll<WP8Entry>().ToList() : _context.GetAll<WP8Entry>().Where(it => !it.IsDeleted).ToList();
-				var allResults = allResultsDb.Select(it => it.AsIEntry()).ToList();
+				var allResultsDb = includeDeleted ? _context.Get<WP8Entry>("select * from WP8Entry").ToList() : _context.Get<WP8Entry>("select* from WP8Entry where IsDeleted = 0").ToList();
+
+                var allResults = allResultsDb.Select(it => it.AsIEntry()).ToList();
 				var results = allResults.Where(it => filterDelegate(it)).ToList();
 				return results.AsQueryable();
-			}
 		}
 
 		public void DeleteEntry(IEntry entry, bool hardDelete = false)
 		{
-			lock (_lock)
-			{
-				var pEntry = _context.GetAll<WP8Entry>().Where(it => it.EntryGuid == entry.EntryGuid).FirstOrDefault();
+				var pEntry = _context.Get<WP8Entry>("select * from WP8Entry where EntryGuid = @p1", entry.EntryGuid).FirstOrDefault();
 				if (pEntry != null)
 				{
 					if (hardDelete)
@@ -78,16 +72,13 @@ namespace Shane.Church.WhatIEat.Core.WP8.Data
 					}
 					_context.SaveChanges();
 				}
-			}
 		}
 
 		public IEntry AddOrUpdateEntry(IEntry entry)
 		{
 			if (!string.IsNullOrWhiteSpace(entry.EntryText))
 			{
-				lock (_lock)
-				{
-					var pEntry = _context.GetAll<WP8Entry>().Where(it => it.EntryGuid == entry.EntryGuid).SingleOrDefault();
+					var pEntry = _context.Get<WP8Entry>("select * from WP8Entry where EntryGuid = @p1", entry.EntryGuid).SingleOrDefault();
 					if (pEntry != null)
 					{
 						pEntry.EntryId = entry.EntryId;
@@ -111,7 +102,6 @@ namespace Shane.Church.WhatIEat.Core.WP8.Data
 					}
 					_context.SaveChanges();
 					return pEntry.AsIEntry();
-				}
 			}
 			return entry;
 		}

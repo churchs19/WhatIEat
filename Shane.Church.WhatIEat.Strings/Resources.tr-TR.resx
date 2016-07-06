@@ -160,7 +160,8 @@
     <value>Bu uygulama oranı</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Telif Hakkı © Shane Church 2015</value>
+    <value>Telif Hakkı © Shane Church 2015-2016</value>
+    <comment></comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>windows phone için basit bir yiyecek günlüğü</value>

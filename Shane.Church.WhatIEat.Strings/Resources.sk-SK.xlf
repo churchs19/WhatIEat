@@ -55,9 +55,9 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Hodnotiť tento app</target>
         </trans-unit>
         <trans-unit id="Resx/AppCopyright" translate="yes" xml:space="preserve">
-          <source>Copyright © Shane Church 2015</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane Church 2015</target>
-        </trans-unit>
+          <source>Copyright © Shane Church 2015-2016</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Copyright © Shane Church 2015-2016</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
         <trans-unit id="Resx/AppDescription" translate="yes" xml:space="preserve">
           <source>a simple food journal for windows phone</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">jednoduché jedlo denník pre windows phone</target>

@@ -160,7 +160,8 @@
     <value>Ocenite to app</value>
   </data>
   <data name="AppCopyright" xml:space="preserve">
-    <value>Copyright © Shane Church 2015</value>
+    <value>Copyright © Shane Church 2015-2016</value>
+    <comment></comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>preprosto hrano temeljnice za windows phone</value>
