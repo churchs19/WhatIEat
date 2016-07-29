@@ -362,8 +362,6 @@
       <culture>zh-CN</culture>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources.zh-TW.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.zh-TW.Designer.cs</LastGenOutput>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.zh-TW.xlf</DependentUpon>
@@ -572,11 +570,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.zh-CN.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources.zh-TW.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.zh-TW.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

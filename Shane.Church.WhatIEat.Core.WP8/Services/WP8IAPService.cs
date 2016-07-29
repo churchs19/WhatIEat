@@ -32,7 +32,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
             try
             {
                 // Kick off purchase; don't ask for a receipt when it returns
-                var purchaseResult = await CurrentApp.RequestProductPurchaseAsync(productId, true);
+                var purchaseResult = await CurrentApp.RequestProductPurchaseAsync(productId);
 
                 await GetListings();
 
@@ -75,7 +75,7 @@ namespace Shane.Church.WhatIEat.Core.WP8.Services
 
         public bool AreAdsVisible()
         {
-#if !PERSONAL
+#if !PERSONAL && !DEBUG
             var license = CurrentApp.LicenseInformation.ProductLicenses[_productCodes[0]];
             return !license.IsActive;
 #else

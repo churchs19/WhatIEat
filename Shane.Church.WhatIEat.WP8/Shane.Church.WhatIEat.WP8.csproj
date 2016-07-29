@@ -12,8 +12,9 @@
     <RootNamespace>Shane.Church.WhatIEat.WP</RootNamespace>
     <AssemblyName>WhatIEat.WP8</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
-    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
     <SilverlightApplication>true</SilverlightApplication>
     <SupportedCultures>ar-SA;bg-BG;ca-ES;cs-CZ;da-DK;de-DE;el-GR;en-GB;en-US;es-ES;es-MX;et-EE;fa-IR;fi-FI;fr-FR;he-IL;hi-IN;hu-HU;id-ID;it-IT;ja-JP;ko-KR;lt-LT;lv-LV;ms-MY;nb-NO;nl-NL;pl-PL;pt-BR;pt-PT;qps-ploc;ro-RO;ru-RU;sk-SK;sl-SI;sv-SE;th-TH;tr-TR;uk-UA;vi-VN;zh-CN;zh-TW</SupportedCultures>
     <XapOutputs>true</XapOutputs>
@@ -23,13 +24,15 @@
     <SilverlightAppEntry>Shane.Church.WhatIEat.WP.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
-    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <ExpressionBlendVersion>12.0.41212.0</ExpressionBlendVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/149bbd86-901c-49ee-be7c-2ad52905c001/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/Shane.Church.WhatIEat.WP8</ApplicationInsightsResourceId>
+    <TargetFrameworkProfile />
+    <DefaultLanguage>en-US</DefaultLanguage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,6 +65,7 @@
     <NoConfig>true</NoConfig>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
@@ -72,6 +76,7 @@
     <NoConfig>true</NoConfig>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,6 +88,7 @@
     <NoConfig>true</NoConfig>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
     <DebugType>pdbonly</DebugType>
@@ -93,6 +99,7 @@
     <NoConfig>true</NoConfig>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget />
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="About.xaml.cs">
@@ -132,6 +139,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Fonts\LiveSymbol.ttf" />
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
@@ -153,27 +163,30 @@
     <Content Include="Images\Settings.png" />
     <Content Include="Images\Shopping-Cart-04.png" />
     <Content Include="Images\Synchronize.png" />
+    <Content Include="Logo44x44.png" />
     <Content Include="MediumApplicationIcon.png" />
     <Content Include="SmallApplicationIcon.png" />
     <Content Include="SplashScreenImage.jpg" />
     <Content Include="SplashScreenImage.Screen-720p.jpg" />
     <Content Include="SplashScreenImage.Screen-WVGA.jpg" />
     <Content Include="SplashScreenImage.Screen-WXGA.jpg" />
+    <Content Include="SquareTile150x150.png" />
+    <Content Include="SquareTile71x71.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="WideApplicationIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="AdDuplex.WindowsPhone, Version=9.0.0.9, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AdDuplexWP8.9.0.0.9\lib\wp8\AdDuplex.WindowsPhone.dll</HintPath>
+    <Reference Include="AdDuplex.WindowsPhone, Version=9.0.0.11, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AdDuplexWP8.9.0.0.11\lib\wp8\AdDuplex.WindowsPhone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Coding4Fun.Toolkit, Version=2.0.8.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\windowsphone8\Coding4Fun.Toolkit.dll</HintPath>
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.8\lib\windowsphone8\Coding4Fun.Toolkit.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Coding4Fun.Toolkit.Controls, Version=2.1.6.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    <Reference Include="Coding4Fun.Toolkit.Controls, Version=2.1.7.0, Culture=neutral, PublicKeyToken=c5fd7b72b1a17ce4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.1.8\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GoogleAds">
@@ -181,7 +194,7 @@
     </Reference>
     <Reference Include="Inneractive.Ad, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\InnerActive.WP8.1.1.3\lib\wp8\Inneractive.Ad.dll</HintPath>
+      <HintPath>..\lib\InneractiveAdSDK\WP8\Inneractive.Ad.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AdMediator.Core">
       <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\Microsoft.AdMediator8\1.0\References\CommonConfiguration\neutral\Microsoft.AdMediator.Core.dll</HintPath>
@@ -213,7 +226,7 @@
       <HintPath>..\packages\Microsoft.Advertising.WindowsPhone.SL80.6.2.40501.1\lib\wp8\Microsoft.Advertising.Mobile.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\wp8\Microsoft.ApplicationInsights.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\wp8\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows">
@@ -272,7 +285,9 @@
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="Telerik.Windows.Controls.Data, Version=2014.3.1021.3040, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWP\2014.3.1021.3040\Telerik.Windows.Controls.Data.dll</HintPath>
       <Private>True</Private>
