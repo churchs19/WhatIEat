@@ -1,16 +1,17 @@
 ﻿using System.Reflection;
-using System.Resources;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Resources;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("What I Eat")]
-[assembly: AssemblyDescription("A food journal for Windows Phone")]
+[assembly: AssemblyTitle("InneractiveAdSample")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Shane Church")]
-[assembly: AssemblyProduct("What I Eat - Windows Phone")]
-[assembly: AssemblyCopyright("Copyright © Shane Church 2015-2016")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("InneractiveAdSample")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("facb038e-a441-4895-8b1f-00cf4c8a4d5f")]
+[assembly: Guid("fa6b34db-4cb2-4cea-8e33-75e44641a4e7")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -31,6 +32,6 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("2.9.2.*")]
-[assembly: AssemblyFileVersion("2.9.2.0")]
-[assembly: NeutralResourcesLanguageAttribute("en")]
+[assembly: AssemblyVersion("1.1.3")]
+[assembly: AssemblyFileVersion("1.1.3")]
+[assembly: NeutralResourcesLanguageAttribute("en-US")]

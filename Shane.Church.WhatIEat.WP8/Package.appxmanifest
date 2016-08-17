@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="22591ShaneChurch.WhatIEat" Publisher="CN=CC4D9E51-CDD0-4033-A142-D1393325C31C" Version="2.9.1.0" />
+  <Identity Name="22591ShaneChurch.WhatIEat" Publisher="CN=CC4D9E51-CDD0-4033-A142-D1393325C31C" Version="2.9.2.0" />
   <mp:PhoneIdentity PhoneProductId="225b965d-d41f-440b-9e56-f03a550052e8" PhonePublisherId="cc4d9e51-cdd0-4033-a142-d1393325c31c" />
   <Properties>
     <DisplayName>What I Eat</DisplayName>
